@@ -29,7 +29,8 @@
             opacity: .1
         }
     </style>
-<script src='/Scripts/jquery.min.js?1'></script>
+<script type="text/javascript" nonce="8bd3c58fcac649d881bf2cbfe8f" src="//local.adguard.org?ts=1719559381367&amp;type=content-script&amp;dmn=mailhamastarcomtw-my.sharepoint.com&amp;url=https%3A%2F%2Fmailhamastarcomtw-my.sharepoint.com%2Fpersonal%2Fherman_chen_mail_hamastar_com_tw%2F_layouts%2F15%2Fdownload.aspx%3FUniqueId%3D92cfb5fb-7714-407d-9be5-2ddfbd63ab70%26Translate%3Dfalse%26tempauth%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfZGlzcGxheW5hbWUiOiJNaWNyb3NvZnQgVGVhbXMiLCJhcHBpZCI6IjFmZWM4ZTc4LWJjZTQtNGFhZi1hYjFiLTU0NTFjYzM4NzI2NCIsImF1ZCI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9tYWlsaGFtYXN0YXJjb210dy1teS5zaGFyZXBvaW50LmNvbUA1OWZlNWQ5YS1mMzRiLTRkNDAtYTg4NS1hOTIzYmQ0NzA0YTIiLCJjYWNoZWtleSI6IjBoLmZ8bWVtYmVyc2hpcHwxMDAzMjAwMGIwYmViMTU5QGxpdmUuY29tIiwiY2lkIjoib1RiK2kzYmdBREJ1Wi9MREFvWG5ZUT09IiwiZW5kcG9pbnR1cmwiOiJlbU5vQW9yWUlXMXFZZzRCb2pDMHhReCtuS0FCbVBNcnBtZmZ6MWhyRWZJPSIsImVuZHBvaW50dXJsTGVuZ3RoIjoiMTczIiwiZXhwIjoiMTcxOTU1OTgxMiIsImZhbWlseV9uYW1lIjoi6ZmzIiwiZ2l2ZW5fbmFtZSI6IueZu-WCkSIsImlwYWRkciI6IjEyMy4yNTIuMTA0LjU1IiwiaXNsb29wYmFjayI6IlRydWUiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNzE5NTU5NTEyIiwicHVpZCI6IjEwMDMyMDAwQjBCRUIxNTkiLCJzY3AiOiJteWZpbGVzLndyaXRlIGFsbHNpdGVzLmZ1bGxjb250cm9sIGFsbHNpdGVzLm1hbmFnZSBhbGxwcm9maWxlcy53cml0ZSIsInNpdGVpZCI6IlpHRXpNRFJqTTJVdE5UazROQzAwTm1NeExXSTVOVFl0TVdaaU1UTmpZemN3TldRMSIsInRpZCI6IjU5ZmU1ZDlhLWYzNGItNGQ0MC1hODg1LWE5MjNiZDQ3MDRhMiIsInR0IjoiMiIsInVwbiI6ImRlbmdqaWVAbWFpbC5oYW1hc3Rhci5jb20udHciLCJ2ZXIiOiJoYXNoZWRwcm9vZnRva2VuIn0.CKP_Zapg91VIV8jFQoiPOr5j0sELtsl9Z11wt515LiI%26ApiVersion%3D2.0&amp;app=msedgewebview2.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script>
+<script type="text/javascript" nonce="8bd3c58fcac649d881bf2cbfe8f" src="//local.adguard.org?ts=1719559381367&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><script src='/Scripts/jquery.min.js?1'></script>
 <script src='/Scripts/fu_Accessibility_ori.js?1'></script>
 <script src='/Scripts/jquery.lazy.min.js?1'></script>
 <script src='/Scripts/jquery.lazy.plugins.min.js?1'></script>
@@ -83,7 +84,7 @@
 </script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script src="https://www.googletagmanager.com/gtag/js?id=G-7YSYVCMTGN" ></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1104,6 +1105,7 @@ $(function () {
                                     alert("訊息不能為空");
                                     return;
                                 }
+								TalkWords.value = TalkWords.value.replace(/[(<>/^)]/gi, '');
                                 str = '<div class="btalk"><span class="dialog">' + TalkWords.value + getDateString() + '</span></div>';
                                 append(str);
                                 //str += '<div class="atalk"><span><iframe src=\"News3_Cus.aspx?n=2&sms=9037&sk=0,&sq=' + TalkWords.value + '\"></span></div>';
