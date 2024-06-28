@@ -16,12 +16,13 @@ function getParameterByUrlAndName(e, t) {
 
 function doSearch(e) {
     var t = e.closest("div").find('[data-search="' + e.attr("data-search") + '"]').val();
-    "1" == $("#searchselect" + e.attr("data-search")).val() ? window.location.href = "News3_2.html?q=" + t : window.location.href = "https://api.www.gov.tw/Advanced_Search.aspx?q=" + t
+    t = t.replace(/[(<>/^)]/gi, '');
+    "1" == $("#searchselect" + e.attr("data-search")).val() ? window.location.href = "News3_2.html?q=" + t : window.location.href = "Advanced_Search.aspx?q=" + t
 }
 
 function CCMS_Print(e) {
     $.ajax({
-        url: "https://api.www.gov.tw/Common/CCMS_WebAPI.ashx?Type=GetSitesPrint&SitesSN=" + e,
+        url: "/Common/CCMS_WebAPI.ashx?Type=GetSitesPrint&SitesSN=" + e,
         type: "get",
         success: function (e) {
             var t = $('<div class="group-list content" data-setlen="1" data-type="4" data-child="2"><div class="in"><div class="ct"><div class="in">' + e.PrintFooterContent + "</div></div></div></div>");
@@ -41,7 +42,7 @@ $(function () {
     })
 }), $(function () {
     if ($("[data-ccms_hitcount]").click(function () {
-        var e = "https://api.www.gov.tw/Common/GetVisitcount.ashx?s=" + $(this).data("ccms_hitcount") + "&sms=" + getParameterByName("sms") + "&n=" + getParameterByName("n");
+        var e = "/Common/GetVisitcount.ashx?s=" + $(this).data("ccms_hitcount") + "&sms=" + getParameterByName("sms") + "&n=" + getParameterByName("n");
         $.ajax({
             url: e,
             type: "POST",
@@ -49,7 +50,7 @@ $(function () {
         })
     }), $("[data-ccms_hitcount_relfile]").each(function () {
         $(this).click(function (e) {
-            var t = "https://api.www.gov.tw/Common/GetVisitcount.ashx?type=relfile&s=" + $(this).data("ccms_hitcount_relfile");
+            var t = "/Common/GetVisitcount.ashx?type=relfile&s=" + $(this).data("ccms_hitcount_relfile");
             $.ajax({
                 url: t,
                 contentType: "text/plain",
@@ -58,7 +59,7 @@ $(function () {
             })
         })
     }), "undefined" != typeof CCMS_SitesSN_Encryption) {
-        var e = "https://api.www.gov.tw/Common/GetVisitcount.ashx?sitessn=" + CCMS_SitesSN_Encryption;
+        var e = "/Common/GetVisitcount.ashx?sitessn=" + CCMS_SitesSN_Encryption;
         window.getParameterByName && "" != getParameterByName("n") && (e = e + "&n=" + getParameterByName("n") + "&sms=" + getParameterByName("sms") + "&s=" + getParameterByName("s")), $.ajax({
             url: e,
             contentType: "text/plain",
