@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+
+<html id="FormHtml" xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-tw">
+
+<head id="Head1">
+    <style>
+        .for_accessibility a {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 99;
+            width: 1px;
+            height: 1px;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #000;
+        }
+
+        .for_accessibility a:focus {
+            width: auto;
+            height: auto;
+            padding: 6px;
+            background-color: #fff;
+        }
+
+        .for_accessibility div {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background-color: transparent;
+            opacity: .1
+        }
+    </style>
+    <script src='https://www.gov.tw/Scripts/jquery.min.js?1'></script>
+    <script src='https://www.gov.tw/Scripts/fu_Accessibility_ori.js?1'></script>
+    <script src='https://www.gov.tw/Scripts/jquery.lazy.min.js?1'></script>
+    <script src='https://www.gov.tw/Scripts/jquery.lazy.plugins.min.js?1'></script>
+    <script src='https://www.gov.tw/Scripts/jquery.cookie.js?1'></script>
+    <script src='https://www.gov.tw/Scripts/jUtil.js?1'></script>
+    <script src='https://www.gov.tw/Scripts/fancybox/jquery.fancybox.js?1'></script>
+    <link rel='stylesheet' type='text/css' href='https://www.gov.tw/Scripts/fancybox/jquery.fancybox.css'>
+    <script src='https://www.gov.tw/Scripts/lightGallery/js/lightgallery-all.min.js'></script>
+    <link rel='stylesheet' type='text/css' href='https://www.gov.tw/Scripts/lightGallery/css/lightgallery.min.css'>
+    <script src='https://www.gov.tw/Scripts/J_Pager.js'></script>
+    <script src='https://www.gov.tw/js/airdatepicker/datepicker.min.js'></script>
+    <script src='https://www.gov.tw/js/airdatepicker/datepicker.zh-tw.js'></script>
+    <script src='https://www.gov.tw/js/airdatepicker/datepicker.en.js'></script>
+    <link rel='stylesheet' type='text/css' href='https://www.gov.tw/js/airdatepicker/datepicker.min.css'>
+    <script src='https://www.gov.tw/Scripts/OutSiteClick.js'></script>
+    <script src='https://www.gov.tw/Scripts/tw-city-selector.js'></script>
+    <script>var CCMS_WWWURL = 'https://www.gov.tw'; var CCMS_LanguageSN = 1; var CCMS_SitesSN_Encryption = '402'; var Egovlocationbase = 'win-17172076121';</script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="DC.Title" content="分類檢索" />
+    <meta name="DC.Subject" content="分類檢索" />
+    <meta name="DC.Creator" content="數位發展部" />
+    <meta name="DC.Publisher" content="數位發展部" />
+    <meta name="DC.Date" content="2024-11-07" />
+    <meta name="DC.Type" content="文字" />
+    <meta name="DC.Identifier" content="A29000000G" />
+    <meta name="DC.Description" content="分類檢索" />
+    <meta name="DC.Contributor" content="數位發展部" />
+    <meta name="DC.Format" content="text" />
+    <meta name="DC.Relation" content="" />
+    <meta name="DC.Source" content="數位發展部" />
+    <meta name="DC.Language" content="中文" />
+    <meta name="DC.Coverage.t.min" content="2023-08-16" />
+    <meta name="DC.Coverage.t.max" content="2025-08-16" />
+    <meta name="DC.Rights" content="" />
+    <meta name="Category.Theme" content="570" />
+    <meta name="Category.Cake" content="500,D00" />
+    <meta name="Category.Service" content="I42" />
+    <meta name="DC.Keywords" content="分類檢索" />
+    <title>
+        我的E政府-分類檢索
+    </title>
+    <link id="likCssGlobal" href="https://www.gov.tw/css/global.css?v=2" rel="stylesheet" type="text/css" />
+    <link id="likCssPage" href="https://www.gov.tw/css/page.css?v=2" rel="stylesheet" type="text/css" />
+    <link id="likPrint" href="https://www.gov.tw/css/print.css?v=2" rel="stylesheet" type="text/css" media="print" />
+    <link id="lnkCssSysDetail" href="https://www.gov.tw/css/sys_detail.css?v=2" rel="stylesheet" type="text/css" />
+    <link href="https://ws.www.gov.tw/001/Upload/402/sites/pagebackimage/6670d938-7669-4354-8a3a-afb75223111a.png"
+        rel="icon" type="image/x-icon">
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-22087197-1', {
+            cookieFlags: 'max-age=7200;secure;samesite=none'
+        });
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-7YSYVCMTGN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YSYVCMTGN', {
+            cookie_flags: 'max-age=7200;secure;samesite=none'
+        });
+    </script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "a677baa3fc554b92b9beb29ed3d7fbb3"}'></script><!-- End Cloudflare Web Analytics -->
+    <meta property="og:title" content="分類檢索">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.gov.tw/category/index.html">
+    <meta property="og:site_name" content="我的E政府">
+</head>
+
+<body id="Formbody" data-js="false">
+    <div class="for_accessibility">
+        <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>
+        <script>
+            var $a = $('.for_accessibility a');
+            $a.on('click', function (evt) {
+                var $href = $($(this).attr('href')),
+                    $target = $href.find('a').eq(0).get(0);
+                setTimeout(function () { try { $target.focus(); } catch (e) { } }, 0);
+            });
+        </script>
+    </div>
+    <script> document.body.setAttribute("data-js", "true");</script>
+
+    <form method="post" action="https://www.gov.tw/category/index.html" id="form1">
+        <!--主選單 結束-->
+        <!--標題-->
+        <div class="title">
+        </div>
+        <div class="group sys-root"
+            data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}"
+            data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。"
+            data-type="3" data-child="3">
+            <div class="in">
+                <div class="ct">
+                    <div class="in">
+                        <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3"
+                            data-child="8">
+                            <div class="in">
+                                <div class="hd">
+                                    <div class="in">
+                                        <div data-index="0" class="headH3"> <span><a title="手機版選單">手機版選單</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ct">
+                                    <div class="in">
+                                        <div class="list-text share" data-index="1" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a href="#" title="分享">分享</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="4">
+                                                            <li data-index="1" class="facebook"> <span><a
+                                                                        href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"
+                                                                        title="Share to Facebook[另開新視窗]"
+                                                                        target="_self">Facebook</a></span></li>
+                                                            <li data-index="2" class="twitter"> <span><a
+                                                                        href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"
+                                                                        title="Share to twitter[另開新視窗]"
+                                                                        target="_self">Twitter</a></span></li>
+                                                            <li data-index="3" class="line"> <span><a
+                                                                        href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"
+                                                                        title="Share to line[另開新視窗]"
+                                                                        target="_self">line</a></span></li>
+                                                            <li data-index="4" class="email"> <span><a
+                                                                        href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"
+                                                                        title="Share to email[另開新視窗]"
+                                                                        target="_self">Email</a></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}"
+                                            data-index="2" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <div id="google_translate_element_phone"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group-list nav" data-id="menu"
+                                            data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="0"></ul>
+                                                    </div>
+                                                </div>
+                                                <div class="ft">
+                                                    <div class="in">
+                                                        <script>
+                                                            var oMenuUrl = "https://www.gov.tw/Html_Menu.html";
+                                                            0 < $('[data-id="menu"]').length && $.ajax({
+                                                                type: "GET",
+                                                                url: oMenuUrl,
+                                                                dataType: "text",
+                                                                success: function (e) {
+                                                                    $('[data-id="menu"]').each(function (t) {
+                                                                        var content = $(e);
+                                                                        content.find('a').each(function(){
+                                                                            var link = $(this).attr('href');
+                                                                        link=link.replace("/","");
+                                                                            if (link && !link.startsWith('http')) {
+                                                                            $(this).attr('href', 'https://www.gov.tw/' + link);
+                                                                            }
+                                                                        });
+                                                                        $(this).replaceWith(content);
+
+                                                                    }), requirejs(["main"], function (t) {
+                                                                        t()
+                                                                    })
+                                                                },
+                                                                error: function (t, e, r) {
+                                                                    console.error("Error: " + e, r)
+                                                                }
+                                                            })
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text hot-key-word" data-index="4" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <style>
+                                                            .base-wrapper {
+                                                                padding-top: 157px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text link" data-index="5" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a title="上方連結">上方連結</a></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="1">
+                                                            <li data-index="1"> <span><a
+                                                                        href="https://www.gov.tw/SiteMap.html"
+                                                                        title="網站連結" target="_self">網站連結</a></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text link" data-index="6" data-type="0">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a title="下方連結">下方連結</a></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="area-customize ebook-icon" data-index="7" data-type="0"
+                                            data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in"><span><a id="gotoComputerBtn_mobile"
+                                                                href="https://www.gov.tw"
+                                                                title="E-GOV小幫手">E-GOV小幫手</a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="area-customize backPC" data-index="8" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in"><span><a id="gotoComputerBtn" href="#"
+                                                                title="電腦版">電腦版</a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group base-extend" data-index="2" data-type="3" data-child="9">
+                            <div class="in">
+                                <div class="ct">
+                                    <div class="in">
+                                        <div class="simple-text accesskey" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in"><span><a href="#Accesskey_U" id="Accesskey_U"
+                                                                accesskey="U"
+                                                                title="上方選單連結區，此區塊列有本網站的主要連結">:::</a></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group default info"
+                                            data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}"
+                                            data-index="1" data-type="3" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0" class="headH3"> <span><a
+                                                                    title="選單">選單</a></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <div class="group-list nav" data-id="menu"
+                                                            data-func="{&#39;majorNavStraight&#39;:{}}" data-index="1"
+                                                            data-type="4">
+                                                            <div class="in">
+                                                                <div class="ct">
+                                                                    <div class="in">
+                                                                        <ul data-index="1" data-child="0"></ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ft">
+                                                                    <div class="in">
+                                                                        <script>
+                                                                            var oMenuUrl = "https://www.gov.tw/Html_Menu.html";
+                                                                            0 < $('[data-id="menu"]').length && $.ajax({
+                                                                                type: "GET",
+                                                                                url: oMenuUrl,
+                                                                                dataType: "text",
+                                                                                success: function (e) {
+                                                                                    $('[data-id="menu"]').each(function (t) {
+                                                                                        var content = $(e);
+                                                                                        content.find('a').each(function(){
+                                                                                            var link = $(this).attr('href');
+                                                                                        link=link.replace("/","");
+                                                                                            if (link && !link.startsWith('http')) {
+                                                                                            $(this).attr('href', 'https://www.gov.tw/' + link);
+                                                                                            }
+                                                                                        });
+                                                                                        $(this).replaceWith(content);
+                                                                                    }), requirejs(["main"], function (t) {
+                                                                                        t()
+                                                                                    })
+                                                                                },
+                                                                                error: function (t, e, r) {
+                                                                                    console.error("Error: " + e, r)
+                                                                                }
+                                                                            })
+                                                                        </script>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}"
+                                            data-index="2" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <div id="google_translate_element"></div>
+                                                        <script type="text/javascript">
+                                                            setTimeout(function () {
+                                                                var script = document.createElement('script');
+                                                                script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                                                                script.async = true;
+                                                                document.head.appendChild(script);
+                                                                if ($(window).width() < 768) {
+                                                                    function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element_phone'); }
+
+                                                                }
+                                                                else {
+                                                                    console.log('translate')
+                                                                    function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element'); }
+                                                                }
+                                                            }, 3000);
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <h1><a href="https://www.gov.tw/index.html"
+                                                                title="回首頁">我的E政府</a><strong
+                                                                style="display: none;">我的E政府</strong></h1>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text link" data-index="4" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a title="上方連結">上方連結</a></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="1">
+                                                            <li data-index="1"> <span><a
+                                                                        href="https://www.gov.tw/SiteMap.html"
+                                                                        title="網站連結" target="_self">網站連結</a></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="scripts" data-index="5" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <style>
+                                                            .scripts {
+                                                                display: none
+                                                            }
+                                                        </style>
+                                                        <script>$('.base-extend .info > .in > .hd a').attr('href', '#');</script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text font-size"
+                                            data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}"
+                                            data-index="6" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a href="#" title="字級">字級</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="3">
+                                                            <li data-index="1" class="small"> <span><a href="#"
+                                                                        title="小">小</a></span></li>
+                                                            <li data-index="2" class="medium"> <span><a href="#"
+                                                                        title="中">中</a></span></li>
+                                                            <li data-index="3" class="large"> <span><a href="#"
+                                                                        title="大">大</a></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text share"
+                                            data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}"
+                                            data-index="7" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a href="#" title="分享">分享</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="4">
+                                                            <li data-index="1" class="facebook"> <span><a
+                                                                        href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"
+                                                                        title="Share to Facebook[另開新視窗]"
+                                                                        target="_self">Facebook</a></span></li>
+                                                            <li data-index="2" class="twitter"> <span><a
+                                                                        href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"
+                                                                        title="Share to twitter[另開新視窗]"
+                                                                        target="_self">Twitter</a></span></li>
+                                                            <li data-index="3" class="line"> <span><a
+                                                                        href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"
+                                                                        title="Share to line[另開新視窗]"
+                                                                        target="_self">line</a></span></li>
+                                                            <li data-index="4" class="email"> <span><a
+                                                                        href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"
+                                                                        title="Share to email[另開新視窗]"
+                                                                        target="_self">Email</a></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}"
+                                            data-index="8" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0"> <span><a href="javascript:void(0)"
+                                                                    title="搜尋" target="_self">搜尋</a></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <div class="fieldset">
+                                                            <span class="search">
+                                                                <span class="search_cistern">
+                                                                    <select title="想知道什麼?" class="text-select"
+                                                                        id="searchselectbtn_70914f00a8b644baa796e37a15102a22">
+                                                                        <option value="2">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <font style="vertical-align: inherit;">
+                                                                                    全站搜</font>
+                                                                            </font>
+                                                                        </option>
+                                                                        <option value="1">
+                                                                            <font style="vertical-align: inherit;">
+                                                                                <font style="vertical-align: inherit;">
+                                                                                    找服務</font>
+                                                                            </font>
+                                                                        </option>
+                                                                    </select>
+                                                                    <label for="txt_70914f00a8b644baa796e37a15102a22"
+                                                                        style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input
+                                                                        data-search="btn_70914f00a8b644baa796e37a15102a22"
+                                                                        id="txt_70914f00a8b644baa796e37a15102a22"
+                                                                        type="search" placeholder="" title="搜尋">
+                                                                </span>
+                                                            </span>
+                                                            <span class="submit"><a href="#" class='CCMS_CusSearchBtn'
+                                                                    role="button"
+                                                                    id="btn_70914f00a8b644baa796e37a15102a22"
+                                                                    data-search="btn_70914f00a8b644baa796e37a15102a22"
+                                                                    title="搜尋">搜尋</a></span>
+                                                        </div>
+                                                        <div class="list">
+                                                            <ul data-index="1" data-child="0">
+                                                            </ul>
+                                                        </div>
+                                                        <script>
+                                                            function CCMS_CusPrint(e) {
+                                                                    var t = $('<div class="group-list content" data-setlen="1" data-type="4" data-child="2"><div class="in"><div class="ct"><div class="in"></div></div></div></div>');
+                                                                    $(".group.base-section").after(t);
+                                                                    var n = $('<div class="group-list content" data-setlen="1" data-type="4" data-child="2"><div class="in"><div class="ct"><div class="in"></div></div></div></div>');
+                                                                    $(".group.base-section").before(n), setTimeout(function () {
+                                                                        print(), t.remove(), n.remove()
+                                                                    }, 100)
+                                                                }
+
+                                                            function doCusSearch(e) {
+                                                                var t = e.closest("div").find('[data-search="' + e.attr("data-search") + '"]').val();
+                                                                t = t.replace(/[(<>/^)]/gi, '');
+                                                                "1" == $("#searchselect" + e.attr("data-search")).val() ? window.location.href = "https://www.gov.tw/News3_2.html?q=" + t : window.location.href = "https://api.www.gov.tw/Advanced_Search.aspx?q=" + t
+                                                            }
+
+                                                            $(function () {
+                                                                $(".CCMS_CusSearchBtn").each(function () {
+                                                                    $(this).click(function () {
+                                                                        doCusSearch($(this));
+                                                                    })
+                                                                });
+
+                                                                $('[data-search="btn_70914f00a8b644baa796e37a15102a22"]').on("keydown", function (event) {
+                                                                    if (event.which == 13) {
+                                                                        doCusSearch($(this));
+                                                                        return false;
+                                                                    }
+                                                                });
+                                                                timeout_var = null;
+
+                                                                function typeWriter(selector_target, placeholder = false, i = 0, text_list_i = 0, delay_ms = 200) {
+
+                                                                    text_list_tw = [
+                                                                        "育兒津貼",
+                                                                        "生育補助",
+                                                                        "長照",
+                                                                        "職業訓練",
+                                                                        "役男出境",
+                                                                        "低收入補助"
+                                                                    ];
+
+                                                                    //加英文翻譯
+                                                                    text_list_en = ["Childcare Allowance", "Maternity Allowance", "Long Shot", "Vocational Training", "Departure", "Low Income Subsidy"];
+                                                                    //判斷語系
+                                                                    var defaultLang = document.documentElement.lang
+                                                                    if (defaultLang == 'zh-TW' || defaultLang == 'zh-Hant-tw') {
+                                                                        text_list = text_list_tw;
+                                                                    } else {
+                                                                        text_list = text_list_en;
+                                                                    }
+
+                                                                    if (!i) {
+                                                                        if (placeholder) {
+                                                                            document.querySelector(selector_target).placeholder = "";
+                                                                        }
+                                                                        else {
+                                                                            document.querySelector(selector_target).innerHTML = "";
+                                                                        }
+                                                                    }
+
+
+                                                                    txt = text_list[text_list_i];
+                                                                    if (i < txt.length) {
+                                                                        if (placeholder) {
+                                                                            document.querySelector(selector_target).placeholder = document.querySelector(selector_target).placeholder.replace("|", "") + txt.charAt(i) + "|";
+                                                                        }
+                                                                        else {
+                                                                            document.querySelector(selector_target).innerHTML = document.querySelector(selector_target).innerHTML.replace("|", "") + txt.charAt(i) + "|";
+                                                                        }
+                                                                        i++;
+                                                                        setTimeout(typeWriter, delay_ms, selector_target, placeholder, i, text_list_i);
+                                                                    }
+                                                                    else {
+                                                                        text_list_i++;
+                                                                        if (typeof text_list[text_list_i] === "undefined") {
+                                                                            setTimeout(typeWriter, (delay_ms * 10), selector_target, placeholder);
+                                                                        }
+                                                                        else {
+                                                                            i = 0;
+                                                                            setTimeout(typeWriter, (delay_ms * 10), selector_target, placeholder, i, text_list_i);
+                                                                        }
+                                                                    }
+
+
+                                                                }
+                                                                return_value = typeWriter("[data-search='btn_70914f00a8b644baa796e37a15102a22']", true);
+                                                                //對html的lang屬性監聽
+                                                                const element = document.querySelector('html');
+                                                                const observer = new MutationObserver(function (mutations) {
+                                                                    mutations.forEach(function (mutation) {
+                                                                        if (mutation.type === "attributes" && mutation.attributeName === "lang") {
+                                                                            if (mutation.target.attributes.lang.value == "zh-TW" || mutation.target.attributes.lang.value == "zh-Hant-tw") {
+                                                                                text_list = text_list_tw;
+                                                                                $('.search_cistern input').css("margin-left", "95px")
+                                                                            } else {
+                                                                                text_list = text_list_en;
+                                                                                $('.search_cistern input').css("margin-left", "140px")
+                                                                            }
+                                                                        }
+                                                                    });
+                                                                });
+                                                                observer.observe(element, {
+                                                                    attributes: true
+                                                                });
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                                <div class="ft">
+                                                    <div class="in">
+                                                        <ul data-index="1" data-child="1">
+                                                            <li data-index="1" class="advanced"><span><a target="_blank"
+                                                                        href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw"
+                                                                        title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <style>
+                                                            .base-wrapper {
+                                                                padding-top: 157px;
+                                                            }
+                                                        </style>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group base-wrapper" data-index="3" data-type="3" data-child="3">
+                            <div class="in">
+                                <div class="ct">
+                                    <div class="in">
+                                        <div class="group base-header" data-index="1" data-type="3">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="base-content" class="group base-content" data-index="2" data-type="3"
+                                            data-child="2">
+                                            <div class="in">
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <div class="group base-page-area" data-index="1" data-type="3"
+                                                            data-child="1">
+                                                            <div class="in">
+                                                                <div class="ct">
+                                                                    <div class="in">
+                                                                        <div class="group base-section" data-index="1"
+                                                                            data-type="3" data-child="3">
+                                                                            <div class="in">
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <div class="simple-text accesskey"
+                                                                                            data-type="0"
+                                                                                            data-child="1">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <span><a href="#Accesskey_C"
+                                                                                                                id="Accesskey_C"
+                                                                                                                accesskey="C"
+                                                                                                                title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="group page-header"
+                                                                                            data-index="1" data-type="3"
+                                                                                            data-child="2">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+
+                                                                                                        <div class="group default info"
+                                                                                                            data-index="2"
+                                                                                                            data-type="3"
+                                                                                                            data-child="2">
+                                                                                                            <div
+                                                                                                                class="in">
+                                                                                                                <div
+                                                                                                                    class="ct">
+                                                                                                                    <div
+                                                                                                                        class="in">
+                                                                                                                        <div class="simple-text heading"
+                                                                                                                            data-index="1"
+                                                                                                                            data-type="0"
+                                                                                                                            data-child="1">
+                                                                                                                            <div
+                                                                                                                                class="in">
+                                                                                                                                <div
+                                                                                                                                    class="ct">
+                                                                                                                                    <div
+                                                                                                                                        class="in">
+                                                                                                                                        <h2><span>分類檢索</span>
+                                                                                                                                        </h2>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <div class="group default msg-tool"
+                                                                                                                            data-index="2"
+                                                                                                                            data-type="3"
+                                                                                                                            data-child="1">
+                                                                                                                            <div
+                                                                                                                                class="in">
+                                                                                                                                <div
+                                                                                                                                    class="ct">
+                                                                                                                                    <div
+                                                                                                                                        class="in">
+                                                                                                                                        <div class="simple-text accesskey"
+                                                                                                                                            data-func="{&#39;focusContent&#39;:{}}"
+                                                                                                                                            data-type="0"
+                                                                                                                                            data-child="1">
+                                                                                                                                            <div
+                                                                                                                                                class="in">
+                                                                                                                                                <div
+                                                                                                                                                    class="ct">
+                                                                                                                                                    <div
+                                                                                                                                                        class="in">
+                                                                                                                                                        <span><a href="#CCMS_Content"
+                                                                                                                                                                title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="list-text user-tool"
+                                                                                                                                            data-index="1"
+                                                                                                                                            data-type="0"
+                                                                                                                                            data-child="1">
+                                                                                                                                            <div
+                                                                                                                                                class="in">
+                                                                                                                                                <div
+                                                                                                                                                    class="hd">
+                                                                                                                                                    <div
+                                                                                                                                                        class="in">
+                                                                                                                                                        <div
+                                                                                                                                                            data-index="0">
+                                                                                                                                                            <span><a href="javascript :return false;"
+                                                                                                                                                                    title="網頁功能"
+                                                                                                                                                                    target="_self">網頁功能</a></span>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div
+                                                                                                                                                    class="ct">
+                                                                                                                                                    <div
+                                                                                                                                                        class="in">
+                                                                                                                                                        <ul data-index="1"
+                                                                                                                                                            data-child="6">
+                                                                                                                                                            <li data-index="1"
+                                                                                                                                                                class="print">
+                                                                                                                                                                <span><a href="javascript:CCMS_CusPrint(402);"
+                                                                                                                                                                        title="列印內容"
+                                                                                                                                                                        target="_self">列印內容</a></span>
+                                                                                                                                                            </li>
+                                                                                                                                                            <li data-index="2"
+                                                                                                                                                                class="bopomofo">
+                                                                                                                                                                <span><a href="#"
+                                                                                                                                                                        title="Bopomofo">Bopomofo</a></span>
+                                                                                                                                                            </li>
+                                                                                                                                                            <li data-index="3"
+                                                                                                                                                                class="content-share facebook">
+                                                                                                                                                                <span><a href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"
+                                                                                                                                                                        title="Share to Facebook[另開新視窗]"
+                                                                                                                                                                        target="_self">Facebook</a></span>
+                                                                                                                                                            </li>
+                                                                                                                                                            <li data-index="4"
+                                                                                                                                                                class="content-share twitter">
+                                                                                                                                                                <span><a href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"
+                                                                                                                                                                        title="Share to twitter[另開新視窗]"
+                                                                                                                                                                        target="_self">Twitter</a></span>
+                                                                                                                                                            </li>
+                                                                                                                                                            <li data-index="5"
+                                                                                                                                                                class="content-share line">
+                                                                                                                                                                <span><a href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"
+                                                                                                                                                                        title="Share to line[另開新視窗]"
+                                                                                                                                                                        target="_self">line</a></span>
+                                                                                                                                                            </li>
+                                                                                                                                                            <li data-index="6"
+                                                                                                                                                                class="content-share email">
+                                                                                                                                                                <span><a href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"
+                                                                                                                                                                        title="Share to email[另開新視窗]"
+                                                                                                                                                                        target="_self">Email</a></span>
+                                                                                                                                                            </li>
+                                                                                                                                                        </ul>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="group page-content "
+                                                                                            id="CCMS_Content"
+                                                                                            data-index="2" data-type="3"
+                                                                                            data-child="3"
+                                                                                            data-funclog="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <div class="simple-text title"
+                                                                                                            data-type="0"
+                                                                                                            data-child="1">
+                                                                                                            <div
+                                                                                                                class="in">
+                                                                                                                <div
+                                                                                                                    class="ct">
+                                                                                                                    <div
+                                                                                                                        class="in">
+                                                                                                                        <h3>分類檢索
+                                                                                                                        </h3>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+
+
+                                                                                                        <div class="area-essay page-caption-p"
+                                                                                                            data-type="0"
+                                                                                                            data-child="1">
+                                                                                                            <div
+                                                                                                                class="in">
+                                                                                                                <div
+                                                                                                                    class="ct">
+                                                                                                                    <div
+                                                                                                                        class="in">
+                                                                                                                        <div class="div"
+                                                                                                                            title="">
+                                                                                                                            <div
+                                                                                                                                class="essay">
+                                                                                                                                <div
+                                                                                                                                    class="caption">
+                                                                                                                                    <span></span>
+                                                                                                                                </div>
+                                                                                                                                <div
+                                                                                                                                    class="p">
+                                                                                                                                    <p><span>
+                                                                                                                                            <style
+                                                                                                                                                type="text/css">
+                                                                                                                                                .simple-text.title .ct h3,
+                                                                                                                                                .simple-text.title .ct .title {
+                                                                                                                                                    display: none;
+                                                                                                                                                }
+
+                                                                                                                                                .area-essay.page-caption-p .ct .area-table.rwd-straight .ct span {
+                                                                                                                                                    margin: 0px;
+                                                                                                                                                }
+
+                                                                                                                                                .area-essay.page-caption-p .ct .box-table .area-table.rwd-straight .ct th,
+                                                                                                                                                .area-essay.page-caption-p .ct .box-table .area-table.rwd-straight .ct tbody td:before {
+                                                                                                                                                    background-color: #22847d !important;
+                                                                                                                                                    color: #fff !important;
+                                                                                                                                                }
+
+                                                                                                                                                .box-table .set-title {
+                                                                                                                                                    padding: 10px 0px;
+                                                                                                                                                    font-weight: bold;
+                                                                                                                                                    font-size: 1.1em;
+                                                                                                                                                    margin-top: 20px;
+                                                                                                                                                    color: #22847d;
+                                                                                                                                                }
+                                                                                                                                                .pdf-link{                                                                                                                                                  
+                                                                                                                                                    font:0/0 a;
+                                                                                                                                                }
+                                                                                                                                                .pdf-link::before {
+                                                                                                                                                    content: '';
+                                                                                                                                                    background: url('pdf.png') no-repeat center;                                                                                                                                                    
+                                                                                                                                                    width: 30px;
+                                                                                                                                                    height: 30px;
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    margin: 0px -25px;                                                                                                                                               
+                                                                                                                                                }
+                                                                                                                                                .ods-link{                                                                                                                                                  
+                                                                                                                                                    font:0/0 a;
+                                                                                                                                                }
+                                                                                                                                                .ods-link::before {
+                                                                                                                                                    content: '';
+                                                                                                                                                    background: url('ods.png') no-repeat center;                                                                                                                                                    
+                                                                                                                                                    width: 30px;
+                                                                                                                                                    height: 30px;
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    margin: 0px -25px;                                                                                                                                               
+                                                                                                                                                }
+                                                                                                                                                .outsite-link{                                                                                                                                                  
+                                                                                                                                                    font:0/0 a;
+                                                                                                                                                }
+                                                                                                                                                .outsite-link::before {
+                                                                                                                                                    content: '';
+                                                                                                                                                    background: url('link.png') no-repeat center;                                                                                                                                                    
+                                                                                                                                                    width: 30px;
+                                                                                                                                                    height: 30px;
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    margin: 0px -25px;                                                                                                                                               
+                                                                                                                                                }
+                                                                                                                                            </style>
+
+                                                                                                                                        </span>
+                                                                                                                                    </p>
+                                                                                                                                    <p
+                                                                                                                                        style="font-size: 0.99em;">
+                                                                                                                                        請下載並瀏覽檔案，進一步瞭解行政機關電子流通要點規定與「政府入口網」分類規範說明。
+                                                                                                                                    </p>
+
+                                                                                                                                    <div
+                                                                                                                                        class="box-table">
+                                                                                                                                        <div
+                                                                                                                                            class="set-title">
+                                                                                                                                            行政機關實施要點與相關資料
+                                                                                                                                        </div>
+
+                                                                                                                                        <div class="area-table rwd-straight"
+                                                                                                                                            data-child="1"
+                                                                                                                                            data-type="0">
+                                                                                                                                            <div
+                                                                                                                                                class="in">
+                                                                                                                                                <div
+                                                                                                                                                    class="ct">
+                                                                                                                                                    <div
+                                                                                                                                                        class="in">
+                                                                                                                                                        <table>
+                                                                                                                                                            <thead>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <th><span>名稱</span>
+                                                                                                                                                                    </th>
+                                                                                                                                                                    <th style="width: 20%;
+"><span>檔案 / 連結</span></th>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </thead>
+                                                                                                                                                            <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>行政機關電子資料流通實施要點</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="https://law.moda.gov.tw/LawContent.aspx?id=FL000775"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="outsite-link"
+                                                                                                                                                                                title="[另開新視窗]行政機關電子資料流通實施要點"
+                                                                                                                                                                                rel="noopener noreferrer">行政機關電子資料流通實施要點</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>行政機關電子資料流通詮釋資料及分類檢索規範</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="https://law.moda.gov.tw/LawContent.aspx?id=FL043379#lawmenu"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="outsite-link"
+                                                                                                                                                                                title="[另開新視窗]行政機關電子資料流通詮釋資料及分類檢索規範"
+                                                                                                                                                                                rel="noopener noreferrer">行政機關電子資料流通詮釋資料及分類檢索規範</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>行政機關電子資料流通詮釋資料基準</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_3.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>My
+                                                                                                                                                                            EGov主題、施政及服務分類訂定原則</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_4.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>主題分類辭彙代碼一覽表</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_5.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>主題分類辭彙代碼一覽表(英文版)</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_6.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>施政分類架構說明及辭彙代碼一覽表</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_7.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>施政分類架構說明及辭彙代碼一覽表(英文版)</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_8.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>服務辭彙代碼一覽表</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_9.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>服務辭彙代碼一覽表(英文版)</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_10.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>主題分類、服務分類、施政分類代碼總表</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="2_11.ods"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="ods-link"
+                                                                                                                                                                                title="[另開新視窗]ODS"
+                                                                                                                                                                                rel="noopener noreferrer">ODS</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+
+                                                                                                                                    <div
+                                                                                                                                        class="box-table">
+                                                                                                                                        <div
+                                                                                                                                            class="set-title">
+                                                                                                                                            參考範例
+                                                                                                                                        </div>
+
+                                                                                                                                        <div class="area-table rwd-straight"
+                                                                                                                                            data-child="1"
+                                                                                                                                            data-type="0">
+                                                                                                                                            <div
+                                                                                                                                                class="in">
+                                                                                                                                                <div
+                                                                                                                                                    class="ct">
+                                                                                                                                                    <div
+                                                                                                                                                        class="in">
+                                                                                                                                                        <table>
+                                                                                                                                                            <thead>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <th><span>名稱</span>
+                                                                                                                                                                    </th>
+                                                                                                                                                                    <th style="width: 20%;
+"><span>檔案 / 連結</span></th>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </thead>
+                                                                                                                                                            <tbody>
+                                                                                                                                                                <tr>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="名稱">
+                                                                                                                                                                        <span>RSS詮釋資料基準範例</span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                    <td
+                                                                                                                                                                        data-title="檔案 / 連結">
+                                                                                                                                                                        <span
+                                                                                                                                                                            style="text-align: center;"><a
+                                                                                                                                                                                href="3_1.pdf"
+                                                                                                                                                                                target="_blank"
+                                                                                                                                                                                class="pdf-link"
+                                                                                                                                                                                title="[另開新視窗]PDF"
+                                                                                                                                                                                rel="noopener noreferrer">PDF</a></span>
+                                                                                                                                                                    </td>
+                                                                                                                                                                </tr>
+                                                                                                                                                            </tbody>
+                                                                                                                                                        </table>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <p>
+                                                                                                                                    </p>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="area-editor system-info"
+                                                                                                            data-type="0"
+                                                                                                            data-child="1">
+                                                                                                            <div
+                                                                                                                class="in">
+                                                                                                                <div
+                                                                                                                    class="ct">
+                                                                                                                    <div
+                                                                                                                        class="in">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="group page-footer"
+                                                                                            data-index="3" data-type="3"
+                                                                                            data-child="3">
+                                                                                            <div class="in">
+                                                                                                <div class="ct">
+                                                                                                    <div class="in">
+                                                                                                        <div class="list-text detail"
+                                                                                                            data-index="1"
+                                                                                                            data-type="0">
+                                                                                                            <div
+                                                                                                                class="in">
+                                                                                                                <div
+                                                                                                                    class="ct">
+                                                                                                                    <div
+                                                                                                                        class="in">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="list-text jump-tool"
+                                                                                                            data-index="2"
+                                                                                                            data-type="0"
+                                                                                                            data-child="1">
+                                                                                                            <div
+                                                                                                                class="in">
+                                                                                                                <div
+                                                                                                                    class="ct">
+                                                                                                                    <div
+                                                                                                                        class="in">
+                                                                                                                        <ul data-index="1"
+                                                                                                                            data-child="2">
+                                                                                                                            <li data-index="1"
+                                                                                                                                class="back">
+                                                                                                                                <span><a href="javascript:window.location =document.referrer;"
+                                                                                                                                        title="回上一頁"
+                                                                                                                                        target="_self">回上一頁</a></span>
+                                                                                                                            </li>
+                                                                                                                            <li data-index="2"
+                                                                                                                                class="to-top">
+                                                                                                                                <span><a href="#Accesskey_U"
+                                                                                                                                        title="回最上面"
+                                                                                                                                        target="_self">回最上面</a></span>
+                                                                                                                            </li>
+                                                                                                                        </ul>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="group base-footer"
+                                            data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false}}"
+                                            data-index="3" data-type="3" data-child="3">
+                                            <div class="in">
+                                                <div class="hd">
+                                                    <div class="in">
+                                                        <div data-index="0" class="headH3"> <span><a
+                                                                    title="選單">選單</a></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ct">
+                                                    <div class="in">
+                                                        <div class="simple-text accesskey" data-type="0" data-child="1">
+                                                            <div class="in">
+                                                                <div class="ct">
+                                                                    <div class="in"><span><a href="#Accesskey_Z"
+                                                                                id="Accesskey_Z" accesskey="Z"
+                                                                                title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group-list nav" data-id="ffmenu"
+                                                            data-func="{&#39;setNavLen&#39;:{}}" data-index="1"
+                                                            data-type="4">
+                                                            <div class="in">
+                                                                <div class="ct">
+                                                                    <div class="in">
+                                                                        <ul data-index="1" data-child="0"></ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="ft">
+                                                                    <div class="in">
+                                                                        <script>
+                                                                            var offMenuUrl = "https://www.gov.tw/Html_FatFootMenu.html";
+                                                                            0 < $('[data-id="ffmenu"]').length && $.ajax({
+                                                                                type: "GET",
+                                                                                url: offMenuUrl,
+                                                                                dataType: "text",
+                                                                                success: function (e) {
+                                                                                    $('[data-id="ffmenu"]').each(function (t) {
+                                                                                        var content = $(e);
+                                                                                        content.find('a').each(function(){
+                                                                                            var link = $(this).attr('href');
+                                                                                        link=link.replace("/","");
+                                                                                            if (link && !link.startsWith('http')) {
+                                                                                            $(this).attr('href', 'https://www.gov.tw/' + link);
+                                                                                            }
+                                                                                        });
+                                                                                        $(this).replaceWith(content);
+                                                                                    }), requirejs(["main"], function (t) {
+                                                                                        t()
+                                                                                    })
+                                                                                },
+                                                                                error: function (t, e, r) {
+                                                                                    console.error("Error: " + e, r)
+                                                                                }
+                                                                            })
+                                                                        </script>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group default info" data-index="2" data-type="3"
+                                                            data-child="1">
+                                                            <div class="in">
+                                                                <div class="ct">
+                                                                    <div class="in">
+                                                                        <div class="list-text link" data-index="1"
+                                                                            data-type="0">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <div data-index="0"> <span><a
+                                                                                                    title="下方連結">下方連結</a></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="group default msg-tool" data-index="3" data-type="3"
+                                                            data-child="4">
+                                                            <div class="in">
+                                                                <div class="ct">
+                                                                    <div class="in">
+                                                                        <div class="area-editor address"
+                                                                            data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}"
+                                                                            data-index="1" data-type="0" data-child="1">
+                                                                            <div class="in">
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <p>如對本站有帳號申請與網站操作相關問題，歡迎聯絡客服中心，線上服務網站：<a
+                                                                                                href="https://www.service.gov.tw/"
+                                                                                                target="_blank"
+                                                                                                title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a><br />
+                                                                                            客服電話：(02)2192-7111，傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
+                                                                                            電話服務時間：週一至週五&nbsp;
+                                                                                            上午8時30分至下午6時&nbsp;
+                                                                                            (例假日除外，非上述時間請多利用客服信箱)<br />
+                                                                                            Copyright&copy; 中華民國數位發展部
+                                                                                            版權所有</p>
+
+                                                                                        <div class="box" id="box"
+                                                                                            style="text-align:center;">
+                                                                                            <a
+                                                                                                id="gotoComputerBtnFT">電腦版</a><a
+                                                                                                id="gotoRWDBtnFT"
+                                                                                                style="display: none;">行動版</a>
+                                                                                        </div>
+                                                                                        <script type="text/javascript">
+                                                                                            var useragent = navigator.userAgent;
+                                                                                            useragent = useragent.toLowerCase();
+
+                                                                                            if (useragent.indexOf('iphone') != -1) {//iphone
+                                                                                            }
+                                                                                            else if (useragent.indexOf('ipad') != -1 || useragent.indexOf('ipod') != -1) {//ipad
+                                                                                            }
+                                                                                            else if (useragent.indexOf('android') != -1) {
+                                                                                                if (ConsiderLimits()) {
+
+
+
+
+                                                                                                } else {
+
+                                                                                                }
+                                                                                            } else {
+                                                                                                document.getElementById("box").style.display = "none";
+                                                                                            }
+
+                                                                                            function ConsiderLimits() {
+                                                                                                if (screen.width >= 1024 && screen.height >= 600)
+                                                                                                    return 1;
+                                                                                                return 0;
+                                                                                            }
+
+                                                                                            $(function () {
+                                                                                                var user = $.cookie("IsNoRWD");
+                                                                                                varviewport = document.getElementById("viewport");
+                                                                                                if (user == 'true') {
+                                                                                                    document.getElementById("gotoComputerBtnFT").style.display = "none";
+                                                                                                    document.getElementById("gotoRWDBtnFT").style.display = "block";
+                                                                                                    viewport.content = "";
+                                                                                                }
+                                                                                                else if (user == 'false') {
+                                                                                                    document.getElementById("gotoComputerBtnFT").style.display = "block";
+                                                                                                    document.getElementById("gotoRWDBtnFT").style.display = "none";
+                                                                                                    viewport.content = "width=device-width, initial-scale=1";
+                                                                                                }
+                                                                                                else {
+                                                                                                    document.getElementById("gotoRWDBtnFT").style.display = "none";
+                                                                                                }
+
+                                                                                                $("#gotoComputerBtn").click(function () {
+                                                                                                    $.cookie("IsNoRWD", 'true', { expires: 365, path: "/;SameSite=Strict", secure: true });
+                                                                                                    var viewport = document.getElementById("viewport");
+                                                                                                    viewport.content = "";
+                                                                                                    document.getElementById("gotoComputerBtnFT").style.display = "none";
+                                                                                                    document.getElementById("gotoRWDBtnFT").style.display = "block";
+                                                                                                    document.getElementById("box").style.display = "block";
+                                                                                                });
+
+                                                                                                $("#gotoComputerBtnFT").click(function () {
+                                                                                                    $.cookie("IsNoRWD", 'true', { expires: 365, path: "/;SameSite=Strict", secure: true });
+                                                                                                    var viewport = document.getElementById("viewport");
+                                                                                                    viewport.content = "";
+                                                                                                    document.getElementById("gotoComputerBtnFT").style.display = "none";
+                                                                                                    document.getElementById("gotoRWDBtnFT").style.display = "block";
+                                                                                                    document.getElementById("box").style.display = "block";
+                                                                                                });
+
+                                                                                                $("#gotoRWDBtnFT").click(function () {
+                                                                                                    $.cookie("IsNoRWD", 'false', { expires: 365, path: "/;SameSite=Strict", secure: true });
+                                                                                                    var viewport = document.getElementById("viewport");
+                                                                                                    viewport.content = "width=device-width, initial-scale=1";
+                                                                                                    document.getElementById("gotoComputerBtnFT").style.display = "block";
+                                                                                                    document.getElementById("gotoRWDBtnFT").style.display = "none";
+                                                                                                    document.getElementById("box").style.display = "block";
+                                                                                                });
+                                                                                            });
+
+                                                                                        </script>
+                                                                                        <style>
+                                                                                            .base-extend .list-text.share.e-book .hd a {
+                                                                                                position: absolute;
+                                                                                                top: 0;
+                                                                                                right: 0;
+                                                                                                bottom: 0;
+                                                                                                left: 0;
+                                                                                                transition: 150ms;
+                                                                                                border-radius: 100%;
+                                                                                                background-image: url(https://www.gov.tw/images/icon-pic/main-ebook.png?1583227606);
+                                                                                                background-repeat: no-repeat;
+                                                                                                background-position: center;
+                                                                                                border-radius: 100%;
+                                                                                                border: 2px solid #343434;
+                                                                                            }
+                                                                                    
+                                                                                            .base-extend .list-text.link {
+                                                                                                right: 136px !important;
+                                                                                            }
+                                                                                    
+                                                                                            .list-text.font-size {
+                                                                                                right: 96px !important;
+                                                                                            }
+                                                                                    
+                                                                                            .base-extend .list-text.share {
+                                                                                                right: 48px !important;
+                                                                                            }
+                                                                                    
+                                                                                            .base-extend .list-text.share.e-book {
+                                                                                                right: 0px !important;
+                                                                                            }
+                                                                                        </style>
+                                                                                        <script>
+                                                                                            $('.group.base-extend>.in>.ct>.in').append('<div class="list-text share e-book"><div class="in"><div class="hd"><div class="in"><div> <span><a href="https://www.gov.tw" class="e-book-open" title="E-GOV小幫手">E-GOV小幫手</a></span></div></div></div></div></div>')
+                                                                                        </script>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="list-pic icon" data-index="2"
+                                                                            data-type="0" data-child="1">
+                                                                            <div class="in">
+                                                                                <div class="ct">
+                                                                                    <div class="in">
+                                                                                        <ul data-index="1"
+                                                                                            data-child="2">
+                                                                                            <li data-index="1"
+                                                                                                class="E-Gov"> <span
+                                                                                                    style="background-image: url('https://www.gov.tw/images/egov.png');"><a
+                                                                                                        href="https:///www.gov.tw/"
+                                                                                                        title="我的E政府 [另開新視窗]"
+                                                                                                        target="_self"><img
+                                                                                                            src="https://www.gov.tw//images/egov.png"
+                                                                                                            alt="我的E政府 [另開新視窗]" /></a></span>
+                                                                                            </li>
+                                                                                            <li data-index="2"
+                                                                                                class="wcag"> <span
+                                                                                                    style="background-image: url('https://www.gov.tw/images/aplus.png');"><a
+                                                                                                        href="https://accessibility.moda.gov.tw/Applications/Detail?category=20221124134146"
+                                                                                                        title="[另開新視窗]通過AA等級無障礙網頁檢測"
+                                                                                                        target="_blank"><img
+                                                                                                            src="https://www.gov.tw/images/aplus.png"
+                                                                                                            alt="通過AA等級無障礙網頁檢測" /></a></span>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="simple-text visit-count"
+                                                                            data-index="4" data-type="0" data-child="1">
+                                                                            <div class="in">
+                                                                                <div class="hd">
+                                                                                    <div class="in">
+                                                                                        <div data-index="0"> <span><a
+                                                                                                    title="瀏覽人次">瀏覽人次</a></span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="ct">
+                                                                                    <div class="in"><span
+                                                                                            id="footer_visitcount_span">..</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <script src='https://www.gov.tw/js/require.js'></script>
+    <script>
+        requirejs.config({
+            baseUrl: 'https://www.gov.tw/js',
+            urlArgs: "version=v2"
+        });
+        console.log('require')
+        requirejs(['main'], function (func) {
+            func();
+        });
+    </script>
+</body>
+
+</html>
