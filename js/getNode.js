@@ -173,9 +173,8 @@ define(['langFilter'], function(langFilter) {
 					if( _text === 'prev' || _text === 'next' ) {
 						_method = 'prepend';
 					}
-
+                    role = 'button';
 					if ( langFilter ) {
-
 						if( _text === 'prev' ) {
 							_text = '上一則';
 						}else if( _text === 'next' ) {
@@ -183,9 +182,10 @@ define(['langFilter'], function(langFilter) {
 						}else if( _text === 'more' ) {
 							_text = '更多';
 						}
+						role = '按鈕';
 					}
 					
-					$btn = $('<li class="'+ className +'"><span><a title="'+ _text +'['+ _extend +']" href="#">'+ _text +'</a></span></li>');
+					$btn = $('<li class="' + className + '"><span><a title="' + _text + '_' + role +'['+ _extend +']" href="#" role="button">'+ _text +'</a></span></li>');
 				}
 
 				$ftList[_method]($btn);

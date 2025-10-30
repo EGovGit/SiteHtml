@@ -62,28 +62,28 @@ define(['langFilter'], function(langFilter) {
 		getHdLink: function(env, add) { //取得 hd a 節點
 			var $hdIn = this.getHdIn(env),
 				_type = this.getType(env),
-        $link = null;
-        // console.log(_type);
-        // if( !_type ) {
-        // 	$link = $hdIn.children('h4');
-        // } else {
-        // 	$link = $hdIn.children('h3');
-        // }
+				$link = null;
+			// console.log(_type);
+			// if( !_type ) {
+			// 	$link = $hdIn.children('h4');
+			// } else {
+			// 	$link = $hdIn.children('h3');
+			// }
 
 			$link = $hdIn.find('>div');
-			console.log($link)
-			if (!$link.length && add !== false) {
+			// console.log($link)
+			if( !$link.length && add !== false ) {
+				
+				// if( !_type ) {
+				// 	$link = $('<h4></h4>');
+				// }else {
+				// 	$link = $('<h3></h3>');
+				// }
+				$link = $('<div class="headH3"></div>');
+				$link.append('<span><a title="'+ _defaultText +'['+ _extend +']" href="#">'+ _defaultText +'</a></span>');
+				$hdIn.append($link);
+			}
 
-			  // if( !_type ) {
-			  // 	$link = $('<h4></h4>');
-			  // }else {
-			  // 	$link = $('<h3></h3>');
-			  // }
-			  $link = $('<div class="headeH3"></div>');
-			  $link.append('<span><a title="' + _defaultText + '[' + _extend + ']" href="#">' + _defaultText + '</a></span>');
-			  $hdIn.append($link);
-      }
-      
 			return $link;
 		},
 
@@ -170,12 +170,11 @@ define(['langFilter'], function(langFilter) {
 				}else {
 					var _text = className;
 					
-					if (_text === 'prev' || _text === 'next') {
+					if( _text === 'prev' || _text === 'next' ) {
 						_method = 'prepend';
 					}
-
+                    role = 'button';
 					if ( langFilter ) {
-
 						if( _text === 'prev' ) {
 							_text = '上一則';
 						}else if( _text === 'next' ) {
@@ -183,9 +182,10 @@ define(['langFilter'], function(langFilter) {
 						}else if( _text === 'more' ) {
 							_text = '更多';
 						}
+						role = '按鈕';
 					}
 					
-					$btn = $('<li class="'+ className +'"><span><a title="'+ _text +'['+ _extend +']" href="#">'+ _text +'</a></span></li>');
+					$btn = $('<li class="' + className + '"><span><a title="' + _text + '_' + role +'['+ _extend +']" href="#" role="button">'+ _text +'</a></span></li>');
 				}
 
 				$ftList[_method]($btn);

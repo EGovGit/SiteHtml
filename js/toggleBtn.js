@@ -15,6 +15,7 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 			text: 'link',
 			addHref: true,
 			chText: '連結',
+			expanded: false,
 			debug: false
 		}
 
@@ -40,10 +41,11 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 
 		var _text = $set.text;
 
+		$btn.attr('role', 'button');
 		if (langFilter) {
 			_text = $set.chText;
 		}
-
+		$btn.attr('aria-expanded', $set.expanded);
 		//設定文字功能...有原生文字及觸發文字
 		if (!!$set.btnOrangeText && _flag && !!$set.btnActiveText) {
 			$btn.text($set.btnActiveText);
@@ -66,6 +68,8 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 		if (_flag === '1') {
 			$target.addClass($set.targetClass);
 			$env.addClass($set.toggleClass);
+
+			$btn.attr('aria-expanded', 'true');
 		} else if (_flag === '0') {
 			$target.removeClass($set.targetClass);
 			$env.removeClass($set.toggleClass);
@@ -73,6 +77,8 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 
 		if ($btn.attr('href') === undefined && $set.addHref) { //沒有 href 就加入
 			$btn.attr('href', '#');
+			var $title = $btn.attr('title');
+			$btn.attr('title', $title+'_按鈕');
 		}
 
 		//如果符合以下三條件，就開啟 click body 刪除 env class 的功能
@@ -116,7 +122,7 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 			$item_list.on('keydown', function (event) {
 				if (event.shiftKey == 1 && event.which == 9) {
 					$item.eq(_itemLeng-2).focus();
-				}else if(event.which == 9){
+				} else if (event.which == 9) {
 					$env.removeClass('is-active');
 				}
 			});
@@ -132,10 +138,9 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 			//--------------------------lele cus kcc
 		$item_list_first.on('keydown', function (event) {
 		  if (event.shiftKey == 1 && event.which == 9) {
-			$env.removeClass('is-active');
+			  $env.removeClass('is-active');
 		  }
 		});
-
 
 		//觸發的事件
 		$btn.on(_eventNmae, function () {
@@ -143,7 +148,10 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 			// 主要功能...換 class orz
 			// $target.toggleClass($set.targetClass);
 			$env.toggleClass($set.toggleClass);
-
+			if ($env.hasClass($set.toggleClass))
+				$btn.attr('aria-expanded', 'true');
+			else
+				$btn.attr('aria-expanded', 'false');
 
 
 			//如果有開啟 cookie 功能就紀錄吧
@@ -161,6 +169,8 @@ define(['getNode', 'mobileFilter', 'langFilter'], function (getNode, mobileFilte
 				$btn.text($set.btnOrangeText);
 				$btn.attr('title', $set.btnOrangeText + '[' + _text + ']');
 			}
+
+			$btn.attr('aria-expanded', $(this).attr('aria-expanded') === 'true' ? 'false' : 'true');
 		});
 
 		if ($set.debug) {
