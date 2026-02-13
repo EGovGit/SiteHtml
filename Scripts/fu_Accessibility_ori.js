@@ -54,6 +54,7 @@ $(window).on('load', (function () {
                 var lang = document.getElementsByTagName("html")[0].getAttribute("lang").toLowerCase();
                 switch (lang) {
                     case 'zh-hant-tw':
+                    case 'zh-tw':
                         New_Windows_LanguageSN = 1;
                         New_Windows_Title = "[另開新視窗]";
                         Fancybox_Title = "[彈出視窗]";
@@ -138,80 +139,219 @@ $(window).on('load', (function () {
             $(this).attr('title', Fancybox_Title + $atitle);
         });
 
+
         //檢查所有連結
         $('a').each(function (index) {
-            //空<a>補內容
-            if ($(this).text() == '') {
-                $(this).append('<p style="display:none">\u200C</p>');
-            }
-            //加入title
-            var $atitle = $(this).attr('title');
-            var titlevalue = '';
-            if ($atitle == undefined || $atitle.length == 0) {
-                if ($(this).children().length > 0) {
-                    titlevalue = $(this).text();
-                    if (titlevalue == '') titlevalue = h2value + "_" + index;
-                    if (titlevalue == '') titlevalue = ' ';
-                }
-                else if ($(this).children().length == 0 && $(this).text() != '') {
-                    titlevalue = $(this).text();
-                }
-                else {
-                    titlevalue = h2value + "_" + index;
-                }
-                if (titlevalue.trim() == '' && $(this).attr('name') != undefined) titlevalue = $(this).attr('name');
-                titlevalue = titlevalue.trim() + '_連結';
-                $(this).attr('title', titlevalue);
-            }
-            $atitle = $(this).attr('title');
-            ///如果title和文字一樣就加上_連結,無障礙3A需求
-            if ($atitle != undefined && $(this).text().trim() == $atitle.trim()
-                && (($(this).attr('href') != undefined && $(this).attr('href') != '') || $(this).attr('href') == '#')) {
-                $(this).attr('title', $(this).text().trim() + '_連結');
-            }
-
+            var $this = $(this); // 緩存物件以提升效能
             var domain = window.location.origin.toLowerCase();
 
-            //外連網址補 target
-            if ($(this).attr('href') != null && $(this).attr('href').indexOf('http') > -1 && $(this).attr('href').indexOf(domain) == -1 && $(this).attr('href').indexOf('webws.miaoli.gov.tw') == -1 && $(this).attr('href') != '#' && $(this).attr('target') != "_blank" && $(this).attr('href').indexOf('javascript:') < 0) {
-                $(this).attr('target', "_blank");
-            }
-
-            //檢查是否加入新視窗
-            if ($(this).attr('target') == "_blank") {
-                if (CheckIndex($(this).attr('title')) == -1) {
-                    $(this).attr('title', New_Windows_Title + $(this).attr('title'));
-                }
-                if ($(this).attr('rel') != "noopener noreferrer")
-                    $(this).attr('rel', 'noopener noreferrer');
-            }
-
-            //10/19無障礙檢測 圖片都需要有alt
+            // ==========================================
+            // 1. 圖片 Alt 屬性處理
+            // ==========================================
+            // 10/19無障礙檢測 圖片都需要有alt
             // <a> 標籤內之 IMG 替代文字為空即可 (邏輯:<a>內有圖片且子節點>1or有文字說明時，IMG之替代文字為空)
-            if ($(this).find('img') != null && ($(this).children().length > 1) || $(this).text() != '') {
-                $(this).find('img').attr('alt', '');
+            if ($this.find('img').length > 0 && ($this.children().length > 1 || $this.text().trim() !== '')) {
+                $this.find('img').attr('alt', '');
             }
 
-            if ($(this).find('img') != null && ($(this).children().length == 1) && $(this).attr('title') == $(this).find('img').attr('alt')) {
-                $(this).find('img').attr('alt', '連結裝飾圖');
+            if ($this.find('img').length > 0 && ($this.children().length == 1) && $this.attr('title') == $this.find('img').attr('alt')) {
+                $this.find('img').attr('alt', $this.attr('title') + ' 連結裝飾圖');
             }
 
-            //var href = $(this).attr('href');
-            //if (href != null && href.indexOf('#', 0) == 0) {
-            //    if ($(href).find('a[href]').length > 0) {
-            //        $(this).on('keydown', function (event) {
-            //            if (event.keyCode == 13) {
+            // ==========================================
+            // 2. 空 <a> 內容補全 (AAA 優化重點)
+            // ==========================================
+            // 修改說明：原 display:none 會被讀報軟體忽略，導致無法達到 AAA 標準。
+            // 改用 CSS clip 方式隱藏，視覺看不見但在無障礙樹中存在。
+            if ($this.text().trim() == '' && $this.children('img').length === 0) {
+                // 嘗試使用 title 作為補全文字，若無則給予預設值，避免連結無名稱
+                var fallbackText = $this.attr('title') || '連結';
 
-            //                $(href).find('a[href]').eq(0).focus();
-            //            }
-            //        });
-            //    }
-            //}
+                // 建立 visually-hidden (sr-only) 的 span
+                var $srSpan = $('<span>').text(fallbackText).css({
+                    'position': 'absolute',
+                    'width': '1px',
+                    'height': '1px',
+                    'padding': '0',
+                    'margin': '-1px',
+                    'overflow': 'hidden',
+                    'clip': 'rect(0,0,0,0)',
+                    'border': '0',
+                    'white-space': 'nowrap'
+                });
+                $this.append($srSpan);
+            }
+
+            // ===========================================================================
+            // 區塊開始：Title 生成邏輯 (依賴外部變數 h2value)
+            // 請確認 h2value 變數在此作用域可被存取
+            // ===========================================================================
+            var $atitle = $this.attr('title');
+            var titlevalue = '';
+
+            if ($atitle == undefined || $atitle.length == 0) {
+                if ($this.children().length > 0) {
+                    titlevalue = $this.text();
+
+                    // 注意：若 h2value 未定義可能會報錯，建議檢查
+                    if (titlevalue == '' && typeof h2value !== 'undefined') titlevalue = h2value + "_" + index;
+                    if (titlevalue == '') titlevalue = ' ';
+
+                } else if ($this.children().length == 0 && $this.text() != '') {
+                    titlevalue = $this.text();
+                } else {
+                    // 注意：若 h2value 未定義可能會報錯
+                    if (typeof h2value !== 'undefined') titlevalue = h2value + "_" + index;
+                }
+
+                if (titlevalue && titlevalue.trim() == '' && $this.attr('name') != undefined)
+                    titlevalue = $this.attr('name');
+
+                if (titlevalue) {
+                    $this.attr('title', titlevalue.trim());
+                }
+            }
+            // ===========================================================================
+            // 區塊結束：Title 生成邏輯
+            // ===========================================================================
 
 
-        });//使 a content都塞入看不到的東西 != empty
+            // ==========================================
+            // 3. Title 重複性優化 (解決語音重複)
+            // ==========================================
+            // 重新取得當下的 title 與 text
+            var currentTitle = ($this.attr('title') || '').trim();
+            var currentText = $this.text().trim();
+            var hrefContent = $this.attr('href');
+
+            if (currentTitle.length > 0) {
+                // 情況 A: 可視文字與 Title 完全一樣 -> 移除 Title (符合 FreeGo 與 WCAG 最佳實務)
+                if (currentText.length > 0 && currentText === currentTitle) {
+                    $this.removeAttr('title');
+                }
+                // 情況 B: 功能性連結 (#) 且文字相同 -> 移除 Title
+                else if (hrefContent === '#' && currentText === currentTitle) {
+                    $this.removeAttr('title');
+                }
+            }
 
 
+            // ==========================================
+            // 4. 檔案下載連結處理 (補上副檔名)
+            // ==========================================
+            var href = $this.attr('href');
+            if (href) {
+                var matchExt = href.toLowerCase().match(/\.([a-z0-9]+)(?=($|\?|#))/);
+                if (matchExt) {
+                    var ext = matchExt[1];
+                    var pageExts = ['html', 'aspx', 'php', 'ashx', 'asp', 'action', 'jsp'];
+
+                    if ($.inArray(ext, pageExts) === -1) {
+                        // 重新檢查 text 和 title (因為 title 可能剛被移除)
+                        var nowTitle = $this.attr('title') || '';
+                        var nowText = $this.text().trim();
+                        var extLabel = '(' + ext.toUpperCase() + ')';
+
+                        // 如果 title 存在，且沒包含副檔名 -> 加在 title
+                        if (nowTitle && nowTitle.indexOf(ext.toUpperCase()) === -1) {
+                            $this.attr('title', nowTitle + extLabel);
+                        }
+                        // 如果 title 不存在 (被移除了)，且文字本身也沒包含副檔名 -> 加回 title 以提示使用者
+                        else if (!nowTitle && nowText.indexOf(ext.toUpperCase()) === -1) {
+                            $this.attr('title', nowText + extLabel);
+                        }
+                    }
+                }
+            }
+
+
+            // ==========================================
+            // 5. 外連網址處理
+            // ==========================================
+            if ($this.attr('href') != null && $this.attr('href').indexOf('http') > -1 &&
+                $this.attr('href').indexOf(domain) == -1 &&
+                $this.attr('href').indexOf('webws.miaoli.gov.tw') == -1 &&
+                $this.attr('href') != '#' &&
+                $this.attr('target') != "_blank" &&
+                $this.attr('href').indexOf('javascript:') < 0) {
+                $this.attr('target', "_blank");
+            }
+
+
+            // ===========================================================================
+            // 區塊開始：新視窗提示 (依賴 CheckIndex, New_Windows_Title)
+            // ===========================================================================
+            if ($this.attr('target') == "_blank") {
+                // 確保變數存在才執行，避免 JS 錯誤
+                if (typeof CheckIndex === 'function' && typeof New_Windows_Title !== 'undefined') {
+
+                    var finalTitle = $this.attr('title') || '';
+
+                    if (CheckIndex(finalTitle) == -1) {
+                        // 若 title 存在，補在 title 前
+                        if (finalTitle) {
+                            $this.attr('title', New_Windows_Title + finalTitle);
+                        }
+                    }
+                    // 補在文字後方 (視覺提示)
+                    $this.text($this.text() + New_Windows_Title);
+                }
+
+                // 安全性屬性補強
+                if ($this.attr('rel') != "noopener noreferrer")
+                    $this.attr('rel', 'noopener noreferrer');
+            }
+            // ===========================================================================
+            // 區塊結束：新視窗提示
+            // ===========================================================================
+
+
+            // ==========================================
+            // 6. Role="tab" 互動邏輯 (AAA 鍵盤導航增強)
+            // ==========================================
+            // 修改：排除 data-fun 或 data-funclog 區塊內的 tab，避免與 tab.js 衝突
+            if ($this.attr('role') == "tab" && $this.closest('[data-fun], [data-funclog]').length === 0) {
+                var $parentLi = $this.closest('li');
+                var isInsideList = $parentLi.length > 0 && $parentLi.parent().is('ul');
+
+                // --- 初始化狀態 ---
+                if (isInsideList) {
+                    if ($parentLi.attr('data-index') == "1") {
+                        $this.attr('aria-selected', 'true');
+                        // tabindex="0" 表示可被 Tab 鍵聚焦
+                        $this.attr('tabindex', '0');
+                    } else {
+                        $this.attr('aria-selected', 'false');
+                        // tabindex="-1" 表示 Tab 鍵跳過 (需搭配方向鍵腳本，若無方向鍵腳本，建議改回 0)
+                        // 為了保守起見，若無法確認是否有方向鍵監聽，可設為 0
+                        $this.attr('tabindex', '0');
+                    }
+                }
+
+                // --- 事件綁定 (滑鼠與鍵盤) ---
+                $this.on('click keydown', function (e) {
+                    // 支援滑鼠點擊，或鍵盤 Enter(13)、Space(32)
+                    if (e.type === 'click' || (e.type === 'keydown' && (e.which == 13 || e.which == 32))) {
+
+                        // 防止空白鍵造成頁面捲動
+                        if (e.which == 32) e.preventDefault();
+
+                        // 設定自己為選取狀態
+                        $(this).attr('aria-selected', 'true');
+                        $(this).attr('tabindex', '0'); // 確保可聚焦
+
+                        // 處理兄弟元素
+                        if (isInsideList) {
+                            var $siblings = $parentLi.siblings().find('a[role="tab"]');
+                            $siblings.attr('aria-selected', 'false');
+                            // 未選取者設為不可 Tab 聚焦 (符合 WAI-ARIA Pattern)
+                            $siblings.attr('tabindex', '-1');
+                        }
+                    }
+                });
+            }
+
+        });
 
         //如果有onkeypress進行移除
         $("a[onkeypress]").each(function (index) {
