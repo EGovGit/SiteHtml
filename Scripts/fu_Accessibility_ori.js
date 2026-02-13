@@ -161,8 +161,6 @@ $(window).on('load', (function () {
             // ==========================================
             // 2. 空 <a> 內容補全 (AAA 優化重點)
             // ==========================================
-            // 修改說明：原 display:none 會被讀報軟體忽略，導致無法達到 AAA 標準。
-            // 改用 CSS clip 方式隱藏，視覺看不見但在無障礙樹中存在。
             if ($this.text().trim() == '' && $this.children('img').length === 0) {
                 // 嘗試使用 title 作為補全文字，若無則給予預設值，避免連結無名稱
                 var fallbackText = $this.attr('title') || '連結';
@@ -184,7 +182,6 @@ $(window).on('load', (function () {
 
             // ===========================================================================
             // 區塊開始：Title 生成邏輯 (依賴外部變數 h2value)
-            // 請確認 h2value 變數在此作用域可被存取
             // ===========================================================================
             var $atitle = $this.attr('title');
             var titlevalue = '';
@@ -193,14 +190,12 @@ $(window).on('load', (function () {
                 if ($this.children().length > 0) {
                     titlevalue = $this.text();
 
-                    // 注意：若 h2value 未定義可能會報錯，建議檢查
                     if (titlevalue == '' && typeof h2value !== 'undefined') titlevalue = h2value + "_" + index;
                     if (titlevalue == '') titlevalue = ' ';
 
                 } else if ($this.children().length == 0 && $this.text() != '') {
                     titlevalue = $this.text();
                 } else {
-                    // 注意：若 h2value 未定義可能會報錯
                     if (typeof h2value !== 'undefined') titlevalue = h2value + "_" + index;
                 }
 
@@ -293,8 +288,13 @@ $(window).on('load', (function () {
                             $this.attr('title', New_Windows_Title + finalTitle);
                         }
                     }
+
                     // 補在文字後方 (視覺提示)
-                    $this.text($this.text() + New_Windows_Title);
+                    if ($this.find('img').length === 0 && $this.text().trim().length > 0) {
+                        if (CheckIndex($this.text()) === -1) {
+                            $this.append(New_Windows_Title);
+                        }
+                    }
                 }
 
                 // 安全性屬性補強
