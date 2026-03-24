@@ -290,10 +290,37 @@ $(window).on('load', (function () {
                     }
 
                     // 補在文字後方 (視覺提示)
-                    if ($this.find('img').length === 0 && $this.text().trim().length > 0) {
-                        if (CheckIndex($this.text()) === -1) {
-                            $this.append(New_Windows_Title);
+                    if ($this.text().trim().length > 0 && CheckIndex($this.text()) === -1) {
+                        var $target = $this;
+
+                        // 取得連結內容的所有子節點(包含文字節點)
+                        var contents = $this.contents();
+
+                        // 從最後一個節點往前檢查
+                        for (var i = contents.length - 1; i >= 0; i--) {
+                            var node = contents[i];
+
+                            // 如果是元素節點 (nodeType === 1)
+                            if (node.nodeType === 1) {
+                                var $node = $(node);
+                                // 檢查元素是否可見且非圖片等取代元素 (排除 img, br, hr, input, script, style 等)
+                                if ($node.is(':visible') && !$node.is('img, br, hr, input, script, style')) {
+                                    $target = $node;
+                                    break;
+                                }
+                                // 如果是圖片，則認定為最後的可見內容，但文字應加在圖片後方(即 $this)，所以直接跳出迴圈使用預設 $target
+                                else if ($node.is('img') && $node.is(':visible')) {
+                                    break;
+                                }
+                            }
+                            // 如果是文字節點 (nodeType === 3) 且非空白
+                            else if (node.nodeType === 3 && node.nodeValue.trim() !== '') {
+                                // 找到最後的文字內容，文字應加在該文字後方(即 $this)，直接跳出
+                                break;
+                            }
                         }
+
+                        $target.append(New_Windows_Title);
                     }
                 }
 
