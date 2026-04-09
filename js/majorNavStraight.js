@@ -25,9 +25,10 @@ define(['getNode', 'mobileFilter'], function(getNode, mobileFilter){
 			var _index = parseInt($.cookie(file));
 
 			$li.eq(_index - 1).addClass($set.activeClass);
+			$li.eq(_index - 1).find('.hd').find('a').attr('aria-expanded','true');
 		}
 
-		
+		$a.attr('aria-expanded','false');
 		$child_node_content.each(function(){
 			var $this = $(this),
 				$item = $this.find('.in li'),
@@ -76,11 +77,14 @@ define(['getNode', 'mobileFilter'], function(getNode, mobileFilter){
 				_index = $li_parent.data('index');
 
 			if( $li_parent.hasClass($set.activeClass) ) {
+				$this.attr('aria-expanded','false');
 				$li_parent.removeClass($set.activeClass);
 				$.removeCookie(file);
 			}else {
 				$li.removeClass($set.activeClass);
 				$li_parent.addClass($set.activeClass);
+				$a.attr('aria-expanded','false');
+				$this.attr('aria-expanded','true');
 				$.cookie(file, _index, { path: '/' });
 			}
 		});
