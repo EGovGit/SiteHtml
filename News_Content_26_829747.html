@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=829747" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=829747" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="CYT/n71dnLKugbWJJPmHYQS9+B5tuqD29gXO+qMzOu8XDN2bhC3MfGNwCeT7KKZJZgmYSIQNdCbB804Hj0bSoDtF2mZXpvTXKyDSvaoPiJ5RAnTQW/nDoZHf9tbd83n6MT8pGA4063N7nAE876J12SwgU3zGyskNTGwS+Us4GNVGSf9eUqBwME+v1EpQWeDddrspSfZs0MM/tq1Rxk/6nGiwVLHC9vLqc4ykH05idrh0fBW4ajZihv8rSdF0YLkeMAONSuokNB3iKK6/YJ9ykQZyZVEbOd8JHSGgDqYivAFUEyZVL8azOFjq4EVulh++Ij4wmC/QofAsZX9yOnjX/P2VVzIGwAsNFnYsuzLYNUU+8X9fVqroH+m4btZ+bVhzcvLFPsCm4tp1zIb8jx5eyC03eJxpGiNuoeYXzbghnIIbhbZ7oG9T7GZJnx4UxFVKjmdLxqKQnfMHp9hmxU+1/P2paxMVjSExigau/2LeWSK3CefItaqQXiMy9plRV8xCTXwpLT5EsaU9Ry15Fo11vQ4O2+HKSgBs0q6HPfuYxGP0aLHKTSf+xyNz9Xjk29bFDwcDEXchKeJPoSH/Duiz0w0TfCu6ZsDoJXbl3GRmvKPUXKj83Ek+CsOFjg6KE8ouizSkINEsHykE1zq7vv3gD4yRnxxnGahG9Fplnfy7FRNUXJPFvPTMo9KgNPo7t0x02wR//ZkaSiyVMQ3qqNQdSmgGPz1myY35ipTaFvOqe1tDk6YrUPSslUilZDlp13RIRaiBZb/PztA5wrNvzMFABk1tlNeaFgqH2D4I0GiorsUyx8oDhLfu+J0wNHf+iGh4SXb85lQ7HRH02tUJ5/aWFCZWxJgLcs9DWP4O5QDiPQqYfV2Nvbbm3aelre14UH+XjWQtDMoVk/RilSwOy0oama7xsU2yRJKIOzEspw+wgJBg8Tt0wKHM1ze+oqYSdkq+NTcHV7mNEuuDMsxlH771GmAqVqLqaz2mhGuRc9mD0E6taYYFIaJsVqFt0d6U0dTKfTimtbp6cA0w7b8Yp7w9G30eaAPWFWlAeSAbIgL3Bm+9saa5dcgwwDGCCVsqBdViszgHkVsqq+hH9FP4bnGDK1an8dBAgvk/N0LQQkpM8MRehk9GAL+tq5ONmrI/aLl6SDAVWhlIebONdUaCIyTDdWLn1FHgSIJk2n46L41b7dcs1imnSngCQCsKD78fWSZ5dQvxL5kvSCbq4padzZ5c1eq0MlOeA/i/gtJ+DHUeHeN/35AtmD779JdAq0TDUBPtKxS9mB/UHxT58dN7J7KF2lHMFZSuuc46aI4VZ85W6ksTISJkTEuR6TntwUTkQUGJsng33Din7OqzochfgXYgpXrAs5lhJfLLRlGW4ZfC2fsA/K6IVBwjsEsBqfA/rYoeBekR1cadHVPmr+NDEX5IuQMVP+N1XBQj1Uu1EA9aYMmyXlppwPG7vo8jrBmwkhIRJ51Y9YN88To2bjAcpiY4o/TqI8YxzNvjjwMLgPXb+gxV5FAb" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ZKdZddhngsm2ijSqdSulrbSJdvAMSti5HzFB+ogLqi2J5hgeq8aVpeDogilQW8u+hWlmhFF5jNFGhWMEYw+mI85z4yuqTh5Gcu/4N33lhGqnn+pGWmonUpXeFKR6A5BW/WrwQcYvAJHENzxcua0ZUau9oLFFERS9eaNLGV/iHsG32kAsl6L29bWxLV8vYuPjxx1HRh0dDQoxrG3/xC0ZXNlQFyypMPPKazNYBOjOaG1Xr0Ph/A7V+iadU8yPgh/uFAliUMj0nl80T/SC0NvDc5lIHB9V7mfZeqUKfoyKl7xK31sj4IAHOUVlCfUIz6K4PIr8bM9x9QckAxuHCxt5KUcTQXIkZOwbARHplVBLshUn379YaJRb7VVfofhVFKH9rPTsFapkRC0tAygUhyJnttV9l+UHahoCxLPwQn/D8BuDAKZmnAcEQj6WKqJIxruvKk3Eps3I7WYhovbECSss+BHOAysfH9Dm9js2F46SF6UBVV1JDhcP2aE2oqJF8duaeQ1BerGN+cekXwzP8zL85yXxI+hJwhWDOXTew8YDjGZ/dzd7hRXkc1s7cyWcn4HkFsGEIUXo9xmxLjQCHRMKrEyQrlQ8xFwuZJSBsX0+21rKAbJP6EK3tqH2XaTW+jw7EdbSoyPQMynto8BkM27FFTN7sTDSxjd9OvkqilO4iEWBPqEj1TVw/m+BBe6mu312dIjESjGA10hPP/TjCXyA9isYZvcrelA52xeXYBU9Mp8TahtXI4dSqrSiL1mIwBWZMxTGP3gGrl/lexBmNFfYrMsNVUAZopU3n518Zx6l++6nDb/KLFJCXuZXeJKFFlvnfgw2Dn0B3o9OynjR2QTum38SgouZMAWAnHZxqzWWMKPjeJzLVOprplyX/xYAGFQWEfZzamVvTSF80ralEeu76TTgsxFM1nEEqJ3TguesXvbDRJwvkSll3cqPaPNUVysj35UnjSZKsGSFldbZrN8y09EGXhupkwnXCjLMumTRhdffi/ujWib+zbbiZj04c/jQfwGE/aWQ6QKVO4ljl/Wy8JCBni6u3NCVFyJRnqTisoWIkoH5/6R3PZm9/fncRz8xhE9OmTOxEKQumRbixLqeed2g+D/y6+bmSTvGvoCd/0kWXBQ5uXafB5MhdPO3LGlemWIaTgKJblZhPTU6S9r4wFdPphGocpxdDS8+bvqJGQwEfDoFD1U/AbpDeBtbeVqESzXSaaUSAVzYuN8MqnpETCbMaJHAM/+/Ghj8jHogqbOdfpkAW7WHrXOMaAhjIChc0+mr/4DtVr3KSdrzedEu5eC/CURF5XL6Q/nM8hWE/nStIUIDscyQ/eY7aDqUZS7vl/YhBmGQWt6IwUD7krAKXE5r9jB7OvASPw6r97yLPtVr6v3vIQvWC4MwbtICnLS7tgVbFjuGKP1qFL0zTrUOOGVuUErE1Fq9soKDn6WcPXArNwkMhMZJpHxOqEMuM1kvxysyj4FyCuOrmSxhZ/BsXy9kwfnyY6PD5pASV99vGR2lBTQT" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_478796047e3a4a0fa9c096708211130a">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_c1e231ebd4a14a12a99a01560d24c3a7">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_478796047e3a4a0fa9c096708211130a" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_478796047e3a4a0fa9c096708211130a" id="txt_478796047e3a4a0fa9c096708211130a" type="search" placeholder="" title="搜尋">
+  <label for="txt_c1e231ebd4a14a12a99a01560d24c3a7" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_c1e231ebd4a14a12a99a01560d24c3a7" id="txt_c1e231ebd4a14a12a99a01560d24c3a7" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_478796047e3a4a0fa9c096708211130a" data-search="btn_478796047e3a4a0fa9c096708211130a" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_c1e231ebd4a14a12a99a01560d24c3a7" data-search="btn_c1e231ebd4a14a12a99a01560d24c3a7" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_478796047e3a4a0fa9c096708211130a"]').on("keydown", function (event) {
+    $('[data-search="btn_c1e231ebd4a14a12a99a01560d24c3a7"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_478796047e3a4a0fa9c096708211130a'));
+             doSearch($('#btn_c1e231ebd4a14a12a99a01560d24c3a7'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_478796047e3a4a0fa9c096708211130a']", true);
+return_value = typeWriter("[data-search='btn_c1e231ebd4a14a12a99a01560d24c3a7']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_478796047e3a4a0fa9c096708211130a']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_GreBjwWhvR" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_FbrAUKuQRH" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_uMdMcWnnmq" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_MoiNcRmtcE" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_VfmrvddIAX" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_EusfHjKnQn" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>警察刑事紀錄證明(良民證)怎麼申請？申請資格、流程與常見用途一次看！</h3></div></div></div></div>
         
         
@@ -620,7 +582,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p style="line-height: 20px;">&nbsp;</p>
 
-<p><b>警察刑事紀錄證明</b>（Police Criminal Record Certificate）根據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080088&amp;flno=3" target="_blank" rel="noopener noreferrer" title="[另開新視窗]警察刑事紀錄證明核發條例第3條">警察刑事紀錄證明核發條例第3條</a>規定，是指警察機關依司法或軍法機關判決確定、執行之刑事案件資料所作成的紀錄證明，<b>主要功能是證明申請人在臺灣是否有刑事案件前科紀錄</b>。</p>
+<p><b>警察刑事紀錄證明</b>（Police Criminal Record Certificate）根據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080088&amp;flno=3" target="_blank" title="[另開新視窗]警察刑事紀錄證明核發條例第3條">警察刑事紀錄證明核發條例第3條</a>規定，是指警察機關依司法或軍法機關判決確定、執行之刑事案件資料所作成的紀錄證明，<b>主要功能是證明申請人在臺灣是否有刑事案件前科紀錄</b>。</p>
 
 <p style="line-height: 20px;">&nbsp;</p>
 
@@ -638,23 +600,23 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">移民、打工度假、出國留學</td>
-			<td style="text-align:left; padding:5px;">雖然各國對於入境條件的規定不盡相同，但若計畫在國外居留一段時間，例如移民、打工度假或出國留學，多數國家政府往往會要求申請人提供無犯罪紀錄的相關證明，以確保申請者在原居住國家過往的行為符合其入境和工作準則，例如：<a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/taiwan.html" target="_blank" rel="noopener noreferrer" title="[另開新視窗]加拿大-如何取得無犯罪紀錄證明 ">加拿大</a>。</td>
+			<td style="text-align:left; padding:5px;">雖然各國對於入境條件的規定不盡相同，但若計畫在國外居留一段時間，例如移民、打工度假或出國留學，多數國家政府往往會要求申請人提供無犯罪紀錄的相關證明，以確保申請者在原居住國家過往的行為符合其入境和工作準則，例如：<a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/police-certificates/how/taiwan.html" target="_blank" title="[另開新視窗]加拿大-如何取得無犯罪紀錄證明 ">加拿大</a>。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">申請特定職業別工作</td>
-			<td style="text-align:left; padding:5px;">依據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0090001&amp;flno=5" target="_blank" rel="noopener noreferrer" title="[另開新視窗]就業服務法第5條第2項第2款">就業服務法第5條第2項第2款</a>規定，雇主<strong style="color:#b50000;">不得要求</strong>員工及求職者提供<strong style="color:#b50000;">非屬就業所需之隱私資料</strong>。但若該職業涉及到倫理、公共安全及信任，且<strong style="color:#b50000;">法律明訂「曾犯特定罪者」不得從事</strong>，雇主就可以要求員工及求職者提供良民證。以下列舉常見職業為例：
+			<td style="text-align:left; padding:5px;">依據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=N0090001&amp;flno=5" target="_blank" title="[另開新視窗]就業服務法第5條第2項第2款">就業服務法第5條第2項第2款</a>規定，雇主<strong style="color:#b50000;">不得要求</strong>員工及求職者提供<strong style="color:#b50000;">非屬就業所需之隱私資料</strong>。但若該職業涉及到倫理、公共安全及信任，且<strong style="color:#b50000;">法律明訂「曾犯特定罪者」不得從事</strong>，雇主就可以要求員工及求職者提供良民證。以下列舉常見職業為例：
 			<ul style="margin: 8px 0px;">
-				<li><b>教保服務人員</b>：為保護幼兒照護環境，<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0070071&amp;flno=12" target="_blank" rel="noopener noreferrer" title="[另開新視窗]教保服務人員條例第12條">教保服務人員條例第12條</a>規定，有性侵害、性騷擾、性霸凌等相關犯罪紀錄者，不得任用。</li>
-				<li><b>居家式托育服務提供者</b>：按照<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050001&amp;flno=26-1" target="_blank" rel="noopener noreferrer" title="[另開新視窗]兒童及少年福利與權益保障法第26-1條">兒童及少年福利與權益保障法第26-1條</a>，曾犯性侵害、性騷擾、兒童及少年性交易、兒童及少年性剝削、毒品罪、家庭暴力等罪責者，不得提供居家式托育服務。</li>
-				<li><b>補教業者</b>：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0080002&amp;flno=9" target="_blank" rel="noopener noreferrer" title="[另開新視窗]補習及進修教育法第9條">補習及進修教育法第9條</a>規定，有性侵害、性騷擾、性剝削、性霸凌等損害兒童及少年權益的行為，應予解聘或解僱。</li>
-				<li><b>保全</b>：依據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080081&amp;flno=10-1" target="_blank" rel="noopener noreferrer" title="[另開新視窗]保全業法第10-1條">保全業法第10-1條</a>規定，曾犯組織犯罪防制條例、肅清煙毒條例、貪污治罪條例等罪責者，不得擔任保全人員。</li>
-				<li><b>計程車駕駛</b>：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&amp;flno=37" target="_blank" rel="noopener noreferrer" title="[另開新視窗]道路交通管理處罰條例第37條">道路交通管理處罰條例第37條</a>明定，曾犯故意殺人、故意重傷、搶劫等罪責者，不得辦理計程車駕駛人執業執照登記。</li>
+				<li><b>教保服務人員</b>：為保護幼兒照護環境，<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0070071&amp;flno=12" target="_blank" title="[另開新視窗]教保服務人員條例第12條">教保服務人員條例第12條</a>規定，有性侵害、性騷擾、性霸凌等相關犯罪紀錄者，不得任用。</li>
+				<li><b>居家式托育服務提供者</b>：按照<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0050001&amp;flno=26-1" target="_blank" title="[另開新視窗]兒童及少年福利與權益保障法第26-1條">兒童及少年福利與權益保障法第26-1條</a>，曾犯性侵害、性騷擾、兒童及少年性交易、兒童及少年性剝削、毒品罪、家庭暴力等罪責者，不得提供居家式托育服務。</li>
+				<li><b>補教業者</b>：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=H0080002&amp;flno=9" target="_blank" title="[另開新視窗]補習及進修教育法第9條">補習及進修教育法第9條</a>規定，有性侵害、性騷擾、性剝削、性霸凌等損害兒童及少年權益的行為，應予解聘或解僱。</li>
+				<li><b>保全</b>：依據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080081&amp;flno=10-1" target="_blank" title="[另開新視窗]保全業法第10-1條">保全業法第10-1條</a>規定，曾犯組織犯罪防制條例、肅清煙毒條例、貪污治罪條例等罪責者，不得擔任保全人員。</li>
+				<li><b>計程車駕駛</b>：<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=K0040012&amp;flno=37" target="_blank" title="[另開新視窗]道路交通管理處罰條例第37條">道路交通管理處罰條例第37條</a>明定，曾犯故意殺人、故意重傷、搶劫等罪責者，不得辦理計程車駕駛人執業執照登記。</li>
 			</ul>
 			</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">申請特定執照</td>
-			<td style="text-align:left; padding:5px;">在部分需具備專業執照才可執業的行業中，「無犯罪紀錄」常被視為取得資格的基本門檻。這類職業通常涉及高度公共信賴與法律責任，例如：<a href=" https://www.gov.tw/News_Content_2_520232" target="_blank" rel="noopener noreferrer" title="[另開新視窗]申請律師證書">律師</a>、<a href="https://www.fsc.gov.tw/ch/home.jsp?id=145&amp;parentpath=0,6&amp;mcustomize=multimessage_view.jsp&amp;dataserno=30848&amp;aplistdn=ou=form,ou=multisite,ou=chinese,ou=ap_root,o=fsc,c=tw&amp;toolsflag=Y&amp;dtable=FormDown" target="_blank" rel="noopener noreferrer" title="[另開新視窗]會計師辦理公開發行公司財務報告查核簽證業務申請書">會計師</a>等，因此主管機關會要求申請人檢附良民證，作為信任的基本要求。</td>
+			<td style="text-align:left; padding:5px;">在部分需具備專業執照才可執業的行業中，「無犯罪紀錄」常被視為取得資格的基本門檻。這類職業通常涉及高度公共信賴與法律責任，例如：<a href=" https://www.gov.tw/News_Content_2_520232" target="_blank" title="[另開新視窗]申請律師證書">律師</a>、<a href="https://www.fsc.gov.tw/ch/home.jsp?id=145&amp;parentpath=0,6&amp;mcustomize=multimessage_view.jsp&amp;dataserno=30848&amp;aplistdn=ou=form,ou=multisite,ou=chinese,ou=ap_root,o=fsc,c=tw&amp;toolsflag=Y&amp;dtable=FormDown" target="_blank" title="[另開新視窗]會計師辦理公開發行公司財務報告查核簽證業務申請書">會計師</a>等，因此主管機關會要求申請人檢附良民證，作為信任的基本要求。</td>
 		</tr>
 	</tbody>
 </table>
@@ -673,16 +635,16 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p style="line-height: 20px;">&nbsp;</p>
 
-<p>依照<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080088&amp;flno=6" target="_blank" rel="noopener noreferrer" title="[另開新視窗]警察刑事紀錄證明核發條例第6條">警察刑事紀錄證明核發條例第6條</a>規定，下列情況的刑事案件前科紀錄，<strong style="color:#b50000;"><u>不會記載</u></strong>在警察刑事紀錄證明上：</p>
+<p>依照<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080088&amp;flno=6" target="_blank" title="[另開新視窗]警察刑事紀錄證明核發條例第6條">警察刑事紀錄證明核發條例第6條</a>規定，下列情況的刑事案件前科紀錄，<strong style="color:#b50000;"><u>不會記載</u></strong>在警察刑事紀錄證明上：</p>
 
 <ul style="margin: 8px 0px;">
-	<li>合於<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010011&amp;flno=83-1" target="_blank" rel="noopener noreferrer" title="[另開新視窗]少年事件處理法第83-1條第1項">少年事件處理法第83-1條第1項</a>規定者。</li>
+	<li>合於<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0010011&amp;flno=83-1" target="_blank" title="[另開新視窗]少年事件處理法第83-1條第1項">少年事件處理法第83-1條第1項</a>規定者。</li>
 	<li>受<strong style="color:#b50000;">緩刑</strong>之宣告，未經撤銷者。</li>
 	<li>受<strong style="color:#b50000;">拘役、罰金</strong>之宣告者。</li>
 	<li>受<strong style="color:#b50000;">免刑之判決</strong>者。</li>
 	<li>經<strong style="color:#b50000;">免除其刑之執行</strong>者。</li>
 	<li>法律已廢除其刑罰者。</li>
-	<li>經<strong style="color:#b50000;">易科罰金</strong>或依<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&amp;flno=41" target="_blank" rel="noopener noreferrer" title="[另開新視窗]刑法第41條第2項">刑法第41條第2項</a>之規定<strong style="color:#b50000;">易服社會勞動執行完畢</strong>，5年內未再受有期徒刑以上刑之宣告者。</li>
+	<li>經<strong style="color:#b50000;">易科罰金</strong>或依<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=C0000001&amp;flno=41" target="_blank" title="[另開新視窗]刑法第41條第2項">刑法第41條第2項</a>之規定<strong style="color:#b50000;">易服社會勞動執行完畢</strong>，5年內未再受有期徒刑以上刑之宣告者。</li>
 </ul>
 
 <p>也就是說，只要符合上述情形，還是可以取得記載內容為「在臺灣地區查無犯罪紀錄」的警察刑事紀錄證明。</p>
@@ -698,7 +660,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080088" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;警察刑事紀錄證明核發條例">&gt;&gt;警察刑事紀錄證明核發條例</a>【資料來源：全國法規資料庫，民國102年1月】</p>
+<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0080088" target="_blank" title="[另開新視窗]&gt;&gt;警察刑事紀錄證明核發條例">&gt;&gt;警察刑事紀錄證明核發條例</a>【資料來源：全國法規資料庫，民國102年1月】</p>
 
 <p>&nbsp;</p>
 
@@ -709,7 +671,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p style="line-height: 20px;">&nbsp;</p>
 
-<p>「警察刑事紀錄證明要去哪裡辦？流程會很複雜嗎？」其實只要掌握幾個步驟就能順利完成申請。若您對於申辦過程有任何疑問，建議直接聯繫<a href="https://eli.npa.gov.tw/E7WebO/download/%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3(%E5%B8%82)%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%8F%97%E7%90%86%E6%A0%B8%E7%99%BC%E8%AD%A6%E5%AF%9F%E5%88%91%E4%BA%8B%E7%B4%80%E9%8C%84%E8%AD%89%E6%98%8E%E6%9C%8D%E5%8B%99%E6%83%85%E5%BD%A2%E4%B8%80%E8%A6%BD%E8%A1%A8List%20of%20FAP%20Units.pdf" target="_blank" rel="noopener noreferrer" title="[另開新視窗]各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表 ">各直轄市、縣（市）政府警察局外事科或其所屬單位</a>，以獲得最即時且專業的協助。</p>
+<p>「警察刑事紀錄證明要去哪裡辦？流程會很複雜嗎？」其實只要掌握幾個步驟就能順利完成申請。若您對於申辦過程有任何疑問，建議直接聯繫<a href="https://eli.npa.gov.tw/E7WebO/download/%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3(%E5%B8%82)%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%8F%97%E7%90%86%E6%A0%B8%E7%99%BC%E8%AD%A6%E5%AF%9F%E5%88%91%E4%BA%8B%E7%B4%80%E9%8C%84%E8%AD%89%E6%98%8E%E6%9C%8D%E5%8B%99%E6%83%85%E5%BD%A2%E4%B8%80%E8%A6%BD%E8%A1%A8List%20of%20FAP%20Units.pdf" target="_blank" title="[另開新視窗]各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表 ">各直轄市、縣（市）政府警察局外事科或其所屬單位</a>，以獲得最即時且專業的協助。</p>
 
 <p style="line-height: 20px;">&nbsp;</p>
 
@@ -717,9 +679,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p style="line-height: 20px;">&nbsp;</p>
 
-<p>依<a href="https://law.moj.gov.tw/LawClass/LawSearchContent.aspx?pcode=D0080088&amp;norge=4" target="_blank" rel="noopener noreferrer" title="[另開新視窗]警察刑事紀錄證明核發條例第4條">警察刑事紀錄證明核發條例第4條</a>規定，只要是現在或曾經在臺灣地區設有戶籍或有居留、停留紀錄的人民（含本國人及外國人），<strong style="color:#b50000;">不論是否曾有刑事犯罪紀錄</strong>，皆可向鄰近直轄市、縣 （市） 政府警察局申請核發警察刑事紀錄證明。</p>
+<p>依<a href="https://law.moj.gov.tw/LawClass/LawSearchContent.aspx?pcode=D0080088&amp;norge=4" target="_blank" title="[另開新視窗]警察刑事紀錄證明核發條例第4條">警察刑事紀錄證明核發條例第4條</a>規定，只要是現在或曾經在臺灣地區設有戶籍或有居留、停留紀錄的人民（含本國人及外國人），<strong style="color:#b50000;">不論是否曾有刑事犯罪紀錄</strong>，皆可向鄰近直轄市、縣 （市） 政府警察局申請核發警察刑事紀錄證明。</p>
 
-<p>但依據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080088&amp;flno=8" target="_blank" rel="noopener noreferrer" title="[另開新視窗]警察刑事紀錄證明核發條例第8條">警察刑事紀錄證明核發條例第8條</a>規定，申請人有以下情形之一者，警察機關依法<strong style="color:#b50000;">不予核發</strong>警察刑事紀錄證明：</p>
+<p>但依據<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0080088&amp;flno=8" target="_blank" title="[另開新視窗]警察刑事紀錄證明核發條例第8條">警察刑事紀錄證明核發條例第8條</a>規定，申請人有以下情形之一者，警察機關依法<strong style="color:#b50000;">不予核發</strong>警察刑事紀錄證明：</p>
 
 <ul style="margin: 8px 0px;">
 	<li>受通緝尚未撤銷</li>
@@ -744,20 +706,20 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;">網路申請<br />
 			<strong style="color:#b50000;">(推薦)</strong></td>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">臨櫃領證</td>
-			<td style="text-align:left; padding:5px;">於<a href="https://eli.npa.gov.tw/E7WebO/index01.jsp" target="_blank" rel="noopener noreferrer" title="[另開新視窗]內政部警政署警察刑事紀錄證明申請網頁">內政部警政署警察刑事紀錄證明申請網頁</a>，選擇「<strong style="color:#b50000;">臨櫃領證</strong>」填寫申請資料並送出，待受理之警察局完成審核並製證後，約<strong style="color:#b50000;">2.5個工作天</strong>（須向司法或軍法機關查詢者，不在此限）後，可攜<a href="#active8" title="應備文件">應備文件</a>至選取的領件地點取件。<br />
+			<td style="text-align:left; padding:5px;">於<a href="https://eli.npa.gov.tw/E7WebO/index01.jsp" target="_blank" title="[另開新視窗]內政部警政署警察刑事紀錄證明申請網頁">內政部警政署警察刑事紀錄證明申請網頁</a>，選擇「<strong style="color:#b50000;">臨櫃領證</strong>」填寫申請資料並送出，待受理之警察局完成審核並製證後，約<strong style="color:#b50000;">2.5個工作天</strong>（須向司法或軍法機關查詢者，不在此限）後，可攜<a href="#active8" title="應備文件">應備文件</a>至選取的領件地點取件。<br />
 			👉完成申請後，無法變更為郵寄領證。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder; ">郵寄領證<br />
 			<strong style="color:#b50000;">(最方便)</strong></td>
-			<td style="text-align:left; padding:5px;">於<a href="https://eli.npa.gov.tw/E7WebO/index01.jsp" target="_blank" rel="noopener noreferrer" title="[另開新視窗]內政部警政署警察刑事紀錄證明申請網頁">內政部警政署警察刑事紀錄證明申請網頁</a>，選擇「<strong style="color:#b50000;">郵寄領證</strong>」，透過MyData平臺線上驗證身分，並填寫申請資料後，再以信用卡於線上繳費，經受理之警察局審核製證後，將以掛號郵寄送達指定之地址。<br />
+			<td style="text-align:left; padding:5px;">於<a href="https://eli.npa.gov.tw/E7WebO/index01.jsp" target="_blank" title="[另開新視窗]內政部警政署警察刑事紀錄證明申請網頁">內政部警政署警察刑事紀錄證明申請網頁</a>，選擇「<strong style="color:#b50000;">郵寄領證</strong>」，透過MyData平臺線上驗證身分，並填寫申請資料後，再以信用卡於線上繳費，經受理之警察局審核製證後，將以掛號郵寄送達指定之地址。<br />
 			👉僅限18歲以上之在臺有戶籍國民使用，且無法支援境外網路申請<strong style="color:#b50000;">（未成年、外國人及在境外的國人不適用）</strong>。<br />
 			👉郵寄領證需另加上郵寄時間（以<strong style="color:#b50000;">掛號</strong>寄出）。<br />
 			👉完成申請後無法變更為臨櫃領證自取。</td>
 		</tr>
 		<tr>
 			<td colspan="2" style="background-color:#F2F2F2; font-weight:bolder; ">臨櫃申請</td>
-			<td style="text-align:left; padding:5px;">備妥<a href="#active8" title="應備文件">應備文件</a>後，就近前往各縣市警察局外事科（金門縣及連江縣為行政科）臨櫃辦理，詳細服務時間、地點、電話及<strong style="color:#b50000;">核發作業時間</strong>，請參考<a href="https://eli.npa.gov.tw/E7WebO/download/%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3(%E5%B8%82)%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%8F%97%E7%90%86%E6%A0%B8%E7%99%BC%E8%AD%A6%E5%AF%9F%E5%88%91%E4%BA%8B%E7%B4%80%E9%8C%84%E8%AD%89%E6%98%8E%E6%9C%8D%E5%8B%99%E6%83%85%E5%BD%A2%E4%B8%80%E8%A6%BD%E8%A1%A8List%20of%20FAP%20Units.pdf" target="_blank" rel="noopener noreferrer" title="[另開新視窗]各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表">各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表</a>。</td>
+			<td style="text-align:left; padding:5px;">備妥<a href="#active8" title="應備文件">應備文件</a>後，就近前往各縣市警察局外事科（金門縣及連江縣為行政科）臨櫃辦理，詳細服務時間、地點、電話及<strong style="color:#b50000;">核發作業時間</strong>，請參考<a href="https://eli.npa.gov.tw/E7WebO/download/%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3(%E5%B8%82)%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%8F%97%E7%90%86%E6%A0%B8%E7%99%BC%E8%AD%A6%E5%AF%9F%E5%88%91%E4%BA%8B%E7%B4%80%E9%8C%84%E8%AD%89%E6%98%8E%E6%9C%8D%E5%8B%99%E6%83%85%E5%BD%A2%E4%B8%80%E8%A6%BD%E8%A1%A8List%20of%20FAP%20Units.pdf" target="_blank" title="[另開新視窗]各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表">各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表</a>。</td>
 		</tr>
 		<tr>
 			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;">郵寄申請</td>
@@ -778,7 +740,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p><strong style="color:#b50000;">※ 注意事項：</strong><br />
 1. 完成申請後，須於<strong style="color:#b50000;">發證日起30日內</strong>領取，逾期未領警察刑事紀錄證明則視為作廢，須重新申請。<br />
 2. 可委託他人至警察局臨櫃申請或領取，受委託人於申請或領件時，須同時出示雙方身分證件正本及委託書。<br />
-3. 申請完成後，可至<a href="https://eli.npa.gov.tw/E7WebO/E701A01Q_01.jsp" target="_blank" rel="noopener noreferrer" title="[另開新視窗]案件進度查詢">案件進度查詢</a>查看申辦進度及受理機關服務資訊。</p>
+3. 申請完成後，可至<a href="https://eli.npa.gov.tw/E7WebO/E701A01Q_01.jsp" target="_blank" title="[另開新視窗]案件進度查詢">案件進度查詢</a>查看申辦進度及受理機關服務資訊。</p>
 
 <p>&nbsp;</p>
 
@@ -791,7 +753,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div style="padding-left:25px;padding-top: 10px;">
 <div class="checkbox-item"><input data-gtm-form-interact-field-id="1" id="document1" type="checkbox" /> <label class="checkbox-label" for="document1"> <span class="label-text"><b>網路申請</b>：線上填寫申請資料即可，無須下載列印申請書。</span> </label></div>
 
-<div class="checkbox-item"><input data-gtm-form-interact-field-id="2" id="document2" type="checkbox" /> <label class="checkbox-label" for="document2"> <span class="label-text"><b>臨櫃/郵寄/傳真申請</b>：須<a href="https://eli.npa.gov.tw/E7WebO/download/f1614333032246.pdf" target="_blank" rel="noopener noreferrer" title="[另開新視窗]下載填寫紙本申請書">下載填寫紙本申請書</a>。</span> </label></div>
+<div class="checkbox-item"><input data-gtm-form-interact-field-id="2" id="document2" type="checkbox" /> <label class="checkbox-label" for="document2"> <span class="label-text"><b>臨櫃/郵寄/傳真申請</b>：須<a href="https://eli.npa.gov.tw/E7WebO/download/f1614333032246.pdf" target="_blank" title="[另開新視窗]下載填寫紙本申請書">下載填寫紙本申請書</a>。</span> </label></div>
 </div>
 
 <p style="line-height: 20px;">&nbsp;</p>
@@ -819,7 +781,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p><span style="color:#035a58;font-weight: bolder;">委託書</span></p>
 
-<p><b>委託他人代辦或領取時</b>，除前述身分證明文件外，需另檢附委託人簽名或蓋章的<a href="https://eli.npa.gov.tw/E7WebO/download/f1614332999234.pdf" target="_blank" rel="noopener noreferrer" title="[另開新視窗]委託書">委託書</a>、委託人及受委託人雙方身分證明文件正本（驗畢後歸還）。</p>
+<p><b>委託他人代辦或領取時</b>，除前述身分證明文件外，需另檢附委託人簽名或蓋章的<a href="https://eli.npa.gov.tw/E7WebO/download/f1614332999234.pdf" target="_blank" title="[另開新視窗]委託書">委託書</a>、委託人及受委託人雙方身分證明文件正本（驗畢後歸還）。</p>
 
 <p style="line-height: 20px;">&nbsp;</p>
 
@@ -848,12 +810,12 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 			<div style="margin-left:12pt;margin-top:18pt;margin-right:12pt;">💡<strong>申請警察刑事紀錄證明多久可以領取？</strong>
 
-			<p style="margin-left: 25px;">如無須向司法、軍法機關查詢之案件，約需2.5個工作日，惟各警察局因人力配置及業務量有不同之發證作業時間，可參考<a href="https://eli.npa.gov.tw/E7WebO/download/%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3(%E5%B8%82)%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%8F%97%E7%90%86%E6%A0%B8%E7%99%BC%E8%AD%A6%E5%AF%9F%E5%88%91%E4%BA%8B%E7%B4%80%E9%8C%84%E8%AD%89%E6%98%8E%E6%9C%8D%E5%8B%99%E6%83%85%E5%BD%A2%E4%B8%80%E8%A6%BD%E8%A1%A8List%20of%20FAP%20Units.pdf" target="_blank" rel="noopener noreferrer" title="[另開新視窗]各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表">各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表</a>。</p>
+			<p style="margin-left: 25px;">如無須向司法、軍法機關查詢之案件，約需2.5個工作日，惟各警察局因人力配置及業務量有不同之發證作業時間，可參考<a href="https://eli.npa.gov.tw/E7WebO/download/%E5%90%84%E7%9B%B4%E8%BD%84%E5%B8%82%E3%80%81%E7%B8%A3(%E5%B8%82)%E6%94%BF%E5%BA%9C%E8%AD%A6%E5%AF%9F%E5%B1%80%E5%8F%97%E7%90%86%E6%A0%B8%E7%99%BC%E8%AD%A6%E5%AF%9F%E5%88%91%E4%BA%8B%E7%B4%80%E9%8C%84%E8%AD%89%E6%98%8E%E6%9C%8D%E5%8B%99%E6%83%85%E5%BD%A2%E4%B8%80%E8%A6%BD%E8%A1%A8List%20of%20FAP%20Units.pdf" target="_blank" title="[另開新視窗]各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表">各直轄市、縣(市)政府警察局受理核發警察刑事紀錄證明服務情形一覽表</a>。</p>
 			</div>
 
 			<div style="margin-left:12pt;margin-top:18pt;margin-right:12pt;margin-bottom:18pt">💡<strong>網路申請警察刑事紀錄證明發現資料錯誤怎麼辦？</strong>
 
-			<p style="margin-left: 25px;">網路申請案件成立後將無法修改，請立即於<a href="https://eli.npa.gov.tw/E7WebO/E701A01Q_01.jsp" target="_blank" rel="noopener noreferrer" title="[另開新視窗]案件進度查詢">案件進度查詢</a>顯示結果中取消申請，再重新申請即可。但如果申請案件已由受理機關辦理中，就無法取消，請直接聯繫各受理機關。</p>
+			<p style="margin-left: 25px;">網路申請案件成立後將無法修改，請立即於<a href="https://eli.npa.gov.tw/E7WebO/E701A01Q_01.jsp" target="_blank" title="[另開新視窗]案件進度查詢">案件進度查詢</a>顯示結果中取消申請，再重新申請即可。但如果申請案件已由受理機關辦理中，就無法取消，請直接聯繫各受理機關。</p>
 			</div>
 			</td>
 		</tr>
@@ -863,17 +825,23 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.moi.gov.tw/News_Content.aspx?n=9&amp;sms=9009&amp;s=278806" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;良民證申領便民新措施再升級 「線上驗證MyData、網路刷卡寄到家」">&gt;&gt;良民證申領便民新措施再升級 「線上驗證MyData、網路刷卡寄到家」</a>【資料來源：內政部，民國112年4月】<br />
-<a href="https://eli.npa.gov.tw/E7WebO/download/%E6%93%8D%E4%BD%9C%E8%AA%AA%E6%98%8E-114.04.29.pdf" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;「網路申請郵寄領證」操作說明">&gt;&gt;「網路申請郵寄領證」操作說明</a>【資料來源：內政部警政署 警察刑事紀錄證明，民國114年4月】<br />
-<a href="https://eli.npa.gov.tw/E7WebO/index01.jsp" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;警察刑事紀錄證明申請網頁">&gt;&gt;警察刑事紀錄證明申請網頁</a>【資料來源：內政部警政署 警察刑事紀錄證明，民國114年8月】<br />
-<a href="https://eli.npa.gov.tw/E7WebO/qa.jsp" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;警察刑事紀錄證明（良民證） 問答集">&gt;&gt;警察刑事紀錄證明（良民證） 問答集</a>【資料來源：內政部警政署 警察刑事紀錄證明 ，民國114年8月】</p>
+<a href="https://www.moi.gov.tw/News_Content.aspx?n=9&amp;sms=9009&amp;s=278806" target="_blank" title="[另開新視窗]&gt;&gt;良民證申領便民新措施再升級 「線上驗證MyData、網路刷卡寄到家」">&gt;&gt;良民證申領便民新措施再升級 「線上驗證MyData、網路刷卡寄到家」</a>【資料來源：內政部，民國112年4月】<br />
+<a href="https://eli.npa.gov.tw/E7WebO/download/%E6%93%8D%E4%BD%9C%E8%AA%AA%E6%98%8E-114.04.29.pdf" target="_blank" title="[另開新視窗]&gt;&gt;「網路申請郵寄領證」操作說明">&gt;&gt;「網路申請郵寄領證」操作說明</a>【資料來源：內政部警政署 警察刑事紀錄證明，民國114年4月】<br />
+<a href="https://eli.npa.gov.tw/E7WebO/index01.jsp" target="_blank" title="[另開新視窗]&gt;&gt;警察刑事紀錄證明申請網頁">&gt;&gt;警察刑事紀錄證明申請網頁</a>【資料來源：內政部警政署 警察刑事紀錄證明，民國114年8月】<br />
+<a href="https://eli.npa.gov.tw/E7WebO/qa.jsp" target="_blank" title="[另開新視窗]&gt;&gt;警察刑事紀錄證明（良民證） 問答集">&gt;&gt;警察刑事紀錄證明（良民證） 問答集</a>【資料來源：內政部警政署 警察刑事紀錄證明 ，民國114年8月】</p>
 </span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>良民證,警察刑事紀錄證明,無犯罪紀錄證明<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taichung.gov.tw/3249866/post" data-sn="876767"
-                data-name="校園安全不容破口    盧市長籲檢討刑責 強化防護機制">校園安全不容破口    盧市長籲檢討刑責 強化防護機制<span>臺中市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=967E7C857E249B39" data-sn="894835"
+                data-name="收聽《勞咖會客室》 保護您的就業隱私">收聽《勞咖會客室》 保護您的就業隱私<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taitung.gov.tw/News_Content.aspx?n=13370&s=147760" data-sn="892185"
+                data-name="關山警分局7月起集中受理良民證申請 提升效率服務不打折">關山警分局7月起集中受理<span class="info_keywords">良民證</span>申請 提升效率服務不打折<span>臺東縣政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.moi.gov.tw/News_Content.aspx?n=4&s=339326" data-sn="892154"
+                data-name="「警察刑事紀錄證明」網路申請新制7月21日上路 統一採MyData驗證及線上繳費">「<span class="info_keywords">警察刑事紀錄證明</span>」網路申請新制7月21日上路 統一採MyData驗證及線上繳費<span>內政部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.moi.gov.tw/News_Content.aspx?n=4&s=339312" data-sn="892078"
+                data-name="內政部115年7月新實施的重大政策或措施">內政部115年7月新實施的重大政策或措施<span>內政部</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -894,7 +862,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -970,7 +938,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -982,7 +952,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1052,7 +1022,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1106,8 +1076,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />
