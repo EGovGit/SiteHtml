@@ -195,7 +195,7 @@ define(['getNode', 'backgroundFilter'], function (getNode, backgroundFilter) {
             }
         }
 
-        if ($set.auto) { //如果要輪播
+        if (false) { //如果要輪播
             var timer; //設定計時器
 
             function auto() { //設定自動撥放涵式
