@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=37&s=643710" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=37&amp;s=643710" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="9mJS2Pinw+DzYsRjDKPw7ea7FMYLpugq2PYiAoEeuVwLuqh0r0Tk2f9gHvlVLL6yqUUSuzrB7ce22qzjEBdE6AEAqxgNnMJCtj2v8LR8xbGZ4P3nIGDBIXwgXB5rQV5BTFyEl1EnuqqLbeiIQ62GPj0SiaxqLVwmWIqlECKlEs3egzXaasQNw7W2zIHeOv/NM0Zu94/9NuTe/FDNOyrw8g5k93p2bqFifl8HFv8G+3zzDoa1cTV72f9qOEF7dFDgkJ+Ms/vIfoVXcGZeGvRLIWINSOO5I1DKt8bUHqbbuFwX9LkEFSAkSLfPvqPDyZdiaOTGTphlKCpRqWZ84QvphpEXq7Q0Ao1+o7CSwyMKaUB9qE/bCxYNQCxQ/HbVBC5VJcpq0ZsBa7ibYVCbno00CxJI7T98KIa/xTBUmMde+tdrjRIEcFH5fdNArdhCYfrBCZnBs+8bqRuZpu4sRnf35KJvSRV3K+51jgCY9j3CeUz4gvO1hGT7i6mpr4/B4cY3QdHBSyc/s83wUJ93w7TwyqCPQVHwyRzb7vAI0uPpDQ4wRaJcWMUpOUsZAAlb4/CTZxjxgu3k0NJhUyXMZdiEX1ovRa3JGz2WWUo7nlECPWXniLDr8pIPvTkJ1uUtxAXbld66OeQX+UB2qVGIO46z7nX/dMF8jeJ2cEddGBJVG5O0R54UHfvzBM4Dtl75bdo3WS0YXdkI6XTJx9ivR/msToKoCFIu5RD5wtISR4pzmMfiR+05POkG6D+4YqKj5qTeJFUvmIADeb/hZbT7OR/Tj4RXqFRNQDXw9cbSTqXSjgngbsetOY/M667QezdKLcna68O/PtmLFiBOrNJXbTK0zMdmgRHXQAVQXEpNt52xHu1BNdTAzD704wN7PRdww20HLijV3QvE6umOS0/Js2NUD16mr1+8qTNzUAPxDA3yabCxiJUkNR0XyKWs16NgnYr35xUZX5dsWl6cYrgU10FGyTGBsIObCuT0FLU968FgwoX22NrASvPfJpzf9ZW/N2KB5pvbA0sTsEZlALkrKA7b5acYikf99aB2Hja7svugS4cWRy/5edWlFm39ommbDCOjKc0JDFLujvUDg+AIABRk2wCz5qJugSnPgjG3Ddhps++2PWU2HaAT7gJx7elDlv4kQUXsWU/XG1CMX1VfW0GAfKbkFl2ByRAmjTwwP0Q9I4UXFxnBYcNXcHG2uQfQ318hftr5STM3v6zKmet8JtAEquOXCLgGrzEbfHjXjDznEHVozp/6d4RyD8MVIgC0NMP3iiEQVWXWtnRQtHlC/lqWH8ErkkBW/Ccm0rbvjzC4rViVTIAZ43JwGYeqEnnaUGPDfSNQW+gaAvfc0goSm+h/b7CH9hdTxX8TP+qyWMFGvorkjzIicQ950lU4/xf9RW4IFS6S1KA+sZwjFIDtXKfoIMiqhcgz/Q9/SHzOr535oi164LO1w8a/9+r6ahGvZmuoUqDFctahtn1qvRAQO8bweHqV2IcOv4tPfcri80mTGyOdBpN9" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="odK+ul/Q/hCXXcswxWETD8c3Xr/Z6ylwlmX2san1KjwZyW/7w4FsA5Tf5pWMYdyomFVN16WgPcT7RDwCu9bRPHcrkX2xv/yqdjMRr9GyF894r1z7B/lMt6bse3t9Cd8lVLfQJQ76DCRJFukf8JTURO8cQFwx0YllgSk9VFyI1cADkIZ3iatxpVzas+mDokRSYD1ZmI4Ed9LQcgkovQTp9PwB2tvij5tGgauaa/JpBL7NouUfsaVhArz776/0BIegi6LaMp4gf6u7BhU1eGjuHl1x5P/KGnphZqEArpBxz4QknjJS+Krz0djUzmBoP3axW7/lkqwiASIIkApOWB6OMZq90OaIFuVvYoj9oL3dnGBs6/mbR7yLGMrtq4j+9UIUOUZMe2IR9kU88CmOu6A6Jcdg8TTQcyL1gXCF+IxoiBQ+pKFQiGs/QAs4Ox5ijKRR8YNCERgoIg1/+ZoIQM7o8cC5Av4Srhq4FrrG4LRj8RxPdnDs109zznpnfO4cdjDQZB7XhWgAapcEWullAf2hXiziCeIZfHgTkH0rPR3ZYvLQOUnp4Qeb9R1MXxfuHxINb3Aw0VmUanO4vkb4MpbkN4sCm61L4s6O9j3XS+ii04KiRsDHiLKvsae7/QtiOJys6a3lTWpw3bGdav7rFYwG9Slqbh16L6fGYZ//zOgKKhJN/ArDWiYT9LI1R8lHhp2HnFEmFWs1bjH+CHNkZSeBV2AOqZw1W+wQWUXtEIzbXmb/0KwEhStiSobPAM57T17wKICyvY5l5AgetXB2wWkzmH+kTMG3uw+72KZfKaFoM8ZV/CTee/x5SOhiRIXwFtGsBO30HixLRE1tSRHhrwnOx1zGCGG8wpDJJ7Y9jbwLsGUkGDmk8Ya6yKUkh1Lzj4HLQ1HJqOqsW7DplfVcPxi7WU2NlrrzYQhtW4VcitD0sXosZg9aonthFbQBDXRXe/dyPaw13H5tO4ynxvm3uqAnxvEMHwvjvQHbXvwv1VIH1BtBhIZcz8OhHW76S63lflZ4LqF6eavRJUw9rS3pf5i/oGiqRDHsTHxt35pDTF7ms1AG0HfGOnFMCm4Rhu4P9WJr4O+4cbqzpy5ZL+y35/WhJFaLgiaLGT7K3Xkxiqc8GocgbtO4nZZKDQO9QrhIg/MZure8I7XgZdxOfXWvFscafcyk6sMmVVinfSRk1GxI0/BdIaikWrhaH58bmAA2E6Pe5P9eHOqLwMMBiXokJO4hqggETnRhRpM0N48TnrJHiB+AE9OMBmMf0mS3RmZgl41Jgc+2OxgS9AilrNVZem6yWw/0vTHQc4MQmpOJS+gOplL9DWOSTpxvVYqw7yxVYLiydJQQuG0lUcM4vELYrGp1AaKUxIbwkq4cdiG+sDiuAj5vebvvcN6ffgOACwaOYAt+lM61BwUciyesv41JNZqP/EzoJVIhDuJpyPIBTXLYvhulLcVdZtVEej0Q2kTmx70Hf+v2qUxP3cxPrXF3khV2YHQFL70YzdxTt2I6UAipxB5ayOc+" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_a4fd9357d8584b5c8bf61ae84ff7441a">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_62ca2a2069324bddb4171290a3260f6f">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_a4fd9357d8584b5c8bf61ae84ff7441a" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_a4fd9357d8584b5c8bf61ae84ff7441a" id="txt_a4fd9357d8584b5c8bf61ae84ff7441a" type="search" placeholder="" title="搜尋">
+  <label for="txt_62ca2a2069324bddb4171290a3260f6f" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_62ca2a2069324bddb4171290a3260f6f" id="txt_62ca2a2069324bddb4171290a3260f6f" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_a4fd9357d8584b5c8bf61ae84ff7441a" data-search="btn_a4fd9357d8584b5c8bf61ae84ff7441a" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_62ca2a2069324bddb4171290a3260f6f" data-search="btn_62ca2a2069324bddb4171290a3260f6f" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_a4fd9357d8584b5c8bf61ae84ff7441a"]').on("keydown", function (event) {
+    $('[data-search="btn_62ca2a2069324bddb4171290a3260f6f"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_a4fd9357d8584b5c8bf61ae84ff7441a'));
+             doSearch($('#btn_62ca2a2069324bddb4171290a3260f6f'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_a4fd9357d8584b5c8bf61ae84ff7441a']", true);
+return_value = typeWriter("[data-search='btn_62ca2a2069324bddb4171290a3260f6f']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_a4fd9357d8584b5c8bf61ae84ff7441a']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_LgqTmiYntd" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_jtcxgJwyXd" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_xDPNUkKbtu" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_XhiCCmGCXg" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_opRijMADdB" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_8.html"   title="資訊發布"   target="_self"  >資訊發布</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_37.html"   aria-current="page" title="資訊快遞"   target="_self"  >資訊快遞</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>資訊快遞</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_edsadJqsiP" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_8.html"   title="資訊發布"   target="_self"  >資訊發布</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_37.html"   title="資訊快遞"   target="_self"  >資訊快遞</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>資訊快遞</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>出入境注意事項總整理，您不可不知的洗錢防制、藥品規定及入境菸酒攜帶限制！</h3></div></div></div></div>
         
         
@@ -576,7 +538,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>以下摘要整理民眾出境時常見問題及注意事項，如欲了解更多關於出境通關規定，可參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/3394" target="_blank" rel="noopener noreferrer">出境旅客</a>&gt;。</p>
+<p>以下摘要整理民眾出境時常見問題及注意事項，如欲了解更多關於出境通關規定，可參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/3394" target="_blank">出境旅客</a>&gt;。</p>
 
 <table align="center" border="1" cellpadding="1" cellspacing="1" class="table-small" style="width: 100%; text-align:center;">
 	<tbody>
@@ -587,23 +549,23 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">護照</td>
 			<td style="text-align:left; padding: 0 5px;">多數國家要求所持護照效期需達<strong style="color: #b50000;">6個月</strong>以上，請民眾出國前務必確認護照效期。<br />
-			👉 若需申辦護照，請至外交部領事事務局&lt;<a href="https://www.boca.gov.tw/np-1-1.html" target="_blank" rel="noopener noreferrer">護照</a>&gt;查詢申請流程、規費及照片規格等資訊。此外，民眾可透過&lt;<a href="https://ppass.boca.gov.tw/sp-ia-login-2.html" target="_blank" rel="noopener noreferrer">個人申辦護照網路填表及預約系統</a>&gt;申請護照，事先上網填寫資料、上傳數位照片，並預約送件地點及時間，以節省申辦時間。</td>
+			👉 若需申辦護照，請至外交部領事事務局&lt;<a href="https://www.boca.gov.tw/np-1-1.html" target="_blank">護照</a>&gt;查詢申請流程、規費及照片規格等資訊。此外，民眾可透過&lt;<a href="https://ppass.boca.gov.tw/sp-ia-login-2.html" target="_blank">個人申辦護照網路填表及預約系統</a>&gt;申請護照，事先上網填寫資料、上傳數位照片，並預約送件地點及時間，以節省申辦時間。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">簽證及入境須知</td>
-			<td style="text-align:left; padding: 0 5px;">如民眾欲查詢前往國家與地區之(免)簽證、新冠肺炎入境管制、免稅額或駐外館聯繫資訊等，請參閱外交部領事事務局&lt;<a href="https://www.boca.gov.tw/sp-foof-countrylp-01-1.html" target="_blank" rel="noopener noreferrer">簽證及入境須知</a>&gt;。</td>
+			<td style="text-align:left; padding: 0 5px;">如民眾欲查詢前往國家與地區之(免)簽證、新冠肺炎入境管制、免稅額或駐外館聯繫資訊等，請參閱外交部領事事務局&lt;<a href="https://www.boca.gov.tw/sp-foof-countrylp-01-1.html" target="_blank">簽證及入境須知</a>&gt;。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">可攜帶或託運上機之危險物品</td>
-			<td style="text-align:left; padding: 0 5px;">民眾欲了解攜帶或託運危險物品(如鋰電池、打火機或有劇烈活性之化學品)、其他有影響飛航安全之虞物品(如液狀或噴霧狀液體)之相關規定，請參閱交通部民用航空局&lt;<a href="https://www.caa.gov.tw/article.aspx?a=1273&amp;lang=1" target="_blank" rel="noopener noreferrer">旅客及組員可攜帶或託運上機之危險物品</a>&gt;及&lt;<a href="https://www.caa.gov.tw/article.aspx?a=1270&amp;lang=1" target="_blank" rel="noopener noreferrer">其他有影響飛航安全之虞不得攜帶進入航空器之物品名稱</a>&gt;。</td>
+			<td style="text-align:left; padding: 0 5px;">民眾欲了解攜帶或託運危險物品(如鋰電池、打火機或有劇烈活性之化學品)、其他有影響飛航安全之虞物品(如液狀或噴霧狀液體)之相關規定，請參閱交通部民用航空局&lt;<a href="https://www.caa.gov.tw/article.aspx?a=1273&amp;lang=1" target="_blank">旅客及組員可攜帶或託運上機之危險物品</a>&gt;及&lt;<a href="https://www.caa.gov.tw/article.aspx?a=1270&amp;lang=1" target="_blank">其他有影響飛航安全之虞不得攜帶進入航空器之物品名稱</a>&gt;。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">管制藥品</td>
-			<td style="text-align:left; padding: 0 5px;">須攜帶醫師處方箋或證明文件，並以治療本人疾病者為限，不得超過所開立之用量，且以<strong style="color: #b50000;">6個月</strong>用量為限。須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteContent.aspx?sid=196" target="_blank" rel="noopener noreferrer">病人隨身攜帶管制藥品入境出境中華民國聲明書</a>」，並於出入境時向海關申報。</td>
+			<td style="text-align:left; padding: 0 5px;">須攜帶醫師處方箋或證明文件，並以治療本人疾病者為限，不得超過所開立之用量，且以<strong style="color: #b50000;">6個月</strong>用量為限。須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteContent.aspx?sid=196" target="_blank">病人隨身攜帶管制藥品入境出境中華民國聲明書</a>」，並於出入境時向海關申報。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">洗錢防制規定</td>
-			<td style="text-align:left; padding: 0 5px;">如攜帶下述物品及貨幣超過限額，請填具「<a href="https://web.customs.gov.tw/taipei/singlehtml/2851?cntId=cus2_179096_2851" target="_blank" rel="noopener noreferrer">旅客或隨交通工具服務之人員攜帶現鈔、有價證券、黃金、物品等入出境登記表</a>」<strong style="color: #b50000;">或</strong>至關港貿單一窗口進行&lt;<a href="https://portal.sw.nat.gov.tw/APGW/MI50!goToMI50INDEX?request_locale=zh_TW" target="_blank" rel="noopener noreferrer">線上預先申報登記</a>&gt; &rarr; 至「海關出境服務櫃檯」申報查驗。
+			<td style="text-align:left; padding: 0 5px;">如攜帶下述物品及貨幣超過限額，請填具「<a href="https://web.customs.gov.tw/taipei/singlehtml/2851?cntId=cus2_179096_2851" target="_blank">旅客或隨交通工具服務之人員攜帶現鈔、有價證券、黃金、物品等入出境登記表</a>」<strong style="color: #b50000;">或</strong>至關港貿單一窗口進行&lt;<a href="https://portal.sw.nat.gov.tw/APGW/MI50!goToMI50INDEX?request_locale=zh_TW" target="_blank">線上預先申報登記</a>&gt; &rarr; 至「海關出境服務櫃檯」申報查驗。
 			<table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 100%; text-align:center;">
 				<tbody>
 					<tr style="background-color:#F2F2F2;">
@@ -632,7 +594,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 					<tr>
 						<td style="font-weight:bolder;">黃金</td>
 						<td>等值美金<strong style="color: #b50000;">2萬元</strong></td>
-						<td rowspan="2" style="text-align:left; padding: 0 5px;">總價值超過等值美金<strong style="color: #b50000;">2萬元</strong>者，於辦理報關手續前，須另向經濟部國際貿易署(電話：02-23510271)申請&lt;<a href="https://www.trade.gov.tw/ProcessList/ProcessList.aspx?nodeID=4366&amp;pid=3" target="_blank" rel="noopener noreferrer">輸出許可證</a>&gt;。</td>
+						<td rowspan="2" style="text-align:left; padding: 0 5px;">總價值超過等值美金<strong style="color: #b50000;">2萬元</strong>者，於辦理報關手續前，須另向經濟部國際貿易署(電話：02-23510271)申請&lt;<a href="https://www.trade.gov.tw/ProcessList/ProcessList.aspx?nodeID=4366&amp;pid=3" target="_blank">輸出許可證</a>&gt;。</td>
 					</tr>
 					<tr>
 						<td style="font-weight:bolder;">超越自用目的之鑽石/寶石/白金</td>
@@ -641,7 +603,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 				</tbody>
 			</table>
 
-			<p>👉 關於洗錢防制物品及海關出境服務櫃檯說明，請參閱財政部關務署&lt;<a href="https://web.customs.gov.tw/singlehtml/2881?cntId=cus1_128145_2881" target="_blank" rel="noopener noreferrer">常見問題</a>&gt;；線上預先申報操作方式，可參考財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank" rel="noopener noreferrer">旅客申報E指通</a>&gt;。</p>
+			<p>👉 關於洗錢防制物品及海關出境服務櫃檯說明，請參閱財政部關務署&lt;<a href="https://web.customs.gov.tw/singlehtml/2881?cntId=cus1_128145_2881" target="_blank">常見問題</a>&gt;；線上預先申報操作方式，可參考財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank">旅客申報E指通</a>&gt;。</p>
 			</td>
 		</tr>
 	</tbody>
@@ -655,17 +617,17 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>年滿<strong style="color: #b50000;">12歲</strong>國人及持居留證之外國人欲註冊自動通關，不需要事先至人工櫃檯辦理註冊，可於<strong style="color: #b50000;">入出國</strong>時直接在閘道內註冊，註冊後即可直接通關，提供旅客更便利的通關選擇，詳情請參閱&lt;<a href="https://www.immigration.gov.tw/5385/7445/7889/7892/50760/" target="_blank" rel="noopener noreferrer">本國國民申辦自動查驗通關及使用說明</a>&gt;、&lt;<a href="https://www.immigration.gov.tw/5385/7445/7889/7892/50764/cp_news" target="_blank" rel="noopener noreferrer">外來人口申辦自動查驗通關及使用說明</a>&gt;。</p>
+<p>年滿<strong style="color: #b50000;">12歲</strong>國人及持居留證之外國人欲註冊自動通關，不需要事先至人工櫃檯辦理註冊，可於<strong style="color: #b50000;">入出國</strong>時直接在閘道內註冊，註冊後即可直接通關，提供旅客更便利的通關選擇，詳情請參閱&lt;<a href="https://www.immigration.gov.tw/5385/7445/7889/7892/50760/" target="_blank">本國國民申辦自動查驗通關及使用說明</a>&gt;、&lt;<a href="https://www.immigration.gov.tw/5385/7445/7889/7892/50764/cp_news" target="_blank">外來人口申辦自動查驗通關及使用說明</a>&gt;。</p>
 
 <p>&nbsp;</p>
 
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.boca.gov.tw/np-1-1.html" target="_blank" rel="noopener noreferrer">&gt;&gt;護照</a>【資料來源：外交部領事事務局，民國113年11月】<br />
-<a href="https://www.boca.gov.tw/sp-foof-countrylp-01-1.html" target="_blank" rel="noopener noreferrer">&gt;&gt;簽證及入境須知</a>【資料來源：外交部領事事務局，民國113年11月】<br />
-<a href="https://web.customs.gov.tw/singlehtml/2881?cntId=cus1_128145_2881" target="_blank" rel="noopener noreferrer">&gt;&gt;洗錢防制專區&lt;常見問題&gt;</a>【資料來源：財政部關務署，民國113年11月】<br />
-<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank" rel="noopener noreferrer">&gt;&gt;旅客申報E指通</a>【資料來源：財政部關務署臺北關，民國113年11月】</p>
+<a href="https://www.boca.gov.tw/np-1-1.html" target="_blank">&gt;&gt;護照</a>【資料來源：外交部領事事務局，民國113年11月】<br />
+<a href="https://www.boca.gov.tw/sp-foof-countrylp-01-1.html" target="_blank">&gt;&gt;簽證及入境須知</a>【資料來源：外交部領事事務局，民國113年11月】<br />
+<a href="https://web.customs.gov.tw/singlehtml/2881?cntId=cus1_128145_2881" target="_blank">&gt;&gt;洗錢防制專區&lt;常見問題&gt;</a>【資料來源：財政部關務署，民國113年11月】<br />
+<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank">&gt;&gt;旅客申報E指通</a>【資料來源：財政部關務署臺北關，民國113年11月】</p>
 
 <p>&nbsp;</p>
 
@@ -682,7 +644,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>以下摘要整理民眾入境時常見問題及注意事項，如欲了解更多關於入境通關規定，可參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/3392" target="_blank" rel="noopener noreferrer">入境旅客</a>&gt;。</p>
+<p>以下摘要整理民眾入境時常見問題及注意事項，如欲了解更多關於入境通關規定，可參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/3392" target="_blank">入境旅客</a>&gt;。</p>
 
 <table align="center" border="1" cellpadding="1" cellspacing="1" class="table-small" style="width: 100%; text-align:center;">
 	<tbody>
@@ -703,7 +665,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 					<tr>
 						<td style="font-weight:bolder;">錠狀、膠囊狀食品</td>
 						<td style="text-align:left; padding: 0 5px;">每種最多<strong style="color: #b50000;">12</strong>瓶(盒、罐、包、袋)，合計不超過<strong style="color: #b50000;">36</strong>瓶(盒、罐、包、袋)。</td>
-						<td rowspan="3" style="text-align:left; padding: 0 5px;">須向衛福部食品藥物管理署申請「<a href="https://oap.fda.gov.tw/B101?type=2" target="_blank" rel="noopener noreferrer">個人自用藥品專案進口許可證</a>」，並於入境時向海關申報後可攜入。</td>
+						<td rowspan="3" style="text-align:left; padding: 0 5px;">須向衛福部食品藥物管理署申請「<a href="https://oap.fda.gov.tw/B101?type=2" target="_blank">個人自用藥品專案進口許可證</a>」，並於入境時向海關申報後可攜入。</td>
 					</tr>
 					<tr>
 						<td style="font-weight:bolder;">非處方西藥</td>
@@ -718,24 +680,24 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 					<tr>
 						<td style="font-weight:bolder;">管制處方西藥</td>
 						<td style="text-align:left; padding: 0 5px;">須攜帶醫師處方箋或證明文件，並以治療本人疾病者為限，不得超過所開立之用量，且以<strong style="color: #b50000;">6個月</strong>用量為限。</td>
-						<td style="text-align:left; padding: 0 5px;">須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteContent.aspx?sid=196" target="_blank" rel="noopener noreferrer">病人隨身攜帶管制藥品入境出境中華民國聲明書</a>」，並於出入境時向海關申報。</td>
+						<td style="text-align:left; padding: 0 5px;">須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteContent.aspx?sid=196" target="_blank">病人隨身攜帶管制藥品入境出境中華民國聲明書</a>」，並於出入境時向海關申報。</td>
 					</tr>
 					<tr>
 						<td style="font-weight:bolder;">中藥</td>
 						<td style="text-align:left; padding: 0 5px;">1. 中藥材：每種最多<strong style="color: #b50000;">1公斤</strong>，合計不超過<strong style="color: #b50000;">12種</strong>。<br />
 						2. 中藥製劑(藥品)：每種最多<strong style="color: #b50000;">12</strong>瓶(盒)，合計不超過<strong style="color: #b50000;">36</strong>瓶(盒)。<br />
 						※ 超量部分：須檢附醫療證明文件，且用量不超過<strong style="color: #b50000;">3個月</strong>。</td>
-						<td style="text-align:left; padding: 0 5px;">填具「<a href="https://www.mohw.gov.tw/cp-2653-9113-1.html" target="_blank" rel="noopener noreferrer">貨品輸入同意書申請書</a>」，向衛生福利部中醫藥司申請輸入許可證，並於入境時向海關申報後可攜入。</td>
+						<td style="text-align:left; padding: 0 5px;">填具「<a href="https://www.mohw.gov.tw/cp-2653-9113-1.html" target="_blank">貨品輸入同意書申請書</a>」，向衛生福利部中醫藥司申請輸入許可證，並於入境時向海關申報後可攜入。</td>
 					</tr>
 				</tbody>
 			</table>
 
-			<p>👉 更多詳情請參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1347" target="_blank" rel="noopener noreferrer">藥物及醫療器材</a>&gt;。</p>
+			<p>👉 更多詳情請參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1347" target="_blank">藥物及醫療器材</a>&gt;。</p>
 			</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">(隱形)眼鏡</td>
-			<td style="text-align:left; padding: 0 5px;">如民眾攜帶超過以下<strong style="color: #b50000;">自用</strong>限量，須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteListContent.aspx?sid=11636&amp;id=36398" target="_blank" rel="noopener noreferrer">醫療器材專供個人自用</a>」，並向海關申報。<br />
+			<td style="text-align:left; padding: 0 5px;">如民眾攜帶超過以下<strong style="color: #b50000;">自用</strong>限量，須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteListContent.aspx?sid=11636&amp;id=36398" target="_blank">醫療器材專供個人自用</a>」，並向海關申報。<br />
 			1. <b>日拋隱形眼鏡</b>：單一度數<strong style="color: #b50000;">60片</strong>，限<strong style="color: #b50000;">1</strong>種品牌、<strong style="color: #b50000;">2</strong>種度數。<br />
 			2. <b>矯正鏡片</b>：不超過<strong style="color: #b50000;">1</strong>副。</td>
 		</tr>
@@ -745,11 +707,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">醫用口罩</td>
-			<td style="text-align:left; padding: 0 5px;">超過<strong style="color: #b50000;">250</strong>片，須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteListContent.aspx?sid=11636&amp;id=36398" target="_blank" rel="noopener noreferrer">醫療器材許可證</a>」，並辦理輸入查驗。</td>
+			<td style="text-align:left; padding: 0 5px;">超過<strong style="color: #b50000;">250</strong>片，須向衛福部食品藥物管理署申請「<a href="https://www.fda.gov.tw/TC/siteListContent.aspx?sid=11636&amp;id=36398" target="_blank">醫療器材許可證</a>」，並辦理輸入查驗。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">洗錢防制規定</td>
-			<td style="text-align:left; padding: 0 5px;">如攜帶下述物品及貨幣超過限額， 請填具「<a href="https://web.customs.gov.tw/singlehtml/1206?cntId=cus1_182931_1206" target="_blank" rel="noopener noreferrer">中華民國海關申報單</a>」及「<a href="https://web.customs.gov.tw/taipei/singlehtml/2851?cntId=cus2_179096_2851" target="_blank" rel="noopener noreferrer">旅客或隨交通工具服務之人員攜帶現鈔、有價證券、黃金、物品等入出境登記表</a>」<strong style="color: #b50000;">或</strong>至關港貿單一窗口進行&lt;<a href="https://portal.sw.nat.gov.tw/APGW/MI50!goToMI50INDEX?request_locale=zh_TW" target="_blank" rel="noopener noreferrer">線上預先申報登記</a>&gt; &rarr; 經紅線檯向海關申報後通關。
+			<td style="text-align:left; padding: 0 5px;">如攜帶下述物品及貨幣超過限額， 請填具「<a href="https://web.customs.gov.tw/singlehtml/1206?cntId=cus1_182931_1206" target="_blank">中華民國海關申報單</a>」及「<a href="https://web.customs.gov.tw/taipei/singlehtml/2851?cntId=cus2_179096_2851" target="_blank">旅客或隨交通工具服務之人員攜帶現鈔、有價證券、黃金、物品等入出境登記表</a>」<strong style="color: #b50000;">或</strong>至關港貿單一窗口進行&lt;<a href="https://portal.sw.nat.gov.tw/APGW/MI50!goToMI50INDEX?request_locale=zh_TW" target="_blank">線上預先申報登記</a>&gt; &rarr; 經紅線檯向海關申報後通關。
 			<table align="center" border="1" cellpadding="1" cellspacing="1" style="width: 100%; text-align:center;">
 				<tbody>
 					<tr style="background-color:#F2F2F2;">
@@ -778,7 +740,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 					<tr>
 						<td style="font-weight:bolder;">黃金</td>
 						<td>等值美金<strong style="color: #b50000;">2萬元</strong></td>
-						<td rowspan="2" style="text-align:left; padding: 0 5px;">總價值超過等值美金<strong style="color: #b50000;">2萬元</strong>者，於辦理報關手續前，須另向經濟部國際貿易署(電話：02-23510271)申請「<a href="https://www.trade.gov.tw/ProcessList/ProcessList.aspx?nodeID=4366&amp;pid=3" target="_blank" rel="noopener noreferrer">輸入許可證</a>」。</td>
+						<td rowspan="2" style="text-align:left; padding: 0 5px;">總價值超過等值美金<strong style="color: #b50000;">2萬元</strong>者，於辦理報關手續前，須另向經濟部國際貿易署(電話：02-23510271)申請「<a href="https://www.trade.gov.tw/ProcessList/ProcessList.aspx?nodeID=4366&amp;pid=3" target="_blank">輸入許可證</a>」。</td>
 					</tr>
 					<tr>
 						<td style="font-weight:bolder;">超越自用目的之鑽石/寶石/白金</td>
@@ -787,7 +749,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 				</tbody>
 			</table>
 
-			<p>👉 關於入境洗錢防制及申報地點說明，請參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1345" target="_blank" rel="noopener noreferrer">入境旅客-洗錢防制</a>&gt;；線上預先申報操作方式，可參考財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank" rel="noopener noreferrer">旅客申報E指通</a>&gt;。</p>
+			<p>👉 關於入境洗錢防制及申報地點說明，請參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1345" target="_blank">入境旅客-洗錢防制</a>&gt;；線上預先申報操作方式，可參考財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank">旅客申報E指通</a>&gt;。</p>
 			</td>
 		</tr>
 	</tbody>
@@ -801,9 +763,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>每位年滿<strong style="color: #b50000;">20歲</strong>(<u>自民國<strong style="color: #b50000;">112年1月1日</strong>起，入境旅客攜帶<strong style="color: #b50000;">酒</strong>之年齡限制調整為<strong style="color: #b50000;">18歲</strong>，惟攜帶菸的年齡仍維持20歲</u>)之旅客，可攜帶菸酒產品數量規定如下。以下數量包含旅客<strong style="color: #b50000;">隨身及不隨身行李內</strong>之所有菸酒產品(包含免稅商店購得、機上購得、國外購得、自國內攜出再攜回之菸酒產品等)，更多詳情請參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1344" target="_blank" rel="noopener noreferrer">菸酒</a>&gt;。<br />
-※ 自民國<strong style="color:#b50000;">114年1月25日</strong>起，入境旅客攜帶自用酒類免稅上限至<strong style="color:#b50000;">1.5</strong>公升，詳情請見&lt;<a href="https://web.customs.gov.tw/singlehtml/2222?cntId=b8f47b6346924fc3a5a85b89a6d3434d" target="_blank" rel="noopener noreferrer">財政部提高入境旅客攜帶自用酒類免稅上限至1.5公升</a>&gt;。<br />
-※ 自民國<strong style="color:#b50000;">115年2月1日</strong>起，入境旅客隨身攜帶菸類，新增經<strong>衛生福利部核定通過健康風險評估審查</strong>之指定菸品<strong style="color:#b50000;">(加熱菸)</strong>入境，須留意在國外購買之加熱菸(未經衛生福利部核定通過健康風險評估審查之指定菸品)，仍屬旅客不得攜帶入境之菸品，違者將處以罰鍰並沒入該菸品，詳情請見&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3130?cntId=cus2_156932_3130" target="_blank" rel="noopener noreferrer">入境旅客攜帶隨身及不隨身行李物品，如已超過免稅範圍或數量應如何處理？</a>&gt;。</p>
+<p>每位年滿<strong style="color: #b50000;">20歲</strong>(<u>自民國<strong style="color: #b50000;">112年1月1日</strong>起，入境旅客攜帶<strong style="color: #b50000;">酒</strong>之年齡限制調整為<strong style="color: #b50000;">18歲</strong>，惟攜帶菸的年齡仍維持20歲</u>)之旅客，可攜帶菸酒產品數量規定如下。以下數量包含旅客<strong style="color: #b50000;">隨身及不隨身行李內</strong>之所有菸酒產品(包含免稅商店購得、機上購得、國外購得、自國內攜出再攜回之菸酒產品等)，更多詳情請參閱財政部關務署臺北關&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3392?cntId=cus2_3392_3392_1344" target="_blank">菸酒</a>&gt;。<br />
+※ 自民國<strong style="color:#b50000;">114年1月25日</strong>起，入境旅客攜帶自用酒類免稅上限至<strong style="color:#b50000;">1.5</strong>公升，詳情請見&lt;<a href="https://web.customs.gov.tw/singlehtml/2222?cntId=b8f47b6346924fc3a5a85b89a6d3434d" target="_blank">財政部提高入境旅客攜帶自用酒類免稅上限至1.5公升</a>&gt;。<br />
+※ 自民國<strong style="color:#b50000;">115年2月1日</strong>起，入境旅客隨身攜帶菸類，新增經<strong>衛生福利部核定通過健康風險評估審查</strong>之指定菸品<strong style="color:#b50000;">(加熱菸)</strong>入境，須留意在國外購買之加熱菸(未經衛生福利部核定通過健康風險評估審查之指定菸品)，仍屬旅客不得攜帶入境之菸品，違者將處以罰鍰並沒入該菸品，詳情請見&lt;<a href="https://web.customs.gov.tw/taipei/singlehtml/3130?cntId=cus2_156932_3130" target="_blank">入境旅客攜帶隨身及不隨身行李物品，如已超過免稅範圍或數量應如何處理？</a>&gt;。</p>
 
 <table align="center" border="1" cellpadding="1" cellspacing="1" class="table-small" style="width: 100%; text-align:center;">
 	<tbody>
@@ -834,7 +796,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			3. <b>菸絲</b><strong style="color: #b50000;">5</strong>磅，或<br />
 			4.&nbsp;經衛生福利部<strong style="color: #b50000;">核定通過</strong><strong>健康風險評估</strong>審查之指定菸品(<strong>加熱菸</strong>)<strong style="color: #b50000;">5條</strong>(<strong style="color: #b50000;">1,000</strong>支)</td>
 			<td style="text-align:left; padding: 0 5px;">1. 未超過限量規定：扣除免稅數量後，徵稅放行。<br />
-			2. 超過限量規定：應檢附菸酒進口業許可執照，依&lt;<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0350001&amp;flno=17" target="_blank" rel="noopener noreferrer">關稅法第17條規定</a>&gt;填具進口報單，以廠商名義辦理報關進口，<strong style="color: #b50000;">或</strong>就超額部分辦理退運。</td>
+			2. 超過限量規定：應檢附菸酒進口業許可執照，依&lt;<a href="https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=G0350001&amp;flno=17" target="_blank">關稅法第17條規定</a>&gt;填具進口報單，以廠商名義辦理報關進口，<strong style="color: #b50000;">或</strong>就超額部分辦理退運。</td>
 		</tr>
 	</tbody>
 </table>
@@ -893,7 +855,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>民眾入境時若有攜帶動植物或其產品，請於行前事先向農業部動植物防疫檢疫署洽詢相關檢疫規定，並於入境時向海關或農業部動植物防疫檢疫署申請檢疫，以免受罰。您也可以參閱&lt;<a href="https://www.aphia.gov.tw/ws.php?id=19967" target="_blank" rel="noopener noreferrer">動物及動物產品檢疫</a>&gt;及&lt;<a href="https://www.aphia.gov.tw/ws.php?id=19968" target="_blank" rel="noopener noreferrer">植物及植物產品檢疫</a>&gt;，以及以下幾個常見的檢疫規定問題及違規案例圖卡。</p>
+<p>民眾入境時若有攜帶動植物或其產品，請於行前事先向農業部動植物防疫檢疫署洽詢相關檢疫規定，並於入境時向海關或農業部動植物防疫檢疫署申請檢疫，以免受罰。您也可以參閱&lt;<a href="https://www.aphia.gov.tw/ws.php?id=19967" target="_blank">動物及動物產品檢疫</a>&gt;及&lt;<a href="https://www.aphia.gov.tw/ws.php?id=19968" target="_blank">植物及植物產品檢疫</a>&gt;，以及以下幾個常見的檢疫規定問題及違規案例圖卡。</p>
 
 <div class="container" style="background-color: black; text-align:center">
 <div class="mySlides"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/643710/4c40c651-c559-4ae2-b7d1-0cb23bc9f94b.jpg" style="width:80%" /></div>
@@ -920,14 +882,14 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </div>
 </div>
 
-<p style="clear:both; text-align:center; text-indent:10%">圖片出處：<a href="https://web.customs.gov.tw/taipei/singlehtml/3130?cntId=cus2_178017_3130" target="_blank" rel="noopener noreferrer">財政部關務署臺北關&lt;農畜水產品及食品-常見問答&gt;</a></p>
+<p style="clear:both; text-align:center; text-indent:10%">圖片出處：<a href="https://web.customs.gov.tw/taipei/singlehtml/3130?cntId=cus2_178017_3130" target="_blank">財政部關務署臺北關&lt;農畜水產品及食品-常見問答&gt;</a></p>
 
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://web.customs.gov.tw/taipei/multiplehtml/3392" target="_blank" rel="noopener noreferrer">&gt;&gt;旅客通關&lt;入境旅客&gt;</a>【資料來源：財政部關務署臺北關，民國115年2月】<br />
-<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank" rel="noopener noreferrer">&gt;&gt;旅客申報E指通</a>【資料來源：財政部關務署臺北關，民國113年11月】<br />
-<a href="https://www.aphia.gov.tw/ws.php?id=4502" target="_blank" rel="noopener noreferrer">&gt;&gt;旅客專區&lt;簡介&gt;</a>【資料來源：農業部動植物防疫檢疫署，民國113年11月】</p>
+<a href="https://web.customs.gov.tw/taipei/multiplehtml/3392" target="_blank">&gt;&gt;旅客通關&lt;入境旅客&gt;</a>【資料來源：財政部關務署臺北關，民國115年2月】<br />
+<a href="https://web.customs.gov.tw/taipei/multiplehtml/ae4fded073c24a2bb4d6f420276ab2c1" target="_blank">&gt;&gt;旅客申報E指通</a>【資料來源：財政部關務署臺北關，民國113年11月】<br />
+<a href="https://www.aphia.gov.tw/ws.php?id=4502" target="_blank">&gt;&gt;旅客專區&lt;簡介&gt;</a>【資料來源：農業部動植物防疫檢疫署，民國113年11月】</p>
 
 <p>&nbsp;</p>
 
@@ -941,8 +903,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>以下統整其他與海外旅遊或工作相關之資訊：</p>
 
 <ul>
-	<li>外交部&lt;<a class="link" href="https://www.mofa.gov.tw/Theme.aspx?n=3915&amp;sms=69&amp;s=136" target="_blank" rel="noopener noreferrer" title="[另開新視窗]海外求職陷阱宣導專區">海外求職陷阱宣導專區</a>&gt;</li>
-	<li>衛生福利部疾病管制署&lt;<a class="link" href="https://www.cdc.gov.tw/CountryEpidLevel/Index/NlUwZUNvckRWQ09CbDJkRVFjaExjUT09" target="_blank" rel="noopener noreferrer" title="[另開新視窗]國際旅遊疫情建議等級">國際旅遊疫情建議等級</a>&gt;</li>
+	<li>外交部&lt;<a class="link" href="https://www.mofa.gov.tw/Theme.aspx?n=3915&amp;sms=69&amp;s=136" target="_blank" title="[另開新視窗]海外求職陷阱宣導專區">海外求職陷阱宣導專區</a>&gt;</li>
+	<li>衛生福利部疾病管制署&lt;<a class="link" href="https://www.cdc.gov.tw/CountryEpidLevel/Index/NlUwZUNvckRWQ09CbDJkRVFjaExjUT09" target="_blank" title="[另開新視窗]國際旅遊疫情建議等級">國際旅遊疫情建議等級</a>&gt;</li>
 </ul>
 <script>
                  var slideIndex = 1;
@@ -975,19 +937,19 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                  }
                  </script></span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>國境解封,出境,入境,出入境,出國登錄,簽證,託運物品,自動查驗通關,通關,報關,入境檢疫<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taichung.gov.tw/3301097/post" data-sn="890087"
-                data-name="點亮台中「永續與智慧旅遊」新魅力 中市府攜手全球城市旅遊發展組織及韓國主流媒體深度踩線">點亮台中「永續與智慧旅遊」新魅力 中市府攜手全球城市旅遊發展組織及韓國主流媒體深度踩線<span>臺中市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://web.customs.gov.tw/singlehtml/2222?cntId=742909258" data-sn="889916"
-                data-name="籲請報關業者落實個資保護 守護商譽與客戶隱私">籲請<span class="info_keywords">報關</span>業者落實個資保護 守護商譽與客戶隱私<span>財政部關務署</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=BDFD3890B35D2C4C" data-sn="889968"
-                data-name="告別頂樓漏水！北市7樓以下平屋頂得免申請建造執照加蓋斜屋頂。">告別頂樓漏水！北市7樓以下平屋頂得免申請建造執照加蓋斜屋頂。<span>臺北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=e0c5d8d265c7af2b5dabeecc45e2fa04" data-sn="889958"
-                data-name="全國首創防詐金三角護您家　新北推宣導影片強化不動產防詐意識">全國首創防詐金三角護您家　新北推宣導影片強化不動產防詐意識<span>新北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taiwan.net.tw/m1.aspx?sNo=0044454" data-sn="890132"
-                data-name="日本護照規費最高調降7,000日圓 觀光署赴日深化JATA及阪急合作，全面促進日客來臺">日本護照規費最高調降7,000日圓 觀光署赴日深化JATA及阪急合作，全面促進日客來臺<span>交通部觀光署</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.mofa.gov.tw/News_Content.aspx?n=96&s=122673" data-sn="896995"
+                data-name="外交部將自今年8月1日起停止現行對柬埔寨國民適用之入境簽證便捷措施">外交部將自今年8月1日起停止現行對柬埔寨國民適用之<span class="info_keywords">入境</span><span class="info_keywords">簽證</span>便捷措施<span>外交部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=168481&ctNode=650&mp=999" data-sn="897265"
+                data-name="「法廉一體 清淨海巡」第一二岸巡隊辦理法治教育講習，深化同仁廉能意識">「法廉一體 清淨海巡」第一二岸巡隊辦理法治教育講習，深化同仁廉能意識<span>海洋委員會海巡署</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.mofa.gov.tw/News_Content.aspx?n=96&s=122670" data-sn="896996"
+                data-name="自今（2026）年8月1日起，延長試辦泰國、汶萊、菲律賓等「新南向政策」目標國國民來台免簽證措施，至明（2027）年7月31日止">自今（2026）年8月1日起，延長試辦泰國、汶萊、菲律賓等「新南向政策」目標國國民來台免<span class="info_keywords">簽證</span>措施，至明（2027）年7月31日止<span>外交部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8825666" data-sn="896780"
+                data-name="臺南推動屋頂綠電 配合中央修法加強結構安全 讓民眾設置更具保障">臺南推動屋頂綠電 配合中央修法加強結構安全 讓民眾設置更具保障<span>臺南市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="http://www.cga.gov.tw/GipOpen/wSite/ct?xItem=168446&ctNode=650&mp=999" data-sn="896805"
+                data-name="海巡嚴守邊境防疫最前線 金門岸際發現海漂豬非洲豬瘟陽性案例 海巡署全面啟動防堵應變機制">海巡嚴守邊境防疫最前線 金門岸際發現海漂豬非洲豬瘟陽性案例 海巡署全面啟動防堵應變機制<span>海洋委員會海巡署</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -1008,7 +970,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -1084,7 +1046,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -1096,7 +1060,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1166,7 +1130,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1220,8 +1184,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

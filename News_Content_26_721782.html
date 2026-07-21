@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=721782" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=721782" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="+riHAGHYkuXU+FVq5USeNK9jWDx68usC/7lsjKAZFnRgHsvfrfH7oyrdMlE9zM7uRvdJyaX/xczNq5F3fnOY8LWOCmBnTeRyvWW2Rn8pSEEMUw/rtuJKlB5pk1gYFzQKo9AoTo4CwLScXU3HPgcaBaUpnBUKeFaSJyijjma8uv+VQqB+API6v9psraPAmfQbfu4G4zOTtoda6GoTeK7lUlDuNYrGPDkOPxXmpr/ZcSLMx5Zb7kAqSKQk7WzqqBeFht3AY7pMyqcEMIGNPDSDSx1EyaREO/B48a5hlQT0V3zRRZieMytaVmIxr65IBSVA1pDw2zRDnPcGSO2Em8MCu09SeF0CKYBgOh3LQMN7ntLslvR7rxZ6kWGCzGOrfpf20vKhlRjJJndpNvtagdp4TQUkAQd+KyvpcmKhWKOBeCRZGZGF+Y0eFq3jFQrDgncxNh/i7CHCnVlMjXyuEHmuTAlT/j2VR6wL2vMXc/tN9VSO0mBWN/Vv64Fpw3Wet4SVLzGNeXmxz9x8knWuhhfzQAZJJ/h0ml/xXUKu5nGl/advHntWG9N0mjzJerPtc8MA+cVDMop5jdczxcTg+DEzLFpvWthIz4FfLQ4BAx50NkuDUcbkd4ZT5+sIF9rVh6P0p2v/C9kmaHsJjTyjtcOLGLoX9O4cxdukScg+t9yq3V2zkVdIdHSayGHgFZpkcvsccTSfqMz7KuN/QcnVfImXWzUH3i27C5NAAjNVaalmvvzmIEfU+Ij3BjwysFw4TQZFGyvsIhe2XV4qA5KyvBM/cdXJbFHGCtG5AK7lF68L7xWaAxgN63YJTwcuTycNNwyvwgI3KwBXxuznAf4M1CIi4inY8/vIfXJh+J8xPFp5ppkolk3lU7rv3IIVpw17piwA+tK0nYLUzZMV4KMANkuoYfp6n+wqrXyrCLKZ3oYeuAwdfjTO3tA5wMjrnP330f4tz05oh7Dc7jICeXiuvY9vNWKwUloFRaDenm2Xfpzom1IpUPKHP+NTilU7tV2wHWK1P4bCL8CWLHvwHV2y6en9Y/XtrhblWpx5SgJPdPNcIWdcjmba9rKMn+8ND/tCfE6lCFUy7hbBn2RSYc26512WNtIp74YQCTtSOzmBH5/RY33zc866/nrC+CFB2VSsrntBYqmfmH3Miz2+pL/wEIisKl/IBpQx1tSDAQsDNnWfBwkGdZ1N2RApm3n24jqU5JD0rHrFyfcHKb+cAWikK09QShw476+c0gA4nJlQh48amC4DOsT29LHYtPh/rLCwHCfW5dtzNaTtpIHM34Xj/zAAdoIB298ibc8FO3hr2YHj2g4nD/7oqxmf4h7CbKMrjI0zoFgpAPJ8O/IILjoTa2RkWFYkKBmLPmCoARt3LFKVqpztfGH/RniDmRi9rCojhULOVWESwBrVGOuq84eSxyOjWfbERM22Gk18XuKeFVTKgVVB+6HtuLCUJlrpA/AHZ/Srgvjj4LSyqY38N2ocxBvhr5DDJhLJUwVv63mIwtIXAqgynKT1" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="PcGPO7/6H5oaX6YI7yBVngiFsjnPOMIdRb+Dwn4twPYy/ATGGgusPMGkZdZ/YN3s1EoxAIqeOPr44FRZwTI2XVWaHCq+/VPtp/t0DgZAiXD6fkpr4MFw0sEBhb4EUiZEbLc3jG8i6eixgGBzytw3e5t8Jgbhai/4CHIdQzzJA3ZFoai3FLY1QysfM1VVft6WI7qt/KAOiqakG9/Z26D8IDIVClA3t2qsHR+21qUiY+rMAq/paiZTMRmqeBxo72rUBrEgfWW0hp05IAmDuFgEgEcJ2OCsc07XFUGzbCywJFnMErksX8VK7Aj6hjeDDUI8zczHaaBl0oCChe/8Vy/SgIqA0GuHOI/M2Cxv0zaQVgFInDa1U1Oj/V0T9OK7VgzTfIEDIYm4SsgqtHq23CFtdN4sQfJ8gK9F/n1lkki50xemuJHVHIgcDsiDCBeqXQW2xokAagWd43KvEgjzzkj2xifvsDb5QpRJgDNO8QxnE/fxxD0wnhe2pXWSYvotTk8F+WcOax/BMxbE/pu1FPsB/RW7yCFIoraLFNFaHGl7AcH8RPwZ4+d2bA6TmfSY2HYG4ED7vVPIAzujkxOb4lQW7DUU8UV/vh2yZDGjtbA1hLC9amccvQSO9d+sA0OsugMVsXYjN15OMWHoD2AolaIHsbrFUnVermPMnyj46ZI2XpjtNo21swvAbDE7WnCtaoqF4ZFdVGdI5nT11IPE+g3T8/zrFGq2gk5w7jzN1druo1+9Z7xgtl58pllRKSb74qQsl7wiJu80czQ1eGAhe3J6O7A7gBMa3EsJmdy89WoJp44Q9x/8DmLhAheNsLnkqXoVkcfe/QPPOqQvktWT5owsguu4gtzdZW4sUTy21MRa/CJgQ6eNthtIdPzWvy8S5lHW0zepCfXDrKJzWSt1vrltvw5oMRWOp6grvrY5ikV8fBddg7M8tQc+x8cQn1T6M87Gc7soiLSfrmUPhWdDd77RrTDQuXjkGL3xFnfQwD52O8CVgVRZhoYPCKWrfVNV+VHUu2J7OPQE29xRcu/vhm6QONBVwFE9Y31vtmZ4K3bnWERuU8XGRmT/FofzuLeP8kSMo503FdqSTeUk4PuMQBkdnQoslcMjbDJHJ0Gf0aa5AQDPEZ+ZgAfCuzy+xpxlhJxJXGWYmrB9msGf+eDgeYFdKqz+XS/JbQZx/xZz8GDciXajaR5qi8PZjSCO+jirVWFzgUoJD1/fVZgKzK2ACFKtR5ZqMuHHzZ8XKPxjIe8dkCucwDgqxeFaBpKGk22uidDDsqKpdnqUvRa+Yuk0bUsyBaNNJKKtHRQgY40kmlkt6Hfx2HfZXOivBHPC9So1ZbSsaddFr2Y440hvQdgcLFckee0UZd0J8vSsJ6ngZPWqrZ5m1lfLdmVFsqzKy3Lze2ylc/Cdn5/Wdz4JncJqGKODYekCjBi8uCr+eia+69Bw1cNYtqKfdqIYUSckPadr+44XROk5yV2/ZLivuyTJ3gnD0F/0Qo8dszKZd8K+rpU3JHQ+Rc/T" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_cc838cbe773e4a2aa966e74405a0ee71">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_b9a8522ed93341c8bdeb238767f28cd1">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_cc838cbe773e4a2aa966e74405a0ee71" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_cc838cbe773e4a2aa966e74405a0ee71" id="txt_cc838cbe773e4a2aa966e74405a0ee71" type="search" placeholder="" title="搜尋">
+  <label for="txt_b9a8522ed93341c8bdeb238767f28cd1" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_b9a8522ed93341c8bdeb238767f28cd1" id="txt_b9a8522ed93341c8bdeb238767f28cd1" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_cc838cbe773e4a2aa966e74405a0ee71" data-search="btn_cc838cbe773e4a2aa966e74405a0ee71" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_b9a8522ed93341c8bdeb238767f28cd1" data-search="btn_b9a8522ed93341c8bdeb238767f28cd1" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_cc838cbe773e4a2aa966e74405a0ee71"]').on("keydown", function (event) {
+    $('[data-search="btn_b9a8522ed93341c8bdeb238767f28cd1"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_cc838cbe773e4a2aa966e74405a0ee71'));
+             doSearch($('#btn_b9a8522ed93341c8bdeb238767f28cd1'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_cc838cbe773e4a2aa966e74405a0ee71']", true);
+return_value = typeWriter("[data-search='btn_b9a8522ed93341c8bdeb238767f28cd1']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_cc838cbe773e4a2aa966e74405a0ee71']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_HgRmGIFEnR" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_TSkwAIViCJ" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_vpBgUtXAyf" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_aRVwikYDBi" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_TTiTonqojC" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_PXNYCyfpuq" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>初次報考汽機車駕照流程說明、汽機車監理服務總整理！</h3></div></div></div></div>
         
         
@@ -544,7 +506,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>以下為普通輕型機車、普通重型機車考照流程。若您在<b>普通重型機車</b>駕照考試前，想透過駕訓班接受機車訓練，可至監理服務網查詢&lt;<a href="https://www.mvdis.gov.tw/m3-emv-mk3/driver/webDriverSchool#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">駕訓班列表</a>&gt;，訓練費（不含規費）約為新臺幣（以下同）<strong style="color:#b50000;">2,800元 ~ 3,700元</strong>，實際金額請依各駕訓班規定為準。</p>
+<p>以下為普通輕型機車、普通重型機車考照流程。若您在<b>普通重型機車</b>駕照考試前，想透過駕訓班接受機車訓練，可至監理服務網查詢&lt;<a href="https://www.mvdis.gov.tw/m3-emv-mk3/driver/webDriverSchool#gsc.tab=0" rel="noopener noreferrer" target="_blank">駕訓班列表</a>&gt;，訓練費（不含規費）約為新臺幣（以下同）<strong style="color:#b50000;">2,800元 ~ 3,700元</strong>，實際金額請依各駕訓班規定為準。</p>
 
 <p>&nbsp;</p>
 
@@ -553,12 +515,12 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li><span><strong>1</strong></span>
 
 	<p><span style="color:#035a58;font-weight:bolder;">至醫院體檢</span><br />
-	前往「<a href="https://openinfo.mohw.gov.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">衛生福利部評鑑合格醫院</a>」或「<a href="https://www.mvdis.gov.tw/m3-emv-hca/agency/query?method=pagination#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">衛生所或公路監理機關指定之體檢代辦所</a>」進行體格檢查，並獲得體檢合格之機車駕駛執照登記書。費用請依各醫院規定為準。</p>
+	前往「<a href="https://openinfo.mohw.gov.tw/" rel="noopener noreferrer" target="_blank">衛生福利部評鑑合格醫院</a>」或「<a href="https://www.mvdis.gov.tw/m3-emv-hca/agency/query?method=pagination#gsc.tab=0" rel="noopener noreferrer" target="_blank">衛生所或公路監理機關指定之體檢代辦所</a>」進行體格檢查，並獲得體檢合格之機車駕駛執照登記書。費用請依各醫院規定為準。</p>
 	</li>
 	<li><span><strong>2</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">線上預約</span><br />
-	請至監理服務網「<a href="https://www.mvdis.gov.tw/m3-emv-trn/exm/locations#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">考照預約報名</a>」&rarr; 選取報考照類「<b>普通重型機</b>或<b>普通輕型機車（50CC以下）</b>」、預計考試日期及地點 &rarr; 進入「<a href="https://hpt.thb.gov.tw/reserve/index" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">機車危險感知教育平臺</a>」體驗影片並正確答題 &rarr; 選取場次並填寫報考人資料 &rarr; 完成線上報名。<br />
-	👉 或下載「監理服務APP &ndash; <a href="https://apps.apple.com/tw/app/%E7%9B%A3%E7%90%86%E6%9C%8D%E5%8B%99/id933737788" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">iOS</a> / <a href="https://play.google.com/store/apps/details?id=gov.mvdis.m3.emv.app.phone&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">Android</a>」，進行考照報名。</p>
+	請至監理服務網「<a href="https://www.mvdis.gov.tw/m3-emv-trn/exm/locations#gsc.tab=0" rel="noopener noreferrer" target="_blank">考照預約報名</a>」&rarr; 選取報考照類「<b>普通重型機</b>或<b>普通輕型機車（50CC以下）</b>」、預計考試日期及地點 &rarr; 進入「<a href="https://hpt.thb.gov.tw/reserve/index" rel="noopener noreferrer" target="_blank">機車危險感知教育平臺</a>」體驗影片並正確答題 &rarr; 選取場次並填寫報考人資料 &rarr; 完成線上報名。<br />
+	👉 或下載「監理服務APP &ndash; <a href="https://apps.apple.com/tw/app/%E7%9B%A3%E7%90%86%E6%9C%8D%E5%8B%99/id933737788" rel="noopener noreferrer" target="_blank">iOS</a> / <a href="https://play.google.com/store/apps/details?id=gov.mvdis.m3.emv.app.phone&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank">Android</a>」，進行考照報名。</p>
 	</li>
 	<li><span><strong>3</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">考照報到</span><br />
@@ -569,7 +531,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 	<div class="checkbox-item"><input id="document2" title="1吋彩色照片3張" type="checkbox" /> <label for="document2"> <span class="label-text">1吋彩色照片3張</span> </label></div>
 
-	<div class="checkbox-item"><input id="document3" title="國民身分證或其他有效駕照" type="checkbox" /> <label for="document3"> <span class="label-text"> 國民身分證或其他有效駕照（<b>外國人</b>、<b>大陸地區人民</b>、<b>臺灣地區無戶籍之國民</b>、 <b>港澳居民</b>須出示<strong style="color:#b50000;">6個月以上</strong>之許可停留或居留證明、證件等； <b>各國外交官員及眷屬</b>須檢具職員證及外交部公函，詳情請見 <a href="https://www.mvdis.gov.tw/m3-emv/mustknow/moto#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]機車考照須知_連結">機車考照須知</a>。) </span> </label></div>
+	<div class="checkbox-item"><input id="document3" title="國民身分證或其他有效駕照" type="checkbox" /> <label for="document3"> <span class="label-text"> 國民身分證或其他有效駕照（<b>外國人</b>、<b>大陸地區人民</b>、<b>臺灣地區無戶籍之國民</b>、 <b>港澳居民</b>須出示<strong style="color:#b50000;">6個月以上</strong>之許可停留或居留證明、證件等； <b>各國外交官員及眷屬</b>須檢具職員證及外交部公函，詳情請見 <a href="https://www.mvdis.gov.tw/m3-emv/mustknow/moto#gsc.tab=0" rel="noopener noreferrer" target="_blank" title="[另開新視窗]機車考照須知_連結">機車考照須知</a>。) </span> </label></div>
 	</div>
 	</li>
 	<li><span><strong>4</strong></span>
@@ -580,7 +542,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<p><span style="color:#035a58;font-weight:bolder;">筆試及路考</span><br />
 	1. 先進行筆試，通過筆試後再進行路考。<br />
 	2. 筆試及格分數為<strong style="color:#b50000;">85分</strong>、路考為<strong style="color:#b50000;">70分</strong>，不合格者可於<strong style="color:#b50000;">7日</strong>後再報考（1年內重考繳交<strong style="color:#b50000;">125元</strong>）。<br />
-	👉筆試可參閱交通部公路局&lt;<a href="https://www.mvdis.gov.tw/m3-simulator-drv/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">汽機車線上隨機模擬考系統</a>&gt;，路考則可參閱交通部公路局臺北市區監理所影片&lt;<a href="https://tpcmv.thb.gov.tw/News_Video_Content.aspx?n=9286&amp;s=244903" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">2024機車路考評分基準</a>&gt;、交通部公路局臺中市區監理所&lt;<a href="https://tmv.thb.gov.tw/cp.aspx?n=2694" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">機車路考示範影片</a>&gt;。</p>
+	👉筆試可參閱交通部公路局&lt;<a href="https://www.mvdis.gov.tw/m3-simulator-drv/" rel="noopener noreferrer" target="_blank">汽機車線上隨機模擬考系統</a>&gt;，路考則可參閱交通部公路局臺北市區監理所影片&lt;<a href="https://tpcmv.thb.gov.tw/News_Video_Content.aspx?n=9286&amp;s=244903" rel="noopener noreferrer" target="_blank">2024機車路考評分基準</a>&gt;、交通部公路局臺中市區監理所&lt;<a href="https://tmv.thb.gov.tw/cp.aspx?n=2694" rel="noopener noreferrer" target="_blank">機車路考示範影片</a>&gt;。</p>
 	</li>
 	<li><span><strong>6</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">領取駕照</span><br />
@@ -596,8 +558,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>考取普通小型車駕照有以下兩種方式：<br />
-1. 須事先申請「<a href="https://www.thb.gov.tw/cp.aspx?n=293" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">汽車學習駕照證</a>」，規費為紙本<strong style="color:#b50000;">100元</strong>、電子<strong style="color:#b50000;">50元</strong>。學習駕駛<strong style="color:#b50000;">滿3個月</strong>後前往「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">監理站(所)</a>」進行考照，考照過程及規費如以下流程所示。<br />
-2. 或者可報名駕訓班（請參閱監理服務網&lt;<a href="https://www.mvdis.gov.tw/m3-emv-mk3/driver/webDriverSchool#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">駕訓班列表</a>&gt;），由駕訓班進行駕駛訓練及原地考照。訓練費（不含規費）約為<strong style="color:#b50000;">10,000元 ~ 13,500元</strong>，實際金額請依各駕訓班規定為準。</p>
+1. 須事先申請「<a href="https://www.thb.gov.tw/cp.aspx?n=293" rel="noopener noreferrer" target="_blank">汽車學習駕照證</a>」，規費為紙本<strong style="color:#b50000;">100元</strong>、電子<strong style="color:#b50000;">50元</strong>。學習駕駛<strong style="color:#b50000;">滿3個月</strong>後前往「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank">監理站(所)</a>」進行考照，考照過程及規費如以下流程所示。<br />
+2. 或者可報名駕訓班（請參閱監理服務網&lt;<a href="https://www.mvdis.gov.tw/m3-emv-mk3/driver/webDriverSchool#gsc.tab=0" rel="noopener noreferrer" target="_blank">駕訓班列表</a>&gt;），由駕訓班進行駕駛訓練及原地考照。訓練費（不含規費）約為<strong style="color:#b50000;">10,000元 ~ 13,500元</strong>，實際金額請依各駕訓班規定為準。</p>
 
 <p>&nbsp;</p>
 
@@ -606,12 +568,12 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li><span><strong>1</strong></span>
 
 	<p><span style="color:#035a58;font-weight:bolder;">至醫院體檢</span><br />
-	前往「<a href="https://openinfo.mohw.gov.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">衛生福利部評鑑合格醫院</a>」或「<a href="https://www.mvdis.gov.tw/m3-emv-hca/agency/query?method=pagination#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">衛生所或公路監理機關指定之體檢代辦所</a>」進行體格檢查、體能測驗，並獲得體格及體能測驗合格之普通汽車駕駛執照登記書。費用請依各醫院規定為準。</p>
+	前往「<a href="https://openinfo.mohw.gov.tw/" rel="noopener noreferrer" target="_blank">衛生福利部評鑑合格醫院</a>」或「<a href="https://www.mvdis.gov.tw/m3-emv-hca/agency/query?method=pagination#gsc.tab=0" rel="noopener noreferrer" target="_blank">衛生所或公路監理機關指定之體檢代辦所</a>」進行體格檢查、體能測驗，並獲得體格及體能測驗合格之普通汽車駕駛執照登記書。費用請依各醫院規定為準。</p>
 	</li>
 	<li><span><strong>2</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">線上預約</span><br />
-	請至監理服務網「<a href="https://www.mvdis.gov.tw/m3-emv-trn/exm/locations#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">考照預約報名</a>」， 選取報考照類「<b>普通小型車</b>」、預計考試日期及地點 &rarr; 選取場次並填寫報考人資料 &rarr; 完成線上報名。<br />
-	👉 或下載「監理服務APP &ndash; <a href="https://apps.apple.com/tw/app/%E7%9B%A3%E7%90%86%E6%9C%8D%E5%8B%99/id933737788" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">iOS</a> / <a href="https://play.google.com/store/apps/details?id=gov.mvdis.m3.emv.app.phone&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">Android</a>」，進行考照報名。</p>
+	請至監理服務網「<a href="https://www.mvdis.gov.tw/m3-emv-trn/exm/locations#gsc.tab=0" rel="noopener noreferrer" target="_blank">考照預約報名</a>」， 選取報考照類「<b>普通小型車</b>」、預計考試日期及地點 &rarr; 選取場次並填寫報考人資料 &rarr; 完成線上報名。<br />
+	👉 或下載「監理服務APP &ndash; <a href="https://apps.apple.com/tw/app/%E7%9B%A3%E7%90%86%E6%9C%8D%E5%8B%99/id933737788" rel="noopener noreferrer" target="_blank">iOS</a> / <a href="https://play.google.com/store/apps/details?id=gov.mvdis.m3.emv.app.phone&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank">Android</a>」，進行考照報名。</p>
 	</li>
 	<li><span><strong>3</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">考照報到</span><br />
@@ -626,14 +588,14 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 	<div class="checkbox-item"><input id="document7" title="1吋彩色照片3張" type="checkbox" /> <label for="document7"> <span class="label-text">1吋彩色照片3張</span> </label></div>
 
-	<div class="checkbox-item"><input id="document8" title="國民身分證或其他有效駕照" type="checkbox" /> <label for="document8"> <span class="label-text"> 國民身分證或其他有效駕照（<b>外國人</b>、<b>大陸地區人民</b>、<b>臺灣地區無戶籍之國民</b>、 <b>港澳居民</b>須出示<strong style="color:#b50000;">6個月以上</strong>之許可停留或居留證明、證件等； <b>各國外交官員及眷屬</b>須檢具職員證及外交部公函，詳情請見 <a href="https://www.mvdis.gov.tw/m3-emv/mustknow/car#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]汽車駕照考試須知_連結">汽車駕照考試須知</a>。) </span> </label></div>
+	<div class="checkbox-item"><input id="document8" title="國民身分證或其他有效駕照" type="checkbox" /> <label for="document8"> <span class="label-text"> 國民身分證或其他有效駕照（<b>外國人</b>、<b>大陸地區人民</b>、<b>臺灣地區無戶籍之國民</b>、 <b>港澳居民</b>須出示<strong style="color:#b50000;">6個月以上</strong>之許可停留或居留證明、證件等； <b>各國外交官員及眷屬</b>須檢具職員證及外交部公函，詳情請見 <a href="https://www.mvdis.gov.tw/m3-emv/mustknow/car#gsc.tab=0" rel="noopener noreferrer" target="_blank" title="[另開新視窗]汽車駕照考試須知_連結">汽車駕照考試須知</a>。) </span> </label></div>
 	</div>
 	</li>
 	<li><span><strong>4</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">筆試及路考</span><br />
 	1. 須先通過筆試後進行路考，路考分為兩個階段，須先通過「<b>場考</b>」後，再進行「<b>道路駕駛考驗</b>」。<br />
 	2. 筆試及格分數為<strong style="color:#b50000;">85分</strong>、路考為<strong style="color:#b50000;">70分</strong>，不合格者可於<strong style="color:#b50000;">7日</strong>後再報考（1年內重考繳交<strong style="color:#b50000;">225元</strong>）。<br />
-	👉筆試可參閱交通部公路局&lt;<a href="https://www.mvdis.gov.tw/m3-simulator-drv/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">汽機車線上隨機模擬考系統</a>&gt;，路考則可參閱&lt;<a href="https://www.thb.gov.tw/cl.aspx?n=254" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">道路駕駛考驗專區</a>&gt;。</p>
+	👉筆試可參閱交通部公路局&lt;<a href="https://www.mvdis.gov.tw/m3-simulator-drv/" rel="noopener noreferrer" target="_blank">汽機車線上隨機模擬考系統</a>&gt;，路考則可參閱&lt;<a href="https://www.thb.gov.tw/cl.aspx?n=254" rel="noopener noreferrer" target="_blank">道路駕駛考驗專區</a>&gt;。</p>
 	</li>
 	<li><span><strong>5</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">領取駕照</span><br />
@@ -645,9 +607,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.mvdis.gov.tw/m3-emv/test/index#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;考試報名</a>【資料來源：交通部公路局 監理服務網，民國114年11月】<br />
-<a href="https://www.thb.gov.tw/cl.aspx?n=56" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;國內駕照</a>【資料來源：交通部公路局，民國114年11月】<br />
-<a href="https://www.thb.gov.tw/cp.aspx?n=380" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;駕訓班收費標準</a>【資料來源：交通部公路局，民國113年11月】</p>
+<a href="https://www.mvdis.gov.tw/m3-emv/test/index#gsc.tab=0" rel="noopener noreferrer" target="_blank">&gt;&gt;考試報名</a>【資料來源：交通部公路局 監理服務網，民國114年11月】<br />
+<a href="https://www.thb.gov.tw/cl.aspx?n=56" rel="noopener noreferrer" target="_blank">&gt;&gt;國內駕照</a>【資料來源：交通部公路局，民國114年11月】<br />
+<a href="https://www.thb.gov.tw/cp.aspx?n=380" rel="noopener noreferrer" target="_blank">&gt;&gt;駕訓班收費標準</a>【資料來源：交通部公路局，民國113年11月】</p>
 
 <p>&nbsp;</p>
 
@@ -665,7 +627,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ol>
 	<li>年滿<strong style="color:#b50000;">20歲</strong>，無最高年齡限制。</li>
 	<li>領有<b>普通重型機車</b>駕駛執照<strong style="color:#b50000;">1年</strong>以上。</li>
-	<li>須通過立案之駕訓班訓練結業，請參閱監理服務網查詢&lt;<a href="https://www.mvdis.gov.tw/m3-emv-mk3/driver/webDriverSchool#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">駕訓班列表</a>&gt;。訓練費（不含規費）約為<strong style="color:#b50000;">5,600元 ~ 7,500元</strong>，實際金額請依各駕訓班規定為準。</li>
+	<li>須通過立案之駕訓班訓練結業，請參閱監理服務網查詢&lt;<a href="https://www.mvdis.gov.tw/m3-emv-mk3/driver/webDriverSchool#gsc.tab=0" rel="noopener noreferrer" target="_blank">駕訓班列表</a>&gt;。訓練費（不含規費）約為<strong style="color:#b50000;">5,600元 ~ 7,500元</strong>，實際金額請依各駕訓班規定為準。</li>
 	<li>須通過體格檢查及體能測驗合格。</li>
 </ol>
 
@@ -705,8 +667,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.thb.gov.tw/cp.aspx?n=178" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;考領大型重型機車駕駛執照資格及身障者報考說明</a>【資料來源：交通部公路局，民國114年7月】<br />
-<a href="https://www.thb.gov.tw/cp.aspx?n=380" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;駕訓班收費標準</a>【資料來源：交通部公路局，民國114年11月】</p>
+<a href="https://www.thb.gov.tw/cp.aspx?n=178" rel="noopener noreferrer" target="_blank">&gt;&gt;考領大型重型機車駕駛執照資格及身障者報考說明</a>【資料來源：交通部公路局，民國114年7月】<br />
+<a href="https://www.thb.gov.tw/cp.aspx?n=380" rel="noopener noreferrer" target="_blank">&gt;&gt;駕訓班收費標準</a>【資料來源：交通部公路局，民國114年11月】</p>
 
 <p>&nbsp;</p>
 
@@ -719,7 +681,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>若您將以<b>個人名義</b>購買汽車（一般自用小客車）或機車，且非營業用，以下彙整幾項相關申辦業務。您也可以下載「監理服務APP &ndash; <a href="https://apps.apple.com/tw/app/%E7%9B%A3%E7%90%86%E6%9C%8D%E5%8B%99/id933737788" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">iOS</a> / <a href="https://play.google.com/store/apps/details?id=gov.mvdis.m3.emv.app.phone&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">Android</a>」，一手掌握個人監理資料查詢及申辦。</p>
+<p>若您將以<b>個人名義</b>購買汽車（一般自用小客車）或機車，且非營業用，以下彙整幾項相關申辦業務。您也可以下載「監理服務APP &ndash; <a href="https://apps.apple.com/tw/app/%E7%9B%A3%E7%90%86%E6%9C%8D%E5%8B%99/id933737788" rel="noopener noreferrer" target="_blank">iOS</a> / <a href="https://play.google.com/store/apps/details?id=gov.mvdis.m3.emv.app.phone&amp;hl=zh_TW" rel="noopener noreferrer" target="_blank">Android</a>」，一手掌握個人監理資料查詢及申辦。</p>
 
 <table align="center" border="1" cellpadding="1" cellspacing="1" class="table-small" style="width: 100%; text-align:center">
 	<tbody>
@@ -729,9 +691,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<th style="width:20%;">費用</th>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.thb.gov.tw/cp.aspx?n=427" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">新領牌照</a></td>
-			<td style="text-align:left; padding:0 3px;">購買新車者，以個人名義申請機車或汽車新領牌照登記，請攜帶以下文件，向「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">監理站(所)</a>」申請：
-			<div class="checkbox-item"><input id="document9" title="新領牌照登記書" type="checkbox" /> <label for="document9"> <span class="label-text"> 新領牌照登記書（ <a href="https://ws.thb.gov.tw/Download.ashx?u=LzAwMS91cGxvYWQvT2xkRmlsZS9yZXNvdXJjZS91cGxvYWQvRG93bmxvYWQvQjI2OTkxODAtQTQ2Ny00OENFLTg0RkEtRUE3NkIzRTJDRkM3LnBkZg%3d%3d&amp;n=5qmf6LuK5paw6aCY54mM54Wn55m76KiY5pu4LnBkZg%3d%3d&amp;icon=..pdf" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]機車_連結">機車</a> / <a href="https://ws.thb.gov.tw/Download.ashx?u=LzAwMS91cGxvYWQvT2xkRmlsZS9yZXNvdXJjZS91cGxvYWQvRG93bmxvYWQvQjM0NTU1NkEtNDMzQi00NzM2LTlFRTItM0FBNkJCQUYzNjUzLnBkZg%3d%3d&amp;n=5rG96LuK5paw6aCY54mM54Wn55m76KiY5pu4LnBkZg%3d%3d&amp;icon=..pdf" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]汽車_連結">汽車</a>） </span> </label></div>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.thb.gov.tw/cp.aspx?n=427" rel="noopener noreferrer" target="_blank">新領牌照</a></td>
+			<td style="text-align:left; padding:0 3px;">購買新車者，以個人名義申請機車或汽車新領牌照登記，請攜帶以下文件，向「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank">監理站(所)</a>」申請：
+			<div class="checkbox-item"><input id="document9" title="新領牌照登記書" type="checkbox" /> <label for="document9"> <span class="label-text"> 新領牌照登記書（ <a href="https://ws.thb.gov.tw/Download.ashx?u=LzAwMS91cGxvYWQvT2xkRmlsZS9yZXNvdXJjZS91cGxvYWQvRG93bmxvYWQvQjI2OTkxODAtQTQ2Ny00OENFLTg0RkEtRUE3NkIzRTJDRkM3LnBkZg%3d%3d&amp;n=5qmf6LuK5paw6aCY54mM54Wn55m76KiY5pu4LnBkZg%3d%3d&amp;icon=..pdf" rel="noopener noreferrer" target="_blank" title="[另開新視窗]機車_連結">機車</a> / <a href="https://ws.thb.gov.tw/Download.ashx?u=LzAwMS91cGxvYWQvT2xkRmlsZS9yZXNvdXJjZS91cGxvYWQvRG93bmxvYWQvQjM0NTU1NkEtNDMzQi00NzM2LTlFRTItM0FBNkJCQUYzNjUzLnBkZg%3d%3d&amp;n=5rG96LuK5paw6aCY54mM54Wn55m76KiY5pu4LnBkZg%3d%3d&amp;icon=..pdf" rel="noopener noreferrer" target="_blank" title="[另開新視窗]汽車_連結">汽車</a>） </span> </label></div>
 
 			<div class="checkbox-item"><input id="document10" title="國民身分證正本（或軍人身分證或僑民居留證)及印章" type="checkbox" /> <label for="document10"> <span class="label-text">國民身分證正本（或軍人身分證或僑民居留證)及印章</span> </label></div>
 
@@ -746,7 +708,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<div class="checkbox-item"><input id="document15" title="防竊辨識碼完工證明文件" type="checkbox" /> <label for="document15"> <span class="label-text">防竊辨識碼完工證明文件</span> </label></div>
 
 			<div class="checkbox-item"><input id="document16" title="車輛型式安全審驗合格證明" type="checkbox" /> <label for="document16"> <span class="label-text">車輛型式安全審驗合格證明</span> </label></div>
-			👉 欲線上進行車輛號牌選號及競標（須持有自然人憑證IC卡），請至交通部公路局&lt;<a href="https://www.mvdis.gov.tw/m3-emv/plate/index#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">選號標牌</a>&gt;。</td>
+			👉 欲線上進行車輛號牌選號及競標（須持有自然人憑證IC卡），請至交通部公路局&lt;<a href="https://www.mvdis.gov.tw/m3-emv/plate/index#gsc.tab=0" rel="noopener noreferrer" target="_blank">選號標牌</a>&gt;。</td>
 			<td style="text-align:left; padding:0 3px;">1. 檢驗費：機車<strong style="color:#b50000;">200元</strong>、大型汽車<strong style="color:#b50000;">600元</strong>、小型汽車<strong style="color:#b50000;">450元</strong>。<br />
 			2. 號牌費：機車<strong style="color:#b50000;">300元</strong>(550C.C.以上重機<strong style="color:#b50000;">400元</strong>)、汽車<strong style="color:#b50000;">600元</strong>。<br />
 			3. 行照費：機車<strong style="color:#b50000;">150元</strong>、汽車<strong style="color:#b50000;">200元</strong>。<br />
@@ -754,9 +716,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">車輛過戶<br />
-			（<a href="https://www.thb.gov.tw/cp.aspx?n=526" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">機車</a> / <a href="https://www.thb.gov.tw/cp.aspx?n=332" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">汽車</a>）</td>
-			<td style="text-align:left; padding:0 3px;">以個人名義購買二手車或變更車輛持有者，須辦理車輛過戶，請駕駛車輛及攜帶以下文件，向「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">監理站(所)</a>」申請。
-			<div class="checkbox-item"><input id="document17" title="汽(機)車過戶登記書" type="checkbox" /> <label for="document17"> <span class="label-text"> <a href="https://ws.thb.gov.tw/Download.ashx?u=LzAwMS91cGxvYWQvT2xkRmlsZS9yZXNvdXJjZS91cGxvYWQvRG93bmxvYWQvQzE3OTk0QTgtQkQ0RS00NkM2LThCMzYtQzlCNjlBNzVFQTUzLnBkZg%3d%3d&amp;n=5rG95qmf6LuK6YGO5oi255m76KiY5pu4LnBkZg%3d%3d&amp;icon=..pdf" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]汽(機)車過戶登記書_連結">汽(機)車過戶登記書</a> </span> </label></div>
+			（<a href="https://www.thb.gov.tw/cp.aspx?n=526" rel="noopener noreferrer" target="_blank">機車</a> / <a href="https://www.thb.gov.tw/cp.aspx?n=332" rel="noopener noreferrer" target="_blank">汽車</a>）</td>
+			<td style="text-align:left; padding:0 3px;">以個人名義購買二手車或變更車輛持有者，須辦理車輛過戶，請駕駛車輛及攜帶以下文件，向「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank">監理站(所)</a>」申請。
+			<div class="checkbox-item"><input id="document17" title="汽(機)車過戶登記書" type="checkbox" /> <label for="document17"> <span class="label-text"> <a href="https://ws.thb.gov.tw/Download.ashx?u=LzAwMS91cGxvYWQvT2xkRmlsZS9yZXNvdXJjZS91cGxvYWQvRG93bmxvYWQvQzE3OTk0QTgtQkQ0RS00NkM2LThCMzYtQzlCNjlBNzVFQTUzLnBkZg%3d%3d&amp;n=5rG95qmf6LuK6YGO5oi255m76KiY5pu4LnBkZg%3d%3d&amp;icon=..pdf" rel="noopener noreferrer" target="_blank" title="[另開新視窗]汽(機)車過戶登記書_連結">汽(機)車過戶登記書</a> </span> </label></div>
 
 			<div class="checkbox-item"><input id="document18" title="新舊車主國民身分證正本（或軍人身分證或僑民居留證）及印章" type="checkbox" /> <label for="document18"> <span class="label-text">新舊車主國民身分證正本（或軍人身分證或僑民居留證）及印章</span> </label></div>
 
@@ -765,11 +727,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<div class="checkbox-item"><input id="document20" title="行照" type="checkbox" /> <label for="document20"> <span class="label-text">行照</span> </label></div>
 
 			<div class="checkbox-item"><input id="document21" title="原新領牌照登記書車主聯" type="checkbox" /> <label for="document21"> <span class="label-text">原新領牌照登記書車主聯（機車過戶不需要）</span> </label></div>
-			👉 機車出廠<strong style="color:#b50000;">5年</strong>以上、汽車出廠<strong style="color:#b50000;">10年</strong>以上，須於「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">監理站(所)</a>」辦理&lt;<a href="https://www.thb.gov.tw/cp.aspx?n=243" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">臨時檢驗</a>&gt;合格。</td>
+			👉 機車出廠<strong style="color:#b50000;">5年</strong>以上、汽車出廠<strong style="color:#b50000;">10年</strong>以上，須於「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank">監理站(所)</a>」辦理&lt;<a href="https://www.thb.gov.tw/cp.aspx?n=243" rel="noopener noreferrer" target="_blank">臨時檢驗</a>&gt;合格。</td>
 			<td>機車<strong style="color:#b50000;">150元</strong>、汽車<strong style="color:#b50000;">200元</strong></td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.cali.org.tw/Consumer1/Default" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">強制汽車責任保險</a></td>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.cali.org.tw/Consumer1/Default" rel="noopener noreferrer" target="_blank">強制汽車責任保險</a></td>
 			<td style="text-align:left; padding:0 3px;">此保險提供汽車交通事故受害人基本保障，並減輕被保險人因事故所負擔之賠償責任，機車及微型電動二輪車主也必須投保。車主請向「保險公司（或透過保險經紀人/代理人）」投保，應備文件可參閱以下清單：
 			<div class="checkbox-item"><input id="document22" title="國民身分證（或僑民居留證）" type="checkbox" /> <label for="document22"> <span class="label-text">國民身分證（或僑民居留證）</span> </label></div>
 
@@ -778,33 +740,33 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<td>保險費請依各保險公司規定為準</td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://mobile.moenv.gov.tw/Motor/Know.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">機車排氣定期檢驗</a></td>
-			<td style="text-align:left; padding:0 3px;">機車出廠滿<strong style="color:#b50000;">5年</strong>，每年須進行排氣定期檢驗1次，請駕駛車輛向環境部認可委託之「<a href="https://mobile.moenv.gov.tw/Motor/Station/ST_Map.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">定檢站</a>」進行檢驗。若檢驗結果不合格，應於1個月內修復並複驗合格。<br />
-			👉 民眾可至環境部&lt;<a href="https://mobile.moenv.gov.tw/Motor/index.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">機車排氣定期檢驗資訊管理系統</a>&gt;查詢檢測資料。</td>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://mobile.moenv.gov.tw/Motor/Know.aspx" rel="noopener noreferrer" target="_blank">機車排氣定期檢驗</a></td>
+			<td style="text-align:left; padding:0 3px;">機車出廠滿<strong style="color:#b50000;">5年</strong>，每年須進行排氣定期檢驗1次，請駕駛車輛向環境部認可委託之「<a href="https://mobile.moenv.gov.tw/Motor/Station/ST_Map.aspx" rel="noopener noreferrer" target="_blank">定檢站</a>」進行檢驗。若檢驗結果不合格，應於1個月內修復並複驗合格。<br />
+			👉 民眾可至環境部&lt;<a href="https://mobile.moenv.gov.tw/Motor/index.aspx" rel="noopener noreferrer" target="_blank">機車排氣定期檢驗資訊管理系統</a>&gt;查詢檢測資料。</td>
 			<td>檢驗費為<strong style="color:#b50000;">100元</strong>，由環境部補助，民眾免付費</td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.thb.gov.tw/cp.aspx?n=264" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">車輛定期檢驗</a>（小自客車、大型重型機車）</td>
-			<td style="text-align:left; padding:0 3px;">小自客車（不含幼童車及LPG車）及大型重型機車出廠滿<strong style="color:#b50000;">5年 ~ 未滿10年</strong>，每年至少檢驗1次；<strong style="color:#b50000;">10年(含)</strong>以上者，每年至少檢驗2次；其餘車種請見官網說明。請駕駛車輛向「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">監理站(所)</a>」或「<a href="https://www.mvdis.gov.tw/m3-emv-mk3/agent/webAgentFactory#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">代檢廠</a>」進行檢驗，應備文件可參閱以下清單：
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.thb.gov.tw/cp.aspx?n=264" rel="noopener noreferrer" target="_blank">車輛定期檢驗</a>（小自客車、大型重型機車）</td>
+			<td style="text-align:left; padding:0 3px;">小自客車（不含幼童車及LPG車）及大型重型機車出廠滿<strong style="color:#b50000;">5年 ~ 未滿10年</strong>，每年至少檢驗1次；<strong style="color:#b50000;">10年(含)</strong>以上者，每年至少檢驗2次；其餘車種請見官網說明。請駕駛車輛向「<a href="https://www.mvdis.gov.tw/m3-emv/news/office#gsc.tab=0" rel="noopener noreferrer" target="_blank">監理站(所)</a>」或「<a href="https://www.mvdis.gov.tw/m3-emv-mk3/agent/webAgentFactory#gsc.tab=0" rel="noopener noreferrer" target="_blank">代檢廠</a>」進行檢驗，應備文件可參閱以下清單：
 			<div class="checkbox-item"><input id="document24" title="汽車新領牌照登記書（自用小型車免附）" type="checkbox" /> <label for="document24"> <span class="label-text">汽車新領牌照登記書（自用小型車免附）</span> </label></div>
 
 			<div class="checkbox-item"><input id="document25" title="行照" type="checkbox" /> <label for="document25"> <span class="label-text">行照</span> </label></div>
 
 			<div class="checkbox-item"><input id="document26" title="強制汽車責任保險證" type="checkbox" /> <label for="document26"> <span class="label-text">強制汽車責任保險證（有效期間在<strong style="color:#b50000;">30日</strong>以上）</span> </label></div>
-			👉 可至監理服務網&lt;<a href="https://www.mvdis.gov.tw/m3-emv-car/car/checkQuery#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">查詢汽車應定檢日</a>&gt;及閱讀注意事項。</td>
+			👉 可至監理服務網&lt;<a href="https://www.mvdis.gov.tw/m3-emv-car/car/checkQuery#gsc.tab=0" rel="noopener noreferrer" target="_blank">查詢汽車應定檢日</a>&gt;及閱讀注意事項。</td>
 			<td>檢驗費為大型汽車<strong style="color:#b50000;">600元</strong>、小型汽車<strong style="color:#b50000;">450元</strong>、大型重型機車<strong style="color:#b50000;">200元</strong></td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.mvdis.gov.tw/m3-emv-fee/fee/fuelFee#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">燃料使用費</a></td>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.mvdis.gov.tw/m3-emv-fee/fee/fuelFee#gsc.tab=0" rel="noopener noreferrer" target="_blank">燃料使用費</a></td>
 			<td style="text-align:left; padding:0 3px;">自用車及機車燃料使用費，於每年<strong style="color:#b50000;">7月</strong>徵收，民眾收到繳款通知書後，可至金融機構、郵局、超商等臨櫃繳納，或者使用行動支付APP、監理服務網、監理服務APP等線上繳納。<br />
-			👉 可申請&lt;<a href="https://www.mvdis.gov.tw/m3-emv-car/fee/ebill#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">汽燃費電子繳款單</a>&gt;及&lt;<a href="https://www.mvdis.gov.tw/m3-emv-car/fee/paymentSet#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">汽燃費約定扣款設定</a>&gt;，享有便利的繳費服務。</td>
-			<td>費額請參閱交通部公路局&lt;<a href="https://www.thb.gov.tw/cp.aspx?n=224" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">燃料費率</a>&gt;</td>
+			👉 可申請&lt;<a href="https://www.mvdis.gov.tw/m3-emv-car/fee/ebill#gsc.tab=0" rel="noopener noreferrer" target="_blank">汽燃費電子繳款單</a>&gt;及&lt;<a href="https://www.mvdis.gov.tw/m3-emv-car/fee/paymentSet#gsc.tab=0" rel="noopener noreferrer" target="_blank">汽燃費約定扣款設定</a>&gt;，享有便利的繳費服務。</td>
+			<td>費額請參閱交通部公路局&lt;<a href="https://www.thb.gov.tw/cp.aspx?n=224" rel="noopener noreferrer" target="_blank">燃料費率</a>&gt;</td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/local/vehicle-license-tax" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">使用牌照稅</a></td>
-			<td style="text-align:left; padding:0 3px;">使用汽機車必須繳納使用牌照稅，於每年<strong style="color:#b50000;">4月</strong>開徵，依汽缸總排氣量或馬達最大馬力徵收。民眾收到繳款書後，可至金融機構、ATM、超商（限<strong style="color:#b50000;">3萬</strong>以下）等臨櫃繳納，或者使用行動支付APP、行動裝置掃QR-code、&lt;<a href="https://net.tax.nat.gov.tw/PLRX/Lrx200d01/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">地方稅網路申報作業</a>&gt;等多元繳納管道。<br />
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/local/vehicle-license-tax" rel="noopener noreferrer" target="_blank">使用牌照稅</a></td>
+			<td style="text-align:left; padding:0 3px;">使用汽機車必須繳納使用牌照稅，於每年<strong style="color:#b50000;">4月</strong>開徵，依汽缸總排氣量或馬達最大馬力徵收。民眾收到繳款書後，可至金融機構、ATM、超商（限<strong style="color:#b50000;">3萬</strong>以下）等臨櫃繳納，或者使用行動支付APP、行動裝置掃QR-code、&lt;<a href="https://net.tax.nat.gov.tw/PLRX/Lrx200d01/" rel="noopener noreferrer" target="_blank">地方稅網路申報作業</a>&gt;等多元繳納管道。<br />
 			👉 即日起至<strong style="color:#b50000;">114/12/31</strong>止，電動汽機車免徵使用牌照稅。</td>
-			<td>稅額請參閱財政部稅務入口網&lt;<a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/local/vehicle-license-tax/2Jv5NBY" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">認識使用牌照稅</a>&gt;</td>
+			<td>稅額請參閱財政部稅務入口網&lt;<a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/local/vehicle-license-tax/2Jv5NBY" rel="noopener noreferrer" target="_blank">認識使用牌照稅</a>&gt;</td>
 		</tr>
 	</tbody>
 </table>
@@ -812,13 +774,13 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.thb.gov.tw/cl.aspx?n=394" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;車輛牌照</a>【資料來源：交通部公路局，民國114年11月】<br />
-<a href="https://www.thb.gov.tw/News_Download.aspx?n=121&amp;sms=12823" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;下載申辦表格</a>【資料來源：交通部公路局，民國114年11月】<br />
-<a href="https://www.cali.org.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;強制汽車責任保險</a>【資料來源：金融監督管理委員會，民國114年11月】<br />
-<a href="https://mobile.moenv.gov.tw/Motor/Know.aspx#" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;機車車主不可不知及問答集</a>【資料來源：環境部 機車排氣定期檢驗資訊管理系統，民國114年11月】<br />
-<a href="https://www.thb.gov.tw/cp.aspx?n=264" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;車輛檢驗&lt;定期檢驗&gt;</a>【資料來源：交通部公路局，民國114年10月】<br />
-<a href="https://www.mvdis.gov.tw/m3-emv/car/index#gsc.tab=0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;汽機車</a>【資料來源：交通部公路局 監理服務網，民國114年11月】<br />
-<a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/local/vehicle-license-tax/2Jv5NBY" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">&gt;&gt;認識使用牌照稅</a>【資料來源：財政部，民國114年5月】</p>
+<a href="https://www.thb.gov.tw/cl.aspx?n=394" rel="noopener noreferrer" target="_blank">&gt;&gt;車輛牌照</a>【資料來源：交通部公路局，民國114年11月】<br />
+<a href="https://www.thb.gov.tw/News_Download.aspx?n=121&amp;sms=12823" rel="noopener noreferrer" target="_blank">&gt;&gt;下載申辦表格</a>【資料來源：交通部公路局，民國114年11月】<br />
+<a href="https://www.cali.org.tw/" rel="noopener noreferrer" target="_blank">&gt;&gt;強制汽車責任保險</a>【資料來源：金融監督管理委員會，民國114年11月】<br />
+<a href="https://mobile.moenv.gov.tw/Motor/Know.aspx#" rel="noopener noreferrer" target="_blank">&gt;&gt;機車車主不可不知及問答集</a>【資料來源：環境部 機車排氣定期檢驗資訊管理系統，民國114年11月】<br />
+<a href="https://www.thb.gov.tw/cp.aspx?n=264" rel="noopener noreferrer" target="_blank">&gt;&gt;車輛檢驗&lt;定期檢驗&gt;</a>【資料來源：交通部公路局，民國114年10月】<br />
+<a href="https://www.mvdis.gov.tw/m3-emv/car/index#gsc.tab=0" rel="noopener noreferrer" target="_blank">&gt;&gt;汽機車</a>【資料來源：交通部公路局 監理服務網，民國114年11月】<br />
+<a href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/local/vehicle-license-tax/2Jv5NBY" rel="noopener noreferrer" target="_blank">&gt;&gt;認識使用牌照稅</a>【資料來源：財政部，民國114年5月】</p>
 
 <p>&nbsp;</p>
 
@@ -826,29 +788,29 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.gov.tw/News_Content_2_376854" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/536913/6f45eb54-d067-44f3-a386-a804293cff1e.jpg" /><span>汽機車駕照預約考照</span><span>加入監理服務網會員後，進行考照預約報名流程：選定場次及地點、觀賞體驗危險感知影片、填寫個人資料。</span></a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_376850" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>汽機車選號標牌</span> <span>近期申請領用車牌之民眾，欲進行車牌選號或競標，請先加入「監理服務網」會員，登入會員後線上辦理。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_376849" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/539316/03286eb2-7753-418d-b6ab-d9f1f260d71f.jpg" /><span>汽機車補發登記書</span><span>名下有登記汽車或機車者，可透過線上或臨櫃申請補發牌照登記書。</span></a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_376863" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/ed7e5ecd-f8b2-409b-9a0a-489501db5a86.jpg" /> <span>汽燃費查詢與繳納</span> <span>自用車及機車汽車燃料使用費於每年7月徵收，民眾請至監理服務網或手機下載監理服務APP，以信用卡或金融活期帳戶線上繳納。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_376862" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9104/511911/efafb189-e76e-4411-a4bd-83fbd9c0a380.jpg" /> <span>汽燃費電子繳款單申請</span> <span>汽機車車主可至監理服務網申請此服務，監理機關將依指定之電子方式寄發繳款通知，並取消紙本寄送。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_513702" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/f8a6dad4-2a88-457f-821e-957ff416ab96.jpg" /> <span>申請使用牌照稅身心障礙者免稅(免用憑證)</span> <span>身心障礙者本人所有車輛，由政府主動核定免稅；若擁有多部車輛，可選擇欲免稅的車輛。因身心障礙致無駕照者，其配偶或符合條件之親屬所供其使用之車輛，須依規定辦理免徵使用牌照稅。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_376854" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/536913/6f45eb54-d067-44f3-a386-a804293cff1e.jpg" /><span>汽機車駕照預約考照</span><span>加入監理服務網會員後，進行考照預約報名流程：選定場次及地點、觀賞體驗危險感知影片、填寫個人資料。</span></a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_376850" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>汽機車選號標牌</span> <span>近期申請領用車牌之民眾，欲進行車牌選號或競標，請先加入「監理服務網」會員，登入會員後線上辦理。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_376849" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/539316/03286eb2-7753-418d-b6ab-d9f1f260d71f.jpg" /><span>汽機車補發登記書</span><span>名下有登記汽車或機車者，可透過線上或臨櫃申請補發牌照登記書。</span></a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_376863" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/ed7e5ecd-f8b2-409b-9a0a-489501db5a86.jpg" /> <span>汽燃費查詢與繳納</span> <span>自用車及機車汽車燃料使用費於每年7月徵收，民眾請至監理服務網或手機下載監理服務APP，以信用卡或金融活期帳戶線上繳納。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_376862" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9104/511911/efafb189-e76e-4411-a4bd-83fbd9c0a380.jpg" /> <span>汽燃費電子繳款單申請</span> <span>汽機車車主可至監理服務網申請此服務，監理機關將依指定之電子方式寄發繳款通知，並取消紙本寄送。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_513702" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/f8a6dad4-2a88-457f-821e-957ff416ab96.jpg" /> <span>申請使用牌照稅身心障礙者免稅(免用憑證)</span> <span>身心障礙者本人所有車輛，由政府主動核定免稅；若擁有多部車輛，可選擇欲免稅的車輛。因身心障礙致無駕照者，其配偶或符合條件之親屬所供其使用之車輛，須依規定辦理免徵使用牌照稅。</span> </a></li>
 </ul>
 </div>
 </span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>機車考照,大型重型機車考照,普通小型車考照,強制汽車責任保險,車輛過戶,新領牌照,使用牌照稅,燃料使用費<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.tntb.gov.tw/news_view.php?qinfoid=11118&amp;lmenuid=5&amp;smenuid=109&amp;qtype=1" data-sn="889905"
-                data-name="車輛欠繳使用牌照稅使用道路小心受罰">車輛欠繳<span class="info_keywords">使用牌照稅</span>使用道路小心受罰<span>臺南市政府財政稅務局</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.etax.nat.gov.tw/etwmain/announcement/news/pKlokNB" data-sn="889551"
-                data-name="善用節稅技巧，荷包小確幸">善用節稅技巧，荷包小確幸<span>臺中市政府地方稅務局</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.hsinchu.gov.tw/News_Content.aspx?n=153&s=311587" data-sn="889520"
-                data-name="線上申請「約定轉帳納稅及直撥退稅」 一次完成So Easy!">線上申請「約定轉帳納稅及直撥退稅」 一次完成So Easy!<span>新竹縣政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.tax.taichung.gov.tw/4499/5084/5176/57021/normalPost" data-sn="889135"
-                data-name="台中豪雨肆虐 地稅局曝稅捐減免措施">台中豪雨肆虐 地稅局曝稅捐減免措施<span>臺中市政府地方稅務局</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.tax.ntpc.gov.tw/cp-33-20705-4b4c1-1.html" data-sn="888778"
-                data-name="車主未繳納使用牌照稅 小心車輛使用公共道路將受罰">車主未繳納<span class="info_keywords">使用牌照稅</span> 小心車輛使用公共道路將受罰<span>新北市政府稅捐稽徵處</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.changtax.gov.tw/ActivitiesDetailC002200.aspx?Cond=5dc715fa-b6c8-48b4-98a1-02ac5be5756c" data-sn="896550"
+                data-name="使用牌照稅逾期未繳，繳清上路免受罰"><span class="info_keywords">使用牌照稅</span>逾期未繳，繳清上路免受罰<span>彰化縣地方稅務局</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.miaoli.gov.tw/News_Content2.aspx?n=285&s=974322" data-sn="896886"
+                data-name="擅自改裝車輛，小心觸法受罰！">擅自改裝車輛，小心觸法受罰！<span>苗栗縣政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.mlftax.gov.tw/News_Content.aspx?n=7&s=395909" data-sn="896433"
+                data-name="擅自改裝車輛，小心觸法受罰！">擅自改裝車輛，小心觸法受罰！<span>苗栗縣政府稅務局</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taitung.gov.tw/News_Content.aspx?n=13370&s=148100" data-sn="895307"
+                data-name="交通安全從生活出發 東警交通隊呼籲尊重與禮讓的用路文化">交通安全從生活出發 東警交通隊呼籲尊重與禮讓的用路文化<span>臺東縣政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taitung.gov.tw/News_Content.aspx?n=13370&s=148091" data-sn="895305"
+                data-name="巴威颱風強襲 臺東縣稅務局提醒：若有財損請先拍照存證！">巴威颱風強襲 臺東縣稅務局提醒：若有財損請先拍照存證！<span>臺東縣政府</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -869,7 +831,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -945,7 +907,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -957,7 +921,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1027,7 +991,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1081,8 +1045,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

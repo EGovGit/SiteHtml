@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=37&s=817176" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=37&amp;s=817176" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="LQVgxNdnJBIYnZTbZZPwqt3uccg7gSEct8a2QXFf25Lu8ksKfJ8MyvUWeAb1h8rXvPUKBT2PpYNgiCZ3Mv4409RnAuzLWMHPtTsZdFWw+rtfY9c9V751tbZq4uICJ0z0qW7Ar2bs4aGjEa6agOKpKaNWUyOQFZHfu/C5lKFUogl3XUPOfEiaCPHHK4mn0YPdwIZtRocvmgR6xgVzA2uH9aokkNY4pKm/rGsU9wnVj8ILhPHQf1WI9DVFh1T+4gQgc2S9RJjVzkm4lTmIAql/E+RS1M5qRnbuJeRdC9Jvl/DQK8wH0erbPqKhcGQp8dKdV2Lq6uh/WL2Ceh5OP3HGP4FzO/B2S9uWKnyw8XUbGKBl0/dXp7FRs4T5AGYjK9aaHWDQbznXTE/CKyvVw/5jTHNJMy8iRVrz7oOxmbqvbzxbediLnxVVNXyTJx926zvzSsRcMd9wIcNgQ1ZfP8aSQp1NF8haHla6bwoAUYAw3OXcTJvSadgOEtHNSlh2oQ0og3RTaGlk3Cx8un9FPLUphm14J5XxWUPKxOvjpCmU2XU2PkZIzo+Tk5TSEpZLRxCTaWq+7DfnXPbB7MckfGnGdZ+jmbsltg81sxSWWdgxDO1X8n3PY1R9166+APtDPqO81zyPXR2AKawOa+iyc3ZqgEXQYPNOJIJq7NWp3/w69mNYPWUe+w/gSUi6zyyuLHv3gErIDST/ieAnWY6DOhvKoz81ymgj836vUA++xjKF4XwGimqrzqSes9saIEuWgDxroYZ8oSZRC2JceLitglnc5b+bhVOEN2aUrqxu1qc2+6bLKJzfmyg3mO+EdFSp1pgiGdXnQYuSNLJvlePF/RI64gVq8GZytjdNrsyzrCJkJisnax1KcOl4jBk8GdxYhEZwSTYDeou7fxyEmZZ1WR/K3fLbG17cTFWs7n+3s2rBXKYkNQBWDUJPTMtkWW/UlNn2XEbvKmuGjOD7ySgU3kWaoUiNKFrUb1DobssWV1TdnxYEa1c6SjA43HS+3j89dd60N8kIRbh6HXtLqSj2tOSUAPh511K30vnoig+MZRwQlbO9cnr2Xpz3qeFE5Y2tVZ0dXStZHgdjuQg0rw7ySCYyoym1iXlN56U9Yw4spF0L2zOm0+On6jGi9Ha9BEaxvurUjFBTshCuY+pEqqYGCYnCPZCcfpthwsEJerlabpER5ww9jFp7Pp50j9gbeld6ThSoFVdULnjFdYjhPHwOPfDOc0IIPlMYuOpZrQj3BLHjGTiUgRZl7NyHH/85pron+jWTbEA6L5hv7W5dleTjEtXI/xwF3woTxaJkmECIb4IIliZLFSJLjhKAMZ1Q6I/MMODZvBHoy01b/Xq9pKT4pMfn8FsEEl7NcJmLo/TevnnYsmWV85KhQhPNN0IqUnGLI35KGL3LcuLoZiEIVMFnAA/MopW8dkWHhPDb0ju5eYd3moMKC+PkSBNXKGrLIQoxTvT+Na8DFZccJMJm+vxxffdS5njrtcYQNUfFPZcXMa0BksJM2ceB" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="UZ6lLu1bOqOvAoszAmGsJ750+1od7fkfOgxKrp0elJpBLgk14t7G5IVF3ao0isYxpLBfcKt6GqApeIAnWhLxr9u4CPn4WnOMpwYx8JcUODkWesQuNzpaJ32a6sz4WXdiJKVTpImuiClYmA9/lDu0tNBor9jhb+hzrSPzzwkqS8GTdL7ubBGo3eeCGitwUFmShYCl9ho/5XPy7td76ouUhmds9JBTlz0pZWwwH7w6Ocwq2krPd6PEPjWFfXmceDJHlwDCznbVmO8qCMPKYCbjfCAHBKSRvJOdBEuk7t19sQeNxRuXBQr3yczmN8Hx1ZriC7lcovbYZulSglVTAoRxsMX+MNaMPjhK8CduatyJSx4C+jku3xqif1YxhX4MGWNKWAT38O/MGV9w4xoO/HyAKYFysVH+PPeItuduPiM7aNlvHrxsGNEXJeFc0IaJy1bi3+bNqUsnhYx328exLKN9Q702CUv6w4LgYbP6box6ElXF2MPwk+cdAG9mh1AuOKLunNJ5FU+tuKqpvG8uj6Q6L7t7oiITh2zv7pmW/SXVZCqcNWrBXx58arq37QyIKB13t1RRZoVtHA4oVGzvgcT+Xa7bstFqvs8EqMTNZH2KuN+S5yRVO0gld3As/jXFnzoQnllMHYF/r504HKzf+qTuEeRTxyHp2kb/JqPg8uT/Px2HSwR074eRB1YcLt0EKQQSHzC8OAtXwugs/q4NzecJxhEjEjEkstBOGwzfOAGZiKtmLZ3SS656w2vKj7B8GlDIe9ZKEUAZw/WgeoNb9hZ6qoE9zXsPQo6Ubp3YGd8dhjZ7dN0Hj/DIF1Q62M8HbfvEEX8G6iHTXL29fh1m9WbS6a9lowkw4eW6WORvidXjGqnF3YLyyeR/ceifGPlfkJLi67hoyInOHEUMcGcw/S0dChNSSAybJlOGSTmQIeljJJRpnbkzSX+GYZkhpLv804nFBmQlTSlZnHK0t5nDIxj2LfeeKlufCuKH2nj/qFi12uDcOZy70vk2cf1mFI7Tug9QIodfl3VsuGrFLpFyhvWvHnWQx6kYUyLEl2z7aFAmv5TR7C0k/0YwjwwEHa73XfdfGr0jAVM2tK5Y/K8jALfmgB6l2QVGayIsTsGTiObVLUmLCenjjG/QbBrT1h39QhPmjKiE1Caac7DO5x3FcSGHV6kz5XvlgjaxpSLERbrFDEsWheIE1xwTFsssMyfYlBGUq+HVr5jIr4XGm/rp1s11sS2p9echdTEeZjknYGUBEtU0UnbilxKQPZLsNy6kSovlO9v9tKR/KXTK08FW6/fpl+9ztdk9thVUKyuzPEk+vdQYVusFbPzmdudb1vLLohENRfVOJg8AmC6/tLC/uJPe8KZAzDHftB13c+Ac4aiAm625dDfWmimdkGM8WBQB5vz2i7XAEeryztUROPDu0sKod6dzpwC3ZPDb+5TghOO+2qmXg0GMe3jMfNIvlJOdKJn7jhp3eUljaoKBex7VdYad6LWwZe4e1R+hPtgt1KBzjXmIgIJA" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_df10f636647444b1b3d3a6d4ba5dbecd">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_996e3064d0a94d939603eefea97118b8">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_df10f636647444b1b3d3a6d4ba5dbecd" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_df10f636647444b1b3d3a6d4ba5dbecd" id="txt_df10f636647444b1b3d3a6d4ba5dbecd" type="search" placeholder="" title="搜尋">
+  <label for="txt_996e3064d0a94d939603eefea97118b8" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_996e3064d0a94d939603eefea97118b8" id="txt_996e3064d0a94d939603eefea97118b8" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_df10f636647444b1b3d3a6d4ba5dbecd" data-search="btn_df10f636647444b1b3d3a6d4ba5dbecd" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_996e3064d0a94d939603eefea97118b8" data-search="btn_996e3064d0a94d939603eefea97118b8" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_df10f636647444b1b3d3a6d4ba5dbecd"]').on("keydown", function (event) {
+    $('[data-search="btn_996e3064d0a94d939603eefea97118b8"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_df10f636647444b1b3d3a6d4ba5dbecd'));
+             doSearch($('#btn_996e3064d0a94d939603eefea97118b8'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_df10f636647444b1b3d3a6d4ba5dbecd']", true);
+return_value = typeWriter("[data-search='btn_996e3064d0a94d939603eefea97118b8']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_df10f636647444b1b3d3a6d4ba5dbecd']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_iKHiqfRndW" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_cXMfPoCaFc" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_rKJqfuEafX" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_PRQibIpGvY" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_rcFBcjAbap" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_8.html"   title="資訊發布"   target="_self"  >資訊發布</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_37.html"   aria-current="page" title="資訊快遞"   target="_self"  >資訊快遞</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>資訊快遞</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_mjJoHrwEbd" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_8.html"   title="資訊發布"   target="_self"  >資訊發布</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_37.html"   title="資訊快遞"   target="_self"  >資訊快遞</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>資訊快遞</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>通勤族必看！一篇搞懂TPASS 1.0月票與2.0+常客優惠！ </h3></div></div></div></div>
         
         
@@ -578,11 +540,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div style="width:clamp(100%,100%,930px);aspect-ratio:16/9;position:relative"><iframe allowfullscreen="" src="https://www.youtube.com/embed/Y_siE2Wsp38" style="position:absolute;inset:0;width:100%;height:100%"></iframe></div>
 </div>
 
-<p style="margin-top: 12px; font-size: 1em; color: rgb(51, 51, 51); text-align: center;">影片來源： <a href="https://www.youtube.com/watch?v=Y_siE2Wsp38" rel="noopener noreferrer" style="color: #333; text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[另開新視窗]中華民國交通部_連結"> 中華民國交通部 </a></p>
+<p style="margin-top: 12px; font-size: 1em; color: rgb(51, 51, 51); text-align: center;">影片來源： <a href="https://www.youtube.com/watch?v=Y_siE2Wsp38" rel="noopener noreferrer" style="color: #333; text-decoration: underline;" target="_blank" title="[另開新視窗]中華民國交通部_連結"> 中華民國交通部 </a></p>
 
 <p style="margin-top: 12px; font-size: 1em; color: rgb(51, 51, 51); text-align: center;">&nbsp;</p>
 
-<p style="text-indent:2em">TPASS 通勤月票是依據「<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030343" target="_blank" rel="noopener noreferrer">疫後強化經濟與社會韌性及全民共享經濟成果特別條例</a>」推動的公共運輸優惠政策，提供多個跨縣市生活圈，不限次數搭乘捷運、公車、臺鐵等交通工具的優惠月票方案(簡稱TPASS 1.0)。在114年1月14日，推出TPASS 2.0常客優惠，民眾只要持記名電子票證或使用電子支付APP在<a href="https://tpass.thb.gov.tw/tpass/#naming" target="_blank" rel="noopener noreferrer">公路局公共運輸常客優惠回饋專區</a>完成登錄，每月搭乘公共運輸達<a href="https://api.www.gov.tw/News_Content.aspx?Create=1&amp;n=37&amp;state=F5D336F102ACBC68&amp;s=859432&amp;ccms_cs=1&amp;sms=9100#active6">回饋條件</a>，享有不同比例乘車金額回饋。</p>
+<p style="text-indent:2em">TPASS 通勤月票是依據「<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030343" target="_blank">疫後強化經濟與社會韌性及全民共享經濟成果特別條例</a>」推動的公共運輸優惠政策，提供多個跨縣市生活圈，不限次數搭乘捷運、公車、臺鐵等交通工具的優惠月票方案(簡稱TPASS 1.0)。在114年1月14日，推出TPASS 2.0常客優惠，民眾只要持記名電子票證或使用電子支付APP在<a href="https://tpass.thb.gov.tw/tpass/#naming" target="_blank">公路局公共運輸常客優惠回饋專區</a>完成登錄，每月搭乘公共運輸達<a href="https://api.www.gov.tw/News_Content.aspx?Create=1&amp;n=37&amp;state=F5D336F102ACBC68&amp;s=859432&amp;ccms_cs=1&amp;sms=9100#active6">回饋條件</a>，享有不同比例乘車金額回饋。</p>
 
 <p style="text-indent:2em">政府也為了照顧搭乘國道客運返鄉遠行需求，自114年12月1日起提供「<a href="https://tpass.thb.gov.tw/tpass/News/8c9e4e30-eb07-41e4-950e-164d2632e5dc">TPASS 2.0+公共運輸常客優惠方案</a>」，搭乘<a href="https://drive.google.com/file/d/1Tn8wj6wQbvt1kM3SCYdY7XPhNIS_Zc1d/view?usp=sharing">91條中長途國道客運路線</a><strong style="color:#b50000">2次</strong>享<strong>15%</strong>乘車金額回饋、搭乘<strong style="color:#b50000">4次</strong>享<strong>30%</strong>乘車金額回饋，其他公共運輸則仍依既有回饋條件計算回饋金額，期待全民一起用行動來支持公共運輸。</p>
 
@@ -590,13 +552,13 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div style="text-align: center;"><img alt="行政院TPASS比較表" src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/817176/900cb269-149c-4bc7-9e75-81a07319499c.jpg" style="width: 75%;" /></div>
 
-<p style="text-align: center;">圖片出處：<a href="https://www.ey.gov.tw/Page/5B2FC62D288F4DB7/50038fd5-75b7-469e-bed0-627fc4693f8c" target="_blank" rel="noopener noreferrer">行政院-政策櫥窗</a></p>
+<p style="text-align: center;">圖片出處：<a href="https://www.ey.gov.tw/Page/5B2FC62D288F4DB7/50038fd5-75b7-469e-bed0-627fc4693f8c" target="_blank">行政院-政策櫥窗</a></p>
 
 <div style="line-height: 1.6;">
 <div><br />
 站外連結之參考文章：</div>
 
-<div>&gt;&gt; <a href="https://www.thb.gov.tw/cl.aspx?n=13807" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="TPASS官方網站－關於TPASS">TPASS專區</a> 【資料來源：交通部公路局，民國114年1月】<br />
+<div>&gt;&gt; <a href="https://www.thb.gov.tw/cl.aspx?n=13807" rel="noopener noreferrer" target="_blank" title="TPASS官方網站－關於TPASS">TPASS專區</a> 【資料來源：交通部公路局，民國114年1月】<br />
 &gt;&gt; <a href="https://tpass.thb.gov.tw/tpass/News/8c9e4e30-eb07-41e4-950e-164d2632e5dc">12/1起TPASS 2.0再升級，每月搭乘2次中長途國道客運即可享回饋</a>【資料來源：交通部公路局，民國114年11月】</div>
 
 <hr />
@@ -652,8 +614,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;基北北桃生活圈</td>
 			<td data-title="月票方案" style="width: 470px;">📍基北北桃跨城際(1,200元)<br />
 			📍基隆市都市內(288元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&amp;s=BB3631329CC1A297" target="_blank" rel="noopener noreferrer">基北北桃都會通TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&amp;s=BB3631329CC1A297" target="_blank" rel="noopener noreferrer">悠遊卡</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&amp;s=BB3631329CC1A297" target="_blank">基北北桃都會通TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.metro.taipei/cp.aspx?n=CEF54168B23F73B4&amp;s=BB3631329CC1A297" target="_blank">悠遊卡</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;北宜生活圈</td>
@@ -661,7 +623,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			📍北宜跨城際(1,800元)<br />
 			📍宜蘭縣都市內(750元)<br />
 			📍宜蘭好行三日券(299元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://yilan.tpass.tw/" target="_blank" rel="noopener noreferrer">宜蘭縣TPASS</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://yilan.tpass.tw/" target="_blank">宜蘭縣TPASS</a></td>
 			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1692255183">悠遊卡</a><br />
 			👉<a href="https://www.i-pass.com.tw/Page/YilanRegion">一卡通</a><br />
 			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385">愛金卡</a></td>
@@ -672,9 +634,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			📍桃竹竹跨城際(799元)<br />
 			📍竹竹苗跨城際(699元)<br />
 			📍竹竹跨城際(288元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://traffic.tycg.gov.tw/present/profession/View.aspx?p0=19&amp;openExternalBrowser=1" target="_blank" rel="noopener noreferrer">桃竹竹苗TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1694585962" target="_blank" rel="noopener noreferrer">悠遊卡</a><br />
-			👉<a href="https://www.i-pass.com.tw/Page/TaoHsinMiaoRegion" target="_blank" rel="noopener noreferrer">一卡通</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://traffic.tycg.gov.tw/present/profession/View.aspx?p0=19&amp;openExternalBrowser=1" target="_blank">桃竹竹苗TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1694585962" target="_blank">悠遊卡</a><br />
+			👉<a href="https://www.i-pass.com.tw/Page/TaoHsinMiaoRegion" target="_blank">一卡通</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;中彰投苗生活圈</td>
@@ -682,18 +644,18 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			📍臺中市都市內(臺中市民299元/非臺中市民599元)<br />
 			📍彰化縣都市內(699元)<br />
 			📍南投縣都市內(699元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.taichung-go.tw/ch/about-ticket/index/1" target="_blank" rel="noopener noreferrer">中彰投TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1683187269" target="_blank" rel="noopener noreferrer">悠遊卡</a><br />
-			👉<a href="https://www.i-pass.com.tw/Page/CentralRegion" target="_blank" rel="noopener noreferrer">一卡通</a><br />
-			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank" rel="noopener noreferrer">愛金卡</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.taichung-go.tw/ch/about-ticket/index/1" target="_blank">中彰投TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1683187269" target="_blank">悠遊卡</a><br />
+			👉<a href="https://www.i-pass.com.tw/Page/CentralRegion" target="_blank">一卡通</a><br />
+			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank">愛金卡</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;雲林縣</td>
 			<td data-title="月票方案" style="width: 470px;">📍雲林縣都市內(199元/399元含臺鐵跨區7站)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://yunlin.tpass.tw/" target="_blank" rel="noopener noreferrer">雲林縣TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1701936656" target="_blank" rel="noopener noreferrer">悠遊卡</a><br />
-			👉<a href="https://www.i-pass.com.tw/Page/YunlinRegion" target="_blank" rel="noopener noreferrer">一卡通</a><br />
-			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank" rel="noopener noreferrer">愛金卡</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://yunlin.tpass.tw/" target="_blank">雲林縣TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1701936656" target="_blank">悠遊卡</a><br />
+			👉<a href="https://www.i-pass.com.tw/Page/YunlinRegion" target="_blank">一卡通</a><br />
+			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank">愛金卡</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;嘉嘉南生活圈</td>
@@ -701,10 +663,10 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			📍大臺南公車加南嘉高鐵(799元)<br />
 			📍嘉嘉南(999元)<br />
 			📍嘉義縣市(399元/799元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.men-go.tw/#/MProductList" target="_blank" rel="noopener noreferrer">嘉嘉南TPASSＸMengo</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1701940351" target="_blank" rel="noopener noreferrer">悠遊卡</a><br />
-			👉<a href="https://www.i-pass.com.tw/Page/ChiayiRegion" target="_blank" rel="noopener noreferrer">一卡通</a><br />
-			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank" rel="noopener noreferrer">愛金卡</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.men-go.tw/#/MProductList" target="_blank">嘉嘉南TPASSＸMengo</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1701940351" target="_blank">悠遊卡</a><br />
+			👉<a href="https://www.i-pass.com.tw/Page/ChiayiRegion" target="_blank">一卡通</a><br />
+			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank">愛金卡</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;南高屏生活圈</td>
@@ -712,30 +674,30 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			📍臺南市都市內(299元/含臺鐵399元)<br />
 			📍高雄市都市內(399元)<br />
 			📍屏東縣都市內(299元/含臺鐵399元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.men-go.tw/#/MProductList" target="_blank" rel="noopener noreferrer">南高屏TPASSＸMengo</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.i-pass.com.tw/Page/SouthRegion" target="_blank" rel="noopener noreferrer">一卡通</a>（<a href="http://men-go.tw/#/Post/642" target="_blank" rel="noopener noreferrer">詳細教學</a>）</td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.men-go.tw/#/MProductList" target="_blank">南高屏TPASSＸMengo</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.i-pass.com.tw/Page/SouthRegion" target="_blank">一卡通</a>（<a href="http://men-go.tw/#/Post/642" target="_blank">詳細教學</a>）</td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;花蓮縣</td>
 			<td data-title="月票方案" style="width: 470px;">📍花蓮縣都市內(199元/含公路客運399元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.hly.tw/tpass/usage" target="_blank" rel="noopener noreferrer">花蓮縣TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1694586560" target="_blank" rel="noopener noreferrer">悠遊卡</a><br />
-			👉<a href="https://www.i-pass.com.tw/Page/HualienRegion" target="_blank" rel="noopener noreferrer">一卡通</a><br />
-			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank" rel="noopener noreferrer">愛金卡</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.hly.tw/tpass/usage" target="_blank">花蓮縣TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1694586560" target="_blank">悠遊卡</a><br />
+			👉<a href="https://www.i-pass.com.tw/Page/HualienRegion" target="_blank">一卡通</a><br />
+			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank">愛金卡</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;臺東縣</td>
 			<td data-title="月票方案" style="width: 470px;">📍臺東縣都市內(299元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://taitung.tpass.tw/" target="_blank" rel="noopener noreferrer">臺東縣TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1694587216" target="_blank" rel="noopener noreferrer">悠遊卡</a><br />
-			👉<a href="https://www.i-pass.com.tw/Page/TaitungRegion" target="_blank" rel="noopener noreferrer">一卡通</a><br />
-			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank" rel="noopener noreferrer">愛金卡</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://taitung.tpass.tw/" target="_blank">臺東縣TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.easycard.com.tw/easycard?cls=1682492497&amp;id=1694587216" target="_blank">悠遊卡</a><br />
+			👉<a href="https://www.i-pass.com.tw/Page/TaitungRegion" target="_blank">一卡通</a><br />
+			👉<a href="https://www.icash.com.tw/Home/NewsDetail/11385" target="_blank">愛金卡</a></td>
 		</tr>
 		<tr>
 			<td data-title="各縣市生活圈" style="width: 247px;">&nbsp;澎湖縣</td>
 			<td data-title="月票方案" style="width: 470px;">📍澎湖縣境內公車及交通船(150元/含一般民眾方案及澎湖縣民方案400元)</td>
-			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.tpass.tw/penghuTPASS_guide_202505.pdf" target="_blank" rel="noopener noreferrer">澎湖縣TPASS</a></td>
-			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.i-pass.com.tw/Page/PenghuRegion" target="_blank" rel="noopener noreferrer">一卡通</a></td>
+			<td data-title="查詢網頁" style="width: 181px;">👉<a href="https://www.tpass.tw/penghuTPASS_guide_202505.pdf" target="_blank">澎湖縣TPASS</a></td>
+			<td data-title="購買與續購方式" style="width: 160px;">👉<a href="https://www.i-pass.com.tw/Page/PenghuRegion" target="_blank">一卡通</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -745,10 +707,10 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div><br />
 站外連結之參考文章：</div>
 
-<div>&gt;&gt; <a href="https://www.thb.gov.tw/cp.aspx?n=12632" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="TPASS官方網站－關於TPASS">各月票方案及查詢管道</a> 【資料來源：交通部公路局，民國114年10月】</div>
+<div>&gt;&gt; <a href="https://www.thb.gov.tw/cp.aspx?n=12632" rel="noopener noreferrer" target="_blank" title="TPASS官方網站－關於TPASS">各月票方案及查詢管道</a> 【資料來源：交通部公路局，民國114年10月】</div>
 
-<div>&gt;&gt; <a href="https://www.thb.gov.tw/cp.aspx?n=12596" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">各縣市方案月票</a>&nbsp;【資料來源：交通部公路局，民國114年10月】<br />
-&gt;&gt; <a href="https://traffic.chiayi.gov.tw/News_Content.aspx?n=4129&amp;sms=12038&amp;s=924617" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">嘉嘉南三縣市聯合推出999元TPASS定期票 今日正式上線啟用</a>&nbsp;【資料來源：嘉義市交通處，民國114年12月】</div>
+<div>&gt;&gt; <a href="https://www.thb.gov.tw/cp.aspx?n=12596" rel="noopener noreferrer" target="_blank">各縣市方案月票</a>&nbsp;【資料來源：交通部公路局，民國114年10月】<br />
+&gt;&gt; <a href="https://traffic.chiayi.gov.tw/News_Content.aspx?n=4129&amp;sms=12038&amp;s=924617" rel="noopener noreferrer" target="_blank">嘉嘉南三縣市聯合推出999元TPASS定期票 今日正式上線啟用</a>&nbsp;【資料來源：嘉義市交通處，民國114年12月】</div>
 </div>
 
 <hr />
@@ -774,11 +736,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p><span>📍</span><strong>電子支付APP</strong>：<br />
-&nbsp; &nbsp; 下載電子支付APP註冊會員，並於該電子支付APP (<a href="https://tpass.thb.gov.tw/tpass/file/EasyWallet.pdf" target="_blank" rel="noopener noreferrer" title="悠遊付申請步驟">悠遊付</a>、<a href="https://tpass.thb.gov.tw/tpass/file/ipass%20money.pdf" target="_blank" rel="noopener noreferrer" title="ipass money">iPASS MONEY</a>、<a arget="_blank" href="https://tpass.thb.gov.tw/tpass/file/icash%20pay.pdf" title="icash pay">icash Pay</a>)內點選完成記名及同意個資使用聲明後，即符合回饋資格。</p>
+&nbsp; &nbsp; 下載電子支付APP註冊會員，並於該電子支付APP (<a href="https://tpass.thb.gov.tw/tpass/file/EasyWallet.pdf" target="_blank" title="悠遊付申請步驟">悠遊付</a>、<a href="https://tpass.thb.gov.tw/tpass/file/ipass%20money.pdf" target="_blank" title="ipass money">iPASS MONEY</a>、<a arget="_blank" href="https://tpass.thb.gov.tw/tpass/file/icash%20pay.pdf" title="icash pay">icash Pay</a>)內點選完成記名及同意個資使用聲明後，即符合回饋資格。</p>
 
 <div style="text-align: center;"><img alt="步驟" src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/817176/af34cece-4ff8-4cee-9f95-1f5980525c2c.jpg" style="width: 65%;" /></div>
 
-<p style="text-align: center;">圖片出處：<a href="https://www.thb.gov.tw/cp.aspx?n=13815" target="_blank" rel="noopener noreferrer">公共運輸常客優惠回饋專區 懶人包</a></p>
+<p style="text-align: center;">圖片出處：<a href="https://www.thb.gov.tw/cp.aspx?n=13815" target="_blank">公共運輸常客優惠回饋專區 懶人包</a></p>
 
 <p>&nbsp;</p>
 
@@ -792,7 +754,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div style="text-align: center;"><img alt="回饋條件" src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/817176/0662dd25-03b3-462f-9dea-cdbfff8d09b5.png" style="width: 70%;" /></div>
 
-<p style="text-align: center;">圖片出處：<a href="https://tpass.thb.gov.tw/tpass/info" target="_blank" rel="noopener noreferrer">公路局公運常客優惠平臺-回饋說明</a></p>
+<p style="text-align: center;">圖片出處：<a href="https://tpass.thb.gov.tw/tpass/info" target="_blank">公路局公運常客優惠平臺-回饋說明</a></p>
 
 <p>&nbsp;</p>
 
@@ -822,7 +784,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div style="text-align: center;"><img alt="回饋金領取" src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/817176/6f00f4a6-6b1e-420d-a5b4-dc3ffc4c12f3.jpg" style="width: 65%;" /></div>
 
-<p style="text-align: center;">圖片出處：<a href="https://www.thb.gov.tw/cp.aspx?n=13815" target="_blank" rel="noopener noreferrer">公共運輸常客優惠回饋專區 懶人包</a></p>
+<p style="text-align: center;">圖片出處：<a href="https://www.thb.gov.tw/cp.aspx?n=13815" target="_blank">公共運輸常客優惠回饋專區 懶人包</a></p>
 
 <p>&nbsp;</p>
 
@@ -933,7 +895,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div style="line-height: 1.6;">
 <div>站外連結之參考文章：</div>
 
-<div>&gt;&gt; <a href="https://tpass.thb.gov.tw/tpass/info" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="TPASS官方網站－關於TPASS">回饋說明</a> 【資料來源：公路局公路常客優惠平臺，民國114年1月】</div>
+<div>&gt;&gt; <a href="https://tpass.thb.gov.tw/tpass/info" rel="noopener noreferrer" target="_blank" title="TPASS官方網站－關於TPASS">回饋說明</a> 【資料來源：公路局公路常客優惠平臺，民國114年1月】</div>
 
 <hr />
 <p id="active4" style="font-size: 1.463em; color: rgb(201, 66, 0); font-weight: bolder;"><br />
@@ -963,13 +925,13 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div style="background-color: #f0f0f0; border-left: 4px solid #035a58; padding: 16px; margin-bottom: 16px;">
 <p><strong>Q：一定要購買此次推出的 TPASS 2.0 電子票證才能參與常客回饋嗎？</strong></p>
 
-<p>A：不需要，只要持有電子票證，至<a href="https://tpass.thb.gov.tw/tpass/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">公路局公共運輸常客優惠平臺</a>完成記名登錄後，即可符合常客回饋資格。</p>
+<p>A：不需要，只要持有電子票證，至<a href="https://tpass.thb.gov.tw/tpass/" rel="noopener noreferrer" target="_blank">公路局公共運輸常客優惠平臺</a>完成記名登錄後，即可符合常客回饋資格。</p>
 </div>
 
 <div style="background-color: #f0f0f0; border-left: 4px solid #035a58; padding: 16px; margin-bottom: 16px;">
 <p><strong>Q：在哪裡查詢搭乘紀錄及回饋金額度？</strong></p>
 
-<p>A：可至各票證公司網站公共運輸常客回饋專區或『<a href="https://tpass.thb.gov.tw/tpass/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">公路局公運常客優惠平臺</a>』登入後，查詢當月累計搭乘次數、搭乘金額及累積回饋金額。</p>
+<p>A：可至各票證公司網站公共運輸常客回饋專區或『<a href="https://tpass.thb.gov.tw/tpass/" rel="noopener noreferrer" target="_blank">公路局公運常客優惠平臺</a>』登入後，查詢當月累計搭乘次數、搭乘金額及累積回饋金額。</p>
 
 <p>👉<a href="https://promohub.easycard.com.tw/promohub/applyfbs.action">悠遊卡</a><br />
 👉<a href="http://www.i-pass.com.tw/ThbACP/UI/Query_SVC">一卡通</a><br />
@@ -985,7 +947,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div style="background-color: #f0f0f0; border-left: 4px solid #035a58; padding: 16px; margin-bottom: 16px;">
 <p><strong>Q：中長途國道客運路線包含哪些?</strong></p>
 
-<p>A：中長途國道客運路線包含西部70公里以上國道客運路線(76條)及東部國道客運路線(15條)，詳細路線清單可點選<a href="https://www.thb.gov.tw/cp.aspx?n=14132" target="_blank" rel="noopener noreferrer">此處</a>查看。</p>
+<p>A：中長途國道客運路線包含西部70公里以上國道客運路線(76條)及東部國道客運路線(15條)，詳細路線清單可點選<a href="https://www.thb.gov.tw/cp.aspx?n=14132" target="_blank">此處</a>查看。</p>
 </div>
 
 <div><br />
@@ -1004,7 +966,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.facebook.com/motc.gov.tw/posts/pfbid0i4yUfjg2jtdiZsUFQbWNRkkQabmQSSqPBGws3F4LzQPvVSoUVJZLWgTbQMy6fv81l?rdid=ZYtOMh06rZ0Ei0Dg#" target="_blank" rel="noopener noreferrer"><img alt="TPASS高齡換照_縮圖" src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/817176/889ee2cc-2599-4440-a4da-5c87d65a9eb7.jpg" /><br />
+	<li><a href="https://www.facebook.com/motc.gov.tw/posts/pfbid0i4yUfjg2jtdiZsUFQbWNRkkQabmQSSqPBGws3F4LzQPvVSoUVJZLWgTbQMy6fv81l?rdid=ZYtOMh06rZ0Ei0Dg#" target="_blank"><img alt="TPASS高齡換照_縮圖" src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/817176/889ee2cc-2599-4440-a4da-5c87d65a9eb7.jpg" /><br />
 	<span style="padding-top: 35px;">70歲以上長輩主動繳回駕照，TPASS乘車優惠</span> <span>📍補助期間為115年起完成登錄註記次日起算2年<br />
 	📍使用敬老卡搭乘公共運輸回饋50%，每月金額最高1,500元。</span> </a></li>
 </ul>
@@ -1017,26 +979,24 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div><br />
 站外連結之參考文章：</div>
 
-<div>&gt;&gt; <a href="https://www.facebook.com/motc.gov.tw/posts/pfbid0i4yUfjg2jtdiZsUFQbWNRkkQabmQSSqPBGws3F4LzQPvVSoUVJZLWgTbQMy6fv81l?rdid=ZYtOMh06rZ0Ei0Dg#" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">【駕照改革－高齡換照制度2】</a>&nbsp;【資料來源：交通部官方臉書粉絲專頁，民國114年10月】</div>
+<div>&gt;&gt; <a href="https://www.facebook.com/motc.gov.tw/posts/pfbid0i4yUfjg2jtdiZsUFQbWNRkkQabmQSSqPBGws3F4LzQPvVSoUVJZLWgTbQMy6fv81l?rdid=ZYtOMh06rZ0Ei0Dg#" rel="noopener noreferrer" target="_blank">【駕照改革－高齡換照制度2】</a>&nbsp;【資料來源：交通部官方臉書粉絲專頁，民國114年10月】</div>
 </div>
 </div>
 </span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>通勤月票,TPASS<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=18fc3a8422e4152d95c88e76635978a7" data-sn="889596"
-                data-name="端午連假怎麼玩 新北交通資訊懶人包告訴你">端午連假怎麼玩 新北交通資訊懶人包告訴你<span>新北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=9403fcf11e16a42648511463b3b0aa83" data-sn="888969"
-                data-name="淡江大橋新增4公車路線 侯友宜：有助帶動地方發展">淡江大橋新增4公車路線 侯友宜：有助帶動地方發展<span>新北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=9403fcf11e16a426336349a61792aeb6" data-sn="888973"
-                data-name="淡江大橋開啟公共運輸新時代！
-淡水八里直通板橋、機場 + 新北觀巴3線齊發">淡江大橋開啟公共運輸新時代！
-淡水八里直通板橋、機場 + 新北觀巴3線齊發<span>新北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taitung.gov.tw/News_Content.aspx?n=13370&s=147334" data-sn="888456"
-                data-name="端午省荷包！連假搭乘中長途客運享6折優惠！">端午省荷包！連假搭乘中長途客運享6折優惠！<span>臺東縣政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=6DEA564B399D8157" data-sn="886797"
-                data-name="註冊北市車輛定檢LINE通知 好禮LINE著你">註冊北市車輛定檢LINE通知 好禮LINE著你<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taiwan.net.tw/m1.aspx?sNo=0044486" data-sn="896917"
+                data-name="TPASS加碼回饋再升級，搭車賺回饋、減碳拿好康"><span class="info_keywords">TPASS</span>加碼回饋再升級，搭車賺回饋、減碳拿好康<span>交通部觀光署</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8825075" data-sn="895495"
+                data-name="台南再添新電動公車 將分批上線讓民眾搶先體驗">台南再添新電動公車 將分批上線讓民眾搶先體驗<span>臺南市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8823552" data-sn="894070"
+                data-name="TPASS x MeNGo機新增「購買TPASS卡」功能 提供「買卡、買方案、過卡」一站式服務"><span class="info_keywords">TPASS</span> x MeNGo機新增「購買<span class="info_keywords">TPASS</span>卡」功能 提供「買卡、買方案、過卡」一站式服務<span>臺南市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taichung.gov.tw/3314391/post" data-sn="893548"
+                data-name="中部TPASS熱賣突破百萬張! 中市交通局：公共運輸運量最高成長25%">中部<span class="info_keywords">TPASS</span>熱賣突破百萬張! 中市交通局：公共運輸運量最高成長25%<span>臺中市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=2155E1477F252AA8" data-sn="893000"
+                data-name="臺北捷運信用卡乘車首日交易量近4.9萬人次 感謝旅客及各界的支持">臺北捷運信用卡乘車首日交易量近4.9萬人次 感謝旅客及各界的支持<span>臺北市政府</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -1057,7 +1017,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -1133,7 +1093,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -1145,7 +1107,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1215,7 +1177,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1269,8 +1231,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

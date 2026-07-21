@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=561791" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=561791" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="4nUXbvi0KZJlkSAp/kvYUEI8o5INPLayZ+WpXAmAOZt2lScF1xDioPgCPde1LBB26rYapsvlOGHbZEOAUjU5gnIP3dBr/yC/HKyqiBxt+XduhX1hSy4tNQmt8esAQkjitRUjtZkm8Svflj4TvHtpJ/85eBPWuDUiyWA4yWt4c/As5j0OvdtAD77GNdrXcGwYkVi/fOZcTbYcQN09JfJ56354W2IzzFXIh8pPCVD4Ml1RxGKh4rP9NOjUNtIA3anmxNFuVII6BpUI15eaoP8YB32iAFqO+VE6UuQQ7oj4h1gNaLC2k3oaIR808zx1sNzmGXbrt13DsCvrZqwAZxR01fDs267PVKfzo0OARcKYAwLtwE1/9vHeHzpsP/ZB5UytbSc+/C8g4zRzHXo8AfrroBx9Fy14UKgFXuBCgbwBjVr/3JZhWKIDs+IBz0le5W9qXrEdMoTonT87k9/+RLv75XpK66iB2hYPxBx862BD9NTA0II+8xENc9e5O6BCdHMPcgIDc5SOxx7HN05bApw9VcwUrAinBLdI2ZIhVnoMPAaNrtsL+RR7ExlvsJZb+7qevxmsMEK2+TPeNfpZy8nvu1v6pyGXIe6gtaaj3H1TocdaMZnH4HiJlbnFy8O8dMBZ+xwgeD0/+uw/g1SPQBfRhFewdNL5D7WtFIVaAQRg6egIdMvn0JdrKaLQEDH1oaT66MUErv3izAFAXoEjjNity84k+HcLcVPLFD3wZAvaO1DYoW88OYpBtTeLMuuYtxEDLSwO2cWWKOl0d+gjlC/gAp1LciLrRxdkreJG0+ytoMuoXIW1hrnZzRUOvgdbo06kvkPfhQEfttu0RBdNdQgRXujWpPvwUMmD/ZM2gvvDCa2bhE7TDN0Mrc+XPwdud6cpCOMekQzmTya8rtvrcrVViHNfXPQ9OgBD+maS7kGlOb/I/9E42fVktL33GqPP5+haksObwVRt+w0D3zNjDXuvfqtNGYbT/2yGmKNBNXbMtsDdSmTffVtOI+r+a1yF1wDXBhhlrRe32qeaPQ7dvCoubDfw78PVUZ1k/p7vuAtTyUDnLRmSOrDAroLJ/IXtr2QZKEGhozlrfsfLohg3w81Fvx6hVBR9HqyZ9wgiZge73O/yeO71XHe0zCgRdbPyH3Uht77ZeMi8bqWadbweWXeFFml7p9Ae6/A/p9P3RczIAqcc6LfsXSdeEoX/64jxCuCuOWagpWF+EMzlUPIKvic3O+Gws/rzYBlmOQcB1M3fKrTdhwTTCigAEFH3SGs3p1P8Fru42s39H2SywBACOnivsk79pdHpA88mOHhIOZc0WmMjL8CDCi9AhU5CvJxhhdyAgCiPj3gezp9ivzWx/rZpLqoaI12KlFCnfEMGwWxFzm3Xu0pAc1LvCGzWH5borOM9wFssjUyZAg/DPtjwWoJ34iWMFLn9kehW+2c3Jsd0spcS6ZfqjIgVt+syqeKAs2erVMeluKC20CAmvPFejep71XoW0u+nu1+mS0UHZTw79TXFpCfd" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lzYOTd/qfqji3KBsF+o77l4TIP6YL/OD9hipLSWlarQ5ss7hULPWUB/EGe3PBwf1wMqty7SuA6GVweNn6S+VbLXHChKZZigEMSiGwiGULyFtQAdTZ9JsiEvF6cxQ+8TXsKdenO+rffX11/Olq47It1UHHhXQmq4QBcbh7+SZ2CDap5rb+PjO8N+LlseuIArvxjgIrtGj13M+VNHTBXGlTkFU7+Blnye8ZesZKIEXD0xS0zD3D9G3iIfv8k+SiGilpocY7ZaNDvUlLU8XXV8HqyoPgyuz0U+DgVORcqBh8rD4CRjgFn02H9R870OCsaVlsDW/Z0SwstEZMYyxtYWdxTu5tYupaNGq2UdEMdzhssy5DGCBugp+zaFTE/uBeMDNvdoFgp5U5M8eC7HLeuTWLpqzvEdywJOUajmZWfHhtjN0GIg5q/5YCubsdURT/DVraatqYHhONNun8RnIgs7AWqRQLu68xSqL0ZoZFf+C3LHT+8tpmHcBpio0i7TEYp7ARwOPmEldZjyuVbEdylkXe/duDdw0vO698XfNCplPhY3thVvQXWXOCsQdPjtNF7wXMacRdxgP0wf8TeZ5b5XjbASk848/0tfBHR8Vi8C0UiTYFE7PCvjEsSORi0QV6SgYr3f/RBtTuXsnnDdaSfMcV3NzwrPDu1DDHgSsgG9V4TxWaYlUeWQy+GzntiYRFp2Y3JSObGNgXskCQqp17vBqXVakbzKuZpK6TWf269xfb2p/u11Uco4/M1sW7GC+bF6MpL1mNkE3c78wxJbu54C29R3QA3VVc5t7ZPddqnR38sSWASiImQ+MQJTLvUnRGShYGqmrfXE7/tJjCngAJOsav6VQZ3YPTVrUYSHjk2QywqMkKWtUdP38EEmedKV7uSLNceDGNAhaxhYJ8ElCvoIu2jPogrv37SdYKhfT6Rfo77G9t/ukunV1FWm8oFKaOxjgGaFkVT88H7KS63qWyDGvFsVx/xrqUERbZSBrcys+FWlvMdU0cz4Pl9zdn7TOhKfbWAh1ErPKJpkO2l7MaDfBr4SK2TAYFQ4TugmBDdmbF2u+z1XxTQjuF6X6+8MsGQtGju0iDI+31m/7czahrTgDqQxiU/ptA8p8MNjZggU/hMNxsjXFzCGPcmXHOQQ+7ysBB3QntZKXz2wqpDZNkHkYjdF9r+M7QDKf8nAcPY4OSnIKnrv+wEIKQiyZWlh/LRI5eejVTIR6KEJzRzEQwhy1B7xCPWGJITgzv2Ybb+WzdZr4PqkCa5FEz2Erq4sM+pWJGs4ed1JS9cpMLcBBXnhmlnheG8ztOwpmkG5z/NunAdEtq7Y5gvFgShDxxqd52BKMjpgQ1bLkvIjpcsxnjHFgppJiTymneZdOLZvVfYHhi9gYpySGIo8gTH6fnu+/H7heziowrgkP5Mpn5gPwaJWw57L9KNL+VBSOEj98l/INPSwTwFl6m2z+4nAQE0XZFCEHoM93vjPNQgo3vS5OIHSXxVNNgNFpr0wS14lH9ecmMKmc1jTx" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_6facbce4f1d34a57a0a9ca4c0b0d722b">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_5e60b39d9b2f4d1ba48d82b932b822aa">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_6facbce4f1d34a57a0a9ca4c0b0d722b" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_6facbce4f1d34a57a0a9ca4c0b0d722b" id="txt_6facbce4f1d34a57a0a9ca4c0b0d722b" type="search" placeholder="" title="搜尋">
+  <label for="txt_5e60b39d9b2f4d1ba48d82b932b822aa" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_5e60b39d9b2f4d1ba48d82b932b822aa" id="txt_5e60b39d9b2f4d1ba48d82b932b822aa" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_6facbce4f1d34a57a0a9ca4c0b0d722b" data-search="btn_6facbce4f1d34a57a0a9ca4c0b0d722b" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_5e60b39d9b2f4d1ba48d82b932b822aa" data-search="btn_5e60b39d9b2f4d1ba48d82b932b822aa" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_6facbce4f1d34a57a0a9ca4c0b0d722b"]').on("keydown", function (event) {
+    $('[data-search="btn_5e60b39d9b2f4d1ba48d82b932b822aa"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_6facbce4f1d34a57a0a9ca4c0b0d722b'));
+             doSearch($('#btn_5e60b39d9b2f4d1ba48d82b932b822aa'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_6facbce4f1d34a57a0a9ca4c0b0d722b']", true);
+return_value = typeWriter("[data-search='btn_5e60b39d9b2f4d1ba48d82b932b822aa']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_6facbce4f1d34a57a0a9ca4c0b0d722b']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_vwrigcemKe" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_boWfyfdgeV" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_cuyScokuRm" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_bmhgWrAxWK" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_xUaxrejicU" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_gvFGtuXcbR" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>助圓夢安心生，孕婦的補助與福利報您知！</h3></div></div></div></div>
         
         
@@ -547,11 +509,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<th style="width:33%;">每案補助金額 (單位：新臺幣/元)</th>
 		</tr>
 		<tr>
-			<td rowspan="9" style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=194" target="_blank" rel="noopener noreferrer">孕婦產前檢查</a></td>
+			<td rowspan="9" style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=194" target="_blank">孕婦產前檢查</a></td>
 			<td rowspan="9" style="text-align:left; padding:0 5px;">1. 具有全民健保身分的孕婦。<br />
 			2.&nbsp;未納健保的新住民孕婦（配偶須為中華民國國籍並設籍於中華民國）。</td>
 			<td style="text-align:left; padding:0 5px;">從妊娠第1~3期，共補助產檢14次。</td>
-			<td style="text-align:left; padding:0 5px;">請參閱&lt;<a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=194" target="_blank" rel="noopener noreferrer">產檢項目與補助金額</a>&gt;</td>
+			<td style="text-align:left; padding:0 5px;">請參閱&lt;<a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=194" target="_blank">產檢項目與補助金額</a>&gt;</td>
 		</tr>
 		<tr>
 			<td style="text-align:left; padding:0 5px;">母嬰親善醫療機構每次產檢進行「母乳衛教指導」，共14次。</td>
@@ -586,7 +548,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<td style="text-align:left; padding:0 5px;"><span style="color:#b50000;font-weight:bolder">450元</span></td>
 		</tr>
 		<tr>
-			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=197" target="_blank" rel="noopener noreferrer">產前遺傳診斷</a></td>
+			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=197" target="_blank">產前遺傳診斷</a></td>
 			<td style="text-align:left; padding:0 5px;"><span style="color:#b50000;font-weight:bolder">34歲以上</span>、本人或配偶或家族有罹患遺傳性疾病、曾生育過異常兒、超音波篩檢胎兒可能有異常等孕婦。</td>
 			<td rowspan="2" style="text-align:left; padding:0 5px;">補助「產前細胞染色體檢查及基因檢驗」1次。</td>
 			<td style="text-align:left; padding:0 5px;">減免<span style="color:#b50000d;font-weight:bolder">5,000元</span></td>
@@ -596,7 +558,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<td style="text-align:left; padding:0 5px;">由採檢院所另行減免，最多減免採檢費用<span style="color:#b50000;font-weight:bolder">3,500元</span></td>
 		</tr>
 		<tr>
-			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&amp;pid=19060" target="_blank" rel="noopener noreferrer">產後健康照護服務</a></td>
+			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&amp;pid=19060" target="_blank">產後健康照護服務</a></td>
 			<td rowspan="2" style="text-align:left; padding:0 5px;">1. 具有全民健保身分的孕婦。<br />
 			2.&nbsp;未納健保的新住民孕婦（配偶須為中華民國國籍並設籍於中華民國）。</td>
 			<td style="text-align:left; padding:0 5px;">第一次：產後1個月內(建議於產後1-2週)<br />
@@ -635,14 +597,14 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>孕婦因荷爾蒙變化及飲食習慣的改變，較容易出現牙齦發炎、蛀牙及牙周病等問題。為維護孕期口腔健康，衛生福利部中央健康保險署提供孕婦每3個月一次的免費洗牙服務，只要攜帶孕婦手冊，至牙科診所即可享受健保補助。詳情請參閱孕產婦關懷網站&lt;<a href="https://mammy.hpa.gov.tw/Home/NewsKBContent/2505?type=01" target="_blank" rel="noopener noreferrer" title="[另開新視窗]懷孕初期：口腔檢查篇-孕期生活注意事項">懷孕初期：口腔檢查篇-孕期生活注意事項</a>&gt;。</p>
+<p>孕婦因荷爾蒙變化及飲食習慣的改變，較容易出現牙齦發炎、蛀牙及牙周病等問題。為維護孕期口腔健康，衛生福利部中央健康保險署提供孕婦每3個月一次的免費洗牙服務，只要攜帶孕婦手冊，至牙科診所即可享受健保補助。詳情請參閱孕產婦關懷網站&lt;<a href="https://mammy.hpa.gov.tw/Home/NewsKBContent/2505?type=01" target="_blank" title="[另開新視窗]懷孕初期：口腔檢查篇-孕期生活注意事項">懷孕初期：口腔檢查篇-孕期生活注意事項</a>&gt;。</p>
 
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=194" target="_blank" rel="noopener noreferrer">&gt;&gt;孕婦產前檢查項目及補助金額</a>【資料來源：衛生福利部國民健康署，民國114年12月】<br />
-<a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=197" target="_blank" rel="noopener noreferrer">&gt;&gt;產前遺傳診斷</a>【資料來源：衛生福利部國民健康署，民國114年12月】<br />
-<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&amp;pid=19060" target="_blank" rel="noopener noreferrer">&gt;&gt;有關「產後健康照護服務方案」內容說明</a>【資料來源：衛生福利部國民健康署，民國114年5月】</p>
+<a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=194" target="_blank">&gt;&gt;孕婦產前檢查項目及補助金額</a>【資料來源：衛生福利部國民健康署，民國114年12月】<br />
+<a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=197" target="_blank">&gt;&gt;產前遺傳診斷</a>【資料來源：衛生福利部國民健康署，民國114年12月】<br />
+<a href="https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=4878&amp;pid=19060" target="_blank">&gt;&gt;有關「產後健康照護服務方案」內容說明</a>【資料來源：衛生福利部國民健康署，民國114年5月】</p>
 
 <p>&nbsp;</p>
 
@@ -666,13 +628,13 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<th style="width:75%;">對象</th>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.cdc.gov.tw/Category/Page/MXy9TPGNNXMS_rzotG7xzQ" target="_blank" rel="noopener noreferrer" title="[另開新視窗]破傷風、白喉及百日咳相關疫苗">減量破傷風白喉非細胞性百日咳混合疫苗（Tdap）</a></td>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.cdc.gov.tw/Category/Page/MXy9TPGNNXMS_rzotG7xzQ" target="_blank" title="[另開新視窗]破傷風、白喉及百日咳相關疫苗">減量破傷風白喉非細胞性百日咳混合疫苗（Tdap）</a></td>
 			<td style="text-align:left; padding:0 5px;">每次懷孕應接種1劑Tdap疫苗，任何孕期都可接種；若為使抗體能最好地傳遞給嬰兒，建議可選在懷孕第<strong style="color:r#b50000;">27-36週</strong>接種。<br />
 			若懷孕時未接種，建議產後盡快補打。</td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.cdc.gov.tw/Category/Page/c2M5ZW5uOHdjckxJdWZicUQ5TUZwdz09" target="_blank" rel="noopener noreferrer" title="[另開新視窗]流感疫苗 (Influenza)">季節性流感疫苗(Influenza)</a></td>
-			<td style="text-align:left; padding:0 5px;">接種流感疫苗是全球公認預防流感最有效的方法，我國政府推動公費流感疫苗接種計畫，其中孕婦列為公費疫苗優先接種的對象之一。公費流感疫苗於每年<strong style="color:#b50000;">10月1日</strong>起開打，詳情可參閱&lt;<a href="https://www.gov.tw/News_Content_37_787217" target="_blank" rel="noopener noreferrer" title="[另開新視窗]114年公費流感及新冠疫苗接種Q&amp;A快速看">114年公費流感及新冠疫苗接種Q&amp;A快速看&gt;</a>。</td>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.cdc.gov.tw/Category/Page/c2M5ZW5uOHdjckxJdWZicUQ5TUZwdz09" target="_blank" title="[另開新視窗]流感疫苗 (Influenza)">季節性流感疫苗(Influenza)</a></td>
+			<td style="text-align:left; padding:0 5px;">接種流感疫苗是全球公認預防流感最有效的方法，我國政府推動公費流感疫苗接種計畫，其中孕婦列為公費疫苗優先接種的對象之一。公費流感疫苗於每年<strong style="color:#b50000;">10月1日</strong>起開打，詳情可參閱&lt;<a href="https://www.gov.tw/News_Content_37_787217" target="_blank" title="[另開新視窗]114年公費流感及新冠疫苗接種Q&amp;A快速看">114年公費流感及新冠疫苗接種Q&amp;A快速看&gt;</a>。</td>
 		</tr>
 	</tbody>
 </table>
@@ -687,12 +649,12 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <br />
 <strong style="color:#b50000;">懷孕期間</strong>經檢測未具德國麻疹抗體，應避免前往德國麻疹流行地區，並於<strong style="color:#b50000;">產後</strong>盡速接種1劑MMR疫苗。產後持該胎次檢驗日起之2年內德國麻疹抗體檢驗報告者，可免費接種1劑公費MMR疫苗。<br />
 <br />
-詳情可參閱&lt;<a href="https://www.cdc.gov.tw/Category/List/LgLlAQTO4uV_tQPnpf2leA" target="_blank" rel="noopener noreferrer" title="[另開新視窗]麻疹腮腺炎德國麻疹混合疫苗(Measles, Mumps and Rubella, MMR)">麻疹腮腺炎德國麻疹混合疫苗(Measles, Mumps and Rubella, MMR)</a>&gt;。</p>
+詳情可參閱&lt;<a href="https://www.cdc.gov.tw/Category/List/LgLlAQTO4uV_tQPnpf2leA" target="_blank" title="[另開新視窗]麻疹腮腺炎德國麻疹混合疫苗(Measles, Mumps and Rubella, MMR)">麻疹腮腺炎德國麻疹混合疫苗(Measles, Mumps and Rubella, MMR)</a>&gt;。</p>
 
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.cdc.gov.tw/Category/List/RBTBlga106hJcWufEh4YFQ" target="_blank" rel="noopener noreferrer">&gt;&gt;育齡婦女(15-49歲)</a>【資料來源：衛生福利部疾病管制署，民國114年12月】</p>
+<a href="https://www.cdc.gov.tw/Category/List/RBTBlga106hJcWufEh4YFQ" target="_blank">&gt;&gt;育齡婦女(15-49歲)</a>【資料來源：衛生福利部疾病管制署，民國114年12月】</p>
 
 <p>&nbsp;</p>
 
@@ -731,7 +693,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕婦，其配偶設籍基隆市</span></td>
 			<td data-title="補助金額"><span>補助項目包含產檢車資、孕婦營養品及治裝費補助，每次孕期最高補助<strong style="color:#b50000;">20,000元</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">3個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://www.klcg.gov.tw/tw/social/2712-296230.html" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]基隆市114年好孕乘三(孕婦產檢車資、營養品及治裝費)補助計畫，自114年1月1日起實施">基隆市政府社會處</a></span></td>
+			<td data-title="資料來源"><span><a href="https://www.klcg.gov.tw/tw/social/2712-296230.html" style="text-decoration: underline;" target="_blank" title="[開新視窗]基隆市114年好孕乘三(孕婦產檢車資、營養品及治裝費)補助計畫，自114年1月1日起實施">基隆市政府社會處</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -741,7 +703,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕婦，其配偶設籍臺北市</span></td>
 			<td data-title="補助金額"><span>補助電子乘車金<strong style="color:#b50000;">8,000元</strong>，每趟最高補助<strong style="color:#b50000;">250元</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">6個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://born.taipei/cp.aspx?n=D98ABCB51B230AAE" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至【孕中】臺北市好孕2U專車補助">臺北市政府民政局【祝您好孕】</a></span></td>
+			<td data-title="資料來源"><span><a href="https://born.taipei/cp.aspx?n=D98ABCB51B230AAE" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結至【孕中】臺北市好孕2U專車補助">臺北市政府民政局【祝您好孕】</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -752,7 +714,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 夫妻總收入未達150萬元 </span></td>
 			<td data-title="補助金額"><span>補助電子乘車券，每趟最高補貼<strong style="color:#b50000;">200元</strong>，最多<strong style="color:#b50000;">28趟</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">6個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://service.ntpc.gov.tw/eservice/CaseData.action?itemId=110071" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至新北市政府雲端櫃檯申辦e服務">新北市政府雲端櫃檯申辦e服務</a></span></td>
+			<td data-title="資料來源"><span><a href="https://service.ntpc.gov.tw/eservice/CaseData.action?itemId=110071" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結至新北市政府雲端櫃檯申辦e服務">新北市政府雲端櫃檯申辦e服務</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -762,7 +724,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕產婦，其配偶設籍桃園市</span></td>
 			<td data-title="補助金額"><span>補助電子票證<strong style="color:#b50000;">9,000元</strong>，每趟最高補助<strong style="color:#b50000;">250元</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期(或寶寶出生)後<strong style="color:#b50000;">7個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://dowcd.tycg.gov.tw/News_Content.aspx?n=18052&amp;s=1511276" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]桃園孕婦乘車補助申請及預約叫車資訊(最新版)">桃園市政府婦幼發展局</a></span></td>
+			<td data-title="資料來源"><span><a href="https://dowcd.tycg.gov.tw/News_Content.aspx?n=18052&amp;s=1511276" style="text-decoration: underline;" target="_blank" title="[開新視窗]桃園孕婦乘車補助申請及預約叫車資訊(最新版)">桃園市政府婦幼發展局</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -772,7 +734,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 居住於新竹市的外國籍孕婦，其配偶為新竹市市民 </span></td>
 			<td data-title="補助金額"><span>補助乘車券<strong style="color:#b50000;">6,000元</strong>，每趟依實際車資折抵。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">3個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://society.hccg.gov.tw/ch/home.jsp?id=10409&amp;parentpath=0,3,23" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結好孕專車">新竹市政府社會處</a></span></td>
+			<td data-title="資料來源"><span><a href="https://society.hccg.gov.tw/ch/home.jsp?id=10409&amp;parentpath=0,3,23" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結好孕專車">新竹市政府社會處</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -782,7 +744,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. <strong style="color:#b50000;">未滿20歲</strong>外國籍孕產婦，其配偶設籍苗栗縣 </span></td>
 			<td data-title="補助金額"><span>每次孕期補助<strong style="color:#b50000;">6,000元</strong>，偏遠地區者增加補助<strong style="color:#b50000;">2,000元</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">3個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://www.miaoli.gov.tw/social_affairs/News_Content.aspx?n=682&amp;s=845154" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]苗栗縣114年未滿20歲懷孕青少女產檢暨產後就醫車資補助計畫">苗栗縣政府社會處</a></span></td>
+			<td data-title="資料來源"><span><a href="https://www.miaoli.gov.tw/social_affairs/News_Content.aspx?n=682&amp;s=845154" style="text-decoration: underline;" target="_blank" title="[開新視窗]苗栗縣114年未滿20歲懷孕青少女產檢暨產後就醫車資補助計畫">苗栗縣政府社會處</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -792,7 +754,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕產婦，其配偶設籍臺中市</span></td>
 			<td data-title="補助金額"><span>補助電子乘車金，每趟最高補貼<strong style="color:#b50000;">200點</strong>，最多<strong style="color:#b50000;">30趟</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">6個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://www.society.taichung.gov.tw/13710/13735/13762/13768/2956141" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]臺中市孕婦乘車補助 【114年7月1日實施】">臺中市政府社會局</a></span></td>
+			<td data-title="資料來源"><span><a href="https://www.society.taichung.gov.tw/13710/13735/13762/13768/2956141" style="text-decoration: underline;" target="_blank" title="[開新視窗]臺中市孕婦乘車補助 【114年7月1日實施】">臺中市政府社會局</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -802,7 +764,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕婦，其配偶設籍南投縣</span></td>
 			<td data-title="補助金額"><span>補助<strong style="color:#b50000;">5,000點</strong>(等值<strong style="color:#b50000;">5,000元</strong>)，上下車一端為中彰投地區，每趟車資補助上限為<strong style="color:#b50000;">250點</strong>。</span></td>
 			<td data-title="使用效期"><span>預產期後<strong style="color:#b50000;">3個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://eservice.nantou.gov.tw/eservice/apply_mode_directions2?itemId=1276" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]南投縣政府網路e櫃臺 線上免費申請">南投縣政府網路e櫃臺</a></span></td>
+			<td data-title="資料來源"><span><a href="https://eservice.nantou.gov.tw/eservice/apply_mode_directions2?itemId=1276" style="text-decoration: underline;" target="_blank" title="[開新視窗]南投縣政府網路e櫃臺 線上免費申請">南投縣政府網路e櫃臺</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -812,7 +774,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕婦，其配偶設籍嘉義市</span></td>
 			<td data-title="補助金額"><span>補助乘車券<strong style="color:#b50000;">4,500元</strong>，每趟最高補助<strong style="color:#b50000;">150元</strong>。</span></td>
 			<td data-title="使用效期"><span>寶寶出生後<strong style="color:#b50000;">3個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://social.chiayi.gov.tw/News_Content.aspx?n=403&amp;s=293638" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至嘉義市政府社會處">嘉義市政府社會處</a></span></td>
+			<td data-title="資料來源"><span><a href="https://social.chiayi.gov.tw/News_Content.aspx?n=403&amp;s=293638" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結至嘉義市政府社會處">嘉義市政府社會處</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -822,7 +784,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 設籍臺南市的孕婦，或與設籍臺南市市民辦理結婚登記之孕婦（含外縣市及外國籍配偶） </span></td>
 			<td data-title="補助金額"><span>補助項目包含回診交通費、代辦勞務服務費、家務協助及餐食照顧費、居家護理師訪視費，最高補助<strong style="color:#b50000;">11,000元</strong>。</span></td>
 			<td data-title="使用效期"><span>產後<strong style="color:#b50000;">3個月</strong>內申請</span></td>
-			<td data-title="資料來源"><span><a href="https://sab.tainan.gov.tw/News_Content.aspx?n=21365&amp;s=7795171" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]臺南市政府居家安胎服務補助">臺南市政府社會局</a></span></td>
+			<td data-title="資料來源"><span><a href="https://sab.tainan.gov.tw/News_Content.aspx?n=21365&amp;s=7795171" style="text-decoration: underline;" target="_blank" title="[開新視窗]臺南市政府居家安胎服務補助">臺南市政府社會局</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -833,7 +795,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			3. 經社工評估有需求者 </span></td>
 			<td data-title="補助金額"><span>補助乘車券<strong style="color:#b50000;">28張</strong>，每趟最高補助<strong style="color:#b50000;">180元</strong>。</span></td>
 			<td data-title="使用效期"><span>寶寶出生後<strong style="color:#b50000;">6個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://socbu.kcg.gov.tw/index.php?prog=2&amp;b_id=3&amp;m_id=13&amp;s_id=2006" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至高雄市政府社會局">高雄市政府社會局</a></span></td>
+			<td data-title="資料來源"><span><a href="https://socbu.kcg.gov.tw/index.php?prog=2&amp;b_id=3&amp;m_id=13&amp;s_id=2006" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結至高雄市政府社會局">高雄市政府社會局</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -843,7 +805,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 外國籍孕婦，其配偶設籍屏東縣 </span></td>
 			<td data-title="補助金額"><span>補助乘車券<strong style="color:#b50000;">6,000元</strong>，各<strong style="color:#b50000;">20張</strong>面額<strong style="color:#b50000;">100元</strong>及<strong style="color:#b50000;">200元</strong>。</span></td>
 			<td data-title="使用效期"><span>寶寶出生後<strong style="color:#b50000;">2個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://www.pthg.gov.tw/planjdp/cp.aspx?n=7587A0709B97B38B" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至屏東縣政府">屏東縣政府</a></span></td>
+			<td data-title="資料來源"><span><a href="https://www.pthg.gov.tw/planjdp/cp.aspx?n=7587A0709B97B38B" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結至屏東縣政府">屏東縣政府</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -852,7 +814,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<td data-title="對象"><span>設籍花蓮市的孕婦 </span></td>
 			<td data-title="補助金額"><span>乘車補助<strong style="color:#b50000;">3,000元</strong>，每趟最高補助<strong style="color:#b50000;">200元</strong>，單日最高<strong style="color:#b50000;">400元</strong>。</span></td>
 			<td data-title="使用效期"><span>寶寶出生後<strong style="color:#b50000;">2個月</strong>內</span></td>
-			<td data-title="資料來源"><span><a href="https://www.hualien.gov.tw/circulatedview.php?menu=29&amp;typeid=1760&amp;circulated_id=19290" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至花蓮市公所">花蓮市公所</a></span></td>
+			<td data-title="資料來源"><span><a href="https://www.hualien.gov.tw/circulatedview.php?menu=29&amp;typeid=1760&amp;circulated_id=19290" style="text-decoration: underline;" target="_blank" title="[開新視窗]連結至花蓮市公所">花蓮市公所</a></span></td>
 		</tr>
 		<tr>
 			<td data-title="縣市">
@@ -862,7 +824,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			2. 居住於山地鄉之非原住民 </span></td>
 			<td data-title="補助金額"><span>依距離(<strong style="color:#b50000;">5公里</strong>以上)補助，每次補助<strong style="color:#b50000;">200元</strong>、<strong style="color:#b50000;">600元</strong>或<strong style="color:#b50000;">1,000元</strong>。</span></td>
 			<td data-title="使用效期"><span>請洽轄區衛生所詢問內</span></td>
-			<td data-title="資料來源"><span><a href="https://www.ttshb.gov.tw/StaticPage/TransportAllowanceCopy" style="text-decoration: underline;" target="_blank" rel="noopener noreferrer" title="[開新視窗]原住民孕產婦補助">臺東縣衛生局</a></span></td>
+			<td data-title="資料來源"><span><a href="https://www.ttshb.gov.tw/StaticPage/TransportAllowanceCopy" style="text-decoration: underline;" target="_blank" title="[開新視窗]原住民孕產婦補助">臺東縣衛生局</a></span></td>
 		</tr>
 	</tbody>
 </table>
@@ -890,17 +852,17 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 			<th style="width:70%;">說明</th>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.mohw.gov.tw/cp-4259-47036-1.html" target="_blank" rel="noopener noreferrer">國民健康署「孕產兒關懷諮詢專線」</a><br />
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://www.mohw.gov.tw/cp-4259-47036-1.html" target="_blank">國民健康署「孕產兒關懷諮詢專線」</a><br />
 			📞0800-870-870</td>
 			<td style="text-align:left; padding:0 5px;">🔸提供諮詢主題包括產前產後健康、母乳哺育、營養與體重管理、身心調適等，並提供傾聽、關懷與資源轉介服務。<br />
 			🔸服務時間：週一至週五9:00-17:00</td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="http://mammy.hpa.gov.tw/" target="_blank" rel="noopener noreferrer">國民健康署「孕產兒關懷網站」</a></td>
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="http://mammy.hpa.gov.tw/" target="_blank">國民健康署「孕產兒關懷網站」</a></td>
 			<td style="text-align:left; padding:0 5px;">🔸提供孕產婦懷孕相關議題、嬰幼兒發展議題、母乳哺育資源、哺集乳室地圖等知識與資訊。</td>
 		</tr>
 		<tr>
-			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://page.line.me/026itxsg" target="_blank" rel="noopener noreferrer">國民健康署「孕產兒關懷LINE帳號」</a><br />
+			<td style="background-color:#F2F2F2; font-weight:bolder;"><a href="https://page.line.me/026itxsg" target="_blank">國民健康署「孕產兒關懷LINE帳號」</a><br />
 			@mammy870870</td>
 			<td style="text-align:left; padding:0 5px;">🔸可訂閱媽媽/寶寶週報。<br />
 			🔸提供孕幼健康知識庫、諮詢方式、哺集乳室資訊、孕產/哺乳最新資源。<br />
@@ -919,7 +881,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>您可以點選以下連結，來瞭解您所屬的縣市政府提供哪些婦女保健及福利措施：</p>
 
-<p><a href="https://www.klcg.gov.tw/tw/social/2712.html" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="基隆市"><strong>基隆市</strong></a> <a href="https://health.gov.taipei/Content_List.aspx?n=3193C36801F271F7" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺北市"><strong>臺北市</strong></a> <a href="https://www.health.ntpc.gov.tw/basic/?node=10580" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="新北市"><strong>新北市</strong></a> <a href="https://dowcd.tycg.gov.tw/cl.aspx?n=16356" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="桃園市"><strong>桃園市</strong></a> <a href="https://dep.hcchb.gov.tw/ch/home.jsp?id=95&amp;parentpath=0,40,88" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="新竹市"><strong>新竹市</strong></a> <a href="https://civil.hsinchu.gov.tw/cp.aspx?n=1618" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="新竹縣"><strong>新竹縣</strong></a> <a href="https://www.mlshb.gov.tw/nc/content-list?tag=175&amp;idNavigations=15" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="苗栗縣"><strong>苗栗縣</strong></a> <a href="https://www.health.taichung.gov.tw/27071/Lpsimplelist" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺中市"><strong>臺中市</strong></a> <a href="https://www.chshb.gov.tw/topic/135" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="彰化縣"><strong>彰化縣</strong></a> <a href="https://www.ntshb.gov.tw/form/index?Parser=2,7,106,60" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="南投縣"><strong>南投縣</strong></a> <a href="https://welfare.yunlin.gov.tw/People/Search1957/64?Q_CodeType=4" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="雲林縣"><strong>雲林縣</strong></a> <a href="https://health.chiayi.gov.tw/cl.aspx?n=6002" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="嘉義市"><strong>嘉義市</strong></a> <a href="https://sabcc.cyhg.gov.tw/Content_List.aspx?n=80061687FDB8A62C" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="嘉義縣"><strong>嘉義縣</strong></a> <a href="https://health.tainan.gov.tw/page.asp?mainid=6D68F33C-879B-4F5B-951F-C0F340651354&amp;srcorcaid=4342C3D9-DD01-435F-9B99-56C72297EF1D" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺南市"><strong>臺南市</strong></a> <a href="https://khchildcare.kcg.gov.tw/Content_List.aspx?n=0BC74DD52311D023" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="高雄市"><strong>高雄市</strong></a> <a href="https://www.pthg.gov.tw/planjdp/Content_List.aspx?n=A5723553FC55DD80" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="屏東縣"><strong>屏東縣</strong></a> <a href="https://sntroot.e-land.gov.tw/cp.aspx?n=10392" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="宜蘭縣"><strong>宜蘭縣</strong></a> <a href="https://www.hlshb.gov.tw/News.aspx?n=1992&amp;sms=9998" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="花蓮縣"><strong>花蓮縣</strong></a> <a href="https://www.ttshb.gov.tw/Announcement/C000007" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺東縣"><strong>臺東縣</strong></a> <a href="https://www.phchb.gov.tw/home.jsp?intpage=2&amp;id=213&amp;qptdate=&amp;qdldate=&amp;keyword=%E8%AB%8B%E8%BC%B8%E5%85%A5%E9%97%9C%E9%8D%B5%E5%AD%97&amp;pagenum=1&amp;pagesize=15" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="澎湖縣"><strong>澎湖縣</strong></a> <a href="https://phb.kinmen.gov.tw/Content_List.aspx?n=0F1FC577CAEC4253" id="button" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="金門縣"><strong>金門縣</strong></a> <a href="https://www.matsuhb.gov.tw/Chhtml/content/2294?mcid=31368&amp;webaid=" id="button" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="連江縣"><strong>連江縣</strong></a></p>
+<p><a href="https://www.klcg.gov.tw/tw/social/2712.html" id="button" style="text-decoration: none ;  " target="_blank" title="基隆市"><strong>基隆市</strong></a> <a href="https://health.gov.taipei/Content_List.aspx?n=3193C36801F271F7" id="button" style="text-decoration: none ; " target="_blank" title="臺北市"><strong>臺北市</strong></a> <a href="https://www.health.ntpc.gov.tw/basic/?node=10580" id="button" style="text-decoration: none ; " target="_blank" title="新北市"><strong>新北市</strong></a> <a href="https://dowcd.tycg.gov.tw/cl.aspx?n=16356" id="button" style="text-decoration: none ; " target="_blank" title="桃園市"><strong>桃園市</strong></a> <a href="https://dep.hcchb.gov.tw/ch/home.jsp?id=95&amp;parentpath=0,40,88" id="button" style="text-decoration: none ; " target="_blank" title="新竹市"><strong>新竹市</strong></a> <a href="https://civil.hsinchu.gov.tw/cp.aspx?n=1618" id="button" style="text-decoration: none ;  " target="_blank" title="新竹縣"><strong>新竹縣</strong></a> <a href="https://www.mlshb.gov.tw/nc/content-list?tag=175&amp;idNavigations=15" id="button" style="text-decoration: none ;  " target="_blank" title="苗栗縣"><strong>苗栗縣</strong></a> <a href="https://www.health.taichung.gov.tw/27071/Lpsimplelist" id="button" style="text-decoration: none ; " target="_blank" title="臺中市"><strong>臺中市</strong></a> <a href="https://www.chshb.gov.tw/topic/135" id="button" style="text-decoration: none ; " target="_blank" title="彰化縣"><strong>彰化縣</strong></a> <a href="https://www.ntshb.gov.tw/form/index?Parser=2,7,106,60" id="button" style="text-decoration: none ;  " target="_blank" title="南投縣"><strong>南投縣</strong></a> <a href="https://welfare.yunlin.gov.tw/People/Search1957/64?Q_CodeType=4" id="button" style="text-decoration: none ;  " target="_blank" title="雲林縣"><strong>雲林縣</strong></a> <a href="https://health.chiayi.gov.tw/cl.aspx?n=6002" id="button" style="text-decoration: none ;  " target="_blank" title="嘉義市"><strong>嘉義市</strong></a> <a href="https://sabcc.cyhg.gov.tw/Content_List.aspx?n=80061687FDB8A62C" id="button" style="text-decoration: none ;  " target="_blank" title="嘉義縣"><strong>嘉義縣</strong></a> <a href="https://health.tainan.gov.tw/page.asp?mainid=6D68F33C-879B-4F5B-951F-C0F340651354&amp;srcorcaid=4342C3D9-DD01-435F-9B99-56C72297EF1D" id="button" style="text-decoration: none ; " target="_blank" title="臺南市"><strong>臺南市</strong></a> <a href="https://khchildcare.kcg.gov.tw/Content_List.aspx?n=0BC74DD52311D023" id="button" style="text-decoration: none ; " target="_blank" title="高雄市"><strong>高雄市</strong></a> <a href="https://www.pthg.gov.tw/planjdp/Content_List.aspx?n=A5723553FC55DD80" id="button" style="text-decoration: none ; " target="_blank" title="屏東縣"><strong>屏東縣</strong></a> <a href="https://sntroot.e-land.gov.tw/cp.aspx?n=10392" id="button" style="text-decoration: none ; " target="_blank" title="宜蘭縣"><strong>宜蘭縣</strong></a> <a href="https://www.hlshb.gov.tw/News.aspx?n=1992&amp;sms=9998" id="button" style="text-decoration: none ;  " target="_blank" title="花蓮縣"><strong>花蓮縣</strong></a> <a href="https://www.ttshb.gov.tw/Announcement/C000007" id="button" style="text-decoration: none ; " target="_blank" title="臺東縣"><strong>臺東縣</strong></a> <a href="https://www.phchb.gov.tw/home.jsp?intpage=2&amp;id=213&amp;qptdate=&amp;qdldate=&amp;keyword=%E8%AB%8B%E8%BC%B8%E5%85%A5%E9%97%9C%E9%8D%B5%E5%AD%97&amp;pagenum=1&amp;pagesize=15" id="button" style="text-decoration: none ; " target="_blank" title="澎湖縣"><strong>澎湖縣</strong></a> <a href="https://phb.kinmen.gov.tw/Content_List.aspx?n=0F1FC577CAEC4253" id="button" style="text-decoration: none ;  " target="_blank" title="金門縣"><strong>金門縣</strong></a> <a href="https://www.matsuhb.gov.tw/Chhtml/content/2294?mcid=31368&amp;webaid=" id="button" style="text-decoration: none ; " target="_blank" title="連江縣"><strong>連江縣</strong></a></p>
 
 <p style="clear:both;">&nbsp;</p>
 
@@ -928,9 +890,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>除了上述補助項目，您也可參閱站內其他相關資訊：<br />
-👉【<a href="https://www.gov.tw/News_Content_26_530022" target="_blank" rel="noopener noreferrer">有性別平等工作法，讓您就業好放心！</a>】：帶您看性別平等工作法規範勞工從經歷懷孕、生產及育嬰的過程中，可享有的假別及權益。<br />
-👉【<a href="https://www.gov.tw/News_Content_26_402191" target="_blank" rel="noopener noreferrer">輕鬆養，輕鬆領！9個給新手爸媽的育兒服務大集合</a>】：此篇文章彙整新手爸媽享有那些育兒補助。<br />
-👉【<a href="https://www.gov.tw/News_Content_26_761449" target="_blank" rel="noopener noreferrer">產後安心調養，帶您看各縣市政府到宅坐月子服務、母嬰營養補助金！</a>】：彙整各縣市政府所推出之「到宅坐月子服務(月嫂媒合)」及「孕產婦及嬰兒營養補助」方案資訊。</p>
+👉【<a href="https://www.gov.tw/News_Content_26_530022" target="_blank">有性別平等工作法，讓您就業好放心！</a>】：帶您看性別平等工作法規範勞工從經歷懷孕、生產及育嬰的過程中，可享有的假別及權益。<br />
+👉【<a href="https://www.gov.tw/News_Content_26_402191" target="_blank">輕鬆養，輕鬆領！9個給新手爸媽的育兒服務大集合</a>】：此篇文章彙整新手爸媽享有那些育兒補助。<br />
+👉【<a href="https://www.gov.tw/News_Content_26_761449" target="_blank">產後安心調養，帶您看各縣市政府到宅坐月子服務、母嬰營養補助金！</a>】：彙整各縣市政府所推出之「到宅坐月子服務(月嫂媒合)」及「孕產婦及嬰兒營養補助」方案資訊。</p>
 
 <p>&nbsp;</p>
 
@@ -938,26 +900,26 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.gov.tw/News_Content_2_695495" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/8/50049655-40ea-4350-8ac3-bd15ba3f5d8f.jpg" /> <span>桃園市-低收入戶孕產婦及嬰兒營養品代金補助</span> <span>設籍桃園市之低收入戶孕產婦及嬰兒，未領取政府其他同性質補助，且符合申請規定者，孕產婦每人每胎最高補助新臺幣1萬元，未滿1歲嬰兒1次補助新臺幣1萬元。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_818668" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/8/50600216-5e7b-4c82-8051-c97807da76eb.jpg" /> <span>屏東縣政府-孕婦產檢交通補助(好孕車劵)</span> <span>民眾可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」做為申辦文件。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_822609" target="_blank" rel="noopener noreferrer"><img alt="" src="https://www.gov.tw/images/gov-pic/100_1.jpg" /><span>南投縣政府-「好彩投」好孕乘車補助服務</span> <span>可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」做為申辦文件。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_695495" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/8/50049655-40ea-4350-8ac3-bd15ba3f5d8f.jpg" /> <span>桃園市-低收入戶孕產婦及嬰兒營養品代金補助</span> <span>設籍桃園市之低收入戶孕產婦及嬰兒，未領取政府其他同性質補助，且符合申請規定者，孕產婦每人每胎最高補助新臺幣1萬元，未滿1歲嬰兒1次補助新臺幣1萬元。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_818668" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/8/50600216-5e7b-4c82-8051-c97807da76eb.jpg" /> <span>屏東縣政府-孕婦產檢交通補助(好孕車劵)</span> <span>民眾可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」做為申辦文件。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_822609" target="_blank"><img alt="" src="https://www.gov.tw/images/gov-pic/100_1.jpg" /><span>南投縣政府-「好彩投」好孕乘車補助服務</span> <span>可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」做為申辦文件。</span> </a></li>
 </ul>
 </div>
 </span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>不孕症,試管嬰兒,孕婦,產檢,產前檢查,營養補助,懷孕<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=da578c66a5598dbacd001340d7848827" data-sn="889950"
-                data-name="2026 新北聯合婚禮報名開跑限量百對! 新人可親手打造專屬對戒再抽歐洲蜜月機票">2026 新北聯合婚禮報名開跑限量百對! 新人可親手打造專屬對戒再抽歐洲蜜月機票<span>新北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taichung.gov.tw/3299391/post" data-sn="889631"
-                data-name="夏季野生動物活動頻繁 中市動保處籲請民眾提高警覺共同防範狂犬病">夏季野生動物活動頻繁 中市動保處籲請民眾提高警覺共同防範狂犬病<span>臺中市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.exam.gov.tw/News_Content.aspx?n=1&s=51026" data-sn="888909"
-                data-name="考試院通過公教人員保險法、公務人員任用法及公務人員考試法等3法修正案 完備友善的生養環境">考試院通過公教人員保險法、公務人員任用法及公務人員考試法等3法修正案 完備友善的生養環境<span>考試院</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.ey.gov.tw/Page/9277F759E41CCD91//bb8dc93c-af82-466e-8a83-d6fbd4a3dd12" data-sn="888538"
-                data-name="訪視非營利幼兒園 卓揆：建構育兒支持鐵三角 打造友善生養及職場環境">訪視非營利幼兒園 卓揆：建構育兒支持鐵三角 打造友善生養及職場環境<span>行政院</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=4D7AB5F77FBB3F82" data-sn="888255"
-                data-name="出席金吾獎表揚優秀警察　蔣萬安：以實際行動支持同仁">出席金吾獎表揚優秀警察　蔣萬安：以實際行動支持同仁<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&ss=11363B096B53A182" data-sn="896813"
+                data-name="「到站即到家」大寮社宅7月27日公告招租　婚育宅和關懷戶數比達4成">「到站即到家」大寮社宅7月27日公告招租　婚育宅和關懷戶數比達4成<span>高雄市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.mohw.gov.tw/cp-16-87155-1.html" data-sn="895271"
+                data-name="國內出現今年首例境外移入茲卡病毒感染症確定病例 請民眾前往流行地區做好防蚊措施">國內出現今年首例境外移入茲卡病毒感染症確定病例 請民眾前往流行地區做好防蚊措施<span>衛生福利部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taichung.gov.tw/3320871/post" data-sn="895127"
+                data-name="國際獅子會300C2區服務薪傳　鄭副市長盼共創幸福城">國際獅子會300C2區服務薪傳　鄭副市長盼共創幸福城<span>臺中市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taichung.gov.tw/3319906/post" data-sn="894983"
+                data-name="國際獅子會300C複合區薪火相傳　鄭副市長感謝公益傳承攜手打造幸福台中">國際獅子會300C複合區薪火相傳　鄭副市長感謝公益傳承攜手打造幸福台中<span>臺中市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taichung.gov.tw/3319420/post" data-sn="894840"
+                data-name="巴威颱風來襲 中市府超前部署、堅守防線 跨局處全力守護市民安全">巴威颱風來襲 中市府超前部署、堅守防線 跨局處全力守護市民安全<span>臺中市政府</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -978,7 +940,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -1054,7 +1016,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -1066,7 +1030,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1136,7 +1100,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1190,8 +1154,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=708298" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=708298" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SecFde0HE1ra5+bX7w3COu+3MnRKI2wPrly8Eiz/vD97NsPOOi+s9Dl6pMHITPWG11RNSxtjPNbPUAw90pNfj328pLIKpRIkHPCSOxcJrJEAfyHgESxJAJo5ecjl/Ds0gLR84M6GqOk3nOFL1jXPxghOShPxGWBsaP+8a+y8UElb+aBeNnjwkoQCO8An2xwK+GOZ+SHPum9SaLnxPvWd1p0nmVhs6ToXFemY4p1LkMgHqefiNzz3XKERaubA/uNs1rV9nxiKBTix5k88J/GSn7FHSgUzKCMjgQgm+d42DEnSmwira0UVTA9c2ET0UYCaVSTFgDBanSZuSc+ilt+aeo3sKp0z7dlaTh0846u978OLWaq5DiIYaYscRJANb+wrvoJ6SZ/yctz+83++0cQ0tRpR0xNtKhN5Zb6cQ8R2LNMpDJM0k1ihG8x2i5g9R1S5PFhHo0wnM/t89AKXaN5DArlJKkoHTV7+uqwNkPdv6xpazAVTtKoZboFDZpm+kHNPKJs9pOvwErsaBVSgG6UqJm7ajF8sUng6EZ310kXyb0GO35fY8drRBgkYtfjqwdFYmQNFIzqC1nsqduRJQYU9CLBsmrGyeoNYTD8A5F8nJqUCeu6EHAwEqLbWWrUKbvxZpB1MnM435/PWsiHXzoCQ7hLkFZNp9Q71zMi+Hey4fyFu/BAWJMroxh4gKemuTtOYDG17tTnv0Evfmf7t2jjRnX0WXhEL/BlOtQUg70oTjJfJiQpyRQQ0ot8467YdweiYcRSh7Fxzq3pEu2xCrR8ddDYdcKT6XthltDQAWT9r83v7ueUS7je2RO+HirDN4pxtkDOs1ZYA5ZpbJa8PgXIBZC0hnyaLJKu+ni3RnD1yjl3qfjnqZNIsRITHcrYKKO9E5fIlWqCgWcH5XlBjKYRWWeY+nSMbOhEh9+vbR9aSfnkE3evTmaElv1IAcQADsdInGcc5vJX5gNpJjs3dAzefzMomXKR2467LVtpohrBxBzmsV7rndgJ1p6ujCXVF37DpN1so22OanAt/xqE0VKqyz4lyQwBOpPr4+EKQVJ1JFXnQZWFTPG7AtvtwZHH3iO1+HoxC7cszrU35baN5IOW6IqZOtGkA/CpSIi0zhMiAJ8orDPwJ/f2Ki6BXwRl7hWYQ1OQ5kAat3SAS3mdbJAaWZxDdZMPT0F2v+LhpqksV04gC+baQ9ArBm+LhU0qs5c6Cdl4zsiPX6+25K9CI99jaHLcaaWZNDayO97yj9PoDhWQHB80bfDAuV19B/GyX6194Tbh4xRJa1fn6Aujzi456jNwwmHRR1oHeCzlsAA48vwC8abZp/HUVwMLlgeCCDDCPrKUNKJj7tOdwatGlFVDLFVzP860JZ+YXQiY9wnYePVOb9CBtD1h6UXAFhk1ElGg6lFXOmE7OXdGMdCXOa2Q37HVYfjQttD37lle3hjWefu+h6DH6dFmVDo1vuzLb/ToCXHLhULF9BNI1yPo2L2nD8q1Gsp4/WKQDIEfAYBhdFbk5zd5y" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GCdvCb+dua8pdX9VOeXAdWNCk+zJkOjZXut3s6xcx++YuGf1dvP0PNoVgwK3uI+dCfJL9Xzvkcu1TMj9K+0cvSGTwfBF7aH90xUl6TUl1AdiWPDFhT57oFZvC/6W1Z/NnIDhvVjqrYqBvuceiCYjDKzli9QOrsaoCVbevrWmqXquzkafdmvtTYJ/d3mMthq7EIs8yM5qAKDJ2l8CrVFOgsTz2/FwJIK3yhoOh9JahgSmaKtcwrkntTUHL2AKZtG+Ue7JvPx/yoCLgqgsLKgEOwIkyOG3EB5bFKYReW88wooE21Hk/DkEChZd4r8PHT59J/NYnw84TCu8XpSUfDEQdFVS887sHpVhlvukYyx/PHoghep/mz1G1AiPjVIS5IaKG+7+q2Tx8KtmK541Z02AYknX22wBpV3H9wRThUYQiymxFJLXluyo9IE0edOAjCfOtWXX6Ggka9QgnIFLMQOu+c3es/PDZTZ9XPqMt4pZTMRC/f1Hp9zxZtjJ1vzKEXbZwdLF4xJfDYmJSqrnu3kEY2SFoaD4IIWFEOT8LYnSaMF9EL//MdP1Oz9eJnfeYhenu+BmIaBfdgIH3jCpbOxKzsSIhjDTxxOjrAJndhHe/t0bdvtDke9JkzGKTXdpfOAyiz0Z78D4mSnrwOYDqajwmb3lxwljN339q2Erv985rIEzuLaz2AzCViItd0jsiFGCxoigKwzh1Zsv4NozWNIUgfY5OW7Y2ckZ+DSCc6B8HUDu3N+qr0i6cZUC4WFdyvHZ1i8Ms/CQGBIdkdrzd+csKIospq2LMkDk/wWGRT9isFxsO/Gha9o+y8/l9qj5XWcDaiF9b9dhc0sGl3ddfXkhojA4nrSMZ90gait8Unqd3irNmKNDap3K+gkufk/JoLtMVRdKVIAibCYL6bgt+Ys5KIRb8yrrikS+JLzzizWxxxCXg0DZiMIqR3G347onxS8y+aY9uRfdHC1hFv7kiCAmdtU2KonEeM0mChbUkeBNMCFMFk8BpzlsjR713jxEpwssYGT5BTelkfGH/P2G6OJICoAzmFrydM6og6uT0q70P+sY7mcxgidKyzitbbvYA58WoqsIDSoNo48zDE+CA2qBu6IxD/txydlJ9Qm7pKCmUg0qwqzHsay/ZNaR4NOXYdTVQ3wH5ubGDdp2A5ddMAwnQGLU0rz0CW1LI0ivSIfHxgbT3HN7i05vMtlF6c5NqdajdMdJCvpoW9CkYLi1WbG0Ct0EPWLYo2CQfrXsrstmsI1JmUjQuEgfJb0XaXtXetP3ya/dfybrWmgLDafZ07aZabnQhszAUjQjipmsIFkNZRbumttFe1qlErXrqyHBy+pS7H8J1SpTWVTATBcVIqKUgZFFRIUZJgp3eWnSQTasn1ll65nv/4+N6FehxNTzClsoBIJfIOwnaxWIEvtF/0o72aiTBiD3aAUM48zA3NE8x6A+YP86Pf5lmrH5YDl0yPEU1EXslgRh4db1TZS47Ik7XgTvv30V2kBO2i4SmP80YQ5tB9GG" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_18d6206514454a43b0df3f4912519419">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_d303518cef444fb484fdfce76065e6d6">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_18d6206514454a43b0df3f4912519419" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_18d6206514454a43b0df3f4912519419" id="txt_18d6206514454a43b0df3f4912519419" type="search" placeholder="" title="搜尋">
+  <label for="txt_d303518cef444fb484fdfce76065e6d6" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_d303518cef444fb484fdfce76065e6d6" id="txt_d303518cef444fb484fdfce76065e6d6" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_18d6206514454a43b0df3f4912519419" data-search="btn_18d6206514454a43b0df3f4912519419" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_d303518cef444fb484fdfce76065e6d6" data-search="btn_d303518cef444fb484fdfce76065e6d6" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_18d6206514454a43b0df3f4912519419"]').on("keydown", function (event) {
+    $('[data-search="btn_d303518cef444fb484fdfce76065e6d6"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_18d6206514454a43b0df3f4912519419'));
+             doSearch($('#btn_d303518cef444fb484fdfce76065e6d6'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_18d6206514454a43b0df3f4912519419']", true);
+return_value = typeWriter("[data-search='btn_d303518cef444fb484fdfce76065e6d6']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_18d6206514454a43b0df3f4912519419']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_VTktgqAjmD" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_RikjdHGvii" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_iqJbYFIsnQ" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_ngRxaHCxyh" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_SnUQgcFpwe" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_ftuQJHrDQf" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>找工作？找人才？帶您看各行各業的人才資料庫及媒合平臺！</h3></div></div></div></div>
         
         
@@ -511,39 +473,39 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td rowspan="4" style="background-color:#F2F2F2; font-weight:bolder;">不限</td>
-			<td><a href="https://www.taiwanjobs.gov.tw/Internet/Index/index.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">台灣就業通</a></td>
+			<td><a href="https://www.taiwanjobs.gov.tw/Internet/Index/index.aspx" rel="noopener noreferrer" target="_blank">台灣就業通</a></td>
 			<td style="text-align:left; padding:0 5px;">求職者可透過此平臺查詢全臺職缺、線上自我評估、申請技能培訓課程、查詢創業資源等。</td>
 			<td style="text-align:left; padding:0 5px;">企業可於平臺刊登職缺、查詢人才資料及進行線上媒合。</td>
 			<td>勞動部勞動力發展署</td>
 		</tr>
 		<tr>
-			<td><a href="https://contacttaiwan.tw/MainOne/Home.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">Contact TAIWAN</a></td>
+			<td><a href="https://contacttaiwan.tw/MainOne/Home.aspx" rel="noopener noreferrer" target="_blank">Contact TAIWAN</a></td>
 			<td style="text-align:left; padding:0 5px;"><strong style="color:#b50000;">國際專業人才</strong>可透過此平臺查詢全臺職缺，以及了解我國攬才政策等資訊。</td>
 			<td style="text-align:left; padding:0 5px;">此平臺協助臺灣企業延攬國際專業人才，提供線上求職媒合、專人諮詢等服務，另辦理國內外攬才活動。</td>
 			<td>經濟部</td>
 		</tr>
 		<tr>
-			<td><a href="https://events.104.com.tw/ocac/20230412114938/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">僑生i就業</a></td>
+			<td><a href="https://events.104.com.tw/ocac/20230412114938/" rel="noopener noreferrer" target="_blank">僑生i就業</a></td>
 			<td style="text-align:left; padding:0 5px;">提供<strong style="color:#b50000;">僑生(產攜專班、海青班)</strong>、<strong style="color:#b50000;">港澳生</strong>多元工作機會，協助探索其就業方向，並可線上查詢講座及認證研習課程。</td>
 			<td style="text-align:left; padding:0 5px;">協助臺灣企業線上招攬優秀僑生、宣傳企業品牌知名度。</td>
 			<td>中華民國僑務委員會</td>
 		</tr>
 		<tr>
-			<td><a href="https://job.vac.gov.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">就業服務站</a></td>
+			<td><a href="https://job.vac.gov.tw/" rel="noopener noreferrer" target="_blank">就業服務站</a></td>
 			<td style="text-align:left; padding:0 5px;"><strong style="color:#b50000;">榮民榮眷</strong>可透過此平臺得知企業徵才及職訓服務資訊，並進行線上投遞履歷。</td>
 			<td style="text-align:left; padding:0 5px;">企業可於平臺刊登職缺及進行線上媒合。</td>
 			<td>國軍退除役官兵輔導委員會</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">5+2產業</td>
-			<td><a href="https://talent.ipas.org.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">經濟部產業人才能力鑑定人才庫平臺</a></td>
-			<td style="text-align:left; padding:0 5px;">求職者須先成為<a href="https://www.ipas.org.tw/index.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">iPAS</a>獲證者，方可加入人才庫平臺，獲得認同企業優先面試及聘用的機會。</td>
+			<td><a href="https://talent.ipas.org.tw/" rel="noopener noreferrer" target="_blank">經濟部產業人才能力鑑定人才庫平臺</a></td>
+			<td style="text-align:left; padding:0 5px;">求職者須先成為<a href="https://www.ipas.org.tw/index.aspx" rel="noopener noreferrer" target="_blank">iPAS</a>獲證者，方可加入人才庫平臺，獲得認同企業優先面試及聘用的機會。</td>
 			<td style="text-align:left; padding:0 5px;">企業申請加入iPAS企業認同，即可刊登職缺、查詢人才庫、獲得iPAS鑑定考試推廣價等益處。</td>
 			<td>經濟部產業發展署</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">農業</td>
-			<td><a href="https://ahr.moa.gov.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">農業人力資源平臺</a></td>
+			<td><a href="https://ahr.moa.gov.tw/" rel="noopener noreferrer" target="_blank">農業人力資源平臺</a></td>
 			<td style="text-align:left; padding:0 5px;">求職者可至平臺查詢全臺農業職缺，包含全職、兼職、學生專區、僑外生及假日農夫。</td>
 			<td style="text-align:left; padding:0 5px;">1. <b>農場主</b>：可透過此平臺刊登職缺、尋找農機具。<br />
 			2. <b>農機擁有者</b>：透過平臺APP找新案、主動接單報價。</td>
@@ -551,34 +513,34 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">運動</td>
-			<td><a href="https://isports.sa.gov.tw/index.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">i運動資訊平臺</a></td>
+			<td><a href="https://isports.sa.gov.tw/index.aspx" rel="noopener noreferrer" target="_blank">i運動資訊平臺</a></td>
 			<td style="text-align:left; padding:0 5px;">「<strong style="color:#b50000;">國民體適能指導員</strong>」、「<strong style="color:#b50000;">山域嚮導員</strong>」、「<strong style="color:#b50000;">救生員</strong>」及「<strong style="color:#b50000;">無動力飛行運動專業人員</strong>」可至平臺線上報名訓練及檢定課程。</td>
 			<td style="text-align:left; padding:0 5px;">雇主可透過此平臺向運動人才進行工作邀請或查詢證書。</td>
 			<td>運動部全民運動署</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">語言</td>
-			<td><a href="https://idb.immigration.gov.tw/mp.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">通譯人員資料庫</a></td>
+			<td><a href="https://idb.immigration.gov.tw/mp.html" rel="noopener noreferrer" target="_blank">通譯人員資料庫</a></td>
 			<td style="text-align:left; padding:0 5px;">通譯人員申請加入系統，審核通過後即可透過平臺進行接案。</td>
 			<td style="text-align:left; padding:0 5px;">此平臺提供各國語言(含原住民語)通譯人才庫，案件類型包括但不限教育文化體育、關懷輔導、警政調查、就業輔導等。機關團體須先申請加入系統並通過審核，方可與通譯人員進行需求媒合。</td>
 			<td>內政部移民署</td>
 		</tr>
 		<tr>
 			<td rowspan="2" style="background-color:#F2F2F2; font-weight:bolder;">教育</td>
-			<td><a href="https://hr.k12ea.gov.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">教育人才庫媒合平臺</a></td>
+			<td><a href="https://hr.k12ea.gov.tw/" rel="noopener noreferrer" target="_blank">教育人才庫媒合平臺</a></td>
 			<td style="text-align:left; padding:0 5px;">「<strong style="color:#b50000;">國中小代理代課教師</strong>」、「<strong style="color:#b50000;">教學支援人員</strong>」及「<strong style="color:#b50000;">公私立幼兒園人才</strong>」可透過此平臺登錄履歷表、查詢相關職缺資訊。</td>
 			<td style="text-align:left; padding:0 5px;">學校單位及幼兒園可透過此平臺找尋相關教育人才，以及線上刊登職缺。</td>
 			<td>教育部國民及學前教育署</td>
 		</tr>
 		<tr>
-			<td><a href="https://neecs.moenv.gov.tw/Human/TalentPool" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">環境教育人才庫</a></td>
+			<td><a href="https://neecs.moenv.gov.tw/Human/TalentPool" rel="noopener noreferrer" target="_blank">環境教育人才庫</a></td>
 			<td style="text-align:left; padding:0 5px;">環境教育人才可透過此平臺查詢認證或專業領域課程、線上申請認證、報名參與年度徵選計畫等。</td>
 			<td style="text-align:left; padding:0 5px;">需求單位可依照地區、主題及授課方式等，線上搜尋環境教育人員，並與之聯繫洽詢服務內容。</td>
 			<td>國家環境研究院</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">托育</td>
-			<td><a href="https://ncwisweb.sfaa.gov.tw/home/index" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">托育媒合平臺</a></td>
+			<td><a href="https://ncwisweb.sfaa.gov.tw/home/index" rel="noopener noreferrer" target="_blank">托育媒合平臺</a></td>
 			<td style="text-align:left; padding:0 5px;">托育人員透過此平臺進行工作媒合，查詢專業訓練課程開課資訊。</td>
 			<td style="text-align:left; padding:0 5px;">家長可透過此平臺搜尋居家托育人員(保母)並進行媒合，並可查詢全臺托嬰中心、托育相關法令及收退費規定等資訊。</td>
 			<td>衛生福利部社會及家庭署</td>
@@ -588,9 +550,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>👉 以下您可以點選各縣市就業服務平臺或人力網，得知最新徵才活動、就業博覽會、市府職缺徵選等資訊，或是您可點此查詢&lt;<a href="https://job.taiwanjobs.gov.tw/internet/index/service_location.aspx" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">各地就業服務據點</a>&gt;。</p>
+<p>👉 以下您可以點選各縣市就業服務平臺或人力網，得知最新徵才活動、就業博覽會、市府職缺徵選等資訊，或是您可點此查詢&lt;<a href="https://job.taiwanjobs.gov.tw/internet/index/service_location.aspx" rel="noopener noreferrer" target="_blank">各地就業服務據點</a>&gt;。</p>
 
-<p><a href="https://okwork.gov.taipei/ESO/" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺北市"><strong>臺北市</strong></a> <a href="https://ilabor.ntpc.gov.tw/cloud/GoodJob" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="新北市"><strong>新北市</strong></a> <a href="https://oes.tycg.gov.tw/" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="桃園市"><strong>桃園市</strong></a> <a href="https://1catchjob.taichung.gov.tw/default.aspx" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺中市"><strong>臺中市</strong></a> <a href="https://work.yunlin.gov.tw/" id="button" rel="noopener noreferrer" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="雲林縣"><strong>雲林縣</strong></a> <a href="https://sites.google.com/view/2023-da-bu-mei/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF" id="button" rel="noopener noreferrer" style="text-decoration: none ;  " target="_blank" rel="noopener noreferrer" title="嘉義縣"><strong>嘉義縣</strong></a> <a href="https://web.tainan.gov.tw/jobtainan" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺南市"><strong>臺南市</strong></a> <a href="https://ktec.kcg.gov.tw/" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="高雄市"><strong>高雄市</strong></a></p>
+<p><a href="https://okwork.gov.taipei/ESO/" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" title="臺北市"><strong>臺北市</strong></a> <a href="https://ilabor.ntpc.gov.tw/cloud/GoodJob" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" title="新北市"><strong>新北市</strong></a> <a href="https://oes.tycg.gov.tw/" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" title="桃園市"><strong>桃園市</strong></a> <a href="https://1catchjob.taichung.gov.tw/default.aspx" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" title="臺中市"><strong>臺中市</strong></a> <a href="https://work.yunlin.gov.tw/" id="button" rel="noopener noreferrer" style="text-decoration: none ;  " target="_blank" title="雲林縣"><strong>雲林縣</strong></a> <a href="https://sites.google.com/view/2023-da-bu-mei/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF" id="button" rel="noopener noreferrer" style="text-decoration: none ;  " target="_blank" title="嘉義縣"><strong>嘉義縣</strong></a> <a href="https://web.tainan.gov.tw/jobtainan" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" title="臺南市"><strong>臺南市</strong></a> <a href="https://ktec.kcg.gov.tw/" id="button" rel="noopener noreferrer" style="text-decoration: none ; " target="_blank" title="高雄市"><strong>高雄市</strong></a></p>
 
 <p style="clear:both;">&nbsp;</p>
 
@@ -598,9 +560,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.gov.tw/News_Content_2_379827" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/91ef8956-3b7b-4c8b-98b9-7f2d12a6549a.jpg" /> <span>求才登記</span> <span>一般國內求才登記，請至「台灣就業通-找人才」網站註冊會員帳號，完成帳號審查後，即可在網站登錄求才職缺資料。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_379822" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>求職登記</span><span>本國國民、大陸、外籍配偶須取得居留證，外國人士、需依相關法規，取得在臺工作資格等可進行申請</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_394174" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/532207/ebe1a62c-50b0-4917-870f-ab215f194eef.jpg" /> <span>選送華語教學人員赴外任教專區</span> <span>為推廣我國優質華語教學及臺灣文化，教育部補助優秀華語教學人員赴國外學校任教，申請者應先於華語教學人才庫登錄註冊。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_379827" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/91ef8956-3b7b-4c8b-98b9-7f2d12a6549a.jpg" /> <span>求才登記</span> <span>一般國內求才登記，請至「台灣就業通-找人才」網站註冊會員帳號，完成帳號審查後，即可在網站登錄求才職缺資料。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_379822" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>求職登記</span><span>本國國民、大陸、外籍配偶須取得居留證，外國人士、需依相關法規，取得在臺工作資格等可進行申請</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_394174" rel="noopener noreferrer" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/532207/ebe1a62c-50b0-4917-870f-ab215f194eef.jpg" /> <span>選送華語教學人員赴外任教專區</span> <span>為推廣我國優質華語教學及臺灣文化，教育部補助優秀華語教學人員赴國外學校任教，申請者應先於華語教學人才庫登錄註冊。</span> </a></li>
 </ul>
 </div>
 
@@ -631,19 +593,19 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">國民法官制度</td>
-			<td><a href="https://www.judicial.gov.tw/tw/lp-2101-1-1-20.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">國民法官種子講師人才庫</a></td>
+			<td><a href="https://www.judicial.gov.tw/tw/lp-2101-1-1-20.html" rel="noopener noreferrer" target="_blank">國民法官種子講師人才庫</a></td>
 			<td style="text-align:left; padding:0 5px;">為方便各界(機關、團體、學校、村里社區等)辦理國民法官制度課程、講習、宣導等各類活動，司法院推出種子講師人才庫，各界可透過此人才庫搜尋講師名單與聯絡方式。</td>
 			<td>司法院</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">性別平等</td>
-			<td><a href="https://gec.ey.gov.tw/Page/3F92B946F5F0CB3D?page=1&amp;PS=15&amp;" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">各機關師資人才資料庫</a></td>
+			<td><a href="https://gec.ey.gov.tw/Page/3F92B946F5F0CB3D?page=1&amp;PS=15&amp;" rel="noopener noreferrer" target="_blank">各機關師資人才資料庫</a></td>
 			<td style="text-align:left; padding:0 5px;">提供中央機關及地方政府性別人才資料庫，各界可透過人才庫查詢各師資之專長領域，並向講師提出邀請，以辦理性別主流化課程或講習等活動。</td>
 			<td>行政院性別平等會</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">社區公共事務</td>
-			<td><a href="https://communitytaiwan.moc.gov.tw/Resource/CommunityTalent/CommunityTeacher/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">臺灣社區通人才資料庫</a></td>
+			<td><a href="https://communitytaiwan.moc.gov.tw/Resource/CommunityTalent/CommunityTeacher/" rel="noopener noreferrer" target="_blank">臺灣社區通人才資料庫</a></td>
 			<td style="text-align:left; padding:0 5px;">需求單位可至人才資料庫尋找社區營造人才，像是在地達人(類型為社造/傳統技藝/文史/藝術/社會服務/地方知識，具在地專長知識、生活實務經驗者)，或培力師資(類型分為生活/生態/生產/文化，以系統性教學、研究出版物等為主)。</td>
 			<td>文化部</td>
 		</tr>
@@ -665,55 +627,55 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td rowspan="3" style="background-color:#F2F2F2; font-weight:bolder;">雇主</td>
-			<td><a href="https://www.gov.tw/News_Content_26_578136" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">透過政府獎補助措施，讓熟齡族安心邁向就業之路！</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_578136" rel="noopener noreferrer" target="_blank">透過政府獎補助措施，讓熟齡族安心邁向就業之路！</a></td>
 			<td style="text-align:left; padding:0 5px;">如果您是雇主，為(中)高齡員工(<strong style="color:#b50000;">45歲以上</strong>)規劃職業訓練、改善工作環境、辦理就業諮詢等，可參閱政府提供相關獎補助措施。</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.gov.tw/News_Content_26_654552" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">創造勞雇雙贏，帶您看雇主及移工的支持方案及服務！</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_654552" rel="noopener noreferrer" target="_blank">創造勞雇雙贏，帶您看雇主及移工的支持方案及服務！</a></td>
 			<td style="text-align:left; padding:0 5px;">本文重點摘要勞動部推動移工留才久用方案「留用外國中階技術工作人力計畫」，並針對雇主及移工的需求，彙整政府所提供之相關支持服務及申辦平臺。</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.gov.tw/News_Content_26_587596" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">外國人來臺工作，要申請什麼證件?</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_587596" rel="noopener noreferrer" target="_blank">外國人來臺工作，要申請什麼證件?</a></td>
 			<td style="text-align:left; padding:0 5px;">針對雇主聘僱外國人在臺就業，或外國人欲來臺尋職，本文依據證件類別及職業身分摘要說明，並於文末宣導聘僱合法外國人之審查方式。</td>
 		</tr>
 		<tr>
 			<td rowspan="5" style="background-color:#F2F2F2; font-weight:bolder;">勞工</td>
-			<td><a href="https://www.gov.tw/News_Content_26_592130" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">為就業做準備，各行各業的技能檢定與專業考試！</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_592130" rel="noopener noreferrer" target="_blank">為就業做準備，各行各業的技能檢定與專業考試！</a></td>
 			<td style="text-align:left; padding:0 5px;">彙整各行各業技能檢定、專業考試之平臺資訊。</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.gov.tw/News_Content_26_523845" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">想提升職場能力，可運用什麼政府訓練資源？</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_523845" rel="noopener noreferrer" target="_blank">想提升職場能力，可運用什麼政府訓練資源？</a></td>
 			<td style="text-align:left; padding:0 5px;">因應產業發展趨勢與人力供給需求，政府提供各式各樣職業訓練課程和線上學習平臺，來看本文為您統整了哪些資源。</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.gov.tw/News_Content_26_578136" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">透過政府獎補助措施，讓熟齡族安心邁向就業之路！</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_578136" rel="noopener noreferrer" target="_blank">透過政府獎補助措施，讓熟齡族安心邁向就業之路！</a></td>
 			<td style="text-align:left; padding:0 5px;">本文總整理促進中高齡者(<strong style="color:#b50000;">45歲~65歲</strong>)及高齡者(<strong style="color:#b50000;">65歲以上</strong>)就業之獎補助措施。</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.gov.tw/News_Content_26_682123" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">協助青年職涯發展，帶您看投資青年就業方案(第二期)！</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_682123" rel="noopener noreferrer" target="_blank">協助青年職涯發展，帶您看投資青年就業方案(第二期)！</a></td>
 			<td style="text-align:left; padding:0 5px;">因應未來產業發展趨勢，以及引導青年探索職涯、強化職場能⼒，凡是年滿<strong style="color:#b50000;">15歲 ~ 29歲</strong>的青年，可透過本文快速掌握「職涯探索」、「職業訓練」、「促進就業獎補助」及「就業協助資源」等各計畫及服務資訊。</td>
 		</tr>
 		<tr>
-			<td><a href="https://www.gov.tw/News_Content_26_592050" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer">【語言認證考試及獎勵措施】華語、臺語、閩南語、客語及原住民語</a></td>
+			<td><a href="https://www.gov.tw/News_Content_26_592050" rel="noopener noreferrer" target="_blank">【語言認證考試及獎勵措施】華語、臺語、閩南語、客語及原住民語</a></td>
 			<td style="text-align:left; padding:0 5px;">本文統整政府所提供之語言能力或語言相關工作認證考試，以及認證獎勵方案。</td>
 		</tr>
 	</tbody>
 </table>
 </span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>人才庫,就業媒合,人力資源,就業服務<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.moea.gov.tw/MNS/populace/news/News.aspx?kind=1&menu_id=40&news_id=123061" data-sn="890019"
-                data-name="商業署「青年AI實戰養成班」、「智慧行銷及智慧營運數據分析班」、「AI智慧物流班」、「AI驅動產品創新班」已開放報名">商業署「青年AI實戰養成班」、「智慧行銷及智慧營運數據分析班」、「AI智慧物流班」、「AI驅動產品創新班」已開放報名<span>經濟部</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taitung.gov.tw/News_Content.aspx?n=13370&s=147490" data-sn="889827"
-                data-name="馬蘭榮家端午傳愛：慰問周邊榮民，役男挽袖助清掃，溫暖周邊榮民心">馬蘭榮家端午傳愛：慰問周邊榮民，役男挽袖助清掃，溫暖周邊榮民心<span>臺東縣政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.taitung.gov.tw/News_Content.aspx?n=13370&s=147465" data-sn="889589"
-                data-name="臺東縣榮服處舉辦屆退官兵權益說明會">臺東縣榮服處舉辦屆退官兵權益說明會<span>臺東縣政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=CBAD605E35380D33" data-sn="889571"
-                data-name="教育部舉辦115年度校園性別事件行政訴訟案例研討會">教育部舉辦115年度校園性別事件行政訴訟案例研討會<span>教育部</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=EC04FD35284BBF7E" data-sn="889434"
-                data-name="18家企業聯手攬才！北市6月中旬徵才接力登場 最高薪上看4.9萬元">18家企業聯手攬才！北市6月中旬徵才接力登場 最高薪上看4.9萬元<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.yunlin.gov.tw/News_Content.aspx?n=1244&s=599918" data-sn="897273"
+                data-name="青春創意注入在地企業 縣府舉辦「國際創新創業營隊」">青春創意注入在地企業 縣府舉辦「國際創新創業營隊」<span>雲林縣政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.yunlin.gov.tw/News_Content.aspx?n=1244&s=599803" data-sn="897141"
+                data-name="非六都第一！雲林第十家「鈞品農產庇護工場」開幕　首創庇護農產直通全聯全國通路">非六都第一！雲林第十家「鈞品農產庇護工場」開幕　首創庇護農產直通全聯全國通路<span>雲林縣政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=B3E23B2E3A59CE4B" data-sn="897119"
+                data-name="不只缺人，更搶人才！北市9場徵才釋出853職缺　儲備主管、數位人才成企業新寵">不只缺人，更搶人才！北市9場徵才釋出853職缺　儲備主管、數位人才成企業新寵<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.mofa.gov.tw/News_Content.aspx?n=96&s=122669" data-sn="896912"
+                data-name="外交部常務次長葛葆萱款宴歡迎友邦吐瓦魯國教育及人力資源部長何羅納訪台 深化人才培育與多元合作">外交部常務次長葛葆萱款宴歡迎友邦吐瓦魯國教育及<span class="info_keywords">人力資源</span>部長何羅納訪台 深化人才培育與多元合作<span>外交部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.kcg.gov.tw/CityNews_Detail1.aspx?n=3A379BB94CA5F12D&ss=682F5DE49F376D22" data-sn="897005"
+                data-name="【代發勞工局新聞稿】對接各產業求才熱潮 勞工局辦大型徵才活動助市民就業">【代發勞工局新聞稿】對接各產業求才熱潮 勞工局辦大型徵才活動助市民就業<span>高雄市政府</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -734,7 +696,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -810,7 +772,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -822,7 +786,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -892,7 +856,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -946,8 +910,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

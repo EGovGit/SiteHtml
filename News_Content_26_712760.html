@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=712760" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=712760" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GMyR4EPe1sHco1poA5JKzmnMOcHJ1ny88WfqU9YKj+Ym7WoRSPkc31lo6OqynsfhkhCEv1IxwX+RbGowYvmc0D6wUcFc6xm2tUxSpeylArrLHZHf1a56czMJc2F1uXPH9KHx0yB6BI/jU+Hdk8q+h+z99c+iJmcwiaZ21HyZVX79McDAbJxfJiEGegjXpMLUIVl57RWyfJv/x0rlJ1BAYjHMwIdR1HSXwAPWsbE1f/jiky20LDwOuAQ4+ppESJTFFfYbsWCXBs6riOMAY72ZyR3oQzASzbbpwxOFepGmaYmzolsmYtW3eLO8k1yqzNJ/zqiRzm79AOcPpAyr178HuBcV2hMPwgXbh/Elirr8xa847Jv23nyuB/qcWqlP+kIst9IlGhTFYLHdsVdDFCCqLTtkun8tUnoXlrL8FtMeqoxSBAglNdOkAbN3X9YvpaGaO4iVboE+qWo0OTNKNNRy5TMoWsO+3kNra1pTZJZgU+mvhIMgrvFwcd1dDYpFQiUNVmftHucrhmaVFjna/e8eCeRi86j0FO7c8/slRW9ylADL3utBLmGq1SEKoetwjTsWTGZ2kJ9H7NN6dkJzO2am7RtvRet9zudvpyg8jvm5THgpAmdwBC28h31rhNqT0u8/9gGJF1TYytJeBN6sHUm1wie2/dRBghDrzzdHb65tzXcctr2hL9WymsaKUk7WmwodgInnnr2a9DMzMqSeMVXIjnAlvfTWIDgPFibn5klr0RvGDa01BDvvvOxWxz2+t0eyifljwu7JNO+fTQZ1LseJgWZpCW8uJJn4tLR2702uzciOgm6hSo2sNaVc153/hfMXG9GV/mrNLXbwEf5L2Ynr0dGTIcZrG21zCVFXH24KWWlI0X4TgxAa1ciRH708F0K+MidduEeoVN3ZwrwjlJf5XWuuEn+u5eRrjxbinfw/nubhTplJ/JwE+gLdRrQQ0ug6DrINhOjg+KpNBpXZH8CCdEzP3GEJ/F4gQ4Abb3GE0dPQLsNCo+3Y1UxlT4gTUa5GKpiYEFiec62kCPqA/wlgUPuKsW3qq16kMZeB9cKW5xGtHBZwlc5wyeRbd6hMk4sg2vo04WmrIqsxSCCRPaCeCSb0578sjWNF3L/f7dx7YrGZ7QQ2Wbl/p4LkLQAgZanfG/C5TOQE67wTJiZBJACY9BBsXrOkB2wa1RdGwXJrX3m3011IWVYcVwiwy+Nflliu9nuNTIpFHUFG08cyPhv0UQuY2w/NmM7vDfA90m2U+wQrTowoMqWjlm5kn5panYmYlPX4JZkdeE0eygHYtojHzXymxTody0U8OJBSsxCONUdKJfAVHAj5hq/pmX6Uub1yjGRU4vEnWdxYqZ1AeK6VJNrQ0LfVfrWCwpeuJ/tzsK+lLKrYCuSeFvOpx+V+nKuVNol5RhDaPRyszlixU5cnNNCTBr4PVRI7YI1+JxBZwbqwlz3vLx0BfuHVdTTUYYOifY3V0wgx5CBFpuCz88cTs9AW9O9csKWxqQSlx9+JCVDHslhY" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="iLG1JitoKt7ImcaCaxZYPD+nSzBsQ+7KptKdvX7seUt1ummbinJQov/BYCPYFMNtGQPOfUMRFF+WkyzqtM/aGdSUGb6F8wFAJ/t7rLVFOb2/QydJxA0bbueA+0/2+tv+wFl3FHkvh5BPxgZqcrP4i8PshD/2qM1LRCtil+GqeUMnqYW3t2PtQD9x8Kv1Bih3mR7KH2jAQOzyFwNjr7WN7GABbYbAgIKctxTADADwGxWOWpDVySksVpfz6khi48h5lRxm2Hl6Ir4ytJN2bkf974Rt9EpltAMe3xG/QtjWdUzVeN5CGHBrdK/XW0anzHyo5MsVMEzYWH2370ytHNk0eBjQPdb4Te3qwZc11WsyzdLhYY86sQJcME88E7gtVygmtAT6kJqZF6/CyjIikFOgoAYsiXO/qBUDSf2eBvAFbuZGAomMyfQsE/4uWnMGoIsHnYkKMMCo063iOQmkzG03g0fPZ3GGMJ9BNwQJ6YaLY4U97FFMWtBLC5o5pt98VT9gbMB1yjwNOh2FSUlim39W48/KSiIHQKr4ZR3AhjpTcnf7S8Jfwk0Z5GBM3Mcm828mISBgJyOJkOOL7ymwMR24Cdq6iagAuISNoWxAMY9NBIrHL8N+udAUOnpnb3RB6uZ3dJji55BzH6ZPkZNMcGl5grDVCIyRrBeZcvZrh5d8DTz6Lj58ZPlLUefS3hCLHWMTiIJMlB2f20MnC8wItOSKOdAkIRSTAsqIVWmYBQ97NR9vThWvr2/+8WnmcG4xnNmZobTew9YfYSkqMKIyZ9Kbnq66QREBkmPwd3CIsEtt4MmSDPJLN34I2D/QPJTZ4fM6xi7id3969rO7F0rcbngAigpzHPQfeXx/3KANpuwP34xAzAy3kcYhJBMeY475K8+wZp+hz0rC+PG7GbSDk+Sgw1TpMB+IQCVGnND7Lm6c0zZ4n2ndM2CRubkRXCVCVhsNo9yukF2IQavGqC6716UZYZxP7kkh8jsX+GSesAjoBrW+dYCFsngei3J8g5+m9MEOoscD9OEnS356gjHvdTZ4bgIuiPJOxS9Cq3OkLAGJjOIODPFDa1sN0oqyQR6rtQbtyCNSYvuz3lNaDsaqJ2/9c6c09Gc8b52Vyvu5cH5M7GUxHIGqFzsnqyWHq4DQLvpBv1Y9xStPkou5GmW5W2zaoq8cKl4VBtucgj01Cq1IQSPdnPg8DUHdV+IM1F9goZ9TbJ0AhmQsD4Z2cwt1J3UWTn8OFsSEcZOg9sdeI4XsgpWYGTaNFNmcL+zRpeofxAbQGMQiBcb0ycKuA8F88ivW99T4wOyv5ClXwi7Q0ZrOTTFCUmrs+yP8VL0KA2R2U80GOT5K5A4fnfC1e3m6EGKjm4koeflHicxcDSFHDYnBTeoOjJehG19hlqxyZMlQTWDyBAd3cWF3kg32LvRVvTVVNnq/MF8oAb/dVqZMSXql0gt3HbdA8ZFhSgTh/mYkkOidiUDm93ibLABaU4n/c3PE0CUxvh31n4+lsR9tFKW8DcAnpjyy" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_e7dd9d9cf4514b34bb2f862823df8b49">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_a8ca5c39162e4a0a8c6ecbf446291654">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_e7dd9d9cf4514b34bb2f862823df8b49" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_e7dd9d9cf4514b34bb2f862823df8b49" id="txt_e7dd9d9cf4514b34bb2f862823df8b49" type="search" placeholder="" title="搜尋">
+  <label for="txt_a8ca5c39162e4a0a8c6ecbf446291654" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_a8ca5c39162e4a0a8c6ecbf446291654" id="txt_a8ca5c39162e4a0a8c6ecbf446291654" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_e7dd9d9cf4514b34bb2f862823df8b49" data-search="btn_e7dd9d9cf4514b34bb2f862823df8b49" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_a8ca5c39162e4a0a8c6ecbf446291654" data-search="btn_a8ca5c39162e4a0a8c6ecbf446291654" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_e7dd9d9cf4514b34bb2f862823df8b49"]').on("keydown", function (event) {
+    $('[data-search="btn_a8ca5c39162e4a0a8c6ecbf446291654"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_e7dd9d9cf4514b34bb2f862823df8b49'));
+             doSearch($('#btn_a8ca5c39162e4a0a8c6ecbf446291654'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_e7dd9d9cf4514b34bb2f862823df8b49']", true);
+return_value = typeWriter("[data-search='btn_a8ca5c39162e4a0a8c6ecbf446291654']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_e7dd9d9cf4514b34bb2f862823df8b49']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_egUAokDqGh" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_CJdSFTaEcd" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_BECScjffsJ" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_gdQvAJWPgb" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_vGtfrxADBw" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_CmyqxHsnnU" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>【中華郵政數位服務】網路郵局、數位存款帳戶、i郵購、i郵箱、網路投保</h3></div></div></div></div>
         
         
@@ -504,11 +466,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p>凡是<b>持有郵局帳戶</b>者，可申請網路郵局服務，方便您線上使用儲匯、郵務、壽險、公債等各項查詢服務。啟用網路郵局服務後，即可登入&lt;<a href="https://www.gov.tw/News_Content_13_762593" target="_blank" rel="noopener noreferrer">行動郵局APP</a>&gt;，如有一併申請設備綁定密碼，可接著按步驟完成綁定，便可使用繳費、非約定轉帳、無卡提款、掃碼收付等各項金融服務。下列步驟為<b>線上申請</b>開通網路郵局：</p>
+<p>凡是<b>持有郵局帳戶</b>者，可申請網路郵局服務，方便您線上使用儲匯、郵務、壽險、公債等各項查詢服務。啟用網路郵局服務後，即可登入&lt;<a href="https://www.gov.tw/News_Content_13_762593" target="_blank">行動郵局APP</a>&gt;，如有一併申請設備綁定密碼，可接著按步驟完成綁定，便可使用繳費、非約定轉帳、無卡提款、掃碼收付等各項金融服務。下列步驟為<b>線上申請</b>開通網路郵局：</p>
 
 <p>&nbsp;</p>
 
-<p>👉 持有郵局帳戶，欲至郵局<b>臨櫃辦理</b>開通網路郵局者：請至中華郵政&lt;<a href="https://ipost.post.gov.tw/pst/index.html" target="_blank" rel="noopener noreferrer">網路郵局</a>&gt; &rarr; 點選「客戶服務」 &rarr; 點選「二、如何申請網路帳號？申請後有無首次登入期限？」查看相關資訊。<br />
+<p>👉 持有郵局帳戶，欲至郵局<b>臨櫃辦理</b>開通網路郵局者：請至中華郵政&lt;<a href="https://ipost.post.gov.tw/pst/index.html" target="_blank">網路郵局</a>&gt; &rarr; 點選「客戶服務」 &rarr; 點選「二、如何申請網路帳號？申請後有無首次登入期限？」查看相關資訊。<br />
 👉 <strong style="color:#b50000;">未持有</strong>郵局帳戶者：可至郵局臨櫃開戶並申請網路郵局，<strong style="color:#b50000;">或</strong>線上開立「👇<a href="#active2" title="數位存款帳戶">數位存款帳戶</a>」，即可登入行動郵局APP。</p>
 
 <p>&nbsp;</p>
@@ -518,7 +480,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li><span><strong>1</strong></span>
 
 	<p><span style="color:#035a58;font-weight:bolder;">線上申請</span><br />
-	進入中華郵政&lt;<a href="https://ipost.post.gov.tw/pst/applyForiPost.html?rnd=-635001613" target="_blank" rel="noopener noreferrer">網路郵局</a>&gt; &rarr; 點選「立即申請網路郵局」。</p>
+	進入中華郵政&lt;<a href="https://ipost.post.gov.tw/pst/applyForiPost.html?rnd=-635001613" target="_blank">網路郵局</a>&gt; &rarr; 點選「立即申請網路郵局」。</p>
 	</li>
 	<li><span><strong>2</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">填寫基本資料</span><br />
@@ -535,7 +497,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	</li>
 	<li><span><strong>5</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">啟用網路郵局服務</span><br />
-	收到啟用碼 &rarr; <strong style="color:#b50000;">24小時</strong>內持金融卡至&lt;<a href="https://www.post.gov.tw/post/internet/B_saving/index.jsp?ID=1651215115224" target="_blank" rel="noopener noreferrer">實體ATM</a>&gt;或&lt;<a href="https://www.post.gov.tw/post/internet/B_saving/index.jsp?ID=1651215121400" target="_blank" rel="noopener noreferrer">網路ATM</a>&gt;開通。</p>
+	收到啟用碼 &rarr; <strong style="color:#b50000;">24小時</strong>內持金融卡至&lt;<a href="https://www.post.gov.tw/post/internet/B_saving/index.jsp?ID=1651215115224" target="_blank">實體ATM</a>&gt;或&lt;<a href="https://www.post.gov.tw/post/internet/B_saving/index.jsp?ID=1651215121400" target="_blank">網路ATM</a>&gt;開通。</p>
 	</li>
 </ul>
 </div>
@@ -543,7 +505,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://www.post.gov.tw/post/internet/B_saving/index.jsp?ID=1651215072898" target="_blank" rel="noopener noreferrer">&gt;&gt;免臨櫃申請網路郵局</a>【資料來源：中華郵政股份有限公司，民國113年4月】</p>
+<a href="https://www.post.gov.tw/post/internet/B_saving/index.jsp?ID=1651215072898" target="_blank">&gt;&gt;免臨櫃申請網路郵局</a>【資料來源：中華郵政股份有限公司，民國113年4月】</p>
 
 <p>&nbsp;</p>
 
@@ -571,9 +533,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li><span><strong>1</strong></span>
 
 	<p><span style="color:#035a58;font-weight:bolder;">核身驗證</span><br />
-	進入中華郵政&lt;<a href="https://epost.post.gov.tw/pstDigit/apply.html?" target="_blank" rel="noopener noreferrer">數位存款帳戶專區</a>&gt; &rarr; 選擇身分 &rarr; 輸入「身分證號 + 手機號碼 + 出生日期」&rarr; 手機簡訊OTP驗證 &rarr; 選擇以下<strong style="color:#b50000;">任一</strong>驗證方式：<br />
+	進入中華郵政&lt;<a href="https://epost.post.gov.tw/pstDigit/apply.html?" target="_blank">數位存款帳戶專區</a>&gt; &rarr; 選擇身分 &rarr; 輸入「身分證號 + 手機號碼 + 出生日期」&rarr; 手機簡訊OTP驗證 &rarr; 選擇以下<strong style="color:#b50000;">任一</strong>驗證方式：<br />
 	1. 自然人憑證驗證：電腦 + 讀卡機<br />
-	2. 行動郵局驗證：手機綁定&lt;<a href="https://www.gov.tw/News_Content_13_762593" target="_blank" rel="noopener noreferrer">行動郵局APP</a>&gt;<br />
+	2. 行動郵局驗證：手機綁定&lt;<a href="https://www.gov.tw/News_Content_13_762593" target="_blank">行動郵局APP</a>&gt;<br />
 	3. 臨櫃驗證：攜帶雙證件 + 印章，前往鄰近郵局進行驗證</p>
 	</li>
 	<li><span><strong>2</strong></span>
@@ -610,7 +572,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li><span><strong>1</strong></span>
 
 	<p><span style="color:#035a58;font-weight:bolder;">核身驗證</span><br />
-	進入中華郵政&lt;<a href="https://epost.post.gov.tw/pstDigit/apply.html?" target="_blank" rel="noopener noreferrer">數位存款帳戶專區</a>&gt; &rarr; 選擇身分 &rarr; 輸入「身分證號 + 手機號碼 + 出生日期」&rarr; 手機簡訊OTP驗證。</p>
+	進入中華郵政&lt;<a href="https://epost.post.gov.tw/pstDigit/apply.html?" target="_blank">數位存款帳戶專區</a>&gt; &rarr; 選擇身分 &rarr; 輸入「身分證號 + 手機號碼 + 出生日期」&rarr; 手機簡訊OTP驗證。</p>
 	</li>
 	<li><span><strong>2</strong></span>
 	<p><span style="color:#035a58;font-weight:bolder;">證件上傳</span><br />
@@ -626,7 +588,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<p><span style="color:#035a58;font-weight:bolder;">法定代理人核身驗證</span><br />
 	填寫法定代理人基本資料 &rarr; 手機簡訊OTP驗證 &rarr; 身分驗證(以下方式<strong style="color:#b50000;">3擇1</strong>)<br />
 	1. 自然人憑證驗證：電腦 + 讀卡機<br />
-	2. 行動郵局驗證：手機綁定&lt;<a href="https://www.gov.tw/News_Content_13_762593" target="_blank" rel="noopener noreferrer">行動郵局APP</a>&gt;<br />
+	2. 行動郵局驗證：手機綁定&lt;<a href="https://www.gov.tw/News_Content_13_762593" target="_blank">行動郵局APP</a>&gt;<br />
 	3. 臨櫃驗證：須準備未成年雙證件正本、法定代理人雙證件正本、印章，前往鄰近郵局進行驗證</p>
 	</li>
 	<li><span><strong>5</strong></span>
@@ -644,7 +606,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<p><span style="color:#035a58;font-weight:bolder;">收到金融卡</span><br />
 	通過審核後，中華郵政於<strong style="color:#b50000;">7個工作天</strong>內，將金融卡以掛號方式郵寄至指定地址。<br />
 	👉 <strong style="color:#b50000;">年滿7歲~未滿16歲</strong>者為「<b>晶片</b>金融卡」；<strong style="color:#b50000;">年滿16歲以上</strong>為「<b>VISA</b>金融卡」。<br />
-	👉 持有郵政VISA卡者，刷卡享有&lt;<a href="https://www.post.gov.tw/post/internet/Visa/default.jsp" target="_blank" rel="noopener noreferrer">各項優惠或現金回饋</a>&gt;。</p>
+	👉 持有郵政VISA卡者，刷卡享有&lt;<a href="https://www.post.gov.tw/post/internet/Visa/default.jsp" target="_blank">各項優惠或現金回饋</a>&gt;。</p>
 	</li>
 </ul>
 </div>
@@ -652,7 +614,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章：<br />
-<a href="https://epost.post.gov.tw/pstDigit/assets/files/teach-adult-step-0.html#" target="_blank" rel="noopener noreferrer">&gt;&gt;開戶教學</a>【資料來源：中華郵政股份有限公司，民國113年12月】</p>
+<a href="https://epost.post.gov.tw/pstDigit/assets/files/teach-adult-step-0.html#" target="_blank">&gt;&gt;開戶教學</a>【資料來源：中華郵政股份有限公司，民國113年12月】</p>
 
 <p>&nbsp;</p>
 
@@ -677,33 +639,33 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 		</tr>
 		<tr>
 			<td rowspan="3" style="background-color:#F2F2F2; font-weight:bolder;">郵務</td>
-			<td><a href="https://www.postmall.com.tw/" target="_blank" rel="noopener noreferrer">i郵購</a></td>
+			<td><a href="https://www.postmall.com.tw/" target="_blank">i郵購</a></td>
 			<td style="text-align:left; padding:0 5px;">只要註冊成為會員，即可線上購買食品生鮮、餐旅票券、養生保健、居家日常、婦幼玩具等品項，另有農糧署及中華郵政聯合推薦專區、當季農產品採購專區等。</td>
-			<td style="text-align:left; padding:0 5px;">請至&lt;<a href="https://www.postmall.com.tw/memberRegisterStep2.aspx" target="_blank" rel="noopener noreferrer">i郵購</a>&gt;註冊會員 &rarr; 登入會員後進行線上採購。</td>
+			<td style="text-align:left; padding:0 5px;">請至&lt;<a href="https://www.postmall.com.tw/memberRegisterStep2.aspx" target="_blank">i郵購</a>&gt;註冊會員 &rarr; 登入會員後進行線上採購。</td>
 		</tr>
 		<tr>
-			<td><a href="https://ezpost.post.gov.tw/ibox/default.aspx?aspxerrorpath=/ibox/" target="_blank" rel="noopener noreferrer">i郵箱</a></td>
-			<td style="text-align:left; padding:0 5px;">提供24⼩時全年無休、⾃助寄/取包裹之服務。您可於任⼀「<a href="https://ezpost.post.gov.tw/ibox/E_MAP/Index" target="_blank" rel="noopener noreferrer">i郵箱據點</a>」交寄郵件，使用儲值卡、行動支付、郵政⾦融卡等支付郵資，或在網路購物後，使用i郵箱取件。<br />
-			👉 自<strong style="color:#b50000;">113年1月1日</strong>起，會員登入&lt;<a href="https://ezpost.post.gov.tw/" target="_blank" rel="noopener noreferrer">EZPost郵寄便</a>&gt;預先填寫收寄件資料，於i郵箱寄件即可<strong style="color:#b50000;">現折5元</strong>優惠。</td>
-			<td style="text-align:left; padding:0 5px;">1. 寄件：於&lt;<a href="https://ezpost.post.gov.tw/" target="_blank" rel="noopener noreferrer">EZPost郵寄便</a>&gt;網站填寫i郵箱託運單 &rarr; 至「<a href="https://ezpost.post.gov.tw/ibox/E_MAP/Index" target="_blank" rel="noopener noreferrer">i郵箱據點</a>」交寄郵件。<br />
+			<td><a href="https://ezpost.post.gov.tw/ibox/default.aspx?aspxerrorpath=/ibox/" target="_blank">i郵箱</a></td>
+			<td style="text-align:left; padding:0 5px;">提供24⼩時全年無休、⾃助寄/取包裹之服務。您可於任⼀「<a href="https://ezpost.post.gov.tw/ibox/E_MAP/Index" target="_blank">i郵箱據點</a>」交寄郵件，使用儲值卡、行動支付、郵政⾦融卡等支付郵資，或在網路購物後，使用i郵箱取件。<br />
+			👉 自<strong style="color:#b50000;">113年1月1日</strong>起，會員登入&lt;<a href="https://ezpost.post.gov.tw/" target="_blank">EZPost郵寄便</a>&gt;預先填寫收寄件資料，於i郵箱寄件即可<strong style="color:#b50000;">現折5元</strong>優惠。</td>
+			<td style="text-align:left; padding:0 5px;">1. 寄件：於&lt;<a href="https://ezpost.post.gov.tw/" target="_blank">EZPost郵寄便</a>&gt;網站填寫i郵箱託運單 &rarr; 至「<a href="https://ezpost.post.gov.tw/ibox/E_MAP/Index" target="_blank">i郵箱據點</a>」交寄郵件。<br />
 			2. 取件：輸入⼿機末3碼及簡訊取件碼即可取件。</td>
 		</tr>
 		<tr>
-			<td><a href="https://ezpost.post.gov.tw/#" target="_blank" rel="noopener noreferrer">EZPost郵寄便</a></td>
-			<td style="text-align:left; padding:0 5px;">民眾可透過此平臺，線上建立i郵箱及國內掛號郵件資料，再到i郵箱或郵局列印託運單，或可自行列印託運單。寄送國際郵件則須使用&lt;<a href="https://ezpost.post.gov.tw/ITMATT/" target="_blank" rel="noopener noreferrer">國際郵件電子通關資訊服務ITMATT</a>&gt;製作發遞單，再到郵局完成交寄。</td>
-			<td style="text-align:left; padding:0 5px;">不須註冊會員即可線上使用，至&lt;<a href="https://ezpost.post.gov.tw/" target="_blank" rel="noopener noreferrer">EZPost郵寄便</a>&gt;註冊會員則享有更便利的服務和優惠活動。</td>
+			<td><a href="https://ezpost.post.gov.tw/#" target="_blank">EZPost郵寄便</a></td>
+			<td style="text-align:left; padding:0 5px;">民眾可透過此平臺，線上建立i郵箱及國內掛號郵件資料，再到i郵箱或郵局列印託運單，或可自行列印託運單。寄送國際郵件則須使用&lt;<a href="https://ezpost.post.gov.tw/ITMATT/" target="_blank">國際郵件電子通關資訊服務ITMATT</a>&gt;製作發遞單，再到郵局完成交寄。</td>
+			<td style="text-align:left; padding:0 5px;">不須註冊會員即可線上使用，至&lt;<a href="https://ezpost.post.gov.tw/" target="_blank">EZPost郵寄便</a>&gt;註冊會員則享有更便利的服務和優惠活動。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">集郵</td>
-			<td><a href="https://stamp.post.gov.tw/post/stamp_mall/big/index.jsp" target="_blank" rel="noopener noreferrer">i集郵</a></td>
+			<td><a href="https://stamp.post.gov.tw/post/stamp_mall/big/index.jsp" target="_blank">i集郵</a></td>
 			<td style="text-align:left; padding:0 5px;">只要註冊成為會員，即可線上採購各式商品，品項包含郵票、封卡、明信片、郵摺、生肖杯禮盒及其他周邊商品等。另可至個人化郵票專區，線上訂製個人化郵票。</td>
-			<td style="text-align:left; padding:0 5px;">請至&lt;<a href="https://stamp.post.gov.tw/post/stamp_mall/big/member/index.jsp" target="_blank" rel="noopener noreferrer">i集郵</a>&gt;註冊會員(或使用i郵購會員) &rarr; 登入會員後即可進行採購。</td>
+			<td style="text-align:left; padding:0 5px;">請至&lt;<a href="https://stamp.post.gov.tw/post/stamp_mall/big/member/index.jsp" target="_blank">i集郵</a>&gt;註冊會員(或使用i郵購會員) &rarr; 登入會員後即可進行採購。</td>
 		</tr>
 		<tr>
 			<td style="background-color:#F2F2F2; font-weight:bolder;">壽險</td>
-			<td><a href="https://insurtech.post.gov.tw/eSoafOnlineIns/onlineIns/#/mainpage?_k=6rqr3z" target="_blank" rel="noopener noreferrer">網路投保</a></td>
+			<td><a href="https://insurtech.post.gov.tw/eSoafOnlineIns/onlineIns/#/mainpage?_k=6rqr3z" target="_blank">網路投保</a></td>
 			<td style="text-align:left; padding:0 5px;">若您為年滿<strong style="color:#b50000;">18歲</strong>之本國國民、具行為能力且持有中華郵政儲金帳戶，可申請網路投保會員，進行線上投保。</td>
-			<td style="text-align:left; padding:0 5px;">1. 成為會員：至&lt;<a href="https://insurtech.post.gov.tw/eSoafOnlineIns/onlineIns/#/mainpage?_k=yfgnse" target="_blank" rel="noopener noreferrer">郵政網路投保專區</a>&gt;註冊會員，或您也可以攜帶國民身分證本人親自到郵局辦理。<br />
+			<td style="text-align:left; padding:0 5px;">1. 成為會員：至&lt;<a href="https://insurtech.post.gov.tw/eSoafOnlineIns/onlineIns/#/mainpage?_k=yfgnse" target="_blank">郵政網路投保專區</a>&gt;註冊會員，或您也可以攜帶國民身分證本人親自到郵局辦理。<br />
 			2. 線上投保：登入會員專區 &rarr; 選擇保險商品 &rarr; 填寫要保資料及指定扣繳帳號 &rarr; 手機簡訊OTP驗證 &rarr; 確認繳費方式及帳號 &rarr; 完成繳費 &rarr; 投保成功。</td>
 		</tr>
 	</tbody>
@@ -715,14 +677,14 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.gov.tw/News_Content_2_380705" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>中華郵政-EZPost線上交寄</span> <span>提供i郵箱託運單、國內郵件託運單、國際郵件發遞單線上登錄及郵件查詢。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_376487" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/ed7e5ecd-f8b2-409b-9a0a-489501db5a86.jpg" /> <span>中華郵政-ATM無卡提款線上申辦</span> <span>本服務申請完成後，即可利用行動郵局APP取得「無卡提款序號」至全國各地提供無卡提款服務之ATM進行無卡提款。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_406383" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9104/511911/efafb189-e76e-4411-a4bd-83fbd9c0a380.jpg" /> <span>中華郵政-「郵件改投改寄」及「掛號函件改投遞」線上申辦服務</span> <span>欲將舊址之郵件全數改投新址者，可透過本服務完成線上申請郵件改投、改寄作業，可大幅縮短申辦完成時間。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_380020" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/f8a6dad4-2a88-457f-821e-957ff416ab96.jpg" /> <span>中華郵政-集郵電子商城</span> <span>完成「中華郵政集郵電子商城」會員註冊後，即可線上購買集郵票品，並透過掛號方式快速將商品送到家。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_380024" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9065/500276/6fb02e91-55f2-425c-8c22-2de031c0458c.jpg" /> <span>中華郵政-集郵業務之個人化郵票製作</span> <span>完成「中華郵政集郵電子商城」會員註冊後，即可選取個人化郵票主題、版式，再上傳照片作編輯，最後填寫寄送資訊並付款即完成訂購。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_380705" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>中華郵政-EZPost線上交寄</span> <span>提供i郵箱託運單、國內郵件託運單、國際郵件發遞單線上登錄及郵件查詢。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_376487" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/ed7e5ecd-f8b2-409b-9a0a-489501db5a86.jpg" /> <span>中華郵政-ATM無卡提款線上申辦</span> <span>本服務申請完成後，即可利用行動郵局APP取得「無卡提款序號」至全國各地提供無卡提款服務之ATM進行無卡提款。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_406383" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9104/511911/efafb189-e76e-4411-a4bd-83fbd9c0a380.jpg" /> <span>中華郵政-「郵件改投改寄」及「掛號函件改投遞」線上申辦服務</span> <span>欲將舊址之郵件全數改投新址者，可透過本服務完成線上申請郵件改投、改寄作業，可大幅縮短申辦完成時間。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_380020" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/f8a6dad4-2a88-457f-821e-957ff416ab96.jpg" /> <span>中華郵政-集郵電子商城</span> <span>完成「中華郵政集郵電子商城」會員註冊後，即可線上購買集郵票品，並透過掛號方式快速將商品送到家。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_380024" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9065/500276/6fb02e91-55f2-425c-8c22-2de031c0458c.jpg" /> <span>中華郵政-集郵業務之個人化郵票製作</span> <span>完成「中華郵政集郵電子商城」會員註冊後，即可選取個人化郵票主題、版式，再上傳照片作編輯，最後填寫寄送資訊並付款即完成訂購。</span> </a></li>
 </ul>
 </div>
-</span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>網路郵局,行動郵局,中華郵政數位服務,i郵購,i郵箱,郵寄便,郵局數位存款帳戶<span></div></div></div></div> <div class="list-text detail" data-index="2" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>網路郵局,行動郵局,中華郵政數位服務,i郵購,i郵箱,郵寄便,郵局數位存款帳戶<span></div></div></div></div> <div class="list-text detail" data-index="2" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -743,7 +705,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -819,7 +781,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -831,7 +795,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -901,7 +865,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -955,8 +919,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News3_html.aspx?n=18&sms=9062" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News3_html.aspx?n=18&amp;sms=9062" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="gZVTnVRoZCdDYOZp2EOfE6dCGWDKi938lvuenQZKW50jeFpz9wdyuuwhJjloFnvD97HonH+qRiuBXVASqE01K5pV1waLlYN/ykL9wGX7Ixv5AYv9mHWP8NYHZmLZLbBiplmBTobw15Zy0CThTqIMnYwLduR5IPVd84mlqyQCe10KPjJKB9ya8piVSvyEwV90UEJojaOvr0SRNhGaau4si7pCIZRt4bkvifLGp+EET8uqPoVP9K5dANXzHDMGmDmRMZcA7IQERRVdodQI3aHzAKjuNJwKxrT3pCzH21ObDSYOYMoe79izJ2mhX47cF/Ygd5X4KdyfAf6/DCbD8Xgd3mYcd4oI8zj8VSQxZZP6ibghMVDjqKaj/7yuejUVlBJAwBlqON2QWwqyyhNclQ/Cvgo4LJZAP2/ncNMoSChsa89lvirsfIuYfrVLt9elCAzIbv2xZtPRydI5QGLa8O6h1ZRQ4o31ArOtmyI+BSq0UiAqWZP2c8ZyCzTpTiAN7DYKycLyUbOqNxSkl2lsadbY0slSxCiqWnc091+dxp3uD2n2A2svvlX4Ajb8xMx9gX+ssUHMd+A3lmahUhPlsxb9zGIRTT8xfHpHfGu/+htO0Tle6e7GTIgg57SFZ+Z9xWIcyfOUdujcfZJXSiKD3rBEmzsQ249xPTXzo9L7ZJISa6LhUo2G92sDzdijspOApKiAoDGUMj6twPAfHpzzv98YyxF0c2o3e7x+0wrhsPySzIqcR6mqa/2JcV++D5qLPz3RbrnlI1h4P29YQPfwu6Ox8dA/cYpcMa53xpIRHbyXbfcDBOop+mO0k0CIgYEYoPKSETFE8IiCkkbHLgdQezBG6QcEDZHwFHuQILFQC93JWrv4i7/yteeApN/cNR0u7fAdgQig+yuHlVWJOrVdovd+BGGJzf3xjub7Sb05hBDN2FDrvdizIYK+uU7RZW8NOtHgSyU4ThmvTY0us+6AOUv4/Kc8T/AY2JMdUPebWCgde5OGpEZ+Zk/32rc2+2WGdkG1xlLc8JXX4hNimV7uPfVOCFfwXtsu52OoO5YjCiIiyNHXYvSggwhfDLhgitp/4yABJe3ZryWRRqkv8baEUWGVSPQB7k8JCsojw3AmqTSk3ssRTRjleZeIMpHU638Ub2zGb4+HskakTRkfwIncMlbp8ZZS5ZRiiB2ezQbrB/93nQHzaqGR8XTVDFtMoWmPs2pzB+JyKd35xgNFrPGPY/dpzbQehqekk1f1yuVpEFtks3HnNvXGnu/Hkjx0gjRGoaN82nlVFBSpe5nca+ifBremsnKPeuQzOjw+vWbG4G6PLnFhRJcBqj4Z3/C5vNw2xvvXd76gYyq9chjqJMNiiELxhqiywMDUiu0PEzjl579oMmTf7C6gwRhVRMDwW+R6ANlghNY10YrMLTFsAYf+edR+GZ3vcJsLJ08s1HipIhwoEw5Mwjda6FlaEiSkkx3AZwUfYOdb0Z7c0swfLYGCN3yNa8rYogh0UHxqURs+/iHBQkInLZ8C" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Gl3xbA8JpdD6Rp78Crk3YjKeVEUrdG0aNAGIEEpQmc0ZwWv2lIKo1SD+uFnF2tqzkJI38hIxlkAjqb6MLcpBElGftBjQqFJ6CI3jsQp5snGONNPDJOwPpqx3nsU39xBU3dCaV/MR4fbux2WyMRfNxrNHAHReDBLocirmMLhm/Iq/nIDWey7rxK+1pNsqkFurP3N+jMIDArUohUudK4RjUM9kzcAiuirQoTK+CbMAM4cxZypwZI9HR2BEBYS37VP0hcaGXRykrZ8th0KOQszdlmL3vSSxjcpie0wa9/pH+BOrx4+Y1sgYVfszJGo6SQtnsEI3Ihej39Ft9h6mlkxw17iFXrr92qWKarHnIki1Rp3RUl9EwXYt97hKovQoEEOuKwY0JCUk+QWeG5GE+1DY5iol7bXfz6XgsHvLuAKBUrodfm2ZdL76lpEcf/p4g12B8Szj8alwhLwlBXFBN4ZCFkC1yKuhnL+YzGrsJb6mgWNEARf6GADftCwW+pMad5UWowzupVz8lgDqKz5oEk+gdttEjHnFx0UKkN/nS1UffU9rFMgNQSEQS/tEUcE9vu8vjbQv7rHM/bo9fuLHajEeXA/gq+doACngMZrO2768bIT6AdkO/tXiFVAEqTk/DC7JZLbB1koT9fuVR9hrBJzi6q0SJZOKopQljmxI9BRmUBM6Czqu2gH0xqLH024r9cD39XdLUCrYnPL0kscCbFjCAQaXgZ5njbvlsBH0yU8TxUM1eXJKo7abOLgz3C48ZziyjpGmAJNUbad3i+CU19CuIWE41AXw35KKC+RKIHwKZzYEpDfcC5UYeU3VkKDI6g0nubVyMxt5WuFpHQxjKtvdKE3178EibKaLBwzOa32DTpBYeeGs1r4I0IVnpGP69nkt6miWnLd+v0vO2z+blln2UTFUt5b28RMKpQbMmVYFIAGvV3xflEeCEXRWG0HKFBPtopSHa78Boq2jmCT8l9MgfrX1rMdxRu3+stIsDjIEgcyErYsAhVmKDnOtAYCg7yDAPDd6qLI5mvi74488od9ih7tJj6OIT4iJYiZsDOHmwotkjd1ugwiyePhTD8Leas/8U31dqCD6HLN97PfKNEhxa4nflTyq6ZTlOgNS5OZlq4iqOVOlpDwCvdJx5Zzi/fo35pOjIfxqRj82jfucjIZpuwz+iE20O3PR3hc0k/+Qac5WySnlAtnRNgYt+Xw+Zt0apPwTv/i9kg7QVZ3gtXB/OBhXs0F6S7v2PA3UVeyjTUBINPO5NAtE6KTvCb4OiWCJmZdVE/OGVGLYB4bSrWLo8PjRKtjOi+cEtp4qS5FYM5e8nsKaHpWKcsCcN7X8ZBnWOOLdZXH24l9WGjkq7TS6xu6l9V0R4ud+K/yiljjeDG0MF61U+mlXknAoMXrhcPwbxJUMpKYY/y3KglKOz29LfAZvMlCzH1ZpteahL16lRsHrai6UduJkRuQO+a3tu48WZY3JEkBZoEUzvIvF+bosYJYsVIOCBwNJA6FNOAZncEb023SH" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_d02a11847e624b3484773aa4c97bc10d">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_fd3d242e6e3840b1b452f7f6df9da0df">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_d02a11847e624b3484773aa4c97bc10d" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_d02a11847e624b3484773aa4c97bc10d" id="txt_d02a11847e624b3484773aa4c97bc10d" type="search" placeholder="" title="搜尋">
+  <label for="txt_fd3d242e6e3840b1b452f7f6df9da0df" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_fd3d242e6e3840b1b452f7f6df9da0df" id="txt_fd3d242e6e3840b1b452f7f6df9da0df" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_d02a11847e624b3484773aa4c97bc10d" data-search="btn_d02a11847e624b3484773aa4c97bc10d" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_fd3d242e6e3840b1b452f7f6df9da0df" data-search="btn_fd3d242e6e3840b1b452f7f6df9da0df" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_d02a11847e624b3484773aa4c97bc10d"]').on("keydown", function (event) {
+    $('[data-search="btn_fd3d242e6e3840b1b452f7f6df9da0df"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_d02a11847e624b3484773aa4c97bc10d'));
+             doSearch($('#btn_fd3d242e6e3840b1b452f7f6df9da0df'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_d02a11847e624b3484773aa4c97bc10d']", true);
+return_value = typeWriter("[data-search='btn_fd3d242e6e3840b1b452f7f6df9da0df']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_d02a11847e624b3484773aa4c97bc10d']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_hidsUkXepS" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_jdQndgiCEC" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_GQksnAsYwm" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_NQwvLhYQnD" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_QjFhKCBNad" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area showaside" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="group base-aside-custom" data-index="1" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="h4headH3"  >		<span  ><a   href="#"   title="側選單"   >側選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_L" id="Accesskey_L" accesskey="L" title="左方次要連結區，此區塊列有本網站的次要連結">:::</a></span></div></div></div></div> <div class="group-tab default" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="主選單"   >主選單</a></span></div></div></div><div class="ct"><div class="in"> <ul data-index="1" data-child="3"  role="menu" aria-labelledby="menubutton" aria-label="Side Menu">
- <div id="live-region" aria-live="polite" style="height: 0px; overflow: hidden; position: absolute;"></div>
+</script></div></div></div></div> <div id="Group_61_NJphfujHmg" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area showaside" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="group base-aside-custom" data-index="1" data-type="3" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="h4headH3"  >		<span  ><a   href="#"   title="側選單"   >側選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_L" id="Accesskey_L" accesskey="L" title="左方次要連結區，此區塊列有本網站的次要連結">:::</a></span></div></div></div></div> <div class="group-tab default" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="主選單"   >主選單</a></span></div></div></div><div class="ct"><div class="in"> <ul data-index="1" data-child="3">
                                                                         <li data-index="1">
                                                                             <div class="list-text tab" data-type="0" data-child="1">
                                                                                 <div class="in">
@@ -380,14 +341,14 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                             <ul data-index="1" style="display: flex;" :data-child="nodeid == '11' ? '1' : '2'">
                                                                                                 <li data-index="1" v-if="nodeid != '11'" :class="{ 'is-active': queryParam_tab == '1' }" @click="changeTab(1)">
                                                                                                     <span>
-                                                                                                        <a href="#" title="類別" role="tab" ref="tabCategory" @keydown.tab="onCategoryTabTab">類別</a>
+                                                                                                        <a href="#" title="類別">類別</a>
                                                                                                     </span>
                                                                                                 </li>
                                                                                                 <li data-index="2"
                                                                                                     :style="{ 'max-width': nodeid === '11' ? '100% !important' : '50%' }"
                                                                                                     :class="{ 'is-active': queryParam_tab == '2' }" @click="changeTab(2)">
                                                                                                     <span>
-                                                                                                        <a href="#" title="機關別" role="tab" ref="tabOrg"  @keydown.tab.prevent="onOrgTabTab" @keydown.shift.tab.prevent="onOrgTabShiftTab">機關別</a>
+                                                                                                        <a href="#" title="機關別">機關別</a>
                                                                                                     </span>
                                                                                                 </li>
                                                                                             </ul>
@@ -409,7 +370,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                                                 <div class="in">
                                                                                                                     <div data-index="0" class="h3">
                                                                                                                         <span>
-                                                                                                                            <a style="cursor: pointer;" tabindex="0"  role="tab" ref="categoryItem" :class="{ 'is-active': queryParam_mid === item.code }" :aria-selected="(queryParam_mid === item.code ? 'true' : 'false')" :title="item.category" @click="filterMID(item.code, $event)"  @keydown.enter.prevent="filterMID(item.code, $event)" @keydown.space.prevent="filterMID(item.code, $event)" @keydown.tab="onCategoryItemTab(index, $event)">{{item.category}}</a>
+                                                                                                                            <a style="cursor: pointer;" role="button" :class="{ 'is-active': queryParam_mid === item.code }" :title="item.category" @click="filterMID(item.code)">{{item.category}}</a>
                                                                                                                         </span>
                                                                                                                     </div>
                                                                                                                 </div>
@@ -441,7 +402,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                                                 <div class="in">
                                                                                                                     <div data-index="0" class="h3 is-active">
                                                                                                                         <span>
-                                                                                                                            <a style="cursor: pointer;" tabindex="0" role="tab" ref="TopOrgItem" :class="{ 'is-active': queryParam_oid1 === item.oid }" :aria-selected="(queryParam_oid1 === item.oid  ? 'true' : 'false')" :aria-expanded="(queryParam_oid1 === item.oid  ? 'true' : 'false')" :title="item.name" @click="filterOID(item.oid, $event)"  @keydown.enter.prevent="filterOID(item.oid, $event)" @keydown.space.prevent="filterOID(item.oid, $event)">
+                                                                                                                            <a style="cursor: pointer;" role="button" :class="{ 'is-active': queryParam_oid1 === item.oid }" :title="item.name" @click="filterOID(item.oid)">
                                                                                                                                 {{item.name}}
                                                                                                                                 <i>{{item.count}}</i>
                                                                                                                             </a>
@@ -459,7 +420,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                                                                         <div class="in">
                                                                                                                                             <div data-index="0" class="h3">
                                                                                                                                                 <span>
-                                                                                                                                                    <a style="cursor: pointer;"  tabindex="0"  role="tab" :class="{ 'is-active': queryParam_oid2 === item2.oid }" :aria-selected="(queryParam_oid2 === item2.oid ? 'true' : 'false')" :title="item2.name" @click="filterOID(item2.oid, $event)"  @keydown.enter.prevent="filterOID(item2.oid, $event)" @keydown.space.prevent="filterOID(item2.oid, $event)">
+                                                                                                                                                    <a style="cursor: pointer;" role="button" :class="{ 'is-active': queryParam_oid2 === item2.oid }" :title="item2.name" @click="filterOID(item2.oid)">
                                                                                                                                                         {{item2.name}}
                                                                                                                                                         <i>{{item2.count}}</i>
                                                                                                                                                     </a>
@@ -477,7 +438,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                                                                                                 <div class="in">
                                                                                                                                                                     <div v-for="(item3, index3) in item2.oid3" data-index="1" :class="{ 'is-active': queryParam_oid3 === item3.oid  } ">
                                                                                                                                                                         <span>
-                                                                                                                                                                            <a style="cursor: pointer;"  tabindex="0"  role="tab" :class="{ 'is-active': queryParam_oid3 === item3.oid }" :aria-selected="(queryParam_oid3 === item3.oid ? 'true' : 'false')" :title="item3.name" @click="filterOID(item3.oid, $event)"  @keydown.enter.prevent="filterOID(item3.oid, $event)" @keydown.space.prevent="filterOID(item3.oid, $event)">
+                                                                                                                                                                            <a style="cursor: pointer;" role="button" :class="{ 'is-active': queryParam_oid3 === item3.oid }" :title="item3.name" @click="filterOID(item3.oid)">
                                                                                                                                                                                 {{item3.name}}
                                                                                                                                                                                 <i>{{item3.count}}</i>
                                                                                                                                                                             </a>
@@ -507,8 +468,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                             </div>
                                                                         </li>
                                                                     </ul>
-</div></div></div></div></div></div></div></div> <div class="group base-section" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News3_18.html"   aria-current="page" title="英文申辦服務"   target="_self"  >英文申辦服務</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>英文申辦服務</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div></div></div></div></div> <div class="group base-section" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News3_18.html"   title="英文申辦服務"   target="_self"  >英文申辦服務</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>英文申辦服務</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div> <div class="area-editor system-info" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p><script>
 (function() {
     const englishPattern = /^[\u0000-\u007F\u2018-\u201D\u2013-\u2014\u2026\u00A0\u00B0]*$/;
@@ -584,15 +545,15 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                                 </th>
                                                                                             </tr>
                                                                                         </thead>
-                                                                                        <tbody data-index="2" lang="en" data-child="" v-if="paginatedData.length>0">
+                                                                                        <tbody data-index="2" data-child="" v-if="paginatedData.length>0">
                                                                                             <tr v-for="item in paginatedData" :key="item.title" data-index="" data-child="">
                                                                                                 <td data-title="主題" class="td_title">
-                                                                                                    <a :href="item.link" :title="item.title+'_link'" @click="visitCount(item.SN)"  :target="(item.link.indexOf('www.gov.tw') == -1 && item.link.indexOf('http') > -1) ? '_blank' : ''" rel="noopener noreferrer" >
+                                                                                                    <a :href="item.link" :title="item.title" @click="visitCount(item.SN)"  :target="(item.link.indexOf('www.gov.tw') == -1 && item.link.indexOf('http') > -1) ? '_blank' : ''">
                                                                                                         <span>{{ item.title }}</span>
                                                                                                     </a>
                                                                                                 </td>
                                                                                                 <td data-title="發布日期" width="150" class="td_title" v-if="nodeid==11">
-                                                                                                    <span class="date" style="text-align: center;">{{ padHyphenParts(item.date) }}</span>
+                                                                                                    <span class="date" style="text-align: center;">{{ item.date }}</span>
                                                                                                 </td>
                                                                                                 <td data-title="發布單位" width="150" class="td_organ">
                                                                                                     <span class="place">{{ item.depName }}</span>
@@ -797,69 +758,6 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                 changeItemsPerPage() {
                                                                                     this.currentPage = 1; // Reset to the first page when changing items per page
                                                                                 },
-                                                                                 onCategoryTabTab() {
-                                                                                   const items = this.$refs.categoryItem;
-                                                                                   if (!event.shiftKey && Array.isArray(items) && items.length > 0) {
-                                                                                     event.preventDefault();
-                                                                                     items[0].focus();
-                                                                                   }
-                                                                                 },
-                                                                                 onCategoryItemTab(index, event) {
-                                                                                   const items = this.$refs.categoryItem;
-                                                                                   if (!Array.isArray(items) || items.length === 0) return;
-                                                                                   const lastIndex = items.length - 1;
-                                                                                   if (!event.shiftKey && index === lastIndex) {
-                                                                                     event.preventDefault();
-                                                                                     if (this.$refs.tabOrg) {
-                                                                                       this.$refs.tabOrg.focus();
-                                                                                     }
-                                                                                   }
-                                                                                   else if(event.shiftKey && index === 0) { event.preventDefault();  if (this.$refs.tabCategory) {this.$refs.tabCategory.focus(); }} 
-                                                                                 },
-                                                                                 onOrgTabShiftTab() {
-                                                                                   const tabCategory = this.$refs.tabCategory;
-                                                                                   // Check if Category Tab is displayed (nodeid check in template)
-                                                                                   if (tabCategory) {
-                                                                                      this.changeTab(1);
-                                                                                      this.$nextTick(() => {
-                                                                                         tabCategory.focus();
-                                                                                      });
-                                                                                   }
-                                                                                 },
-                                                                                 onOrgTabTab() {
-                                                                                   this.changeTab(2);
-                                                                                   this.$nextTick(() => {
-                                                                                     let items = this.$refs.TopOrgItem;
-                                                                                     if (!items) return;
-                                                                                     if (!Array.isArray(items)) {
-                                                                                       items = [items];
-                                                                                     }
-                                                                                     if (items.length > 0) {
-                                                                                       const target = items[0];
-                                                                                       const el = target.$el || target;
-                                                                                       if (el && typeof el.focus === 'function') {
-                                                                                         el.focus();
-                                                                                       }
-                                                                                     }
-                                                                                   });
-                                                                                 },
-                                                                                padHyphenParts(objCode) {
-                                                                                  if (objCode === null || objCode === undefined) {
-                                                                                    return ''
-                                                                                  }
-                                                                                  const s = String(objCode).trim()
-                                                                                  const parts = s.split('-')
-                                                                                  const newParts = parts.map((part, idx) => {
-                                                                                    if (idx === 0) {
-                                                                                      return part
-                                                                                    }
-                                                                                    if (/^\d$/.test(part)) {
-                                                                                      return '0' + part
-                                                                                    }
-                                                                                    return part
-                                                                                  })
-                                                                                  return newParts.join('-')
-                                                                                },
                                                                                 fetchData(nodeid) {
                                                                                     const fileUrls = [
                                                                                         'news3_json_' + nodeid + '_1.json',
@@ -911,11 +809,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                     }
                                                                                     this.news = filter_data;
                                                                                 },
-                                                                                filterMID(mid, e) {
-                                                                                    var fromKeyboard = false;
-                                                                                    if (e && (e.type === 'keydown' || e.type === 'keyup' || (e.type === 'click' && e.detail === 0))) {
-                                                                                        fromKeyboard = true;
-                                                                                    }
+                                                                                filterMID(mid) {
                                                                                     this.queryParam_mid = mid;
                                                                                     this.queryParam_oid1 = '0';
                                                                                     this.queryParam_oid2 = '0';
@@ -923,19 +817,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
                                                                                     this.currentPage = 1;
                                                                                     this.fetchData2(this.nodeid);
-                                                                                    this.updateAriaStatus();
-                                                                                    if (fromKeyboard) {
-                                                                                        this.$nextTick(function () {
-                                                                                            var firstItem = document.querySelector('.area-table tbody tr:first-child a[title]');
-                                                                                            if (firstItem) { firstItem.focus(); }
-                                                                                        });
-                                                                                    }
                                                                                 },
-                                                                                filterOID(oid, e) {
-                                                                                    var fromKeyboard = false;
-                                                                                    if (e && (e.type === 'keydown' || e.type === 'keyup' || (e.type === 'click' && e.detail === 0))) {
-                                                                                        fromKeyboard = true;
-                                                                                    }
+                                                                                filterOID(oid) {
                                                                                     var queryParam_oid = oid;
                                                                                     this.queryParam_mid = '0';
                                                                                     if (queryParam_oid != null) {
@@ -945,22 +828,6 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                                     }
                                                                                     this.currentPage = 1;
                                                                                     this.fetchData2(this.nodeid);
-                                                                                    this.updateAriaStatus();
-                                                                                    if (fromKeyboard) {
-                                                                                        this.$nextTick(function () {
-                                                                                            var firstItem = document.querySelector('.area-table tbody tr:first-child a[title]');
-                                                                                            if (firstItem) { firstItem.focus(); }
-                                                                                        });
-                                                                                    }
-                                                                                },
-                                                                                updateAriaStatus() {
-                                                                                    const isEnglish = (this.nodeid == 18);
-                                                                                    const msg = isEnglish ? "List updated." : "列表已更新。";
-                                                                                    const liveRegion = document.getElementById('live-region');
-                                                                                    if (liveRegion) {
-                                                                                        liveRegion.textContent = msg;
-                                                                                        setTimeout(() => { liveRegion.textContent = ''; }, 1000);
-                                                                                    }
                                                                                 }
                                                                             },
                                                                             mounted() {
@@ -1043,62 +910,63 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                         // 定義排序函數
                                                                         function sortByOid(data) {
                                                                             data.sort((a, b) => a.oid != null && a.oid.localeCompare(b.oid));
-                                                                            data.forEach(item => {
+                                                                            data.forEach(item => {																				
                                                                                 if (item.oid2) {
-											if(item.oid=='2.16.886.101.20003')
-												sortByEYOid(item.oid2);
-											else
-												sortByOid(item.oid2);
+																					if(item.oid=='2.16.886.101.20003')
+																						sortByEYOid(item.oid2);
+																					else
+																						sortByOid(item.oid2);
                                                                                 }
                                                                                 if (item.oid3) {
                                                                                     sortByOid(item.oid3);
                                                                                 }
                                                                             });
                                                                         }
-											function sortByEYOid(data) {
-												const sortOrder = [
-													"2.16.886.101.20003.20001",
-													"2.16.886.101.20003.20002",
-													"2.16.886.101.20003.20003",
-													"2.16.886.101.20003.20004",
-													"2.16.886.101.20003.20005",
-													"2.16.886.101.20003.20006",
-													"2.16.886.101.20003.20007",
-													"2.16.886.101.20003.20008",
-													"2.16.886.101.20003.20063",
-													"2.16.886.101.20003.20064",
-													"2.16.886.101.20003.20065",
-													"2.16.886.101.20003.20083",
-													"2.16.886.101.20003.20067",
-													"2.16.886.101.20003.20082",
-													"2.16.886.101.20003.20086",
-													"2.16.886.101.20003.20069",
-													"2.16.886.101.20003.20081",
-													"2.16.886.101.20003.20033",
-													"2.16.886.101.20003.20052",
-													"2.16.886.101.20003.20070",
-													"2.16.886.101.20003.20010",
-													"2.16.886.101.20003.20016",
-													"2.16.886.101.20003.20036",
-													"2.16.886.101.20003.20043",
-													"2.16.886.101.20003.20035",
-													"2.16.886.101.20003.20071",
-													"2.16.886.101.20003.20072",
-													"2.16.886.101.20003.20025",
-													"2.16.886.101.20003.20018",
-													"2.16.886.101.20003.20026",
-													"2.16.886.101.20003.20034",
-													"2.16.886.101.20003.20056"
-												];
-												data.sort((a, b) => {
-												  const indexA = sortOrder.indexOf(a.oid);
-												  const indexB = sortOrder.indexOf(b.oid);
-												  const posA = indexA === -1 ? Number.MAX_VALUE : indexA;
-												  const posB = indexB === -1 ? Number.MAX_VALUE : indexB;
-												  return posA - posB;
-												});
-                                                                            data.forEach(item => {
-                                                                                if (item.oid2) {
+																		function sortByEYOid(data) {
+																			console.log(data)
+																			const sortOrder = [
+																				"2.16.886.101.20003.20001",
+																				"2.16.886.101.20003.20002",
+																				"2.16.886.101.20003.20003",
+																				"2.16.886.101.20003.20004",
+																				"2.16.886.101.20003.20005",
+																				"2.16.886.101.20003.20006",
+																				"2.16.886.101.20003.20007",
+																				"2.16.886.101.20003.20008",
+																				"2.16.886.101.20003.20063",
+																				"2.16.886.101.20003.20064",
+																				"2.16.886.101.20003.20065",
+																				"2.16.886.101.20003.20083",
+																				"2.16.886.101.20003.20067",
+																				"2.16.886.101.20003.20082",
+																				"2.16.886.101.20003.20086",
+																				"2.16.886.101.20003.20069",
+																				"2.16.886.101.20003.20081",
+																				"2.16.886.101.20003.20033",
+																				"2.16.886.101.20003.20052",
+																				"2.16.886.101.20003.20070",
+																				"2.16.886.101.20003.20010",
+																				"2.16.886.101.20003.20016",
+																				"2.16.886.101.20003.20036",
+																				"2.16.886.101.20003.20043",
+																				"2.16.886.101.20003.20035",
+																				"2.16.886.101.20003.20071",
+																				"2.16.886.101.20003.20072",
+																				"2.16.886.101.20003.20025",
+																				"2.16.886.101.20003.20018",
+																				"2.16.886.101.20003.20026",
+																				"2.16.886.101.20003.20034",
+																				"2.16.886.101.20003.20056"
+																			];																			
+																			data.sort((a, b) => {																			  
+																			  const indexA = sortOrder.indexOf(a.oid);
+																			  const indexB = sortOrder.indexOf(b.oid);
+																			  const posA = indexA === -1 ? Number.MAX_VALUE : indexA;
+																			  const posB = indexB === -1 ? Number.MAX_VALUE : indexB;
+																			  return posA - posB;
+																			});
+                                                                            data.forEach(item => {																				
+                                                                                if (item.oid2) {																					
                                                                                     sortByOid(item.oid2);
                                                                                 }
                                                                                 if (item.oid3) {
@@ -1108,7 +976,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
                                                                         }
                                                                         setTimeout(function () { $('#dataempty').show() }, 3000);
                                                                     </script>
-</div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor system-info" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text detail" data-index="2" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor system-info" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text detail" data-index="2" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -1129,7 +997,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -1205,7 +1073,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -1217,7 +1087,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1287,7 +1157,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1341,8 +1211,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="60B372B2" />
