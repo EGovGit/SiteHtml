@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=862040" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=862040" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GdRnv1wq44q9wBQunMjUR21UeJlxcs6OvLsYgMUNPq+H4tMvbSt89dt1qoJ0SL87Q2rUgyDe3vN2FpqnCrab397FdPkhxRaaztrevyvtqS0h4T5J6aC26LAxmnkant2sZp+lipOx4ckPz///Y4Fu4TO44RxWUiTLAUANVSBiZzLVd7kmAPTl91ckZRpwDO0Ykoqtb965y1g2z9AI5FoC19eQlOh5k6g+hjtqvOFLxQXwW1dj8phKN6NGMzsY+UAdmBKfBlXteD+opBjbbdovvYM0xAQv4RO7ud4VakkkYj4XtAQycj+aedXHMPhmzh1YJrnfUMRCABfsJAjt1LZN8jkYmDSM4TROh9U/YhMz+WfGCo6dooCMM63NOa19WIuLjPCF/Mc6dF8AC14ZDprY9PZqxieA7SVGe7yfx3KQkFwcLw9Ae+O9QFrAIqMP1qTsNf6RUE6Hpr8SQau8kIVEYS/xmfWNfv/KUgSmwIsvGkOB4xoyFjUCQc00QPORnBVzw2JP4yVbymfOLVGGR5Dr1d6DtXiSJ4WiWgkyq6V5Qrvchtc99dqxi9I9uvyzB+VOjBPbeIbbHNyqgCkYSe8LWwlPOc2onwn3t3PGmBqNZd2ur8MrunTMet4w9kPqie5dof3dn7Xz1ZAAqo6Duf9csc3dFFUYVMmxd98+Q6spaHzEr4kkJcRmJ/U59CEit96uTWj1KorT+fTR75HtjynONCblhtz23DhwzkhlDlVHgxOK8zqxuU9PEyMlTZnLcjKwxOE5CVDVXrXNHg3Z6UrzfycwPu2IVPpj40nBM8PZHVTETbb4DsfpRGhVNqv4mk8UxtQ8mxVYeGzYMhGH9Mjcx1boI1MoxVfjh6eWmK43ejDSkmjhsxCCwBVmMl1/UTp+cRYmiu5A5uiddS4otNsWbCDB9a1TigNu2fYGouGUlFJLWRrG5hDYKx68uoyoL2Nz8SnQd5nGvxXwNG+i6jCdgHAhHnxeZFjMSBS2uYycp6V5HEyEYrbUfv4eax8FQl+NoeCvVMee9TkXFwiND7yoEUoOo4hdbl2P+IBgLGoXv/qSxN2ZEu4SDnOfKQ4CYBLPVUGxS5mUqCUqlIpVD3UhLeFjXJSIh20/ckuEwZNoVNIRqjM29pS7TZ/NhHgqdlZpZAVS+PZAPKBp/Ynnp1TNWaTHQpEc66pM4LRrkARFkjreIu1EC1CzmjYLe8IlWXmqvf/ap2H5nWL8f/oFw6uLfCvxaJ5O5+U2VokSUUWR5o/+76VQmaDudwNNW8pI8i3ecyMYjC0rCxFMP2jBGiVNvxerE9kn1aLTG9TI7AibvPcRn8vYkWI7nlQYcaKfrUIstF4ALpo10W+zaiCwopRr2ERcyXIyp0L7aTyT+rkErT/0hDHDOogutQRcliYbIyACByu/MNHoUjKjDoe5kJaKBbgXhsqfRs+TK9E4AUmEeiyhlEfps4N7ke8W40ledBpTohDSad/mL1CXyPhoLEGps/jXovnHVx59bVISaNFzj48xvZVv" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GciGo6XYAS3Os2xQY7wJMjklhqcRxCeroWvY4uGxa51EHOAhvNTWBNQGZ1fjxwr0nYYP3QVfhrg5fXHSVDYQaOAiE2+VEQ9aMntaONyI0t06CePqHycnTW3je49RyID0mZQgCMHa5Dw1/OHUnuyOlgEkFgOu4WFiFJ7GT+Soq3HjLz8HwRj+DRsLwH8BlGG66kszYOhlxuur16ic+fqS7GCeTsZnmdzc4GKvx6kfmOXetqUppAvpRNCAtcS4/zdNxgv7UCL6Fhzq6y6h2Pxn5SUWZlhiybpF7RTbNo0aE8RJ5B0C7KbtrUWV9XQ14fJ2TPjDxyIlFHFm1gHN1c+zHsRpW8wgqhwyBIuIUuHIusjee0TsH2a+C3Fam/Mb44Tm7LKQPP31gMdf/FncPQB2652tn2KoWIeIAJzZO/GH814YmVs2HPapxlF/alGTYnVOlOxvKfZZUpHYBJG6ejdk6PASGY2y5zqp0w6fPsCm5Dhr/9Us/zx+P7vHRSPmHPMJJVNoPLAJKx2RX46SpHfXPgXBPU2BEII5zKgtZXjzg7JrqVwdbgMCQOvzLalp3NjcJqg0l3qF7Wh0NNqspR0878aklVZlMdg/mrBVjKuJmSbh9PArTop1JTvkioM9nCGHTnRIkiRAV5QPRH/sWaHiwe1tcrTD3WcqlMeU3kRsFuv+spo//nLRyfGibTpJQtm+7SYcedwfgMsLUahndOg8tOYkyJ/S0C2Vt/TD7akwt9cRjneNj/AhbR1JPdNzSTRg0Q+Yi9dRW1lKcNvIvCC2vMEfOtDLTpMDq9mBanE4QPVsv07aFJvkcBLuBJBQ0Tm5qkMCVlfYw63kqXlfQhPd4qqJCRmi+zKG0ZveS7o59gRI2xRDcgjDWTod9toHl7g01nvHyoO9/Tttd+rOYfMYbTkj4PRakFc9cao5dxzO8OJlxdpxydybVrCjUKxyelRiM7e30/d/zDF43S++Ztt3FRYw4oMZ1eBYA2vn/RyTIPah1q7t5dGU5KGphvEjnfJc7OFtnfCXtKaQTopa1aU5UOaQF3L4eSfMbfzC9HdXTxwEq8hL7YCDnif5RhJcPE5VK9vbm6t+rQ+NBoOYLMqRL3Pl/f9E2OGKgziVyM/+BXR202aiU8eDgEmmIAKjCTQoxkAb+VEoZ0lZB1CbRr4uw9GGoVvZHefE/7gbuAxDDFTmdFS+g10hWMEQmUc1Ihxqht87OFqCId5V8vugph4IyNvpSzVh/EKZKcY2hyYqz6LUApZVAuS9JWsH7GdVVGNj2pxI4wcIMNOgFlEgRyLk8T/QrdOeAzFZv82Lx1GlDHWvExssl8dh5NjORMnfvQS2lk54adCRAzGKqPIcMSxiy+UPjoQPduQvb9rWlJ/Uiqb2J3aDaBrwBnIyVKo4lcFjMIENjaGaQv1Y3awp9p/kQSqnQBCu5adgQ5Oe4jixERlo/x1KbIKzlL4qML9PehM3PIOtlKw3j8kYmj2jsnbsD259/kSmQeQ5unZDYptdcVg9OU9G" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_e9cb4a73d6b74654bb869da815ef936f">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_1e21a892df5b4f499a1593e861ec0e3d">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_e9cb4a73d6b74654bb869da815ef936f" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_e9cb4a73d6b74654bb869da815ef936f" id="txt_e9cb4a73d6b74654bb869da815ef936f" type="search" placeholder="" title="搜尋">
+  <label for="txt_1e21a892df5b4f499a1593e861ec0e3d" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_1e21a892df5b4f499a1593e861ec0e3d" id="txt_1e21a892df5b4f499a1593e861ec0e3d" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_e9cb4a73d6b74654bb869da815ef936f" data-search="btn_e9cb4a73d6b74654bb869da815ef936f" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_1e21a892df5b4f499a1593e861ec0e3d" data-search="btn_1e21a892df5b4f499a1593e861ec0e3d" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_e9cb4a73d6b74654bb869da815ef936f"]').on("keydown", function (event) {
+    $('[data-search="btn_1e21a892df5b4f499a1593e861ec0e3d"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_e9cb4a73d6b74654bb869da815ef936f'));
+             doSearch($('#btn_1e21a892df5b4f499a1593e861ec0e3d'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_e9cb4a73d6b74654bb869da815ef936f']", true);
+return_value = typeWriter("[data-search='btn_1e21a892df5b4f499a1593e861ec0e3d']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_e9cb4a73d6b74654bb869da815ef936f']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_AetWGRGRvj" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_ipckhYuUur" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_ibwrutGMRg" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_KDbAqnPCdW" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_EdwrmdjcGc" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_GKXfgPhPqj" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>想成為街頭藝人，該如何申請？有哪些場地可以讓我演出？</h3></div></div></div></div>
         
         
@@ -696,11 +658,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">200元</strong>/人</li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://klneartsnew.klccab.gov.tw/Uploads/ArtistLawAll/4f703601-57b1-41ef-ac52-6ada7ad38549.pdf" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://klneartsnew.klccab.gov.tw/Uploads/ArtistLawAll/4f703601-57b1-41ef-ac52-6ada7ad38549.pdf" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://klneartsnew.klccab.gov.tw/StreetPerformer/Legislation" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至基隆市文化觀光局 基隆市街頭藝人"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://klneartsnew.klccab.gov.tw/StreetPerformer/Legislation" id="button" target="_blank" title="[開新視窗]連結至基隆市文化觀光局 基隆市街頭藝人"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至基隆市文化觀光局 基隆市街頭藝人</p>
 </div>
@@ -713,11 +675,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">200元</strong>/人</li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://tpbusker.gov.taipei/newscontent.aspx?t=4&amp;id=26" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://tpbusker.gov.taipei/newscontent.aspx?t=4&amp;id=26" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://tpbusker.gov.taipei/register.aspx?r=639034173871016238" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至臺北市政府文化局 臺北市街頭藝人"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://tpbusker.gov.taipei/register.aspx?r=639034173871016238" id="button" target="_blank" title="[開新視窗]連結至臺北市政府文化局 臺北市街頭藝人"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至臺北市政府文化局 臺北市街頭藝人</p>
 </div>
@@ -730,11 +692,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">200元</strong>/人</li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://newtaipeicitybuskers.azurewebsites.net/ArtistLaw" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://newtaipeicitybuskers.azurewebsites.net/ArtistLaw" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://newtaipeicitybuskers.azurewebsites.net/Account/Register" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至新北市政府文化局 新北藝文團體資訊網"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://newtaipeicitybuskers.azurewebsites.net/Account/Register" id="button" target="_blank" title="[開新視窗]連結至新北市政府文化局 新北藝文團體資訊網"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至新北市政府文化局 新北藝文團體資訊網</p>
 </div>
@@ -747,11 +709,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">200元</strong>/人</li>
 	<li>原住民、身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://taobuskers.azurewebsites.net/News/Detail/0276614a-a0af-47a6-ad04-48edbdcf1bf5" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://taobuskers.azurewebsites.net/News/Detail/0276614a-a0af-47a6-ad04-48edbdcf1bf5" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://taobuskers.azurewebsites.net/Account/Login" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至桃園市政府文化局 桃園市街頭藝人"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://taobuskers.azurewebsites.net/Account/Login" id="button" target="_blank" title="[開新視窗]連結至桃園市政府文化局 桃園市街頭藝人"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至桃園市政府文化局 桃園市街頭藝人</p>
 </div>
@@ -764,11 +726,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：每人或每團<strong style="color:#b50000;">500元</strong></li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>每月<strong style="color:#b50000;">1-10日</strong>臨櫃申請，請參閱<a href="https://culture.hccg.gov.tw/ch/home.jsp?id=255&amp;parentpath=0,6&amp;mcustomize=filedownload_view.jsp&amp;toolsflag=Y&amp;dataserno=202502130001&amp;t=Download&amp;mserno=201808270005" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>每月<strong style="color:#b50000;">1-10日</strong>臨櫃申請，請參閱<a href="https://culture.hccg.gov.tw/ch/home.jsp?id=255&amp;parentpath=0,6&amp;mcustomize=filedownload_view.jsp&amp;toolsflag=Y&amp;dataserno=202502130001&amp;t=Download&amp;mserno=201808270005" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://culture.hccg.gov.tw/ch/home.jsp?id=255&amp;parentpath=0,6&amp;mcustomize=filedownload_view.jsp&amp;toolsflag=Y&amp;dataserno=202408220003&amp;t=Download&amp;mserno=201808270005" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至新竹市文化局"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://culture.hccg.gov.tw/ch/home.jsp?id=255&amp;parentpath=0,6&amp;mcustomize=filedownload_view.jsp&amp;toolsflag=Y&amp;dataserno=202408220003&amp;t=Download&amp;mserno=201808270005" id="button" target="_blank" title="[開新視窗]連結至新竹市文化局"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至新竹市文化局</p>
 </div>
@@ -781,11 +743,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：每人或每團<strong style="color:#b50000;">500元</strong></li>
 	<li>身心障礙、(中)低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://buskers.hchcc.gov.tw/index.php?inter=news&amp;category=1&amp;id=186" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://buskers.hchcc.gov.tw/index.php?inter=news&amp;category=1&amp;id=186" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://buskers.hchcc.gov.tw/buskerapply/index.php?inter=ApplyEntryForRegistration" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至新竹縣政府文化局 新竹縣街頭藝人"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://buskers.hchcc.gov.tw/buskerapply/index.php?inter=ApplyEntryForRegistration" id="button" target="_blank" title="[開新視窗]連結至新竹縣政府文化局 新竹縣街頭藝人"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至新竹縣政府文化局 新竹縣街頭藝人</p>
 </div>
@@ -797,11 +759,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>臨櫃/郵寄/電郵申請，請參閱<a href="https://www.mlc.gov.tw/form/index.aspx?Parser=2,6,85,40" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>臨櫃/郵寄/電郵申請，請參閱<a href="https://www.mlc.gov.tw/form/index.aspx?Parser=2,6,85,40" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.mlc.gov.tw/form/index.aspx?Parser=2,6,85,40" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至苗栗縣政府文化觀光局"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.mlc.gov.tw/form/index.aspx?Parser=2,6,85,40" id="button" target="_blank" title="[開新視窗]連結至苗栗縣政府文化觀光局"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至苗栗縣政府文化觀光局</p>
 </div>
@@ -813,11 +775,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://buskers.taichung.gov.tw/index.php?inter=download" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://buskers.taichung.gov.tw/index.php?inter=download" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://buskers.taichung.gov.tw/buskerapply/index.php?inter=ApplyEntryForRegistration&amp;step=NoHaveLicense" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至臺中市政府文化局 臺中市街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://buskers.taichung.gov.tw/buskerapply/index.php?inter=ApplyEntryForRegistration&amp;step=NoHaveLicense" id="button" target="_blank" title="[開新視窗]連結至臺中市政府文化局 臺中市街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至臺中市政府文化局 臺中市街頭藝人資訊平臺</p>
 </div>
@@ -830,11 +792,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">3年</strong></li>
 	<li>費用：<strong style="color:#b50000;">200元</strong>/人</li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>每年<strong style="color:#b50000;">3月</strong>及<strong style="color:#b50000;">9月</strong>郵寄申請，請參閱<a href="https://busker.culture.tw/changhua/cms/news" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>每年<strong style="color:#b50000;">3月</strong>及<strong style="color:#b50000;">9月</strong>郵寄申請，請參閱<a href="https://busker.culture.tw/changhua/cms/news" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://busker.culture.tw/changhua/download/index" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至彰化縣文化局 彰化縣街頭藝人"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://busker.culture.tw/changhua/download/index" id="button" target="_blank" title="[開新視窗]連結至彰化縣文化局 彰化縣街頭藝人"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至彰化縣文化局 彰化縣街頭藝人</p>
 </div>
@@ -846,11 +808,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">3年</strong></li>
 	<li>費用：每人或每團<strong style="color:#b50000;">200元</strong></li>
-	<li>臨櫃或郵寄申請，請參閱<a href="https://busker.culture.tw/nantou/download/index" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>臨櫃或郵寄申請，請參閱<a href="https://busker.culture.tw/nantou/download/index" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://busker.culture.tw/nantou/download/index" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至南投縣政府文化局 南投縣街頭藝人"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://busker.culture.tw/nantou/download/index" id="button" target="_blank" title="[開新視窗]連結至南投縣政府文化局 南投縣街頭藝人"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至南投縣政府文化局 南投縣街頭藝人</p>
 </div>
@@ -862,11 +824,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://content.yunlin.gov.tw/News_Content.aspx?n=7655&amp;s=339500" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://content.yunlin.gov.tw/News_Content.aspx?n=7655&amp;s=339500" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://buskers.yunlin.gov.tw/apply/index.php?inter=ApplyEntryForRegistration" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至雲林縣政府文化觀光處 雲林縣街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://buskers.yunlin.gov.tw/apply/index.php?inter=ApplyEntryForRegistration" id="button" target="_blank" title="[開新視窗]連結至雲林縣政府文化觀光處 雲林縣街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至雲林縣政府文化觀光處 雲林縣街頭藝人資訊平臺</p>
 </div>
@@ -878,11 +840,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">3年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li><strong style="color:#b50000;">115年</strong>於<strong style="color:#b50000;">4/20-5/20</strong>受理申請，請參閱<a href="https://www.facebook.com/chiayicity.cultureman/posts/%E6%83%B3%E5%9C%A8%E5%98%89%E7%BE%A9%E7%9A%84%E8%A1%97%E9%A0%AD%E8%A1%A8%E6%BC%94%E5%97%8E115%E5%B9%B4%E5%98%89%E7%BE%A9%E5%B8%82%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E7%99%BB%E8%A8%98%E7%94%B3%E8%AB%8B%E9%96%8B%E5%A7%8B%E5%9B%89-%E4%B8%8D%E7%AE%A1%E6%98%AF%E9%9F%B3%E6%A8%82%E8%88%9E%E8%B9%88%E9%9B%9C%E8%80%8D%E6%88%96%E5%90%84%E7%A8%AE%E5%89%B5%E4%BD%9C%E5%8F%AA%E8%A6%81%E4%BD%A0%E6%BA%96%E5%82%99%E5%A5%BD%E4%BA%86%E5%98%89%E7%BE%A9%E7%9A%84%E8%A1%97%E9%A0%AD%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E8%88%9E%E5%8F%B0%E7%94%B3%E8%AB%8B%E9%87%8D%E9%BB%9E%E7%9C%8B%E9%80%99%E8%A3%A1-%E7%94%B3%E8%AB%8B%E6%9C%9F%E9%96%931150420/1439895721514727/" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li><strong style="color:#b50000;">115年</strong>於<strong style="color:#b50000;">4/20-5/20</strong>受理申請，請參閱<a href="https://www.facebook.com/chiayicity.cultureman/posts/%E6%83%B3%E5%9C%A8%E5%98%89%E7%BE%A9%E7%9A%84%E8%A1%97%E9%A0%AD%E8%A1%A8%E6%BC%94%E5%97%8E115%E5%B9%B4%E5%98%89%E7%BE%A9%E5%B8%82%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E7%99%BB%E8%A8%98%E7%94%B3%E8%AB%8B%E9%96%8B%E5%A7%8B%E5%9B%89-%E4%B8%8D%E7%AE%A1%E6%98%AF%E9%9F%B3%E6%A8%82%E8%88%9E%E8%B9%88%E9%9B%9C%E8%80%8D%E6%88%96%E5%90%84%E7%A8%AE%E5%89%B5%E4%BD%9C%E5%8F%AA%E8%A6%81%E4%BD%A0%E6%BA%96%E5%82%99%E5%A5%BD%E4%BA%86%E5%98%89%E7%BE%A9%E7%9A%84%E8%A1%97%E9%A0%AD%E5%B0%B1%E6%98%AF%E4%BD%A0%E7%9A%84%E8%88%9E%E5%8F%B0%E7%94%B3%E8%AB%8B%E9%87%8D%E9%BB%9E%E7%9C%8B%E9%80%99%E8%A3%A1-%E7%94%B3%E8%AB%8B%E6%9C%9F%E9%96%931150420/1439895721514727/" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://cabcy.chiayi.gov.tw/web/cabcych/Performance" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至嘉義市政府文化局"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://cabcy.chiayi.gov.tw/web/cabcych/Performance" id="button" target="_blank" title="[開新視窗]連結至嘉義市政府文化局"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至嘉義市政府文化局</p>
 </div>
@@ -894,11 +856,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">3年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>每年<strong style="color:#b50000;">5/1-5/15</strong>受理申請，請參閱<a href="https://tbocc.cyhg.gov.tw/News_Content.aspx?n=100122&amp;s=517240#:~:text=%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%20*%20%E5%98%89%E7%BE%A9%E7%B8%A3%E9%96%8B%E6%94%BE%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%B1%95%E6%BC%94%E7%A9%BA%E9%96%93%E5%A0%B4%E5%9C%B0%E5%BD%99%E6%95%B4%E8%A1%A8%20pdf(0%20byte)%20*%201120607%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%BE%9E%E4%BA%8B%E8%97%9D%E6%96%87%E6%B4%BB%E5%8B%95%E7%AE%A1%E7%90%86%E8%A6%81%E9%BB%9E,%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89%E5%88%B0%E6%9C%9F%E7%94%B3%E8%AB%8B%E8%A1%A8%20docx(17.52%20KB)%20pdf(50.22%20KB)%20odt(16.74%20KB)" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>每年<strong style="color:#b50000;">5/1-5/15</strong>受理申請，請參閱<a href="https://tbocc.cyhg.gov.tw/News_Content.aspx?n=100122&amp;s=517240#:~:text=%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%20*%20%E5%98%89%E7%BE%A9%E7%B8%A3%E9%96%8B%E6%94%BE%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%B1%95%E6%BC%94%E7%A9%BA%E9%96%93%E5%A0%B4%E5%9C%B0%E5%BD%99%E6%95%B4%E8%A1%A8%20pdf(0%20byte)%20*%201120607%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%BE%9E%E4%BA%8B%E8%97%9D%E6%96%87%E6%B4%BB%E5%8B%95%E7%AE%A1%E7%90%86%E8%A6%81%E9%BB%9E,%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89%E5%88%B0%E6%9C%9F%E7%94%B3%E8%AB%8B%E8%A1%A8%20docx(17.52%20KB)%20pdf(50.22%20KB)%20odt(16.74%20KB)" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://tbocc.cyhg.gov.tw/News_Content.aspx?n=100122&amp;s=517240#:~:text=%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%20*%20%E5%98%89%E7%BE%A9%E7%B8%A3%E9%96%8B%E6%94%BE%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%B1%95%E6%BC%94%E7%A9%BA%E9%96%93%E5%A0%B4%E5%9C%B0%E5%BD%99%E6%95%B4%E8%A1%A8%20pdf(0%20byte)%20*%201120607%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%BE%9E%E4%BA%8B%E8%97%9D%E6%96%87%E6%B4%BB%E5%8B%95%E7%AE%A1%E7%90%86%E8%A6%81%E9%BB%9E,%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89%E5%88%B0%E6%9C%9F%E7%94%B3%E8%AB%8B%E8%A1%A8%20docx(17.52%20KB)%20pdf(50.22%20KB)%20odt(16.74%20KB)" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至嘉義縣文化觀光局"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://tbocc.cyhg.gov.tw/News_Content.aspx?n=100122&amp;s=517240#:~:text=%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%20*%20%E5%98%89%E7%BE%A9%E7%B8%A3%E9%96%8B%E6%94%BE%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%B1%95%E6%BC%94%E7%A9%BA%E9%96%93%E5%A0%B4%E5%9C%B0%E5%BD%99%E6%95%B4%E8%A1%A8%20pdf(0%20byte)%20*%201120607%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%BE%9E%E4%BA%8B%E8%97%9D%E6%96%87%E6%B4%BB%E5%8B%95%E7%AE%A1%E7%90%86%E8%A6%81%E9%BB%9E,%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89%E5%88%B0%E6%9C%9F%E7%94%B3%E8%AB%8B%E8%A1%A8%20docx(17.52%20KB)%20pdf(50.22%20KB)%20odt(16.74%20KB)" id="button" target="_blank" title="[開新視窗]連結至嘉義縣文化觀光局"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至嘉義縣文化觀光局</p>
 </div>
@@ -910,11 +872,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">3年</strong></li>
 	<li>費用：每人或每團<strong style="color:#b50000;">200元</strong>(身心障礙者<strong style="color:#b50000;">150元</strong>)</li>
-	<li>請參閱<a href="https://buskersapply.tainan.gov.tw/index.php?inter=news&amp;category=2&amp;id=6" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://buskersapply.tainan.gov.tw/index.php?inter=news&amp;category=2&amp;id=6" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://buskersapply.tainan.gov.tw/apply/index.php?inter=ApplyEntryForRegistration" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至臺南市政府文化局 臺南市街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://buskersapply.tainan.gov.tw/apply/index.php?inter=ApplyEntryForRegistration" id="button" target="_blank" title="[開新視窗]連結至臺南市政府文化局 臺南市街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至臺南市政府文化局 臺南市街頭藝人資訊平臺</p>
 </div>
@@ -926,11 +888,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">3年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://busker.kcg.gov.tw/content/index?Parser=1,8,33" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://busker.kcg.gov.tw/content/index?Parser=1,8,33" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://busker.kcg.gov.tw/artist_register/index?Parser=99,4,30" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至高雄市政府文化局 高雄市街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://busker.kcg.gov.tw/artist_register/index?Parser=99,4,30" id="button" target="_blank" title="[開新視窗]連結至高雄市政府文化局 高雄市街頭藝人資訊平臺"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至高雄市政府文化局 高雄市街頭藝人資訊平臺</p>
 </div>
@@ -942,11 +904,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">200元</strong>/人</li>
-	<li>請參閱<a href="https://streetartist.cultural.pthg.gov.tw/index.php?inter=news" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://streetartist.cultural.pthg.gov.tw/index.php?inter=news" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://streetartist.cultural.pthg.gov.tw/?inter=ApplyEntryForRegistration" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至屏東縣政府文化處 街頭藝人展演許可申請平臺"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://streetartist.cultural.pthg.gov.tw/?inter=ApplyEntryForRegistration" id="button" target="_blank" title="[開新視窗]連結至屏東縣政府文化處 街頭藝人展演許可申請平臺"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至屏東縣政府文化處 街頭藝人展演許可申請平臺</p>
 </div>
@@ -959,11 +921,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：個人<strong style="color:#b50000;">500元</strong>/團體<strong style="color:#b50000;">1,000元</strong></li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://busker.culture.tw/yilan/download/index" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://busker.culture.tw/yilan/download/index" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://forms.gle/wWFhsvCVxx7pbnqr9" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至宜蘭縣政府文化局 宜蘭縣街頭藝人"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://forms.gle/wWFhsvCVxx7pbnqr9" id="button" target="_blank" title="[開新視窗]連結至宜蘭縣政府文化局 宜蘭縣街頭藝人"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至宜蘭縣政府文化局 宜蘭縣街頭藝人</p>
 </div>
@@ -976,11 +938,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：個人<strong style="color:#b50000;">200元</strong>/團體<strong style="color:#b50000;">500元</strong></li>
 	<li>身心障礙、低收入戶<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://buskers.hccc.gov.tw/help" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://buskers.hccc.gov.tw/help" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://buskers.hccc.gov.tw/" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至花蓮縣文化局 花蓮縣街頭藝人線上平臺"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://buskers.hccc.gov.tw/" id="button" target="_blank" title="[開新視窗]連結至花蓮縣文化局 花蓮縣街頭藝人線上平臺"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至花蓮縣文化局 花蓮縣街頭藝人線上平臺</p>
 </div>
@@ -992,11 +954,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：個人或團體<strong style="color:#b50000;">200元</strong></li>
-	<li>臨櫃/郵寄/電郵申請，請參閱<a href="https://culture.taitung.gov.tw/street-artist" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>臨櫃/郵寄/電郵申請，請參閱<a href="https://culture.taitung.gov.tw/street-artist" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://culture.taitung.gov.tw/street-artist" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至臺東縣政府文化處 臺東藝文平臺"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://culture.taitung.gov.tw/street-artist" id="button" target="_blank" title="[開新視窗]連結至臺東縣政府文化處 臺東藝文平臺"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至臺東縣政府文化處 臺東藝文平臺</p>
 </div>
@@ -1008,11 +970,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">2年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>臨櫃/郵寄/電郵申請，請參閱<a href="https://busker.culture.tw/penghu/cms/news/1931" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>臨櫃/郵寄/電郵申請，請參閱<a href="https://busker.culture.tw/penghu/cms/news/1931" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://busker.culture.tw/penghu/download/index" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至澎湖縣政府文化局 澎湖縣街頭藝人"><strong>下載申請表 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://busker.culture.tw/penghu/download/index" id="button" target="_blank" title="[開新視窗]連結至澎湖縣政府文化局 澎湖縣街頭藝人"><strong>下載申請表 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至澎湖縣政府文化局 澎湖縣街頭藝人</p>
 </div>
@@ -1024,11 +986,11 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">4年</strong></li>
 	<li>費用：<strong style="color:#b50000;">免費</strong></li>
-	<li>請參閱<a href="https://cabkc.kinmen.gov.tw/information?uid=206&amp;pid=5234" target="_blank" rel="noopener noreferrer">申請辦法</a></li>
+	<li>請參閱<a href="https://cabkc.kinmen.gov.tw/information?uid=206&amp;pid=5234" target="_blank">申請辦法</a></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://cabkc.kinmen.gov.tw/informationlist?uid=206" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至金門縣文化局 金門縣街頭藝人專區"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://cabkc.kinmen.gov.tw/informationlist?uid=206" id="button" target="_blank" title="[開新視窗]連結至金門縣文化局 金門縣街頭藝人專區"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至金門縣文化局 金門縣街頭藝人專區</p>
 </div>
@@ -1040,7 +1002,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <ul style="text-align: left;">
 	<li>登記有效期限：<strong style="color:#b50000;">1年</strong></li>
 	<li>費用：<strong style="color:#b50000;">待公告</strong></li>
-	<li>115年方案待公告，可先參閱<a href="https://matsucc.gov.tw/114%E5%B9%B4%E5%BA%A6-%E9%80%A3%E6%B1%9F%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89-%E9%96%8B%E6%94%BE%E7%94%B3%E8%AB%8B%E5%8F%8A%E6%8F%9B%E8%AD%89/" target="_blank" rel="noopener noreferrer">114年度連江縣街頭藝人證開放申請及換證</a></li>
+	<li>115年方案待公告，可先參閱<a href="https://matsucc.gov.tw/114%E5%B9%B4%E5%BA%A6-%E9%80%A3%E6%B1%9F%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89-%E9%96%8B%E6%94%BE%E7%94%B3%E8%AB%8B%E5%8F%8A%E6%8F%9B%E8%AD%89/" target="_blank">114年度連江縣街頭藝人證開放申請及換證</a></li>
 </ul>
 
 <p style="font-size: 12px;">&nbsp;</p>
@@ -1069,7 +1031,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p>&nbsp;</p>
 
-<p><a class="my-button" href="https://klneartsnew.klccab.gov.tw/StreetPerformer/Space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="基隆市"><strong>基隆市</strong></a> <a class="my-button" href="https://tpbusker.gov.taipei/place.aspx?r=639057590654619498" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺北市"><strong>臺北市</strong></a> <a class="my-button" href="https://newtaipeicitybuskers.azurewebsites.net/Space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="新北市"><strong>新北市</strong></a> <a class="my-button" href="https://taobuskers.azurewebsites.net/Space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="桃園市"><strong>桃園市</strong></a> <a class="my-button" href="https://dgservice.hccg.gov.tw/rentalType.do?rule=guest&amp;id=73" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="新竹市"><strong>新竹市</strong></a> <a class="my-button" href="https://buskers.hchcc.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="新竹縣"><strong>新竹縣</strong></a> <a class="my-button" href="https://www.mlc.gov.tw/form/index.aspx?Parser=2,6,86,40" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="苗栗縣"><strong>苗栗縣</strong></a> <a class="my-button" href="https://buskers.taichung.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺中市"><strong>臺中市</strong></a> <a class="my-button" href="https://busker.culture.tw/changhua/place/list" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="彰化縣"><strong>彰化縣</strong></a> <a class="my-button" href="https://busker.culture.tw/nantou/place/list" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="南投縣"><strong>南投縣</strong></a> <a class="my-button" href="https://buskers.yunlin.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="雲林縣"><strong>雲林縣</strong></a> <a class="my-button" href="https://cabcy.chiayi.gov.tw/web/cabcych/busker_24120314243947961?id=24120314214124263" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="嘉義市"><strong>嘉義市</strong></a> <a class="my-button" href="https://tbocc.cyhg.gov.tw/News_Content.aspx?n=100122&amp;s=517240#:~:text=%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%20*%20%E5%98%89%E7%BE%A9%E7%B8%A3%E9%96%8B%E6%94%BE%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%B1%95%E6%BC%94%E7%A9%BA%E9%96%93%E5%A0%B4%E5%9C%B0%E5%BD%99%E6%95%B4%E8%A1%A8%20pdf(0%20byte)%20*%201120607%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%BE%9E%E4%BA%8B%E8%97%9D%E6%96%87%E6%B4%BB%E5%8B%95%E7%AE%A1%E7%90%86%E8%A6%81%E9%BB%9E,%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89%E5%88%B0%E6%9C%9F%E7%94%B3%E8%AB%8B%E8%A1%A8%20docx(17.52%20KB)%20pdf(50.22%20KB)%20odt(16.74%20KB)" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="嘉義縣"><strong>嘉義縣</strong></a> <a class="my-button" href="https://buskersapply.tainan.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺南市"><strong>臺南市</strong></a> <a class="my-button" href="https://busker.kcg.gov.tw/space/index?Parser=99,7,28" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="高雄市"><strong>高雄市</strong></a> <a class="my-button" href="https://streetartist.cultural.pthg.gov.tw/index.php?inter=news&amp;id=146" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="屏東縣"><strong>屏東縣</strong></a> <a class="my-button" href="https://busker.culture.tw/yilan/place/list" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="宜蘭縣"><strong>宜蘭縣</strong></a> <a class="my-button" href="https://www.hccc.gov.tw/zh-tw/CulturalFamily/SpaceList" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="花蓮縣"><strong>花蓮縣</strong></a> <a class="my-button" href="https://culture.taitung.gov.tw/street-artist" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="臺東縣"><strong>臺東縣</strong></a> <a class="my-button" href="https://busker.culture.tw/penghu/place/detail?placeId=1967" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="澎湖縣"><strong>澎湖縣</strong></a> <a class="my-button" href="https://cabkc.kinmen.gov.tw/information?uid=206&amp;pid=5088" style="text-decoration: none ; " target="_blank" rel="noopener noreferrer" title="金門縣"><strong>金門縣</strong></a></p>
+<p><a class="my-button" href="https://klneartsnew.klccab.gov.tw/StreetPerformer/Space" style="text-decoration: none ; " target="_blank" title="基隆市"><strong>基隆市</strong></a> <a class="my-button" href="https://tpbusker.gov.taipei/place.aspx?r=639057590654619498" style="text-decoration: none ; " target="_blank" title="臺北市"><strong>臺北市</strong></a> <a class="my-button" href="https://newtaipeicitybuskers.azurewebsites.net/Space" style="text-decoration: none ; " target="_blank" title="新北市"><strong>新北市</strong></a> <a class="my-button" href="https://taobuskers.azurewebsites.net/Space" style="text-decoration: none ; " target="_blank" title="桃園市"><strong>桃園市</strong></a> <a class="my-button" href="https://dgservice.hccg.gov.tw/rentalType.do?rule=guest&amp;id=73" style="text-decoration: none ; " target="_blank" title="新竹市"><strong>新竹市</strong></a> <a class="my-button" href="https://buskers.hchcc.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" title="新竹縣"><strong>新竹縣</strong></a> <a class="my-button" href="https://www.mlc.gov.tw/form/index.aspx?Parser=2,6,86,40" style="text-decoration: none ; " target="_blank" title="苗栗縣"><strong>苗栗縣</strong></a> <a class="my-button" href="https://buskers.taichung.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" title="臺中市"><strong>臺中市</strong></a> <a class="my-button" href="https://busker.culture.tw/changhua/place/list" style="text-decoration: none ; " target="_blank" title="彰化縣"><strong>彰化縣</strong></a> <a class="my-button" href="https://busker.culture.tw/nantou/place/list" style="text-decoration: none ; " target="_blank" title="南投縣"><strong>南投縣</strong></a> <a class="my-button" href="https://buskers.yunlin.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" title="雲林縣"><strong>雲林縣</strong></a> <a class="my-button" href="https://cabcy.chiayi.gov.tw/web/cabcych/busker_24120314243947961?id=24120314214124263" style="text-decoration: none ; " target="_blank" title="嘉義市"><strong>嘉義市</strong></a> <a class="my-button" href="https://tbocc.cyhg.gov.tw/News_Content.aspx?n=100122&amp;s=517240#:~:text=%E6%AA%94%E6%A1%88%E4%B8%8B%E8%BC%89%20*%20%E5%98%89%E7%BE%A9%E7%B8%A3%E9%96%8B%E6%94%BE%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%B1%95%E6%BC%94%E7%A9%BA%E9%96%93%E5%A0%B4%E5%9C%B0%E5%BD%99%E6%95%B4%E8%A1%A8%20pdf(0%20byte)%20*%201120607%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E5%BE%9E%E4%BA%8B%E8%97%9D%E6%96%87%E6%B4%BB%E5%8B%95%E7%AE%A1%E7%90%86%E8%A6%81%E9%BB%9E,%E5%98%89%E7%BE%A9%E7%B8%A3%E8%A1%97%E9%A0%AD%E8%97%9D%E4%BA%BA%E8%AD%89%E5%88%B0%E6%9C%9F%E7%94%B3%E8%AB%8B%E8%A1%A8%20docx(17.52%20KB)%20pdf(50.22%20KB)%20odt(16.74%20KB)" style="text-decoration: none ; " target="_blank" title="嘉義縣"><strong>嘉義縣</strong></a> <a class="my-button" href="https://buskersapply.tainan.gov.tw/index.php?inter=space" style="text-decoration: none ; " target="_blank" title="臺南市"><strong>臺南市</strong></a> <a class="my-button" href="https://busker.kcg.gov.tw/space/index?Parser=99,7,28" style="text-decoration: none ; " target="_blank" title="高雄市"><strong>高雄市</strong></a> <a class="my-button" href="https://streetartist.cultural.pthg.gov.tw/index.php?inter=news&amp;id=146" style="text-decoration: none ; " target="_blank" title="屏東縣"><strong>屏東縣</strong></a> <a class="my-button" href="https://busker.culture.tw/yilan/place/list" style="text-decoration: none ; " target="_blank" title="宜蘭縣"><strong>宜蘭縣</strong></a> <a class="my-button" href="https://www.hccc.gov.tw/zh-tw/CulturalFamily/SpaceList" style="text-decoration: none ; " target="_blank" title="花蓮縣"><strong>花蓮縣</strong></a> <a class="my-button" href="https://culture.taitung.gov.tw/street-artist" style="text-decoration: none ; " target="_blank" title="臺東縣"><strong>臺東縣</strong></a> <a class="my-button" href="https://busker.culture.tw/penghu/place/detail?placeId=1967" style="text-decoration: none ; " target="_blank" title="澎湖縣"><strong>澎湖縣</strong></a> <a class="my-button" href="https://cabkc.kinmen.gov.tw/information?uid=206&amp;pid=5088" style="text-decoration: none ; " target="_blank" title="金門縣"><strong>金門縣</strong></a></p>
 
 <p>&nbsp;</p>
 
@@ -1087,7 +1049,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.necoast-nsa.gov.tw/Busker-Space.aspx?a=122&amp;l=1" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至交通部觀光署東北角及宜蘭海岸國家風景區管理處-戶外公共空間展演使用申請"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.necoast-nsa.gov.tw/Busker-Space.aspx?a=122&amp;l=1" id="button" target="_blank" title="[開新視窗]連結至交通部觀光署東北角及宜蘭海岸國家風景區管理處-戶外公共空間展演使用申請"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至交通部觀光署東北角及宜蘭海岸國家風景區管理處</p>
 </div>
@@ -1102,7 +1064,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.trimt-nsa.gov.tw/zh-tw/street-artist-venue/" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至交通部觀光署參山國家風景區管理處-街頭藝人場地申請"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.trimt-nsa.gov.tw/zh-tw/street-artist-venue/" id="button" target="_blank" title="[開新視窗]連結至交通部觀光署參山國家風景區管理處-街頭藝人場地申請"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至交通部觀光署參山國家風景區管理處</p>
 </div>
@@ -1118,7 +1080,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.sunmoonlake.gov.tw/explore/ApplyArtists?a=73" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至交通部觀光署日月潭國家風景區管理處-街頭藝人表演首次申請"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.sunmoonlake.gov.tw/explore/ApplyArtists?a=73" id="button" target="_blank" title="[開新視窗]連結至交通部觀光署日月潭國家風景區管理處-街頭藝人表演首次申請"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至交通部觀光署日月潭國家風景區管理處</p>
 </div>
@@ -1133,7 +1095,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.ali-nsa.net/zh-tw/application/apply/5" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至交通部觀光署阿里山國家風景區管理處-線上服務街頭藝人場地申請"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.ali-nsa.net/zh-tw/application/apply/5" id="button" target="_blank" title="[開新視窗]連結至交通部觀光署阿里山國家風景區管理處-線上服務街頭藝人場地申請"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至交通部觀光署阿里山國家風景區管理處</p>
 </div>
@@ -1148,7 +1110,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.maolin-nsa.gov.tw/zh-tw/application/street-artist-venue/" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至交通部觀光署茂林國家風景區管理處-街頭藝人場地借用預約"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.maolin-nsa.gov.tw/zh-tw/application/street-artist-venue/" id="button" target="_blank" title="[開新視窗]連結至交通部觀光署茂林國家風景區管理處-街頭藝人場地借用預約"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至交通部觀光署茂林國家風景區管理處</p>
 </div>
@@ -1163,7 +1125,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.dbnsa.gov.tw/zh-tw/tripinfo/MultifunctionalFormPage?a=176" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至交通部觀光署大鵬灣國家風景區管理處-濱灣碼頭街頭藝人表演場地展演申請"><strong>線上申請 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.dbnsa.gov.tw/zh-tw/tripinfo/MultifunctionalFormPage?a=176" id="button" target="_blank" title="[開新視窗]連結至交通部觀光署大鵬灣國家風景區管理處-濱灣碼頭街頭藝人表演場地展演申請"><strong>線上申請 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: rgb(4, 133, 127);">至交通部觀光署大鵬灣國家風景區管理處</p>
 </div>
@@ -1177,17 +1139,17 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.gov.tw/News_Content_2_717880" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/80cc750f-9c1c-4ec6-b43d-faff3ded4ef5.jpg" /> <span>臺中市-街頭藝人登記</span> <span>依據臺中市街頭藝人藝文活動實施要點，得線上向臺中市政府文化局申請登記為街頭藝人。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_675006" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9123/1/8a193577-367f-4efc-9b32-7504d23ec19c.jpg" /> <span>臺中市政府沙鹿公所-街頭藝人表演申請</span> <span>街頭藝人可申請於沙鹿區鎮立公園進行表演，需填寫場地使用申請書，經機關審核後，核發場地使用申請書公文。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_717929" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>臺中市-【纖維工藝博物館】纖維廣場街頭藝人展演場地申請</span> <span>提供街頭藝人申請於纖維廣場進行展演，填妥報名表後，可透過臨櫃、郵寄及電子信箱寄信等方式申辦。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_834408" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9065/518964/20d377f9-6c73-49dd-b620-08a056d78b9d.jpg" /> <span>彰化縣-大佛風景區街頭藝人展演許可申請</span> <span>民眾申請「彰化縣政府-大佛風景區街頭藝人展演許可申請」服務，可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」做為申辦文件。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_834762" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9123/1/a321a529-b0dc-4fbb-b37d-c1835cf14b6b.jpg" /> <span>南投縣-街頭藝人登記申請</span> <span>民眾申請「南投縣政府-街頭藝人登記申請」服務，可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」、「身心障礙資格」做為申辦文件。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_773963" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9123/1/a3528698-1c6d-4da4-8f39-bb98d66cc779.jpg" /> <span>宜蘭縣-街頭藝人證新證申請</span> <span>民眾申請「宜蘭縣政府-街頭藝人證新證申請」服務，可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」、「低收入戶及中低收入戶證明」、「身心障礙資格」等做為申辦文件。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_813156" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/512485/9ff8be5a-4945-4b36-a350-ef739f53fa1f.jpg" /> <span>花蓮縣-七星潭風景特定區街頭藝人展演場地租借申請</span> <span>街頭藝人可線上申請於七星潭風景特定區展演，申請人可以透過MyData 完成身分驗證及同意後，提供戶政國民身分證資料，申請本服務。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_758417" target="_blank" rel="noopener noreferrer"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9104/511911/efafb189-e76e-4411-a4bd-83fbd9c0a380.jpg" /> <span>花蓮縣-東大門夜市街頭藝人展演場地申請</span> <span>供街頭藝人可線上申請於東大門夜市展演，申請人可以透過MyData完成身分驗證及同意後，提供戶政國民身分證資料，申請本服務。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_717880" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/80cc750f-9c1c-4ec6-b43d-faff3ded4ef5.jpg" /> <span>臺中市-街頭藝人登記</span> <span>依據臺中市街頭藝人藝文活動實施要點，得線上向臺中市政府文化局申請登記為街頭藝人。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_675006" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9123/1/8a193577-367f-4efc-9b32-7504d23ec19c.jpg" /> <span>臺中市政府沙鹿公所-街頭藝人表演申請</span> <span>街頭藝人可申請於沙鹿區鎮立公園進行表演，需填寫場地使用申請書，經機關審核後，核發場地使用申請書公文。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_717929" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/78ba994a-a7b6-4c4a-8bcc-28d089700859.jpg" /> <span>臺中市-【纖維工藝博物館】纖維廣場街頭藝人展演場地申請</span> <span>提供街頭藝人申請於纖維廣場進行展演，填妥報名表後，可透過臨櫃、郵寄及電子信箱寄信等方式申辦。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_834408" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9065/518964/20d377f9-6c73-49dd-b620-08a056d78b9d.jpg" /> <span>彰化縣-大佛風景區街頭藝人展演許可申請</span> <span>民眾申請「彰化縣政府-大佛風景區街頭藝人展演許可申請」服務，可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」做為申辦文件。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_834762" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9123/1/a321a529-b0dc-4fbb-b37d-c1835cf14b6b.jpg" /> <span>南投縣-街頭藝人登記申請</span> <span>民眾申請「南投縣政府-街頭藝人登記申請」服務，可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」、「身心障礙資格」做為申辦文件。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_773963" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9123/1/a3528698-1c6d-4da4-8f39-bb98d66cc779.jpg" /> <span>宜蘭縣-街頭藝人證新證申請</span> <span>民眾申請「宜蘭縣政府-街頭藝人證新證申請」服務，可透過MyData完成身分驗證及同意後，提供「戶政國民身分證資料」、「低收入戶及中低收入戶證明」、「身心障礙資格」等做為申辦文件。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_813156" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9100/512485/9ff8be5a-4945-4b36-a350-ef739f53fa1f.jpg" /> <span>花蓮縣-七星潭風景特定區街頭藝人展演場地租借申請</span> <span>街頭藝人可線上申請於七星潭風景特定區展演，申請人可以透過MyData 完成身分驗證及同意後，提供戶政國民身分證資料，申請本服務。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_758417" target="_blank"><img src="https://ws.www.gov.tw/001/Upload/402/relpic/9104/511911/efafb189-e76e-4411-a4bd-83fbd9c0a380.jpg" /> <span>花蓮縣-東大門夜市街頭藝人展演場地申請</span> <span>供街頭藝人可線上申請於東大門夜市展演，申請人可以透過MyData完成身分驗證及同意後，提供戶政國民身分證資料，申請本服務。</span> </a></li>
 </ul>
 </div>
-</span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>街頭藝人登記,街頭藝人申請<span></div></div></div></div> <div class="list-text detail" data-index="2" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>街頭藝人登記,街頭藝人申請<span></div></div></div></div> <div class="list-text detail" data-index="2" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -1208,7 +1170,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -1284,7 +1246,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -1296,7 +1260,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1366,7 +1330,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1420,8 +1384,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />

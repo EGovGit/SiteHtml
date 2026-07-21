@@ -44,6 +44,7 @@
 <script  src='/js/airdatepicker/datepicker.en.js'></script> 
 <link rel='stylesheet' type='text/css'  href='/js/airdatepicker/datepicker.min.css'> 
 <script  src='/Scripts/OutSiteClick.js'></script> 
+<script src='/Scripts/tw-city-selector.js'></script>
 <script>var CCMS_WWWURL='https://www.gov.tw';var CCMS_LanguageSN=1;var CCMS_SitesSN_Encryption='402';var Egovlocationbase='win-17172076121';</script><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="DC.Title" content="" />
 <meta name="DC.Subject" content="" />
@@ -84,10 +85,9 @@
 <meta property="og:type" content="article" >
 <meta property="og:url" content="https://www.gov.tw/News_Content.aspx?n=26&s=826198" >
 <meta property="og:site_name" content="我的E政府" >
-<meta http-equiv="content-language" content="zh-Hant-tw" >
 </head>
 <body id="Formbody" data-js="false"><div class="for_accessibility">
-    <a href="#CCMS_Content" class="" title="跳到主要內容區塊_跳轉">跳到主要內容區塊</a>    <script>
+    <a href="#CCMS_Content" class="" title="跳到主要內容區塊">跳到主要內容區塊</a>    <script>
         var $a = $('.for_accessibility a');
         $a.on('click', function (evt) {
             var $href = $($(this).attr('href')),
@@ -100,7 +100,7 @@
     
     <form method="post" action="./News_Content.aspx?n=26&amp;s=826198" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="3AidEQdjFtxwfIlVlwL9u6bO0nrd5eyaioJRh8YjdK1MLc/N/N2drhtqujOZGysFfeMcaGucbXY+P1QqOvKTqoBD/W7Q9N/0j5z/26cqK7kBdiwGb0cI2qf6c/w5rV2beelKWvpWSDPAFgSvLeQbKFVBzwcWa1YeKWBBBNZF0Vzn0mHOBB19aLQSkjxuA5bAHqIDGmMmIUefM76uBwqcUaCs3Nyqk6d2zdLPtPDXc662n1+9/Oz74E5Fr8QiGOct7LlmSxEiK8RQi9cIfN1z9BN2JsCj7+PPu1vfP/rBhVAcHNQYmKP3Y8zo2ACkool+pHOc9t8fVUeUtCqCHMaVvc9hVrKy8GaWy9PKWTaEJ1cNnPKycklm3gxbkhT7OIt2IeEjqha1l+P6adKSo7lFiFi8/19xdEJoBruibTFGpiPyKSqkvo/vRG/p1xX9O/Ca0G4IfhD1C6aXWWZAocUOc1Z15AD6Yq1AtGY34tFZboA/kZWj7Cwi/b+Qwm/AUxZrmWuCAfwDJ8J1lVVl23cytYKZNWlKcmA6uxfA3INB9L3o8vSd2YX+Z7AsrJ037qpVm8Tc64YgiacN7t8s5/AMudqCge0860t9BgIHtlIkpVCkSQFvaq41LOIbMl1nkykP0lWB6tczisQhsJCDEgIjNg6EolSBeJcjU/vCjywbVxAtSrQThLjv4O/b21Bu6F7Fu4h/c8H5bY/pp9a2nUWfWOODaibPFDAALjpBZrtEOethuaAfolLXY9T+8xtyJHYFrM/udL5ryWNXMJqYlLaS4SG5NXLoXVEgkFisc9PGBDdftwkaWHFZIaPtJN5+v3lFfYr1sk1EWMWYEeQV5WsQpDVvOBf2sTnRHtz3ZJMRNymntYh747kR5strvuqEhI7/OJinFoRRvbB5z2VQ0PCdV1KHQFkJwL5b4rqR0ktQcVtVoFp6uWTv5olbg2+8Xe5a++RgvLBIksz5hX86baQxivcRJ4sjpcyC7df8cKXRVNQwiMr1gseNzpjmUAxYatQvsv5dU0IImJTlQBwijHLXfWjCHkMLkY2X7SZHBodMW0rqfJ/godrabqjiTS+VXd0pYUDGZBI57aEuA9PE/0lbnqBpMxT0I3clTXmz3BgRzhg+mrh/skVpgjfj+DQ/DNQOM/I08yg/ldz/2hwAu9nc3t5CnZ0KtbBGnsWgehZWqLK9Js6H69sZdoNFfYyKGLf0kAkct2JmtJGy8Y52Tl/fwZ46PeASLkeW5464jonBbH9wKR47TrKdFInI0Hcw60pPjTrixjb9ekeCbzrqrnj5I3/NvA02NGNIhApoI3DQvoW+stJ+q/dR+OR3pEeQjMngEW5u8UX3gIySYwJRL0jfgBRfuSUgrbaqjMqWG/9NViE+a3KVP2QA5ZJF/BH/xjCy06YzTJhCJ4lWNafllCbaufo07+NAOYkdm1R3Qs0wjbllz3S9H0xSEelG50w1zG7qnxBczgqpOiSoRji05CYWy83Ju4K6NM8qWTyylaLaUodMofQv" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="abn0oCRDtKHmfcfFfrdA8fawaMpURlVczgJ7Po+HSw8f6Eo+DFDn2x3BR40793ZFXgsPcns7ej4Rpe3cdUs61mvdPE7fPoVPxvqzM7vt0aqkRDFWZ8h9SWWw4Y9AUgntV0PLDU2bgof6/wVoEx70xhe8poyk3/BjQ7OVbsh1l5j+/T/MHKj3FwPo5gNoc3sUTm3AT3lvDO3HPBrrpmQ++qe01+R1uManE/3c+Dd/XG2Ad1QT3ow881ShJvEgtXE88u1dfNrGxlWtRIw7DDpZuSQuqUUofcbfD5XFG/FYYyGlV1opNOE84aBGrZGB+kKEV1W951sua+2b/3++2KW8XEbewj7rCRRWr0nThtCS4WPaUMbu0hBHenQrvI8wKEaL5pJA2ynVeLdtkL0xtGb2kWG0hnA8Fmp6Dr5ugzmErtTdmpa9DGbgF381V1CebdOckFQaGi5B5urFnk1rFpX+4G5fTYUUcjxCD0kYoxa1hhkSDWQxi4ihb8nn+tNiShiAy49qG8P9DhMAI8E1qVKw/IQNwlBAIddkZxyXnLbZGNxfEEpORZ2O6tpOwLAauhfUbyYKR++Z2HKKeBGprLDCSHgP/CCN9lkfmyi/JNxvo4e+qYjnSCS+SbHiWx3hirVLwaKyScSefEYd1E3+7HZC8q6N97DfPGrwZzspevHToVMYZKWdKFSNaA/GZ8UVVDfD4juZ5dZIGox5dlSRfoLkd14He/8UwpC8I8HbQlZsl/dU32GIST1lH54AUu6Wc/rWLYQZX+BLoLwqLmYvBPC+Yr/P6Oey80SiCppvCaqpYTje1MRccLgtaxTGLRPn1e72neigEvNrXoUUjYrLXCaiK4kzELOojrqTgJ7yr5R/m2Z87L88Sgjp8V111iaXfPwLv20ynn9rmik3OiCNXB8xJ5l29BXFU52vdYo31wDT6AQfNmPf1DWnVYZZnk2IqGLwlZmPCntUO4hHvk8/tforU+IvpsiWRduSVs7zqVCDpONYqp2qCyxHxMKGPWePneUtR0KstgpNX0JCfgG6ISJo5m0eNs61Svlu9uYP2bjiEY1j8QCzuSdHX+/ocDdlaHQYN99Gmfc9RjuIpki+jyXolyTmofQAY0jvKhKzILYy2ZstuFokh81pvzldMJGcWDv/u62S2dxkr6kppwzsQVYxGmNon+62FQgaRpLY2kjkeK0q2mX18vKyWS0VeGCXfGPXrLLMWbh9n15j6UB7EFexJrXGz6sqpWNFDJBn2s1sDr73zQKfY39PqlfdEZbox9Gxgu3SuB5R+B3G7hrha/4r+TBZk7FYIaQN7blZrRrV9nBuc/wTZSkG4RN2f9YnVVLfRlH/phHUeGP8ajYsoUwzBxes2bg5Gn2+He0Hz1PjTlXkBXso2io/EdFnJWiYaKKNQam+D+ZL0FeZHw8HV7eNMo9S4J+jQmyDJpOvLOAcQTITt5Y3DwDNgJ4H60Pl8cDHfeyJCxj8iYeIAkOwo/7ez+nMqIYQlHdxjglr8dEhqAkG4PEW" />
 </div>
 
         <!--主選單 結束-->
@@ -116,7 +116,7 @@
         
         
         
-     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+     <div class="group sys-root" data-func="{&#39;datePicker&#39;:{&#39;autoClose&#39;:true,&#39;language&#39;:&#39;zh-tw&#39;,&#39;navTitles&#39;:{&#39;days&#39;:&#39;&lt;i&amp;gt;民國 rrr 年&lt;/i&amp;gt; &amp;nbsp; MM&#39;,&#39;months&#39;:&#39;民國 rrr 年&#39;,&#39;years&#39;:&#39;民國 rrr1 至 rrr2 年&#39;}}}" data-nojs="您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態。如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。如需要回到上一頁，可使用瀏覽器提供的 Alt + 左方向鍵(←)。如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-mobile" data-func="{&#39;toggleBtn&#39;:{}}" data-index="1" data-type="3" data-child="8"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="手機版選單"   >手機版選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="list-text share" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element_phone"></div>
 </div></div></div></div> <div class="group-list nav" data-id="menu" data-func="{&#39;majorNavMobile&#39;:{}}" data-index="3" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var oMenuUrl = "/Html_Menu.html";
@@ -157,71 +157,33 @@
 </script>
 </div></div></div></div></div></div></div></div> <div class="area-customize translate" data-func="{&#39;translate&#39;:{}}" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><div id="google_translate_element"></div>
                 <script type="text/javascript">
-  function googleTranslateElementInit() {
-    var targetId = (window.innerWidth < 768)
-      ? 'google_translate_element_phone'
-      : 'google_translate_element';
-    new google.translate.TranslateElement({
-      pageLanguage: 'zh-TW',
-      includedLanguages: 'en,zh-TW',
-      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-    }, targetId);
-  }
-  setTimeout(function () {
-    var s = document.createElement('script');
-    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-    s.async = true;
-    document.head.appendChild(s);
-  }, 3000);
+ setTimeout(function(){var script = document.createElement('script');
+    script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.async = true;
+    document.head.appendChild(script);
+ if ($(window).width() < 768) {
+    function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_phone');} 
+
+}
+else{
+console.log('translate')
+   function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'zh-TW', includedLanguages: 'en,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+}},    3000);
                 </script>
-<script type="text/javascript">
-  function onGoogleTranslateReady(callback) {
-    if (window.google && window.google.translate && window.google.translate.TranslateElement) {
-      callback();
-    } else {
-      setTimeout(function () {
-        onGoogleTranslateReady(callback);
-      }, 200);
-    }
-  }
-  onGoogleTranslateReady(function () {
-    console.log("Google Translate 載入完成");
-    const inputs = document.querySelectorAll('input[id]');
-    inputs.forEach(input => {
-      const id = input.getAttribute('id');
-      if (!id) return;
-      const existingLabel = document.querySelector(`label[for="${id}"]`);
-      if (!existingLabel) {
-        const label = document.createElement('label');
-        label.setAttribute('for', id);
-        label.setAttribute('style', 'font-size:0rem;');
-        label.textContent = `Label for ${id}`;
-        input.parentNode.insertBefore(label, input);
-      }
-    });
-    const iframes = document.querySelectorAll('iframe');
-    iframes.forEach(iframe => {
-      if (!iframe.hasAttribute('title') || iframe.getAttribute('title').trim() === '') {
-        const titleText = iframe.getAttribute('name') || iframe.getAttribute('id') || 'Embedded content';
-        iframe.setAttribute('title', titleText);
-      }
-    });
-  });
-</script>
 </div></div></div></div> <div class="simple-text major-logo" data-index="3" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h1><a href="index.html" title="回首頁">我的E政府</a><strong style="display: none;">我的E政府</strong></h1></div></div></div></div> <div class="list-text link" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="上方連結"   >上方連結</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="1"><li   data-index="1"  >		<span  ><a   href="SiteMap.html"   title="網站導覽"   target="_self"  >網站導覽</a></span></li></ul>
-</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
-</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   role="button" title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</div></div></div></div> <div class="scripts" data-index="5" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.scripts{display:none}</style><script>$('.base-extend .info > .in > .hd a').attr('href','#');</script></div></div></div></div> <div class="list-text font-size" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true},&#39;fontSize&#39;:{}}" data-index="6" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="字級"   >字級</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  class="small"  >		<span  ><a   href="#"   title="小"   >小</a></span></li><li   data-index="2"  class="medium"  >		<span  ><a   href="#"   title="中"   >中</a></span></li><li   data-index="3"  class="large"  >		<span  ><a   href="#"   title="大"   >大</a></span></li></ul>
+</div></div></div></div> <div class="list-text share" data-func="{&#39;toggleBtn&#39;:{&#39;clickToRemove&#39;:true}}" data-index="7" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="#"   title="分享"   >分享</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="4"><li   data-index="1"  class="facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="2"  class="X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="3"  class="line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="4"  class="email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div> <div class="area-form search" data-func="{&#39;showDataList&#39;:{}}" data-index="8" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript:void(0)"   title="搜尋"   target="_self"  >搜尋</a></span></div></div></div><div class="ct"><div class="in"><div class="fieldset">
   <span class="search">
 <span class="search_cistern">
-   <select title="想知道什麼?" class="text-select" id="searchselectbtn_993b7c05cf5a41109cac3c0f56e9e393">
+   <select title="想知道什麼?" class="text-select" id="searchselectbtn_f2738ac8b7114f9695d1f8c1132f4fda">
   <option value="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全站搜</font></font></option>  
   <option value="1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找服務</font></font></option>
  </select>
-  <label for="txt_993b7c05cf5a41109cac3c0f56e9e393" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_993b7c05cf5a41109cac3c0f56e9e393" id="txt_993b7c05cf5a41109cac3c0f56e9e393" type="search" placeholder="" title="搜尋">
+  <label for="txt_f2738ac8b7114f9695d1f8c1132f4fda" style="color: transparent; position: absolute;font-size: 0em;">搜尋</label><input data-search="btn_f2738ac8b7114f9695d1f8c1132f4fda" id="txt_f2738ac8b7114f9695d1f8c1132f4fda" type="search" placeholder="" title="搜尋">
 </span>
 </span>
-  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_993b7c05cf5a41109cac3c0f56e9e393" data-search="btn_993b7c05cf5a41109cac3c0f56e9e393" title="搜尋" >搜尋</a></span>
+  <span class="submit"><a href="#" class='CCMS_SearchBtn' role= "button" id="btn_f2738ac8b7114f9695d1f8c1132f4fda" data-search="btn_f2738ac8b7114f9695d1f8c1132f4fda" title="搜尋" >搜尋</a></span>
 </div>
 <div class="list">
   <ul data-index="1" data-child="0">
@@ -229,9 +191,9 @@
 </div>
 <script >
 $(function () {
-    $('[data-search="btn_993b7c05cf5a41109cac3c0f56e9e393"]').on("keydown", function (event) {
+    $('[data-search="btn_f2738ac8b7114f9695d1f8c1132f4fda"]').on("keydown", function (event) {
         if (event.which == 13) {
-             doSearch($('#btn_993b7c05cf5a41109cac3c0f56e9e393'));
+             doSearch($('#btn_f2738ac8b7114f9695d1f8c1132f4fda'));
             return false;
         }
     });
@@ -292,7 +254,7 @@ function typeWriter(selector_target, placeholder = false, i = 0, text_list_i=0, 
 
 
 }
-return_value = typeWriter("[data-search='btn_993b7c05cf5a41109cac3c0f56e9e393']", true);
+return_value = typeWriter("[data-search='btn_f2738ac8b7114f9695d1f8c1132f4fda']", true);
     //對html的lang屬性監聽
     const element = document.querySelector('html');
     const observer = new MutationObserver(function(mutations) {
@@ -314,9 +276,9 @@ return_value = typeWriter("[data-search='btn_993b7c05cf5a41109cac3c0f56e9e393']"
 });
 </script>
 </div></div><div class="ft"><div class="in"><ul data-index="1" data-child="1">
-  <li data-index="1" class="advanced"><span><a target="_blank" rel="noopener noreferrer" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
+  <li data-index="1" class="advanced"><span><a target="_blank" href="https://www.google.com.tw/advanced_search?hl=zh-Hant-tw&as_sitesearch=https://www.gov.tw" title="進階搜尋[另開新視窗]">進階搜尋</a></span></li>
 </ul>
-</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_QfAKiPKRpM" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_wVydrmynqt" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
+</div></div></div></div> <div class="list-text hot-key-word" data-index="9" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><style>.base-wrapper {padding-top: 157px ;} </style></div></div></div></div></div></div></div></div> <div class="group base-wrapper" data-index="3" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="group base-header" data-index="1" data-type="3"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div id="base-content" class="group base-content" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div id="Group_6_FbHgGhIeUf" data-Margin_right="0" data-sort="" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="6" data-WidthDeskTop="0" data-anchor="" data-tabType="3" class="group base-module-area" data-Margin_DefaultSetting="false" data-type="3" data-bgClass="" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-Margin_bottom="0" data-child="2" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"> <div id="Group_8874_ShstQxLnYY" data-SitesModuleSN="6" data-Margin_right="0" data-sort="2" data-bgColor="#0000ffff" data-AddParentGroup="False" data-GroupSN="8874" data-WidthDeskTop="0" data-anchor="" data-tabType="0" class="area-editor default float-box float-question-div" data-index="1" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="float-box float-question-div" data-WidthMobile="0" data-groupname="" data-WidthPad="0" data-Margin_left="0" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="0" data-child="1" data-Margin_Top="0"><div class="in"><div class="ct"><div class="in"><style type="text/css">.float-box{
     position:fixed; 
     top: 225px;
     right: 0;
@@ -370,8 +332,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 }else{
  $('.float-question-div').hide();
 }
-</script></div></div></div></div> <div id="Group_61_xfoUmbSbYf" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><nav aria-label="breadcrumb" role="navigation"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   aria-current="page" title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
-</nav></div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" role="toolbar" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   role="button" title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   role="button" title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   role="button" title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   role="button" title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
+</script></div></div></div></div> <div id="Group_61_nbrwnNPXNp" data-SitesModuleSN="74" data-Margin_right="" data-sort="4" data-bgColor="" data-AddParentGroup="" data-GroupSN="61" data-WidthDeskTop="" data-anchor="" data-tabType="0" class="simple-pic default" data-index="2" data-Margin_DefaultSetting="false" data-type="0" data-bgClass="" data-WidthMobile="" data-groupname="" data-WidthPad="" data-Margin_left="" data-MenuWidth="" data-isgroup="true" data-setLen="0" data-Margin_bottom="" data-Margin_Top=""><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group base-page-area" data-index="1" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="group base-section" data-index="1" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_C" id="Accesskey_C" accesskey="C" title="中間主要內容區，此區塊呈現網頁的網頁內容">:::</a></span></div></div></div></div> <div class="group page-header" data-index="1" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="list-text breadcrumb" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="3"><li   data-index="1"  >		<span  ><a   href="index.html"   title="首頁"   target="_self"  >首頁</a></span></li><li   data-index="2"  >		<span  ><a   href="/CL_7.html"   title="政府服務"   target="_self"  >政府服務</a></span></li><li   data-index="3"  >		<span  ><a   href="/News_Pic_26.html"   title="主題策展"   target="_self"  >主題策展</a></span></li></ul>
+</div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="2"><div class="in"><div class="ct"><div class="in"> <div class="simple-text heading" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h2><span>主題策展</span></h2></div></div></div></div> <div class="group default msg-tool" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="simple-text accesskey" data-func="{&#39;focusContent&#39;:{}}" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#CCMS_Content" title="跳過此子選單列請按[Enter]，繼續則按[Tab]">_</a></span></div></div></div></div> <div class="list-text user-tool" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a   href="javascript :return false;"   title="網頁功能"   target="_self"  >網頁功能</a></span></div></div></div><div class="ct"><div class="in"><ul data-index="1" data-child="6"><li   data-index="1"  class="print"  >		<span  ><a   href="javascript:CCMS_Print(402);"   title="列印內容"   target="_self"  >列印內容</a></span></li><li   data-index="2"  class="bopomofo"  >		<span  ><a   href="#"   title="Bopomofo"   >Bopomofo</a></span></li><li   data-index="3"  class="content-share facebook"  >		<span  ><a   href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"   title="Share to Facebook[另開新視窗]"   target="_self"  >Facebook</a></span></li><li   data-index="4"  class="content-share X"  >		<span  ><a   href="javascript: void(window.open('http://twitter.com/home/?status='.concat(encodeURIComponent(document.title)) .concat(' ') .concat(encodeURIComponent(location.href))));"   title="Share to X[另開新視窗]"   target="_self"  >X</a></span></li><li   data-index="5"  class="content-share line"  >		<span  ><a   href="javascript: void(window.open('http://line.naver.jp/R/msg/text/?'.concat(encodeURIComponent(location.href)) ));"   title="Share to line[另開新視窗]"   target="_self"  >line</a></span></li><li   data-index="6"  class="content-share email"  >		<span  ><a   href="javascript:  void(window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&amp;body=' +  encodeURIComponent(document.URL)));"   title="Share to email[另開新視窗]"   target="_self"  >Email</a></span></li></ul>
 </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group page-content " id="CCMS_Content" data-func="{&#39;linkType&#39;:{&#39;domains&#39;:[&#39;https://ws.www.gov.tw&#39;,&#39;https://ws.www.gov.tw&#39;]}}" data-index="2" data-type="3" data-child="3"><div class="in"><div class="ct"><div class="in"> <div class="simple-text title" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><h3>追求健康「心」生活，心理諮商資源與求助管道一次整理給您看！</h3></div></div></div></div>
         
         
@@ -618,7 +580,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p style="text-align:center"><img alt="青壯世代心理健康支持方案" src="https://ws.www.gov.tw/001/Upload/402/relpic/9065/826198/24da6169-c718-48e6-861c-5eddd4c9a428.jpg" /></p>
 
-<p style="text-align:center">圖片出處 : <a href="https://sps.mohw.gov.tw/mhs/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]衛生福利部 青壯世代心理健康支持方案">衛生福利部 青壯世代心理健康支持方案</a></p>
+<p style="text-align:center">圖片出處 : <a href="https://sps.mohw.gov.tw/mhs/" rel="noopener noreferrer" target="_blank" title="[另開新視窗]衛生福利部 青壯世代心理健康支持方案">衛生福利部 青壯世代心理健康支持方案</a></p>
 
 <p>&nbsp;</p>
 
@@ -632,7 +594,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	<li><span>1</span>
 
 	<p style="padding: 0px 0px 10px 0px;"><span style="color:#035a58;"><strong>查詢</strong></span><br />
-	在官網查詢尚有名額的<a href="https://sps.mohw.gov.tw/mhs" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]查詢尚有名額的合作機構">合作機構</a>。</p>
+	在官網查詢尚有名額的<a href="https://sps.mohw.gov.tw/mhs" rel="noopener noreferrer" target="_blank" title="[另開新視窗]查詢尚有名額的合作機構">合作機構</a>。</p>
 	</li>
 	<li><span>2</span>
 	<p style="padding: 0px 0px 10px 0px;"><span style="color:#035a58;"><strong>預約</strong></span><br />
@@ -658,7 +620,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <p id="active4" style="color:#035a58;font-size:1.33em; font-weight:bolder;">(二) 常見問答</p>
 
-<p style="padding: 10px 0px;">以下為民眾常見的重點問答彙整，更多資訊（如民眾篇、地方政府與機構篇、系統使用篇）請參閱「<a href="https://sps.mohw.gov.tw/mhs/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]青壯世代心理健康支持方案">青壯世代心理健康支持方案</a>」常見問題。</p>
+<p style="padding: 10px 0px;">以下為民眾常見的重點問答彙整，更多資訊（如民眾篇、地方政府與機構篇、系統使用篇）請參閱「<a href="https://sps.mohw.gov.tw/mhs/" rel="noopener noreferrer" target="_blank" title="[另開新視窗]青壯世代心理健康支持方案">青壯世代心理健康支持方案</a>」常見問題。</p>
 
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
 	<tbody>
@@ -691,7 +653,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 			<div style="margin-left:12pt;margin-top:18pt;margin-right:12pt;">💡<strong>3次免費心理諮商補助額度用完，還有心理諮商需求怎麼辦？</strong>
 
-			<p style="margin-left: 25px;">如果已經用完3次補助額度，還有心理諮商需求，可以選擇自費繼續接受心理諮商，或是由合作機構協助媒合<a href="https://dep.mohw.gov.tw/domhaoh/cp-4558-69568-107.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]各縣市社區心理諮商服務一覽表">社區中之心理健康服務資源</a>，如社區心理衛生中心、社區心理諮商服務據點等。</p>
+			<p style="margin-left: 25px;">如果已經用完3次補助額度，還有心理諮商需求，可以選擇自費繼續接受心理諮商，或是由合作機構協助媒合<a href="https://dep.mohw.gov.tw/domhaoh/cp-4558-69568-107.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]各縣市社區心理諮商服務一覽表">社區中之心理健康服務資源</a>，如社區心理衛生中心、社區心理諮商服務據點等。</p>
 			</div>
 			</td>
 		</tr>
@@ -701,8 +663,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章:<br />
-<a href="https://dep.mohw.gov.tw/DOMHAOH/cp-509-79500-107.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;衛生福利部115年度「15-45歲青壯世代心理健康支持方案」常見問答">&gt;&gt;衛生福利部115年度「15-45歲青壯世代心理健康支持方案」常見問答</a>【資料來源:衛生福利部心理健康司，民國115年2月】<br />
-<a href="https://sps.mohw.gov.tw/mhs/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;青壯世代心理健康支持方案官網">&gt;&gt;青壯世代心理健康支持方案官網</a>【資料來源:衛生福利部心理健康司 ，民國115年5月】</p>
+<a href="https://dep.mohw.gov.tw/DOMHAOH/cp-509-79500-107.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]&gt;&gt;衛生福利部115年度「15-45歲青壯世代心理健康支持方案」常見問答">&gt;&gt;衛生福利部115年度「15-45歲青壯世代心理健康支持方案」常見問答</a>【資料來源:衛生福利部心理健康司，民國115年2月】<br />
+<a href="https://sps.mohw.gov.tw/mhs/" rel="noopener noreferrer" target="_blank" title="[另開新視窗]&gt;&gt;青壯世代心理健康支持方案官網">&gt;&gt;青壯世代心理健康支持方案官網</a>【資料來源:衛生福利部心理健康司 ，民國115年5月】</p>
 
 <p>&nbsp;</p>
 
@@ -715,7 +677,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">基隆市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.klchb.klcg.gov.tw/tw/klchb/1984-300785.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]基隆市衛生局">基隆市衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.klchb.klcg.gov.tw/tw/klchb/1984-300785.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]基隆市衛生局">基隆市衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">6次</strong></li>
@@ -724,7 +686,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="tel:+886-2-24566185" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]致電基隆市衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="tel:+886-2-24566185" id="button" target="_blank" title="[開新視窗]致電基隆市衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">致電基隆市衛生局社區心理衛生中心 (02)2456-6185</p>
 </div>
@@ -732,16 +694,16 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">臺北市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://mental-health.gov.taipei/cp.aspx?n=8C6AC26A640E7DE1" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]基隆市衛生局">臺北市政府衛生局社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://mental-health.gov.taipei/cp.aspx?n=8C6AC26A640E7DE1" rel="noopener noreferrer" target="_blank" title="[另開新視窗]基隆市衛生局">臺北市政府衛生局社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
-	<li>使用次數：請見<a href="https://mental-health.gov.taipei/cp.aspx?n=F99C2A7517953986" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]臺北市政府衛生局心理衛生中心服務說明">服務說明</a></li>
-	<li>費用：請見<a href="https://mental-health.gov.taipei/cp.aspx?n=F99C2A7517953986" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]臺北市政府衛生局心理衛生中心服務說明">服務說明</a></li>
+	<li>使用次數：請見<a href="https://mental-health.gov.taipei/cp.aspx?n=F99C2A7517953986" rel="noopener noreferrer" target="_blank" title="[另開新視窗]臺北市政府衛生局心理衛生中心服務說明">服務說明</a></li>
+	<li>費用：請見<a href="https://mental-health.gov.taipei/cp.aspx?n=F99C2A7517953986" rel="noopener noreferrer" target="_blank" title="[另開新視窗]臺北市政府衛生局心理衛生中心服務說明">服務說明</a></li>
 	<li>心理諮詢專線：<strong style="color:#b50000;">02-33937885</strong></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://webreg.tpech.gov.tw/" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]至臺北市立聯合醫院網路掛號系統"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://webreg.tpech.gov.tw/" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]至臺北市立聯合醫院網路掛號系統"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至臺北市立聯合醫院網路掛號系統</p>
 </div>
@@ -749,7 +711,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">新北市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.health.ntpc.gov.tw/basic/?node=19497" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]新北市政府衛生局">新北市政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.health.ntpc.gov.tw/basic/?node=19497" rel="noopener noreferrer" target="_blank" title="[另開新視窗]新北市政府衛生局">新北市政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">3次</strong></li>
@@ -758,7 +720,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.health.ntpc.gov.tw/basic/?node=19497" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]至新北市政府衛生局官網查詢各社區心理衛生中心電話"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.health.ntpc.gov.tw/basic/?node=19497" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]至新北市政府衛生局官網查詢各社區心理衛生中心電話"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至新北市政府衛生局官網查詢各社區心理衛生中心電話</p>
 </div>
@@ -766,7 +728,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">桃園市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://mental.tycg.gov.tw/cl.aspx?n=510" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]桃園市政府衛生局社區心理衛生中心">桃園市政府衛生局社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://mental.tycg.gov.tw/cl.aspx?n=510" rel="noopener noreferrer" target="_blank" title="[另開新視窗]桃園市政府衛生局社區心理衛生中心">桃園市政府衛生局社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">3次</strong></li>
@@ -775,7 +737,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://mental.tycg.gov.tw/cl.aspx?n=510" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至桃園市政府衛生局社區心理衛生中心"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://mental.tycg.gov.tw/cl.aspx?n=510" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至桃園市政府衛生局社區心理衛生中心"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至桃園市政府衛生局社區心理衛生中心官網</p>
 </div>
@@ -783,7 +745,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">新竹縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.hcshb.gov.tw/News_Content.aspx?n=638&amp;s=106436" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]新竹縣政府衛生局">新竹縣政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.hcshb.gov.tw/News_Content.aspx?n=638&amp;s=106436" rel="noopener noreferrer" target="_blank" title="[另開新視窗]新竹縣政府衛生局">新竹縣政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">3次</strong></li>
@@ -792,7 +754,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="tel:+886-3-6567138" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]致電新竹縣社區心理諮商預約專線"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="tel:+886-3-6567138" id="button" target="_blank" title="[開新視窗]致電新竹縣社區心理諮商預約專線"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">致電新竹縣社區心理衛生中心 (03)6567138</p>
 </div>
@@ -800,7 +762,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">新竹市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://shc.hccg.gov.tw/ch/home.jsp?id=19&amp;parentpath=0,13" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]新竹市社區心理衛生中心">新竹市社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://shc.hccg.gov.tw/ch/home.jsp?id=19&amp;parentpath=0,13" rel="noopener noreferrer" target="_blank" title="[另開新視窗]新竹市社區心理衛生中心">新竹市社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4次</strong></li>
@@ -809,7 +771,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://dgservice.hccg.gov.tw/serviceIndex.do?rule=guest&amp;searchType=1&amp;searchKeyword=%E5%BF%83%E7%90%86%E8%AB%AE%E8%A9%A2%E9%9D%A2%E8%AB%87%E9%A0%90%E7%B4%84%E7%94%B3%E8%AB%8B&amp;searchSelcetValue=22," id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至新竹縣政府衛生局心理衛生中心專區"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://dgservice.hccg.gov.tw/serviceIndex.do?rule=guest&amp;searchType=1&amp;searchKeyword=%E5%BF%83%E7%90%86%E8%AB%AE%E8%A9%A2%E9%9D%A2%E8%AB%87%E9%A0%90%E7%B4%84%E7%94%B3%E8%AB%8B&amp;searchSelcetValue=22," id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至新竹縣政府衛生局心理衛生中心專區"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至新竹市政府數位申辦平臺</p>
 </div>
@@ -817,7 +779,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">苗栗縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.mlshb.gov.tw/nc/article?id=2d3c4f0e-a6fb-4973-9195-5cac147a1bb3" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]苗栗縣政府衛生局">苗栗縣政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.mlshb.gov.tw/nc/article?id=2d3c4f0e-a6fb-4973-9195-5cac147a1bb3" rel="noopener noreferrer" target="_blank" title="[另開新視窗]苗栗縣政府衛生局">苗栗縣政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4次</strong></li>
@@ -826,7 +788,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="tel:+886-37-558757" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]致電苗栗縣政府衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a> <a href="https://line.me/R/ti/p/@200hpzau" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至LINE@苗栗縣政府_Moodie心情e點通"> <strong>加LINE好友預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="tel:+886-37-558757" id="button" target="_blank" title="[開新視窗]致電苗栗縣政府衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a> <a href="https://line.me/R/ti/p/@200hpzau" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至LINE@苗栗縣政府_Moodie心情e點通"> <strong>加LINE好友預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">致電苗栗縣政府衛生局社區心理衛生中心 (037)558757<br />
 或至苗栗縣政府_Moodie心情e點通 @200hpzau</p>
@@ -835,7 +797,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">臺中市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.health.taichung.gov.tw/26198/27065/27068/27089/400593" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]臺中市政府衛生局">臺中市政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.health.taichung.gov.tw/26198/27065/27068/27089/400593" rel="noopener noreferrer" target="_blank" title="[另開新視窗]臺中市政府衛生局">臺中市政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4次</strong></li>
@@ -844,7 +806,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://mental.health.taichung.gov.tw/" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至臺中市政府衛生局心理服務預約系統"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://mental.health.taichung.gov.tw/" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至臺中市政府衛生局心理服務預約系統"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至臺中市政府衛生局心理服務預約系統</p>
 </div>
@@ -852,7 +814,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">彰化縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://center.chshb.gov.tw/counseling_list_agree.asp" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]彰化縣社區心理衛生中心">彰化縣社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://center.chshb.gov.tw/counseling_list_agree.asp" rel="noopener noreferrer" target="_blank" title="[另開新視窗]彰化縣社區心理衛生中心">彰化縣社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：<strong style="color:#b50000;">無限制</strong></li>
@@ -861,7 +823,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://center.chshb.gov.tw/counseling_list_agree.asp" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至彰化縣社區心理衛生中心心理諮商預約"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://center.chshb.gov.tw/counseling_list_agree.asp" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至彰化縣社區心理衛生中心心理諮商預約"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至彰化縣社區心理衛生中心官網</p>
 </div>
@@ -869,7 +831,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">南投縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ntshb.gov.tw/form/Details?Parser=2,7,158,57,85,,2405" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]南投縣政府衛生局">南投縣政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ntshb.gov.tw/form/Details?Parser=2,7,158,57,85,,2405" rel="noopener noreferrer" target="_blank" title="[另開新視窗]南投縣政府衛生局">南投縣政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4次</strong></li>
@@ -878,7 +840,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.ntshb.gov.tw/counseling/index?Parser=99,5,74,42" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至南投縣政府衛生局線上申請心理諮商服務"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.ntshb.gov.tw/counseling/index?Parser=99,5,74,42" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至南投縣政府衛生局線上申請心理諮商服務"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至南投縣政府衛生局官網</p>
 </div>
@@ -886,16 +848,16 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">雲林縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://ylshb.yunlin.gov.tw/News.aspx?n=13432&amp;sms=17682" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]雲林縣衛生局">雲林縣衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://ylshb.yunlin.gov.tw/News.aspx?n=13432&amp;sms=17682" rel="noopener noreferrer" target="_blank" title="[另開新視窗]雲林縣衛生局">雲林縣衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">10次</strong></li>
 	<li>費用：免費</li>
-	<li>心理諮詢專線：<strong style="color:#b50000;"><a href="https://ylshb.yunlin.gov.tw/News_Content.aspx?n=13432&amp;s=539992" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至雲林縣各鄉鎮市衛生所">請洽各鄉鎮市衛生所</a></strong></li>
+	<li>心理諮詢專線：<strong style="color:#b50000;"><a href="https://ylshb.yunlin.gov.tw/News_Content.aspx?n=13432&amp;s=539992" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至雲林縣各鄉鎮市衛生所">請洽各鄉鎮市衛生所</a></strong></li>
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://ws.yunlin.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNTIwL3JlbGZpbGUvMTc2ODIvNTM5OTkyLzJhMzAyNTY1LWQ4YmItNGNiMy04YjU5LWI4NjFlYmIzMDc4NC5wZGY%3d&amp;n=MTE15bm05b%2bD55CG6Kuu5ZWG5pyN5YuZ5pmC5q61LnBkZg%3d%3d" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至115年雲林縣心理諮商預約電話及服務時段"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://ws.yunlin.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvNTIwL3JlbGZpbGUvMTc2ODIvNTM5OTkyLzJhMzAyNTY1LWQ4YmItNGNiMy04YjU5LWI4NjFlYmIzMDc4NC5wZGY%3d&amp;n=MTE15bm05b%2bD55CG6Kuu5ZWG5pyN5YuZ5pmC5q61LnBkZg%3d%3d" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至115年雲林縣心理諮商預約電話及服務時段"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至雲林縣衛生局官網查詢心理諮商預約電話</p>
 </div>
@@ -903,7 +865,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">嘉義縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://cyshb.cyhg.gov.tw/cmhc/cp.aspx?n=F314094F21605910" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]雲林縣衛生局">嘉義縣社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://cyshb.cyhg.gov.tw/cmhc/cp.aspx?n=F314094F21605910" rel="noopener noreferrer" target="_blank" title="[另開新視窗]雲林縣衛生局">嘉義縣社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4次</strong></li>
@@ -912,7 +874,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://cyshb.cyhg.gov.tw/cmhc/cp.aspx?n=F314094F21605910" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至嘉義縣社區心理衛生中心諮商服務"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://cyshb.cyhg.gov.tw/cmhc/cp.aspx?n=F314094F21605910" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至嘉義縣社區心理衛生中心諮商服務"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至嘉義縣社區心理衛生中心官網查詢心理諮商站電話</p>
 </div>
@@ -920,7 +882,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">嘉義市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://mental.chiayi.gov.tw/cp.aspx?n=10017" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]嘉義市社區心理衛生中心">嘉義市社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://mental.chiayi.gov.tw/cp.aspx?n=10017" rel="noopener noreferrer" target="_blank" title="[另開新視窗]嘉義市社區心理衛生中心">嘉義市社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4次</strong></li>
@@ -929,7 +891,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBfmIVlAG3V7itiKKnmWfitJdxuDr_HY2wgO7PomK_8qa9mA/viewform" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至嘉義市政府衛生局心理諮商服務"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBfmIVlAG3V7itiKKnmWfitJdxuDr_HY2wgO7PomK_8qa9mA/viewform" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至嘉義市政府衛生局心理諮商服務"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至嘉義市政府衛生局心理諮商預約表單</p>
 </div>
@@ -937,7 +899,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">臺南市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://health.tainan.gov.tw/list.asp?orcaid=440F0379-D8B8-4FB9-9DAC-998C4A5ABB60" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]臺南市政府衛生局">臺南市政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://health.tainan.gov.tw/list.asp?orcaid=440F0379-D8B8-4FB9-9DAC-998C4A5ABB60" rel="noopener noreferrer" target="_blank" title="[另開新視窗]臺南市政府衛生局">臺南市政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">2次</strong></li>
@@ -946,7 +908,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.beclass.com/rid=305025e6953292e521fb" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至115年臺南市政府衛生局心理諮詢預約服務表單"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.beclass.com/rid=305025e6953292e521fb" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至115年臺南市政府衛生局心理諮詢預約服務表單"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至115年臺南市政府衛生局心理諮詢預約服務表單</p>
 </div>
@@ -954,7 +916,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">高雄市</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://health.kcg.gov.tw/Content_List.aspx?n=9AE52F47A8C29855" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]高雄市政府衛生局">高雄市政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://health.kcg.gov.tw/Content_List.aspx?n=9AE52F47A8C29855" rel="noopener noreferrer" target="_blank" title="[另開新視窗]高雄市政府衛生局">高雄市政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">1-3次</strong></li>
@@ -963,7 +925,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://line.me/R/ti/p/@872ohpkw?from=page&amp;searchId=872ohpkw" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至高雄市政府衛生局AI心靈會客室@mentalhealth.kcg"><strong>加LINE好友預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://line.me/R/ti/p/@872ohpkw?from=page&amp;searchId=872ohpkw" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至高雄市政府衛生局AI心靈會客室@mentalhealth.kcg"><strong>加LINE好友預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至高雄市政府衛生局AI心靈會客室 @mentalhealth.kcg</p>
 </div>
@@ -971,7 +933,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">屏東縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ptshb.gov.tw/cp.aspx?n=C6996DCFC3A44968" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]屏東縣政府衛生局">屏東縣政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ptshb.gov.tw/cp.aspx?n=C6996DCFC3A44968" rel="noopener noreferrer" target="_blank" title="[另開新視窗]屏東縣政府衛生局">屏東縣政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">3次</strong></li>
@@ -980,7 +942,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.ptshb.gov.tw/cp.aspx?n=C6996DCFC3A44968" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至屏東縣政府衛生局心理諮商預約"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.ptshb.gov.tw/cp.aspx?n=C6996DCFC3A44968" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至屏東縣政府衛生局心理諮商預約"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至屏東縣政府衛生局官網</p>
 </div>
@@ -988,7 +950,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">宜蘭縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ilshb.gov.tw/News.aspx?n=15713&amp;sms=15523" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]宜蘭縣政府衛生局">宜蘭縣政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ilshb.gov.tw/News.aspx?n=15713&amp;sms=15523" rel="noopener noreferrer" target="_blank" title="[另開新視窗]宜蘭縣政府衛生局">宜蘭縣政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">4-6次</strong></li>
@@ -997,7 +959,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdhgjVGRf20A8Ei8k1x7HOVyuXiD75PKTS1re1C2mqY-bxAPw/viewform" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至115年宜蘭縣社區心衛中心諮商預約單"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdhgjVGRf20A8Ei8k1x7HOVyuXiD75PKTS1re1C2mqY-bxAPw/viewform" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至115年宜蘭縣社區心衛中心諮商預約單"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至115年宜蘭縣社區心衛中心諮商預約單</p>
 </div>
@@ -1005,7 +967,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">花蓮縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://dapc.hlshb.gov.tw/mentalHealth/contactUs" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]花蓮縣社區心理衛生中心">花蓮縣社區心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://dapc.hlshb.gov.tw/mentalHealth/contactUs" rel="noopener noreferrer" target="_blank" title="[另開新視窗]花蓮縣社區心理衛生中心">花蓮縣社區心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">3次</strong></li>
@@ -1014,7 +976,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfyIZUVNO2qn1HDN4syVU0kgE4LzskCZmW5Dp8_59lYLu1OlA/viewform" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至115年花蓮縣社區心理諮詢預約"><strong>線上預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfyIZUVNO2qn1HDN4syVU0kgE4LzskCZmW5Dp8_59lYLu1OlA/viewform" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至115年花蓮縣社區心理諮詢預約"><strong>線上預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至115年花蓮縣社區心理諮商預約</p>
 </div>
@@ -1022,7 +984,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">臺東縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ttshb.gov.tw/Tmhc/FileList/C190005?SubCategoryID=ac064599-abc2-4da4-9f6e-05eddda89ec0" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]臺東縣衛生局心理衛生中心">臺東縣衛生局心理衛生中心</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.ttshb.gov.tw/Tmhc/FileList/C190005?SubCategoryID=ac064599-abc2-4da4-9f6e-05eddda89ec0" rel="noopener noreferrer" target="_blank" title="[另開新視窗]臺東縣衛生局心理衛生中心">臺東縣衛生局心理衛生中心</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">6次</strong></li>
@@ -1031,7 +993,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="tel:+886-89-230598" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]致電臺東市社區心理衛生中心"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="tel:+886-89-230598" id="button" target="_blank" title="[開新視窗]致電臺東市社區心理衛生中心"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">致電臺東市社區心理衛生中心 (089)230295</p>
 </div>
@@ -1039,7 +1001,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">澎湖縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.phchb.gov.tw/home.jsp?id=179" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]澎湖縣政府衛生局">澎湖縣政府衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.phchb.gov.tw/home.jsp?id=179" rel="noopener noreferrer" target="_blank" title="[另開新視窗]澎湖縣政府衛生局">澎湖縣政府衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：<strong style="color:#b50000;">無限制</strong></li>
@@ -1048,7 +1010,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="https://www.phchb.gov.tw/home.jsp?id=179" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至澎湖縣政府衛生局社區心理衛生中心服務內容"><strong>電話預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="https://www.phchb.gov.tw/home.jsp?id=179" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至澎湖縣政府衛生局社區心理衛生中心服務內容"><strong>電話預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">至澎湖縣政府衛生局官網查詢心理諮商預約電話</p>
 </div>
@@ -1056,7 +1018,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">金門縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://phb.kinmen.gov.tw/Content_List.aspx?n=4D2D6DB6AECF17E5" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]金門縣衛生局">金門縣衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://phb.kinmen.gov.tw/Content_List.aspx?n=4D2D6DB6AECF17E5" rel="noopener noreferrer" target="_blank" title="[另開新視窗]金門縣衛生局">金門縣衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：每年<strong style="color:#b50000;">6次</strong></li>
@@ -1065,7 +1027,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="tel:+886-82-337885" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]致電金門縣衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a> <a href="https://line.me/R/ti/p/@325nfmhs" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至金門縣衛生局_金心衛您@kinmen33788"> <strong>加LINE好友預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="tel:+886-82-337885" id="button" target="_blank" title="[開新視窗]致電金門縣衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a> <a href="https://line.me/R/ti/p/@325nfmhs" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至金門縣衛生局_金心衛您@kinmen33788"> <strong>加LINE好友預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">致電金門縣衛生局社區心理衛生中心 (082)337885<br />
 或至金門縣衛生局_金心衛您 @kinmen337885</p>
@@ -1074,7 +1036,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div id="myDiv">
 <p><span style="font-size: 1.2em; color: #035a58; font-weight: bolder;">連江縣</span><br />
-<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.matsuhb.gov.tw/Chhtml/content/684?webaid=2" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]連江縣衛生局">連江縣衛生局</a></span></p>
+<span style="font-size: 1em; font-weight: bolder;"><a href="https://www.matsuhb.gov.tw/Chhtml/content/684?webaid=2" rel="noopener noreferrer" target="_blank" title="[另開新視窗]連江縣衛生局">連江縣衛生局</a></span></p>
 
 <ul style="text-align: left;">
 	<li>使用次數：<strong style="color:#b50000;">6次</strong></li>
@@ -1083,7 +1045,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 </ul>
 
 <div class="bottom-area">
-<p class="apply-btn"><a href="tel:+886-836-22095" id="button" target="_blank" rel="noopener noreferrer" title="[開新視窗]致電連江縣衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a> <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=266lnllb" id="button" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[開新視窗]連結至LINE@點入預約心理諮商按鈕申請"> <strong>加LINE好友預約 〉</strong> </a></p>
+<p class="apply-btn"><a href="tel:+886-836-22095" id="button" target="_blank" title="[開新視窗]致電連江縣衛生局社區心理衛生中心"><strong>電話預約 〉</strong> </a> <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=266lnllb" id="button" rel="noopener noreferrer" target="_blank" title="[開新視窗]連結至LINE@點入預約心理諮商按鈕申請"> <strong>加LINE好友預約 〉</strong> </a></p>
 
 <p class="text-small" style="font-size: 0.8em; color: #035a58; ">致電連江縣衛生局社區心理衛生中心 (0836)23122<br />
 或至連江縣社區心理衛生中心 @266lnllb</p>
@@ -1093,7 +1055,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p style="clear:both;">&nbsp;</p>
 
 <p>站外連結之參考文章:<br />
-<a href="https://dep.mohw.gov.tw/DOMHAOH/cp-4558-69568-107.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;各縣市社區心理諮商服務一覽表">&gt;&gt;各縣市社區心理諮商服務一覽表</a>【資料來源:衛生福利部心理健康司 ，民國115年3月】</p>
+<a href="https://dep.mohw.gov.tw/DOMHAOH/cp-4558-69568-107.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]&gt;&gt;各縣市社區心理諮商服務一覽表">&gt;&gt;各縣市社區心理諮商服務一覽表</a>【資料來源:衛生福利部心理健康司 ，民國115年3月】</p>
 
 <p>&nbsp;</p>
 
@@ -1101,8 +1063,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 
 <div class="page-block">
 <ul>
-	<li><a href="https://www.gov.tw/News_Content_2_741359" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]桃園市-心理諮詢面談預約_線上預約"><img alt="" src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/ed7e5ecd-f8b2-409b-9a0a-489501db5a86.jpg" /> <span>桃園市-心理諮詢面談預約_線上預約</span> <span>依據申請說明填寫申辦表單與備齊相關證明後，進行服務送件，後續依據審查結果進行通知回覆。</span> </a></li>
-	<li><a href="https://www.gov.tw/News_Content_2_515225" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]臺中市-臺中市衛生局定點心理諮詢服務e櫃檯預約申請 "><img alt="" src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/1b46b80b-d24d-4c01-9096-b62ad205c571.jpg" /> <span>臺中市-臺中市衛生局定點心理諮詢服務e櫃檯預約申請</span> <span> 提供有明顯情緒困擾或心理困擾，有意願接受諮詢之臺中市市民免費面對面心理諮詢服務。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_741359" rel="noopener noreferrer" target="_blank" title="[另開新視窗]桃園市-心理諮詢面談預約_線上預約"><img alt="" src="https://ws.www.gov.tw/001/Upload/402/relpic/9057/19/ed7e5ecd-f8b2-409b-9a0a-489501db5a86.jpg" /> <span>桃園市-心理諮詢面談預約_線上預約</span> <span>依據申請說明填寫申辦表單與備齊相關證明後，進行服務送件，後續依據審查結果進行通知回覆。</span> </a></li>
+	<li><a href="https://www.gov.tw/News_Content_2_515225" rel="noopener noreferrer" target="_blank" title="[另開新視窗]臺中市-臺中市衛生局定點心理諮詢服務e櫃檯預約申請 "><img alt="" src="https://ws.www.gov.tw/001/Upload/402/relpic/9034/23/1b46b80b-d24d-4c01-9096-b62ad205c571.jpg" /> <span>臺中市-臺中市衛生局定點心理諮詢服務e櫃檯預約申請</span> <span> 提供有明顯情緒困擾或心理困擾，有意願接受諮詢之臺中市市民免費面對面心理諮詢服務。</span> </a></li>
 </ul>
 </div>
 
@@ -1128,62 +1090,62 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 	</thead>
 	<tbody>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://dep.mohw.gov.tw/DOMHAOH/cp-4906-54077-107.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]安心專線">安心專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://dep.mohw.gov.tw/DOMHAOH/cp-4906-54077-107.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]安心專線">安心專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">1925</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸提供免費心理諮詢服務，若您或觀察到身邊有想自殺、憂鬱的朋友，也可來電通報，將協助轉介給專業醫療人員。<br />
 			🔸服務時間：週一至週日，24小時</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.life1995.org.tw/?aid=2&amp;iid=3" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]生命線">生命線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.life1995.org.tw/?aid=2&amp;iid=3" rel="noopener noreferrer" target="_blank" title="[另開新視窗]生命線">生命線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">1995</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸提供免費電話輔導，服務各種心理問題困擾者，包括自殺防治、危機處理、婚姻家庭協談、男女感情協談導、法律或健康協談、人際關係協談、精神心理協談等。<br />
 			🔸服務時間：週一至週日，24小時</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.1980.org.tw/service_item_show.php?service_item_id=1" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]張老師">張老師</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.1980.org.tw/service_item_show.php?service_item_id=1" rel="noopener noreferrer" target="_blank" title="[另開新視窗]張老師">張老師</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">1980</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸協助當事人處理情緒及各項生活適應上的困擾，並可針對當事人立即性問題處遇。<br />
 			🔸服務時間：週一至週六9:00-12:00、14:00-17:00、18:00-21:30；週日 9:00-12:00、14:00-17:00</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.lkk.org.tw/OnePage.aspx?tid=170&amp;id=192" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]老朋友專線">老朋友專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.lkk.org.tw/OnePage.aspx?tid=170&amp;id=192" rel="noopener noreferrer" target="_blank" title="[另開新視窗]老朋友專線">老朋友專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">0800-228-585</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸聆聽長輩需求及照顧者心聲，除提供民眾了解現有老人福利、長期照顧資源外，也提供老人心理、社會、生理、休閒等相關的輔導與協談，並給予精神支持、情緒紓解。<br />
 			🔸服務時間：週一至週五，8:30-12:00、13:00-18:00</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://dep.mohw.gov.tw/DOMHAOH/cp-465-83683-107.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]男性關懷專線">男性關懷專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://dep.mohw.gov.tw/DOMHAOH/cp-465-83683-107.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]男性關懷專線">男性關懷專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">0800-013-999</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸讓全國男性有訴說心事與討論其困擾之管道，提供免費線上諮詢服務，傾聽來電者訴說心情、討論其困擾及提供專業法律諮詢與資源轉介。<br />
 			🔸服務時間：週一至週日，7:00-23:00</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.immigration.gov.tw/5382/5385/5388/7181/100924/%E5%A4%96%E4%BE%86%E4%BA%BA%E5%A3%AB%E5%9C%A8%E8%87%BA%E7%94%9F%E6%B4%BB%E8%AB%AE%E8%A9%A2%E6%9C%8D%E5%8B%99%E7%86%B1%E7%B7%9A/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]外來人士在臺生活諮詢服務熱線">外來人士在臺生活諮詢服務熱線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.immigration.gov.tw/5382/5385/5388/7181/100924/%E5%A4%96%E4%BE%86%E4%BA%BA%E5%A3%AB%E5%9C%A8%E8%87%BA%E7%94%9F%E6%B4%BB%E8%AB%AE%E8%A9%A2%E6%9C%8D%E5%8B%99%E7%86%B1%E7%B7%9A/" rel="noopener noreferrer" target="_blank" title="[另開新視窗]外來人士在臺生活諮詢服務熱線">外來人士在臺生活諮詢服務熱線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">1990</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸提供外國人及新住民在臺生活需求與適應之諮詢，包括簽證、居留、工作、教育文化、稅務、健保、交通、人身安全、子女教養、福利服務、法律資訊等。<br />
 			🔸服務時間：中、英、日24小時全年無休；越、印尼、泰、柬為週一至週五(不含國定假日)9:00-17:00。</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://familyedu.moe.gov.tw/docDetail.aspx?uid=8846&amp;pid=8844&amp;docid=182729" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]家庭教育諮詢專線">家庭教育諮詢專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://familyedu.moe.gov.tw/docDetail.aspx?uid=8846&amp;pid=8844&amp;docid=182729" rel="noopener noreferrer" target="_blank" title="[另開新視窗]家庭教育諮詢專線">家庭教育諮詢專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">412-8185<br />
 			(手機請加02)</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸提供親職教養、親子關係、情感交往、婚前與婚後關係經營、家庭資源與管理、家庭生活調適等問題諮詢服務。<br />
 			🔸服務時間：週一至週六9:00-12:00、14:00-17:00；週一至週五18:00-21:00</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.tada2002.org.tw/" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]失智症關懷專線">失智症關懷專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.tada2002.org.tw/" rel="noopener noreferrer" target="_blank" title="[另開新視窗]失智症關懷專線">失智症關懷專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">0800-474-580</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸為幫助失智症家庭，提供免付費全國失智症關懷專線服務。<br />
 			🔸服務時間：週一至週五9:00-21:00</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.familycare.org.tw/service/892" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]家庭照顧者關懷專線">家庭照顧者關懷專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.familycare.org.tw/service/892" rel="noopener noreferrer" target="_blank" title="[另開新視窗]家庭照顧者關懷專線">家庭照顧者關懷專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">0800-507-272</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸提供家庭照顧者社會福利相關諮詢，協助資源連結與轉介。<br />
 			🔸服務時間：週一至週五9:00-18:00</span></td>
 		</tr>
 		<tr>
-			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=315" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]國民健康署孕產婦關懷諮詢專線">國民健康署孕產婦關懷諮詢專線</a></u></span></td>
+			<td data-title="我想知道" style="background-color: #F2F2F2 !important;"><span style="font-weight:bolder;"><u><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=315" rel="noopener noreferrer" target="_blank" title="[另開新視窗]國民健康署孕產婦關懷諮詢專線">國民健康署孕產婦關懷諮詢專線</a></u></span></td>
 			<td data-title="專線" style="background-color: #FFFFFF "><span style="color:#b50000;font-weight:bolder">0800-870-870</span></td>
 			<td data-title="說明" style="background-color: #FFFFFF "><span>🔸提供諮詢主題包括產前產後健康、母乳哺育、營養與體重管理、身心調適等，並提供傾聽、關懷與資源轉介服務。<br />
 			🔸服務時間：週一至週五9:00-17:00</span></td>
@@ -1197,23 +1159,23 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <p>&nbsp;</p>
 
 <p>站外連結之參考文章:<br />
-<a href="https://dep.mohw.gov.tw/DOMHAOH/cp-327-8715-107.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;全國諮詢及救援服務專線">&gt;&gt;全國諮詢及救援服務專線</a>【資料來源:衛生福利部心理健康司，民國114年7月】<br />
-<a href="https://www.mohw.gov.tw/cp-23-135-1.html" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" title="[另開新視窗]&gt;&gt;青壯世代心理健康支持方案官網">&gt;&gt;諮詢服務專線</a>【資料來源:衛生福利部 ，民國114年6月】</p>
+<a href="https://dep.mohw.gov.tw/DOMHAOH/cp-327-8715-107.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]&gt;&gt;全國諮詢及救援服務專線">&gt;&gt;全國諮詢及救援服務專線</a>【資料來源:衛生福利部心理健康司，民國114年7月】<br />
+<a href="https://www.mohw.gov.tw/cp-23-135-1.html" rel="noopener noreferrer" target="_blank" title="[另開新視窗]&gt;&gt;青壯世代心理健康支持方案官網">&gt;&gt;諮詢服務專線</a>【資料來源:衛生福利部 ，民國114年6月】</p>
 </span></p>    </div>  </div></div></div></div></div></div> <div class="area-editor system-info" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group page-footer" data-index="3" data-type="3" data-child="5"><div class="in"><div class="ct"><div class="in"> <div class="list-text file-download keywords" data-index="1" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="關鍵字"   >關鍵字</a></span></div></div></div><div class="ct"><div class="in"><span>心理,諮商,心理諮商,青壯世代心理健康支持方案<span></div></div></div></div> <div class="list-text file-download relnews" data-index="2" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="相關新聞"   >相關新聞</a></span></div></div></div><div class="ct"><div class="in"><div class="info_list">
     <ul>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=FE17157A07849877" data-sn="889506"
-                data-name="「中正心衛中心 升級加倍安心」 全臺首座社區心理衛生中心升級揭牌">「中正心衛中心 升級加倍安心」 全臺首座社區<span class="info_keywords">心理</span>衛生中心升級揭牌<span>臺北市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.cy.gov.tw/News_Content.aspx?n=124&s=37567" data-sn="890119"
-                data-name="彰師大輔諮系教授張景然、黃宗堅、王智弘等3人，涉及性騷性平事件，違失情節重大，監察院通過紀惠容、葉大華委員所提彈劾案">彰師大輔諮系教授張景然、黃宗堅、王智弘等3人，涉及性騷性平事件，違失情節重大，監察院通過紀惠容、葉大華委員所提彈劾案<span>監察院</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.miaoli.gov.tw/News_Content2.aspx?n=285&s=967342" data-sn="890101"
-                data-name="苗栗縣政府啟動跨網絡關懷機制，強化水域安全教育與學生輔導工作">苗栗縣政府啟動跨網絡關懷機制，強化水域安全教育與學生輔導工作<span>苗栗縣政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8819507" data-sn="889868"
-                data-name="全國首座心理健康教育館在台南　打造溪北心理健康服務新據點">全國首座<span class="info_keywords">心理</span>健康教育館在台南　打造溪北<span class="info_keywords">心理</span>健康服務新據點<span>臺南市政府</span></a></li>
-        <li><a class="lifeeventsec" target="_blank" rel="noopener noreferrer" href="https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=C7F2DD9227E86214" data-sn="889569"
-                data-name="轉角遇見心空間─「學美．耕心—大專校院輔導諮商空間改造計畫」成果分享會">轉角遇見心空間─「學美．耕心—大專校院輔導<span class="info_keywords">諮商</span>空間改造計畫」成果分享會<span>教育部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=74F5F968BCB6C6DD" data-sn="897294"
+                data-name="育航幼兒園-臺北市學前專業社群成果分享會盛大登場：用熱情展現專業，共創優質學前教育">育航幼兒園-臺北市學前專業社群成果分享會盛大登場：用熱情展現專業，共創優質學前教育<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.taichung.gov.tw/3326105/post" data-sn="897316"
+                data-name="金龍盃全國青少棒菁英賽登場　18縣市、64隊台中同場較勁">金龍盃全國青少棒菁英賽登場　18縣市、64隊台中同場較勁<span>臺中市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=FFE21603CA0D8890" data-sn="897261"
+                data-name="AI時代資安人才培育再升級 AIS3打造AI原生資安學習環境">AI時代資安人才培育再升級 AIS3打造AI原生資安學習環境<span>教育部</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=71D557E17D73BA76" data-sn="897221"
+                data-name="北市夏莉絲幼兒園不當管教案 教育局行政重罰並主動向地檢署告發">北市夏莉絲幼兒園不當管教案 教育局行政重罰並主動向地檢署告發<span>臺北市政府</span></a></li>
+        <li><a class="lifeeventsec" target="_blank" href="https://landoffice.chcg.gov.tw/changhua/03bulletin/bulletin02_con.aspx?bull_id=5260" data-sn="897333"
+                data-name="🫶跨縣市地政士公會假日防詐！彰化地政公私協力守護產權安全網💪">🫶跨縣市地政士公會假日防詐！彰化地政公私協力守護產權安全網💪<span>彰化縣彰化地政事務所</span></a></li>
     </ul>
 </div>
-</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:history.back();"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   role="button"  title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
+</div></div></div></div> <div class="list-text detail" data-index="3" data-type="0"><div class="in"><div class="ct"><div class="in"></div></div></div></div> <div class="list-text jump-tool" data-index="4" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="back"  >		<span  ><a   href="javascript:window.location =document.referrer;"   title="回上一頁"   target="_self"  >回上一頁</a></span></li><li   data-index="2"  class="to-top"  >		<span  ><a   href="#Accesskey_U"   title="回最上面"   target="_self"  >回最上面</a></span></li></ul>
 </div></div></div></div>
         </div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div> <div class="group base-footer" data-func="{&#39;toggleBtn&#39;:{&#39;btnOrangeText&#39;:&#39;關閉&#39;,&#39;btnActiveText&#39;:&#39;開啟&#39;,&#39;focusActive&#39;:false,&#39;expanded&#39;: true}}" data-index="3" data-type="3" data-child="3"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  class="headH3"  >		<span  ><a    title="選單"   >選單</a></span></div></div></div><div class="ct"><div class="in"> <div class="simple-text accesskey" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><span><a href="#Accesskey_Z" id="Accesskey_Z" accesskey="Z" title="下方選單連結區，此區塊列有[意見信箱]、[資訊安全政策]、[隱私權政策]等連結">:::</a></span></div></div></div></div> <div class="group-list nav" data-id="ffmenu" data-func="{&#39;setNavLen&#39;:{}}" data-index="1" data-type="4"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="0"></ul></div></div><div class="ft"><div class="in"><script>
   var offMenuUrl = "/Html_FatFootMenu.html";
@@ -1234,7 +1196,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
   })
 </script>
 </div></div></div></div> <div class="group default info" data-index="2" data-type="3" data-child="1"><div class="in"><div class="ct"><div class="in"> <div class="list-text link" data-index="1" data-type="0"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="下方連結"   >下方連結</a></span></div></div></div><div class="ct"><div class="in"></div></div></div></div></div></div></div></div> <div class="group default msg-tool" data-index="3" data-type="3" data-child="4"><div class="in"><div class="ct"><div class="in"> <div class="area-editor address" data-func="{&#39;linkToMap&#39;:{&#39;bindClass&#39;:&#39;.map&#39;,&#39;linkClass&#39;:&#39;is-map&#39;}}" data-index="1" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><p>如對本站帳號申請與網站操作有相關問題，請聯絡客服中心；各項申辦服務相關問題，請聯繫各申辦服務頁面之聯絡窗口。<br />
-線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" rel="noopener noreferrer" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
+線上服務網站：<a href="https://www.service.gov.tw/" target="_blank" title="客戶服務中心[另開新視窗]">https://www.service.gov.tw</a>
 ，客服傳真：(02)3393-0708，客服信箱：egov@service.gov.tw<br />
 客服電話：(02)2192-7111，電話服務時間：週一至週五上午8時30分至下午6時（例假日除外，非上述時間請多利用客服信箱）<br />
 中華民國數位發展部</p>
@@ -1310,7 +1272,9 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 .info_list ul li a .info_keywords {
     color: #b50000;
 }
-
+.simple-text.update-time{
+    display: none;
+}
 </style>
 <div class="area-editor default e-book" data-addparentgroup="False" data-anchor="" data-bgclass="e-book" data-bgcolor="#0000ffff" data-child="1" data-groupname="" data-groupsn="2273" data-index="4" data-isgroup="true" data-margin_bottom="0" data-margin_defaultsetting="false" data-margin_left="0" data-margin_right="0" data-margin_top="0" data-menuwidth="" data-setlen="0" data-sitesmodulesn="6" data-sort="8" data-tabtype="0" data-type="0" data-widthdesktop="0" data-widthmobile="0" data-widthpad="0" id="Group_2273_YYpUwxTtPL">
 <div class="in">
@@ -1322,7 +1286,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="box">
 <ul>
 	<li class="btn_statify"><span><a href="javascript: void(0)" title="滿意度調查">滿意度調查</a></span></li>
-	<li class="btn_privacy"><span><a href="CP_16" target="_blank" rel="noopener noreferrer" title="隱私權保護政策">隱私權保護政策</a></span></li>
+	<li class="btn_privacy"><span><a href="CP_16" target="_blank" title="隱私權保護政策">隱私權保護政策</a></span></li>
 	<li class="btn_description"><span><a href="javascript: void(0)" title="服務說明">服務說明</a></span></li>
 </ul>
 </div>
@@ -1392,7 +1356,7 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <div class="privacy" style="display: none;">
 <div class="title">個資保密聲明</div>
 
-<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
+<div class="content">本網站使用前瞻技術提供更好的使用體驗，同時尊重使用者隱私，為維護您的權益，開始使用前懇請事先詳閱「<a href="https://api.www.gov.tw/cp.aspx?n=16" title="[另開新視窗]隱私權保護政策連結" target="_blank" rel="noopener noreferrer">[另開新視窗]隱私權保護政策</a>」。當您點擊「我同意」時，視同您已充分了解並同意本網站智能客服「E-GOV小幫手」開始蒐集與處理您所提供的資料，蒐集範圍將包含使用COOKIE記住您的角色與當次對話紀錄。</div>
 
 <div class="btn"><a class="talk_sub" href="javascript: void(0)" id="btn_agree" role="button" title="我同意按鈕">我同意</a> <a class="talk_sub" href="javascript: void(0)" id="btn_disagree" title="我不同意按鈕">我不同意</a></div>
 </div>
@@ -1446,8 +1410,8 @@ if( stardate.getTime() <= new Date().getTime() && new Date().getTime() < enddate
 <script>
     window.chatbotDomain = "https://api.www.gov.tw/"; 
 $('li.back>span>a').attr('href','javascript:history.back();');
-</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府"   target="_self"  ><img src="/images/egov.png" alt="我的E政府"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank" rel="noopener noreferrer"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
-</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-05-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</script><script src="Scripts/chatbot.js"></script></div></div></div></div> <div class="list-pic icon" data-index="2" data-type="0" data-child="1"><div class="in"><div class="ct"><div class="in"><ul data-index="1" data-child="2"><li   data-index="1"  class="E-Gov"  >		<span style="background-image: url('/images/egov.png');" ><a   href="//www.gov.tw/"   title="我的E政府 [另開新視窗]"   target="_self"  ><img src="/images/egov.png" alt="我的E政府 [另開新視窗]"   /></a></span></li><li   data-index="2"  class="wcag"  >		<span style="background-image: url('/images/aplus.png');" ><a   href="https://accessibility.moda.gov.tw/Applications/Detail?category=20260402140047"   title="[另開新視窗]通過AA等級無障礙網頁檢測"   target="_blank"  ><img src="/images/aplus.png" alt="通過AA等級無障礙網頁檢測"   /></a></span></li></ul>
+</div></div></div></div> <div class="simple-text update-time" data-index="3" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="更新日期"   >更新日期</a></span></div></div></div><div class="ct"><div class="in"><span>115-07-21</span></div></div></div></div> <div class="simple-text visit-count" data-index="4" data-type="0" data-child="1"><div class="in"><div class="hd"><div class="in"><div   data-index="0"  >		<span  ><a    title="瀏覽人次"   >瀏覽人次</a></span></div></div></div><div class="ct"><div class="in"><span id="footer_visitcount_span">..</span></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="195DFC0E" />
